@@ -1,0 +1,27 @@
+.navigation
+	background: paper-color
+	position: fixed
+	width: layout_drawer-width
+	bottom: 0px
+	z-index: 50
+	overflow-x: auto
+	top: layout_header-height
+		
+.site-intro
+	.site-navigation
+		@extends .navigation
+		z-index: 200
+		top: 0px
+		_shadow(3,3)
+		left: 0px//-(layout_drawer-width)
+		&.toggle
+			background: red
+		
+.context-options
+	@extends .navigation
+	right: 0px
+	right: -(layout_drawer-width)
+	_shadow(1,-1)
+	.share
+		position:absolute;
+		float:right

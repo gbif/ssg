@@ -1,0 +1,49 @@
+{
+  "name": "gbif-ssg-i18n",
+  "version": "1.0.0",
+  "description": "A static site generator for GBIF sub sites.",
+  "main": "gulpfile.js",
+  "engines": {
+    "node": ">= 4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gbif"
+  ],
+  "author": "mgh",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "del": "^2.0.2",
+    "front-matter": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.0",
+    "gulp-front-matter": "^1.2.3",
+    "gulp-marked": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "html5shiv": "^3.7.3",
+    "kouto-swiss": "^0.11.13",
+    "marked": "^0.3.5",
+    "merge-stream": "^1.0.0",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4",
+    "swig": "^1.4.2",
+    "through2": "^2.0.0",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "gulp-stylus": "^2.1.0"
+  },
+  "private": true
+}

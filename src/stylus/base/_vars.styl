@@ -1,0 +1,18 @@
+/* HEADER */
+layout_header-height = 65px
+
+
+/* DRAWERS */
+layout_drawer-width = 17em
+
+
+/* COLORS */
+$primary-color = rgb(123, 194, 212)
+
+
+/* MIXINS */
+_shadow(h, v=0)
+	if h>0
+		box-shadow: 1px*v 1px*h 0.5px*h 1px rgba(0, 0, 0, 0.15);
+	else
+		box-shadow: inset 1px*h 1px*v -1px*h 1px rgba(0, 0, 0, 0.15);

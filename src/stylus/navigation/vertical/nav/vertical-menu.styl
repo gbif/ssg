@@ -1,0 +1,43 @@
+.navigation-main
+	>ul>li>a:first-of-type
+		border-bottom: 1px solid darken(paper-color, 5)
+	li
+		display: block
+		cursor: pointer
+		a
+			border-bottom: none
+			display:block
+			text-decoration: none
+			text-transform: capitalize
+			color: ink-color
+			&:hover
+				color: darken(ink-color, 20)
+				background-color: darken(paper-color, 5)
+		&.active
+			>a
+				color: darken(ink-color, 20)
+	>ul>li
+		>a
+			padding: 15px 20px
+		>ul
+			>li
+				>a
+					padding: 15px 20px
+					&:after
+						position: absolute
+						right: 10px
+					&.expandable:after
+						content: "+"
+				>ul
+					display: none
+					>li
+						>a
+							padding: 7px 20px 7px 20px
+							color: lighten(ink-color, 30)
+							&:hover
+								background-color: inherit
+				&.active
+					ul
+						display: block
+					a.expandable:after
+						content: "-"

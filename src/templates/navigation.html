@@ -1,0 +1,47 @@
+<nav class="navigation-main">
+	<ul>
+		<li>
+			<a href="/{{meta.siteLanguage}}">{{nav.root[meta.siteLanguage]}}</a>
+			{% for x in nav.sections%}
+			{% if loop.first %}
+			<ul>
+			{% endif %}
+				<li {% if x.id == meta.frontMatter.category %} class="active" {% endif %}>
+					{% if x.type == 'category' && x.children.length > 1%}
+					<a  rel="nofollow" href="#" class="expandable">
+						{{x.name[meta.siteLanguage]}}
+					</a>
+					{% for y in x.children %}
+						{% if loop.first %}
+						<ul>
+						{% endif %}
+							<li {% if y[meta.siteLanguage].url == meta.prettyUrl %} class="active" {% endif %}>
+								<a href="/{{y[meta.siteLanguage].url}}">
+									{{y[meta.siteLanguage].title}}
+								</a>
+							</li>
+						{% if loop.last %}
+						</ul>
+						{% endif %}
+					{% endfor %}
+					
+					{% elseif x.type == 'category' && x.children.length == 1 %}
+					<a href="/{{x.children[0][meta.siteLanguage].url}}">
+						{{x.children[0][meta.siteLanguage].title}}
+					</a>
+					{% elseif x.type == 'custom'%}
+					<a href="{{x[meta.siteLanguage].url}}" >
+						{{x[meta.siteLanguage].title}}
+					</a>
+					{% else %}
+					{% endif %}
+					
+					
+				</li>
+			{% if loop.last %}
+			</ul>
+			{% endif %}
+		{% endfor %}
+		</li>
+	</ul>
+</nav>

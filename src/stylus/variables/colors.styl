@@ -1,0 +1,48 @@
+/* COLORS */
+color-dark = #333
+color-bright = #FFF
+background-color = #F1F1F1
+
+paper-color = color-bright
+ink-color = color-dark
+link-bg-color = orange
+
+primary-color = rgb(123, 194, 212)
+
+
+/* COLOR COMPLEMENTS */
+
+/* Many colored*/
+complement-colors = tetrad( primary-color )
+secondary-color = complement-colors[1]
+tertiary-color = complement-colors[0]
+accent-color = complement-colors[2]
+
+// /* triad colors */
+// complement-colors = triad( primary-color )
+// secondary-color = complement-colors[0]
+// tertiary-color = complement-colors[1]
+// accent-color = complement-colors[1]
+
+// /* split colors */
+// complement-colors = split-complements( primary-color )
+// secondary-color = complement-colors[0]
+// tertiary-color = complement-colors[1]
+// accent-color = complement-colors[1]
+
+// /* monochrome colors */
+// complement-colors = monochrome( primary-color )
+// secondary-color = complement-colors[0]
+// tertiary-color = complement-colors[1]
+// accent-color = complement-colors[1]
+
+primary-ink-color = _inkColor(primary-color)
+secondary-ink-color = _inkColor(secondary-color)
+tertiary-ink-color = _inkColor(tertiary-color)
+accent-ink-color = _inkColor(accent-color)
+
+_inkColor(bg)
+	if dark(black)
+		color-bright
+	else
+		color-dark
