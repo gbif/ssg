@@ -1,0 +1,13 @@
+---
+title: Custom
+category: examples
+---
+
+# You can insert custom HTML
+
+You can also inject custom HTML into the document. Just point to it.
+
+```gbif
+html:
+- path: alert.html
+```

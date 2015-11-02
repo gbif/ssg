@@ -23,29 +23,29 @@ module.exports = {
             },
             {
                 type: 'category',
-                id: 'board',
+                id: 'examples',
                 name: {
-                    dk: 'Bestyrelse',
-                    en: 'Board members'
+                    dk: 'Eksempler',
+                    en: 'Examples'
                 }
             },
             {
                 type: 'category',
-                id: 'flat',
+                id: 'multilingual',
                 name: {
-                    dk: 'Flad',
-                    en: 'Flat'
+                    dk: '',
+                    en: ''
                 }
             },
             {
                 type: 'custom',
                 dk: {
-                    title: 'min side',
-                    url: 'www.google.com'
+                    title: 'Selvstændig side',
+                    url: '/you-have-to-build-this-page-youself'
                 },
                 en: {
-                    title: 'my page',
-                    url: '/tester'
+                    title: 'Separate pages',
+                    url: '/you-have-to-build-this-page-youself'
                 }
             }
         ]
