@@ -6,7 +6,10 @@ module.exports = {
     src: src,
     dest: dest,
     content: './content/**/*.md',
-    navigation: navigation, 
+    navigation: navigation,
+    lunr: {
+        dest: dest + '/lunr'
+    },
     javascript: {
         main: src + '/js/script.js',
         src: [src + '/js/**/*.js', '!' + src + '/js/ie8.js'],

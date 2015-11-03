@@ -1,6 +1,7 @@
 ---
 title: Multilingual
 category: multilingual
+type: root
 ---
 
 # Multilingual

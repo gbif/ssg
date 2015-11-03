@@ -1,6 +1,7 @@
 var marked = require('marked'),
   frontMatter = require('front-matter'),
-	renderer = new marked.Renderer();
+	renderer = new marked.Renderer(),
+  originalCodeRenderer = renderer.code;
 
 module.exports = renderer;
 
@@ -24,7 +25,7 @@ renderer.code = function (code, language) {
       html += getContacts(data);
       return html;
     }
-    return '';
+    return originalCodeRenderer.call(renderer, code, language);
 };
 
 // Generate HTML for contacts

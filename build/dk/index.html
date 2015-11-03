@@ -12,6 +12,7 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.2.0/es5-shim.js"></script>
 	<![endif]-->
 </head>
 
@@ -22,6 +23,7 @@
 				<span class="Xtoggle toggle-nav" role="button">
 				</span>
 				<h1>BANNER</h1>
+				<input id="search" type="text" />
 			</header>
 			<a class="skip" rel="nofollow" href="#main">Skip to main content</a>
 			<div class="site-navigation">
@@ -75,7 +77,6 @@
 					
 					
 					
-					
 				</li>
 			
 		
@@ -117,7 +118,6 @@
 					
 					
 					
-					
 				</li>
 			
 		
@@ -126,6 +126,18 @@
 					
 					<a href="/dk/flersproget">
 						Flersproget
+					</a>
+					
+					
+					
+				</li>
+			
+		
+			
+				<li >
+					
+					<a href="/dk/skjulte-sider">
+						Skjulte sider
 					</a>
 					
 					
@@ -181,6 +193,9 @@
 			</aside>
 			<section>
 				<div class="content">
+					<ul class="searchresults">
+						
+					</ul>
 					<article>
 	<div class="article--share">Share</div>
 	<h1><a name="en-statisk-website-generator-for-gbif" class="anchor" href="#en-statisk-website-generator-for-gbif"><span class="header-link"></span></a>En statisk website generator for GBIF</h1><p>Et eksempel på hvorledes en side kan se ud.</p>
@@ -195,7 +210,8 @@
 		</main>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.6.0/lunr.min.js"></script>
 	<script src="/javascript/script.js"></script>
 </body>
 

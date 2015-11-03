@@ -33,6 +33,7 @@
     "gulp-watch": "^4.3.5",
     "html5shiv": "^3.7.3",
     "kouto-swiss": "^0.11.13",
+    "lunr": "^0.6.0",
     "marked": "^0.3.5",
     "merge-stream": "^1.0.0",
     "path": "^0.12.7",
@@ -40,6 +41,7 @@
     "run-sequence": "^1.1.4",
     "swig": "^1.4.2",
     "through2": "^2.0.0",
+    "vinyl": "^1.1.0",
     "walk": "^2.3.9"
   },
   "devDependencies": {

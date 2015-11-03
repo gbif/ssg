@@ -5,9 +5,9 @@ var path = require('path'),
     dict, versions, config;
 
 module.exports = function (conf) {
-  // if (!filename) {
-  //  throw new gutil.PluginError('gulp-tar', '`filename` required');
-  // }
+  if (!conf) {
+   throw new gutil.PluginError('gbif-ssg-i18n', 'A configuration object is required');
+  }
     config = JSON.parse(JSON.stringify(conf));
     dict = {};
     versions = {};
@@ -48,7 +48,7 @@ module.exports = function (conf) {
 };
 
 function addLanguageVersions(file) {
-  var extname = path.extname(file.path);
+    var extname = path.extname(file.path);
     var basename = path.basename(file.path, extname);
     var contentLanguage = basename.substr(basename.length-2);
     var siteLanguage = contentLanguage;
@@ -75,8 +75,10 @@ function addLanguageVersions(file) {
 
 function add(file, siteLanguage, contentLanguage, section) {
     var dir = path.dirname(file.relative);
-    var folder = section ? section.name[siteLanguage] : '';
-    var prettyUrl = path.join(siteLanguage, folder, file.frontMatter.title).replace(/\s/g, '-').toLowerCase();
+    
+    var folder = section ? section.lang[siteLanguage].title : '';
+    var title = file.frontMatter.type == 'root' ? '' : file.frontMatter.title;
+    var prettyUrl = path.join(siteLanguage, folder, title).replace(/\s/g, '-').toLowerCase();
 
     if (dir == '.') {
         prettyUrl = contentLanguage;
@@ -96,11 +98,18 @@ function add(file, siteLanguage, contentLanguage, section) {
     versions[dir][file.meta.siteLanguage] = prettyUrl;
     
     if (section) {
-        section.children = section.children || {};
-        section.children[file.meta.dir] = section.children[file.meta.dir] || {};
-        section.children[file.meta.dir][siteLanguage] = {
-            title: file.meta.frontMatter.title,
-            url: file.meta.prettyUrl,
+
+        if (file.meta.frontMatter.type == 'root') {
+            section.lang[siteLanguage].url = prettyUrl;
+            // section.lang[siteLanguage].title = file.meta.frontMatter.title;
+        }
+        else {
+            section.children = section.children || {};
+            section.children[file.meta.dir] = section.children[file.meta.dir] || {};
+            section.children[file.meta.dir][siteLanguage] = {
+                title: file.meta.frontMatter.title,
+                url: file.meta.prettyUrl,
+            }
         }
     }
 }

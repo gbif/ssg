@@ -1,6 +1,7 @@
 ---
 title: Flersproget
 category: multilingual
+type: root
 ---
 
 # Flersproget

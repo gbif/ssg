@@ -4,23 +4,35 @@ var gulp = require('gulp'),
 	marked = require('gulp-marked'),
 	through = require('through2'),
 	renderer = require('./renderer'),
-	i18n_build = require('./i18n_build');
-	
+	i18n_build = require('./i18n_build'),
+	lunr = require('./lunr/gulp-lunr');
+
 	swig.setDefaults({ cache: false });
 
 module.exports = function(conf){
 	function i18n() {
-		return gulp.src(conf.content)
+		var langFiles = gulp.src(conf.content)
 			.pipe(frontMatter({
 				property: 'frontMatter',
 				remove: true
 			}))
-			.pipe(i18n_build(conf.navigation))
+			.pipe(i18n_build(conf.navigation));
+
+		var template = langFiles
 			.pipe(marked({
 				renderer: renderer
 			}))
 			.pipe(applyTemplate('./src/templates/main.html', conf.navigation.languages))
 			.pipe(gulp.dest(conf.dest));
+
+		var search = langFiles
+			.pipe(lunr())
+			.pipe(gulp.dest(conf.lunr.dest));
+
+		var merge = require('merge-stream')();
+		merge.add(template);
+		merge.add(search);
+		return merge.isEmpty() ? null : merge;
 	};
 
 	function applyTemplate(tpl, languages) {
@@ -37,5 +49,6 @@ module.exports = function(conf){
 			cb();
 		});
 	}
+
 	return i18n;
 }

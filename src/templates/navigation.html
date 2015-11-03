@@ -7,9 +7,17 @@
 			<ul>
 			{% endif %}
 				<li {% if x.id == meta.frontMatter.category %} class="active" {% endif %}>
-					{% if x.type == 'category' && x.children.length > 1%}
+					{% if x.type == 'category' && x.lang[meta.siteLanguage].url %}
+					<a href="/{{x.lang[meta.siteLanguage].url}}">
+						{{x.lang[meta.siteLanguage].title}}
+					</a>
+					{% elseif x.type == 'custom'%}
+					<a href="{{x.lang[meta.siteLanguage].url}}" >
+						{{x.lang[meta.siteLanguage].title}}
+					</a>
+					{% elseif x.type == 'category' && x.children.length > 1%}
 					<a  rel="nofollow" href="#" class="expandable">
-						{{x.name[meta.siteLanguage]}}
+						{{x.lang[meta.siteLanguage].title}}
 					</a>
 					{% for y in x.children %}
 						{% if loop.first %}
@@ -24,16 +32,8 @@
 						</ul>
 						{% endif %}
 					{% endfor %}
-					
-					{% elseif x.type == 'category' && x.children.length == 1 %}
-					<a href="/{{x.children[0][meta.siteLanguage].url}}">
-						{{x.children[0][meta.siteLanguage].title}}
-					</a>
-					{% elseif x.type == 'custom'%}
-					<a href="{{x[meta.siteLanguage].url}}" >
-						{{x[meta.siteLanguage].title}}
-					</a>
 					{% else %}
+
 					{% endif %}
 					
 					

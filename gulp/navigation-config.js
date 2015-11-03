@@ -16,36 +16,61 @@ module.exports = {
             {
                 type: 'category',
                 id: 'about',
-                name: {
-                    dk: 'Om',
-                    en: 'About'
+                lang: {
+                    dk: {
+                        title: 'Om'
+                    },
+                    en: {
+                        title: 'About'
+                    }
                 }
             },
             {
                 type: 'category',
                 id: 'examples',
-                name: {
-                    dk: 'Eksempler',
-                    en: 'Examples'
+                lang: {
+                    dk: {
+                        title: 'Eksempler'
+                    },
+                    en: {
+                        title: 'Examples'
+                    }
                 }
             },
             {
                 type: 'category',
                 id: 'multilingual',
-                name: {
-                    dk: '',
-                    en: ''
+                lang: {
+                    dk: {
+                        title: 'Flersproget'
+                    },
+                    en: {
+                        title: 'Multilingual'
+                    }
+                }
+            },{
+                type: 'category',
+                id: 'hidden',
+                lang: {
+                    dk: {
+                        title: 'Skjulte sider'
+                    },
+                    en: {
+                        title: 'Hidden pages'
+                    }
                 }
             },
             {
                 type: 'custom',
-                dk: {
-                    title: 'Selvstændig side',
-                    url: '/you-have-to-build-this-page-youself'
-                },
-                en: {
-                    title: 'Separate pages',
-                    url: '/you-have-to-build-this-page-youself'
+                lang: {
+                    dk: {
+                        title: 'Selvstændig side',
+                        url: '/you-have-to-build-this-page-youself'
+                    },
+                    en: {
+                        title: 'Separate pages',
+                        url: '/you-have-to-build-this-page-youself'
+                    }
                 }
             }
         ]

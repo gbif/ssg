@@ -12,6 +12,7 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.2.0/es5-shim.js"></script>
 	<![endif]-->
 </head>
 
@@ -22,6 +23,7 @@
 				<span class="Xtoggle toggle-nav" role="button">
 				</span>
 				<h1>BANNER</h1>
+				<input id="search" type="text" />
 			</header>
 			<a class="skip" rel="nofollow" href="#main">Skip to main content</a>
 			<div class="site-navigation">
@@ -52,13 +54,17 @@
 			</aside>
 			<section>
 				<div class="content">
+					<ul class="searchresults">
+						
+					</ul>
 					{% include "article.html" %}
 				</div>
 			</section>
 		</main>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.6.0/lunr.min.js"></script>
 	<script src="/javascript/script.js"></script>
 </body>
 
