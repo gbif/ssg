@@ -10,10 +10,6 @@ var idx = {},
 	results = {};
 
 module.exports = function() {
-	// if (!targetFile) {
-	// 	throw new PluginError('gulp-lunr', 'Missing outputFile option for gulp-lunr');
-	// }
-
 	function add(file, enc, cb) {
 		var lang = [file.meta.siteLanguage];
 		if (!idx[lang]) {
@@ -34,8 +30,10 @@ module.exports = function() {
 
 		results[lang] = results[lang] || {};
 		results[lang][doc.href] = {
-	        'title': doc.title,
-	        'desc': file.frontMatter.description ? file.frontMatter.description : ''
+	        title: doc.title,
+	        category: file.frontMatter.category ? file.frontMatter.category : '',
+	        type: file.frontMatter.type ? file.frontMatter.type : '',
+	        desc: file.frontMatter.description ? file.frontMatter.description : ''
 	    };
 
 		cb();

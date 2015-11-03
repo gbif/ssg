@@ -23,7 +23,7 @@ contacts:
   info: Professional dancer
 ```
 
-The extension allows the editor to write Yaml and add e.g. contacts. It is not ideal, but in some cases it might be useful. It looks like this in the markdown file:
+The extension allows the editor to write Yaml and add structured data. It is not ideal, but in some cases it might be useful. It looks like this in the markdown file:
 
 ```
 contacts:
