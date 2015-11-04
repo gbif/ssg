@@ -9,5 +9,5 @@ You can also inject custom HTML into the document. Just point to it.
 
 ```gbif
 html:
-- path: alert.html
+- path: map-test.html
 ```

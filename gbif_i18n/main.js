@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	frontMatter = require('gulp-front-matter'),
 	marked = require('gulp-marked'),
 	through = require('through2'),
+    prettify = require('gulp-html-prettify'),
 	renderer = require('./renderer/renderer'),
 	i18n_build = require('./i18n_build'),
 	lunr = require('./lunr/gulp-lunr');
@@ -25,6 +26,7 @@ module.exports = function (conf) {
                 renderer: renderer
             }))
 			.pipe(applyTemplate('./src/templates/main.html', conf.navigation.languages))
+            .pipe(prettify({indent_char: ' ', indent_size: 2}))
 			.pipe(gulp.dest(conf.dest));
 
         search = langFiles

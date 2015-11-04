@@ -1,36 +1,37 @@
 /*
-Accesibility on skip link
+Accessibility on skip link
 Not all browsers move focus when using anchors. 
 This means that tabbing again will take you back to the initial skip link and not move on from your new position in the DOM
 See: https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/
 */
 // bind a click event to 'skip' links
-$("a.skip").click(function(event){
+$("a.skip").click(function (event) {
 
-	// strip the leading hash and declare
-	// the content we're skipping to
-	var skipTo="#"+this.href.split('#')[1];
+    // strip the leading hash and declare
+    // the content we're skipping to
+    var skipTo = "#" + this.href.split('#')[1];
 
-	// Setting 'tabindex' to -1 takes an element out of normal 
-	// tab flow but allows it to be focused via javascript
-	$(skipTo).attr('tabindex', -1).on('blur focusout', function () {
-
-		// when focus leaves this element, 
-		// remove the tabindex attribute
-		$(this).removeAttr('tabindex');
-
-	}).focus(); // focus on the content container
+    // Setting 'tabindex' to -1 takes an element out of normal
+    // tab flow but allows it to be focused via javascript
+    $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+        // when focus leaves this element,
+        // remove the tabindex attribute
+        $(this).removeAttr('tabindex');
+    }).focus(); // focus on the content container
 });
 //just for testing css for now
-$('.navigation-main>ul>li>ul>li>a').click(function() {
-	$(this).parent().toggleClass('active');
+$('.navigation-main>ul>li>ul>li>a').click(function () {
+    $(this).parent().toggleClass('active');
 });
 
-$('.toggle.toggle-nav').click(function() {
-	$('.site-navigation').toggleClass('toggle');
+$('.toggle.toggle-nav').click(function () {
+    $('.site-navigation').toggleClass('toggle');
 });
 /*
- Search and result display results
+ Perform and display search
+ TODO
+ Needs rewriting. Just for testing as is.
+ Possibly both as a module with config param
  */
 $(document).ready(function () {
     'use strict';
@@ -71,10 +72,15 @@ $(document).ready(function () {
     });
 });
 
+
 /*
- Search interface. From codrops with a few changes.
+ Search interface. From Codrops with a few changes.
  See: https://github.com/codrops/MorphingSearch
  Licence: ≈ free to use without attribution for all purposes
+
+ TODO:
+ body shouldn't have class added until end of animation
+ search overlay shouldn't have scroll-bars until full.
  */
 (function () {
     var morphSearch = document.getElementById('morphsearch'),
@@ -91,7 +97,7 @@ $(document).ready(function () {
                 morphSearch.classList.remove('open');
                 document.body.classList.remove('search-mode');
                 // trick to hide input text once the search overlay closes
-                // todo: hardcoded times, should be done after transition ends
+                // todo: hardcoded times, should be done after transition ends. Consider removing altogether
                 if (input.value !== '') {
                     setTimeout(function () {
                         morphSearch.classList.add('hideInput');

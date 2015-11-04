@@ -1,13 +1,13 @@
 <nav class="languageSelector" id="languageSelector">
 	{% for x in meta.versions%}
-	{% if loop.first %}
-	<ul>
-	{% endif %}
-		<li>
-			<a href="/{{x.url}}" {% if x.lang == meta.siteLanguage %} class="active" {% endif %}>{{languages.presentation[x.lang]}}</a>
-		</li>
-	{% if loop.last %}
-	</ul>
-	{% endif %}
+        {% if loop.first %}
+        <ul>
+        {% endif %}
+            <li>
+                <a href="/{{x.url}}" {% if x.lang == meta.siteLanguage %} class="active" {% endif %}>{{languages.presentation[x.lang]}}</a>
+            </li>
+        {% if loop.last %}
+        </ul>
+        {% endif %}
 	{% endfor %}
 </nav>

@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var runSequence = require('run-sequence');
+var gulp = require('gulp'),
+    runSequence = require('run-sequence');
 
-gulp.task('development', function(callback) {
+gulp.task('development', function (callback) {
     runSequence(
-    	['clean-all'],
+        ['clean-all'],
         ['i18n', 'js', 'stylus'],
         ['watch'],
         callback);

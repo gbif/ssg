@@ -1,3 +1,8 @@
+/*
+Main configuration file for site structure. There is something unintuitive about it.
+This will rarely be edited as menu structure rarely change. Editors will mainly work within the content folder
+TODO consider yaml,splitting config and less config (and more in folder structure).
+ */
 module.exports = {
     languages: {
         main: 'en',
@@ -48,7 +53,7 @@ module.exports = {
                         title: 'Multilingual'
                     }
                 }
-            },{
+            }, {
                 type: 'category',
                 id: 'hidden',
                 lang: {

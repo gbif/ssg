@@ -1,5 +1,8 @@
 /*
- Search and result display results
+ Perform and display search
+ TODO
+ Needs rewriting. Just for testing as is.
+ Possibly both as a module with config param
  */
 $(document).ready(function () {
     'use strict';
@@ -40,10 +43,15 @@ $(document).ready(function () {
     });
 });
 
+
 /*
- Search interface. From codrops with a few changes.
+ Search interface. From Codrops with a few changes.
  See: https://github.com/codrops/MorphingSearch
  Licence: ≈ free to use without attribution for all purposes
+
+ TODO:
+ body shouldn't have class added until end of animation
+ search overlay shouldn't have scroll-bars until full.
  */
 (function () {
     var morphSearch = document.getElementById('morphsearch'),
@@ -60,7 +68,7 @@ $(document).ready(function () {
                 morphSearch.classList.remove('open');
                 document.body.classList.remove('search-mode');
                 // trick to hide input text once the search overlay closes
-                // todo: hardcoded times, should be done after transition ends
+                // todo: hardcoded times, should be done after transition ends. Consider removing altogether
                 if (input.value !== '') {
                     setTimeout(function () {
                         morphSearch.classList.add('hideInput');

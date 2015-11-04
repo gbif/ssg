@@ -1,3 +1,8 @@
+/*
+Build configurations specifying where various folders are located and build to.
+This is not intended to be modified by editors
+*/
+
 var navigation = require('./navigation-config'),
     dest = './build',
     src = './src';
@@ -29,13 +34,6 @@ module.exports = {
     },
     templates: {
         src: src + '/templates/**/*.html'
-    },
-    inject: {
-        cssSrc: dest + '/**/*.css',
-        jsMain: [dest + '/**/*.js', , '!' + dest + '/**/ie/**/*.js'],
-        jsIE: dest + '/**/ie/**/*.js',
-        dest: dest,
-        ignore: '/dist' //TODO should be dependent on destination
     },
     clean: {
         all: [dest + '/**/*.*'],
