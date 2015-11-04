@@ -14,7 +14,7 @@ module.exports = function() {
 		var lang = [file.meta.siteLanguage];
 		if (!idx[lang]) {
 			idx[lang] = lunr(function() {
-				this.field('title', { boost: 10 });
+				this.field('title', { boost: 100 });
 				this.field('body');
 				this.ref('href');
 			});
@@ -30,11 +30,11 @@ module.exports = function() {
 
 		results[lang] = results[lang] || {};
 		results[lang][doc.href] = {
-	        title: doc.title,
-	        category: file.frontMatter.category ? file.frontMatter.category : '',
-	        type: file.frontMatter.type ? file.frontMatter.type : '',
-	        desc: file.frontMatter.description ? file.frontMatter.description : ''
-	    };
+			title: doc.title,
+			category: file.frontMatter.category ? file.frontMatter.category : '',
+			type: file.frontMatter.type ? file.frontMatter.type : '',
+			desc: file.frontMatter.description ? file.frontMatter.description : ''
+		};
 
 		cb();
 	}

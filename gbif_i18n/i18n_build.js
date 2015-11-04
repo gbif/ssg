@@ -1,3 +1,9 @@
+/*
+gulp plugin for building the static site.
+It takes a configuration file with where (categories) to map files and return file objects for all languages
+There is something unintuitive and messy about this.
+A good idea would be to revisit the build configuration and this plugin.
+*/
 'use strict';
 var path = require('path'),
     gutil = require('gulp-util'),
@@ -5,56 +11,56 @@ var path = require('path'),
     dict, versions, config;
 
 module.exports = function (conf) {
-  if (!conf) {
-   throw new gutil.PluginError('gbif-ssg-i18n', 'A configuration object is required');
-  }
+    if (!conf) {
+        throw new gutil.PluginError('gbif-ssg-i18n', 'A configuration object is required');
+    }
     config = JSON.parse(JSON.stringify(conf));
     dict = {};
     versions = {};
 
-  return through.obj(function (file, enc, cb) {
-    if (file.relative === '') {
-      cb();
-      return;
+    function add(file, enc, cb) {
+        if (file.relative !== '') {
+            addLanguageVersions(file);
+        }
+        cb();
     }
-    addLanguageVersions(file);
 
-    cb();
-  }, function (cb) {
+    function end(cb) {
         var stream = this;
 
-        config.navigation.sections.forEach(function(e){
+        config.navigation.sections.forEach(function (e) {
             if (e.children) {
-                e.children = Object.keys(e.children).sort().map(function(i){
+                e.children = Object.keys(e.children).sort().map(function (i) {
                     return e.children[i];
                 });
             }
         });
 
-    Object.keys(dict).forEach(function(key){
-      dict[key].navigation = config.navigation;
+        Object.keys(dict).forEach(function (key) {
+            dict[key].navigation = config.navigation;
             var langVersions = versions[dict[key].meta.dir];
-      dict[key].meta.versions = Object.keys(langVersions).sort().map(function(v){
+            dict[key].meta.versions = Object.keys(langVersions).sort().map(function (v) {
                 return {
                     lang: v,
                     url: langVersions[v]
                 }
             });
-      stream.push(dict[key]);
-    });
+            stream.push(dict[key]);
+        });
 
-    cb();
-  });
+        cb();
+    }
+
+    return through.obj(add, end);
 };
 
 function addLanguageVersions(file) {
-    var extname = path.extname(file.path);
-    var basename = path.basename(file.path, extname);
-    var contentLanguage = basename.substr(basename.length-2);
-    var siteLanguage = contentLanguage;
-    var dir = path.dirname(file.relative);
-    
-    var section = config.navigation.sections.find((e,i,a) => e.id == file.frontMatter.category && e.type == 'category');
+    var extname = path.extname(file.path),
+        basename = path.basename(file.path, extname),
+        contentLanguage = basename.substr(basename.length - 2),
+        siteLanguage = contentLanguage,
+        dir = path.dirname(file.relative),
+        section = config.navigation.sections.find((e,i,a) => e.id == file.frontMatter.category && e.type == 'category');
 
     if (dir != '.' && !section) {
         return;
@@ -74,22 +80,22 @@ function addLanguageVersions(file) {
 }
 
 function add(file, siteLanguage, contentLanguage, section) {
-    var dir = path.dirname(file.relative);
-    
-    var folder = section ? section.lang[siteLanguage].title : '';
-    var title = file.frontMatter.type == 'root' ? '' : file.frontMatter.title;
-    var prettyUrl = path.join(siteLanguage, folder, title).replace(/\s/g, '-').toLowerCase();
+    var dir = path.dirname(file.relative),
+        folder = section ? section.lang[siteLanguage].title : '',
+        title = file.frontMatter.type == 'root' ? '' : file.frontMatter.title,
+        prettyUrl = path.join(siteLanguage, folder, title).replace(/\s/g, '-').toLowerCase();
 
     if (dir == '.') {
         prettyUrl = contentLanguage;
     }
+
     file.meta = {
         originalPath: file.relative,
         siteLanguage: siteLanguage,
         contentLanguage: contentLanguage,
         frontMatter: file.frontMatter,
         dir: dir,
-        folder: section? section.folder : '',
+        folder: section ? section.folder : '',
         prettyUrl: prettyUrl
     };
     file.path = path.join(file.base, prettyUrl, 'index.md');
@@ -102,13 +108,12 @@ function add(file, siteLanguage, contentLanguage, section) {
         if (file.meta.frontMatter.type == 'root') {
             section.lang[siteLanguage].url = prettyUrl;
             // section.lang[siteLanguage].title = file.meta.frontMatter.title;
-        }
-        else {
+        } else {
             section.children = section.children || {};
             section.children[file.meta.dir] = section.children[file.meta.dir] || {};
             section.children[file.meta.dir][siteLanguage] = {
                 title: file.meta.frontMatter.title,
-                url: file.meta.prettyUrl,
+                url: file.meta.prettyUrl
             }
         }
     }
