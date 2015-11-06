@@ -56,9 +56,6 @@
 				</aside>
 				<section>
 					<div class="content">
-						<ul class="searchresults">
-							
-						</ul>
 						{% include "article.html" %}
 					</div>
 				</section>
@@ -66,6 +63,12 @@
 		</div>
 		<script>
 			var GBIF = GBIF || {};
+            GBIF.page = GBIF.page || {};
+            GBIF.site = GBIF.site || {};
+            GBIF.page.meta = {{meta|raw|json_encode}};
+            GBIF.page.versions = {{versions|raw|json_encode}};
+            GBIF.site.navigation = {{nav|raw|json_encode}};
+            GBIF.site.languages = {{languages|raw|json_encode}};
 			GBIF.siteLanguage = '{{meta.siteLanguage}}';
 		</script>
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>

@@ -3,6 +3,7 @@ var marked = require('marked'),
     renderer = new marked.Renderer(),
     originalCodeRenderer = renderer.code,
     getContacts = require('./contacts'),
+    getRSS = require('./rss'),
     getHTMLfiles = require('./injectHTML');
 
 module.exports = renderer;
@@ -25,8 +26,8 @@ renderer.code = function (code, language) {
         var html = '';
         html += getHTMLfiles(data);
         html += getContacts(data);
+        html += getRSS(data);
         return html;
     }
     return originalCodeRenderer.call(renderer, code, language);
 };
-

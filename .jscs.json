@@ -67,5 +67,6 @@
     "requireDotNotation": true,
     "disallowNewlineBeforeBlockStatements": true,
     "disallowMultipleLineStrings": true,
-    "requireSpaceBeforeObjectValues": true
+    "requireSpaceBeforeObjectValues": true,
+    "maxErrors": -1
 }

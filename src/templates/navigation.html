@@ -1,47 +1,53 @@
 <nav class="navigation-main">
 	<ul>
 		<li>
-			<a href="/{{meta.siteLanguage}}">{{nav.root[meta.siteLanguage]}}</a>
-			{% for x in nav.sections%}
-			{% if loop.first %}
-			<ul>
-			{% endif %}
-				<li {% if x.id == meta.frontMatter.category %} class="active" {% endif %}>
-					{% if x.type == 'category' && x.lang[meta.siteLanguage].url %}
-					<a href="/{{x.lang[meta.siteLanguage].url}}">
-						{{x.lang[meta.siteLanguage].title}}
-					</a>
-					{% elseif x.type == 'custom'%}
-					<a href="{{x.lang[meta.siteLanguage].url}}" >
-						{{x.lang[meta.siteLanguage].title}}
-					</a>
-					{% elseif x.type == 'category' && x.children.length > 1%}
-					<a  rel="nofollow" href="#" class="expandable">
-						{{x.lang[meta.siteLanguage].title}}
-					</a>
-					{% for y in x.children %}
-						{% if loop.first %}
-						<ul>
-						{% endif %}
-							<li {% if y[meta.siteLanguage].url == meta.prettyUrl %} class="active" {% endif %}>
-								<a href="/{{y[meta.siteLanguage].url}}">
-									{{y[meta.siteLanguage].title}}
-								</a>
-							</li>
-						{% if loop.last %}
-						</ul>
-						{% endif %}
-					{% endfor %}
-					{% else %}
+            {% if nav.menuItem[meta.siteLanguage] %}
+            <a href="/{{meta.siteLanguage}}">{{nav.menuItem[meta.siteLanguage].fm.title}}</a>
+            {% endif %}
 
-					{% endif %}
-					
-					
-				</li>
-			{% if loop.last %}
-			</ul>
-			{% endif %}
-		{% endfor %}
+			{% for x in nav.children%}
+                {% if loop.first %}
+                <ul>
+                {% endif %}
+                    {% if x.menuItem[meta.siteLanguage] %}
+                        <li {% if meta.prettyUrl|startsWith(x.menuItem[meta.siteLanguage].prettyUrl) %} class="active" {% endif %}>
+
+                            {% if x.menuItem[meta.siteLanguage].fm.type == 'link' %}
+                                <a href="{{x.menuItem[meta.siteLanguage].fm.link}}">
+                                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                                </a>
+                            {% elseif x.children %}
+                                <a href="#">
+                                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                                </a>
+                                {% for y in x.children %}
+                                    {% if loop.first %}
+                                    <ul>
+                                    {% endif %}
+                                        {% if y.menuItem %}
+                                        <li {% if meta.prettyUrl == y.menuItem[meta.siteLanguage].prettyUrl %} class="active" {% endif %}>
+                                            <a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">
+                                                {{y.menuItem[meta.siteLanguage].fm.title}}
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                    {% if loop.last %}
+                                    </ul>
+                                    {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <a href="/{{x.menuItem[meta.siteLanguage].prettyUrl}}">
+                                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                                </a>
+                            {% endif %}
+
+
+                        </li>
+                    {% endif %}
+                {% if loop.last %}
+                </ul>
+                {% endif %}
+            {% endfor %}
 		</li>
 	</ul>
 </nav>

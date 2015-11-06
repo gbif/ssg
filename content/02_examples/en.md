@@ -1,5 +1,5 @@
 ---
-title: Home
+title: examples
 ---
 
 # A static site generator for GBIF
@@ -11,11 +11,6 @@ An example of how a site could look like.
 ## What is this
 
 This is an example of what a static site made with the generator can look like. You can restyle it if needed. In fact you should.
-
-```gbif
-rss:
-- url: http://www.gbif.org/newsroom/news/rss/feed
-```
 
 ```gbif
 contacts:

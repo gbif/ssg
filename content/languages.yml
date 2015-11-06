@@ -1,0 +1,18 @@
+#This file defines which languages that will appear when the site is build
+languages:
+  en: english
+  dk: dansk # danish
+  es: español
+
+
+#
+# should be in the following format
+# languages: 
+#   en: english
+#   dk: dansk
+#   ..: ........
+#
+# "en" refers to how the language will apear in the url. for example: http://mysite/en/my-page
+# "english" is how the language will appear in the language selector. 
+# Languages should be written in their native version. You can write a comment afterwards about what language it is. # are used to crete comments.
+#
