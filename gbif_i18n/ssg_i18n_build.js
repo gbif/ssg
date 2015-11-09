@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    swig = require('swig'),
     frontMatter = require('gulp-front-matter'),
     marked = require('gulp-marked'),
     through = require('through2'),
@@ -8,15 +7,9 @@ var gulp = require('gulp'),
     validate = require('./helpers/validate'),
     applyTemplate = require('./gulp_plugins/applyTemplate'),
     filter = require('./gulp_plugins/filter'),
-    build = require('./build'),
-    lunr = require('./lunr/gulp-lunr'),
-    getYamlFile = require('./helpers/getYml');
+    build = require('./gulp_plugins/i18n_build'),
+    lunr = require('./gulp_plugins/gulp-lunr');
 
-swig.setDefaults({ cache: false });
-
-swig.setFilter('startsWith', function (input, start) {
-    return input.startsWith(start)
-});
 
 module.exports = function (conf, languageData) {
     "use strict";
@@ -26,7 +19,7 @@ module.exports = function (conf, languageData) {
 
         //create stream with language versions and metadata
         langFiles = gulp.src(conf.content)
-            .pipe(frontMatter({ //remove frontmatter from file and add it to file object as attribute "frontMatter"
+            .pipe(frontMatter({ //remove Yaml front matter from file and add it to file object as attribute "frontMatter"
                 property: 'frontMatter',
                 remove: true
             }))
@@ -42,6 +35,9 @@ module.exports = function (conf, languageData) {
             .pipe(applyTemplate('./src/templates/main.html', languageData)) // TODO Hardcoded template file location
             .pipe(gulp.dest(conf.dest));
 
+        // Build a search index using Lunr. The plugin expects a markdown content attribute on the file object.
+        // this attribute is added while creating the language versions.
+        // The file content itself is being transformed to html in parallel
         search = langFiles
             .pipe(lunr())
             .pipe(gulp.dest(conf.lunr.dest));
@@ -54,4 +50,4 @@ module.exports = function (conf, languageData) {
     }
 
     return gulpBuild;
-}
+};

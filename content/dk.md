@@ -12,7 +12,7 @@ Et eksempel på hvorledes en side kan se ud.
 
 Dette er et eksempel på hvorledes en statis site lavet med generatoren ser ud. Du kan restyle det hvis du vil. Det er faktisk en god ide.
 
-```gbif
+```styledYaml
 contacts:
 - name: Beate Carola
   image: http://im1.peldata.com/bl1/7530/6bg.jpg

@@ -7,7 +7,7 @@ category: examples
 
 You can also inject custom HTML into the document. Just point to it.
 
-```gbif
+```styledYaml
 html:
 - path: map-test.html
 ```

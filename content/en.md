@@ -12,12 +12,12 @@ An example of how a site could look like.
 
 This is an example of what a static site made with the generator can look like. You can restyle it if needed. In fact you should.
 
-```gbif
+```styledYaml
 rss:
 - url: http://www.gbif.org/newsroom/news/rss/feed
 ```
 
-```gbif
+```styledYaml
 contacts:
 - name: Beate Carola
   image: http://im1.peldata.com/bl1/7530/6bg.jpg

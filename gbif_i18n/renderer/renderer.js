@@ -18,16 +18,19 @@ renderer.heading = function (text, level) {
         '"><span class="header-link"></span></a>' + text + '</h' + level + '>';
 };
 
-//parse contact as gbif code field
+//if code field is marked as a styled yaml code, then parse content and output templated html instead of standard code text.
 renderer.code = function (code, language) {
-    var fm = frontMatter('---\n' + code + '\n---'),
+    var fm, data;
+    if (language == 'styledYaml') {
+        fm = frontMatter('---\n' + code + '\n---');
         data = fm.attributes;
-    if (language == 'gbif') {
+
         var html = '';
         html += getHTMLfiles(data);
         html += getContacts(data);
         html += getRSS(data);
         return html;
     }
+    //if not styled yaml code field then return the result of the normal code renderer.
     return originalCodeRenderer.call(renderer, code, language);
 };

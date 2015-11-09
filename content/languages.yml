@@ -1,8 +1,10 @@
 #This file defines which languages that will appear when the site is build
 languages:
-  en: english
-  dk: dansk # danish
-  es: español
+  en: English
+  dk: Dansk # danish
+  es: Español
+  en-US: American
+  ar: العَرَبِية #arabic
 
 
 #
@@ -13,6 +15,11 @@ languages:
 #   ..: ........
 #
 # "en" refers to how the language will apear in the url. for example: http://mysite/en/my-page
-# "english" is how the language will appear in the language selector. 
-# Languages should be written in their native version. You can write a comment afterwards about what language it is. # are used to crete comments.
+# Files are also expected to be called by their language. So a file in english would be called 'en.md'
+# The language can also be more specific. Like say: en-US
+#
+# "English" is how the language will appear in the language selector.
+# Languages should be written in their native version. You can write a comment afterwards about what language it is for those who do not speak swahili yet.
+#
+# Are used to create comments.
 #

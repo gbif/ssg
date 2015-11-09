@@ -6,16 +6,8 @@ markdown marked with
 type: menu only
 will not be build, but included in the menu as an item
  */
-var gulp = require('gulp'),
-    swig = require('swig'),
-    frontMatter = require('gulp-front-matter'),
-    marked = require('gulp-marked'),
-    through = require('through2'),
-    renderer = require('./renderer/renderer'),
-    validate = require('./helpers/validate'),
-    applyTemplate = require('./gulp_plugins/applyTemplate'),
-    filter = require('./gulp_plugins/filter'),
-    objectSetter = require('./helpers/objectSetter'),
+var through = require('through2'),
+    objectSetter = require('../helpers/objectSetter'),
     path = require('path'),
     gutil = require('gulp-util');
 
@@ -123,7 +115,7 @@ function addFile(dict, menu, file, languages) {
     var dir = path.dirname(file.relative),
         extName = path.extname(file.path),
         basename = path.basename(file.path, extName),
-        contentLanguage = basename.substr(basename.length - 2),
+        contentLanguage = basename,//basename.substr(basename.length - 2),
         menuItem = getMenuItem(file, dir, contentLanguage);
     if (languages.indexOf(contentLanguage) == -1) {
         return; // language not included on the language file

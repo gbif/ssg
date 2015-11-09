@@ -19,14 +19,14 @@ var through = require('through2'),
 
 function filter(loc, options, unless) {
     "use strict";
-    var value = options.value || undefined;
-    var error = options.error || false;
+    var value = options.value || undefined,
+        error = options.error || false;
     return through.obj(function (file, enc, cb) {
         if (exists(loc, value, file) ? !unless : unless) {
             this.push(file);
-        } else if(error){
-            var description = unless ? 'Illegal' : 'Required';
-            var errorString = description + ' object field: "' + loc.toString() + ' ' + value + ' " in file ' + file.path;
+        } else if (error) {
+            var description = unless ? 'Illegal' : 'Required',
+                errorString = description + ' object field: "' + loc.toString() + ' ' + value + ' " in file ' + file.path;
             throw new gutil.PluginError('gbif-ssg-filter', errorString);
         }
         cb();
@@ -43,7 +43,7 @@ function exists(loc, value, startObj) {
             last = last[loc[i]];
         }
     }
-    if ( (last === value || typeof value === 'undefined') ) {
+    if (last === value || typeof value === 'undefined') {
         return true;
     }
     return false;

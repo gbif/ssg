@@ -8,7 +8,7 @@ The markdown syntax can be extended
 
 Below contacts are written in markdown using a custom markdown renderer.
 
-```gbif
+```styledYaml
 contacts:
 - name: Beate Carola
   image: http://im1.peldata.com/bl1/7530/6bg.jpg

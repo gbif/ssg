@@ -2,6 +2,12 @@ var through = require('through2'),
     swig = require('swig'),
     gutil = require('gulp-util');
 
+swig.setDefaults({ cache: false });
+
+swig.setFilter('startsWith', function (input, start) {
+    return input.startsWith(start)
+});
+
 module.exports = function (tpl, languages) {
     if (typeof tpl !== 'string') {
         var errorString = tpl + ' is not a valid template name'
