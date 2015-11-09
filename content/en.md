@@ -14,7 +14,7 @@ This is an example of what a static site made with the generator can look like. 
 
 ```styledYaml
 rss:
-- url: http://www.gbif.org/newsroom/news/rss/feed
+- url: http://drupaledit.gbif-uat.org/newsroom/news/json/bid/pt
 ```
 
 ```styledYaml
