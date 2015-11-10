@@ -100,7 +100,9 @@ function addToMenu(menu, dir, item) {
         location.push(e);
     });
     Object.keys(item).forEach(function (languageKey) {
-        objectSetter.set([menu, ...location, languageKey], item[languageKey].meta);
+        //objectSetter.set([menu, ...location, languageKey], item[languageKey].meta); // es6 spread syntax
+        var loc = [].concat([menu], location, [languageKey]);
+        objectSetter.set(loc, item[languageKey].meta);
     });
 }
 

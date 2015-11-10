@@ -17,5 +17,8 @@ module.exports = {
     helpers: {
         validate: validate,
         getYamlFile: getYamlFile
+    },
+    config: {
+        template: __dirname + '/src/templates/main.html'
     }
 };
