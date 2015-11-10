@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 gulp.task('development', function (callback) {
     runSequence(
         ['clean-all'],
-        ['i18n', 'js', 'stylus'],
+        ['build-root', 'js', 'stylus'],
         ['watch'],
         callback);
 });

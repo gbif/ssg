@@ -13,4 +13,4 @@ var gulp = require('gulp'),
 requireDir('./gulp/tasks', {recurse: true});
 
 //specifies the default set of tasks to run when you run `gulp`.
-gulp.task('default', ['development']);
+gulp.task('default', ['bundlejs']);

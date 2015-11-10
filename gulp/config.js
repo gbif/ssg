@@ -3,21 +3,20 @@ Build configurations specifying where various folders are located and build to.
 This is not intended to be modified by editors
 */
 
-var navigation = require('./navigation-config'),
-    dest = './build',
+var dest = './example',
     src = './src';
 
 module.exports = {
     src: src,
     dest: dest,
     content: './content/**/*.md',
-    navigation: navigation,
-    lunr: {
-        dest: dest + '/lunr'
-    },
     javascript: {
         main: src + '/js/script.js',
-        src: [src + '/js/**/*.js', '!' + src + '/js/ie8.js'],
+        src: [
+            './node_modules/jquery/dist/**/jquery.js',
+            './node_modules/lunr/lunr.js',
+            src + '/js/**/*.js'
+        ],
         folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
     },

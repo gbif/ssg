@@ -1,12 +1,12 @@
 var gulp = require('gulp'),
-    config = require('../config'),
+    config = require('../../config'),
     browserSync = require('browser-sync');
 
 gulp.task('watch', ['browserSync'], function () {
 
     //If changes on either templates or content files, then rebuild html
-    gulp.watch(config.templates.src, ['i18n']);
-    gulp.watch(config.content, ['i18n']);
+    gulp.watch(config.templates.src, ['build-root']);
+    gulp.watch(config.content, ['build-root']);
     gulp.watch(config.dest + "/index.html").on('change', browserSync.reload);
 
     //rebuild css
