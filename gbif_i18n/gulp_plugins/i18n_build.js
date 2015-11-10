@@ -45,11 +45,12 @@ function build(languages) {
         //Add meta data to files and push them to stream
         Object.keys(dict).forEach(function (key) {
             "use strict";
-            var menuItem = dict[key];
+            var menuItem = dict[key],
+                type;
 
             //If this md file only carries information about the menu category title or is an external link,
             // then skip it
-            var type = menuItem[languages[0]].meta.fm.type;
+            type = menuItem[languages[0]].meta.fm.type;
             if (type == 'menu only' || type == 'link') {
                 return;
             }

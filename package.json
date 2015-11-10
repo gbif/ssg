@@ -2,7 +2,7 @@
   "name": "gbif-ssg-i18n",
   "version": "1.0.0",
   "description": "A static site generator for GBIF sub sites.",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "engines": {
     "node": ">= 4"
   },

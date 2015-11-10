@@ -4,19 +4,13 @@ var marked = require('marked'),
     originalCodeRenderer = renderer.code,
     getContacts = require('./contacts'),
     getRSS = require('./rss'),
+    heading = require('./heading'),
     getHTMLfiles = require('./injectHTML');
 
 module.exports = renderer;
 
 //add anchors to headlines
-renderer.heading = function (text, level) {
-    var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-    return '<h' + level + '><a name="' +
-        escapedText +
-        '" class="anchor" href="#' +
-        escapedText +
-        '"><span class="header-link"></span></a>' + text + '</h' + level + '>';
-};
+renderer.heading = heading;
 
 //if code field is marked as a styled yaml code, then parse content and output templated html instead of standard code text.
 renderer.code = function (code, language) {

@@ -1,0 +1,357 @@
+.font-main {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.font-article,
+main >section >.content >article p {
+  font-family: 'Times New Roman', Times, serif;
+}
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+address,
+section,
+header {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body {
+  color: #333;
+  background: #f1f1f1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.site-intro header {
+/*padding-left: layout_drawer-width*/
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 45px;
+  z-index: 200;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.15);
+}
+.site-intro header .toggle-nav {
+  margin: 5px;
+  line-height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  border-radius: 100%;
+}
+.site-intro header .toggle-nav.active {
+  background: #fff;
+}
+.site-intro header .toggle-nav:before {
+  content: '\2630';
+}
+.site-intro header h1 {
+  color: #fff;
+}
+.site-intro header h1:before {
+  content: 'LOGO';
+  margin-right: 20px;
+}
+.site-intro header {
+  border-image: linear-gradient(90deg, #509e2f 15%, #175ca1 25%, #fdb002 32%, #40bfff 52%, #636fb4 62%, #e5ffff 70%, #7e466a 85%, #e8e8e8 90%, );
+  border-image-source: linear-gradient(90deg, #509e2f 15%, #175ca1 15%, #175ca1 32%, #fdb002 32%, #fdb002 52%, #40bfff 52%, #40bfff 62%, #636fb4 62%, #636fb4 70%, #e5ffff 70%, #e5ffff 85%, #7e466a 85%, #7e466a 90%, #e8e8e8 90%);
+  border-image-slice: 1;
+  border-width: 0 0 5px 0;
+  border-bottom: 5px solid transparent;
+}
+.search {
+  display: none;
+}
+.login {
+  display: none;
+}
+.share {
+  display: none;
+}
+.brand {
+  display: none;
+  height: 90px;
+  background: #333;
+  text-align: center;
+}
+.brand span {
+  line-height: 90px;
+  color: #fff;
+}
+.navigation,
+.site-intro .site-navigation,
+.context-options {
+  background: #fff;
+  position: fixed;
+  width: 17em;
+  bottom: 0px;
+  z-index: 50;
+  overflow-x: auto;
+  top: 45px;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+.site-intro .site-navigation {
+  z-index: 100;
+  box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.15);
+  left: -17em;
+}
+.site-intro .site-navigation.toggle {
+  left: 0px;
+}
+.context-options {
+  right: 0px;
+  right: -17em;
+  box-shadow: -1px 1px 0.5px 1px rgba(0,0,0,0.15);
+}
+.context-options .share {
+  position: absolute;
+  float: right;
+}
+.navigation-main >ul>li>a:first-of-type {
+  border-bottom: 1px solid #f2f2f2;
+}
+.navigation-main li {
+  display: block;
+  cursor: pointer;
+}
+.navigation-main li a {
+  border-bottom: none;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #333;
+}
+.navigation-main li a:hover {
+  color: #000;
+  background-color: #f2f2f2;
+}
+.navigation-main li.active >a {
+  color: #000;
+}
+.navigation-main >ul>li >a {
+  padding: 15px 20px;
+}
+.navigation-main >ul>li >ul >li.active >a {
+  background-color: #f2f2f2;
+}
+.navigation-main >ul>li >ul >li >a {
+  padding: 15px 20px;
+}
+.navigation-main >ul>li >ul >li >a:after {
+  position: absolute;
+  right: 10px;
+}
+.navigation-main >ul>li >ul >li >a.expandable:after {
+  content: "+";
+}
+.navigation-main >ul>li >ul >li >ul {
+  display: none;
+}
+.navigation-main >ul>li >ul >li >ul >li >a {
+  padding: 7px 20px 7px 20px;
+  color: #808080;
+}
+.navigation-main >ul>li >ul >li >ul >li >a:hover {
+  background-color: inherit;
+}
+.navigation-main >ul>li >ul >li.active ul {
+  display: block;
+}
+.navigation-main >ul>li >ul >li.active a.expandable:after {
+  content: "-";
+}
+.skip {
+  position: fixed;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  line-height: 1.75em;
+  text-align: center;
+  text-transform: uppercase;
+  top: -12.5em;
+  transition: top 0.3s ease;
+  width: 100%;
+  z-index: 600;
+  text-decoration: underline;
+  outline: none;
+  box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.15);
+}
+.skip:hover {
+  background: #333;
+}
+.skip:focus {
+  top: 0;
+}
+main {
+  padding-top: 45px;
+  padding-left: 0px;
+  transition: padding-left 0.3s ease;
+}
+main >section >.content {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 1px 0.5px 1px rgba(0,0,0,0.15);
+}
+main >section >.content >article {
+  padding: 50px;
+  color: #333;
+  overflow-x: auto;
+  max-width: 768px;
+  margin: 0px auto;
+}
+main >section >.content >article .contacts {
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main >section >.content >article .contact {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: auto;
+  display: inline-block;
+  margin: 2em;
+}
+main >section >.content >article .contact div {
+  margin: auto;
+  width: 15em;
+  height: 15em;
+  border-radius: 7.5em;
+  background-size: cover;
+  background-position: center;
+}
+main >section >.content >article .contact address {
+  margin: 1em;
+}
+main >section >.content >article .contact address span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 2px;
+}
+main >section >.content >article .contact address span a {
+  padding: 2px;
+}
+main >section >.content >article >p:first-of-type {
+  margin-bottom: 2em;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  text-align: center;
+}
+main >section >.content >article >p:first-of-type:after {
+  display: block;
+  border-bottom: 1px solid #e2c8ed;
+  content: '';
+  width: 50%;
+  margin: 20px auto;
+}
+main >section >.content >article p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+main >section >.content >article h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+main >section >.content >article h2 {
+  font-variant: small-caps;
+  border-bottom: 1px dotted;
+  margin-bottom: 1em;
+}
+main >section >.content >article h2 a.anchor {
+  visibility: hidden;
+  width: 0px;
+  padding-top: 45px;
+  margin-top: -layout_header-height;
+  margin-left: -45px;
+  background: none;
+  border: none;
+}
+main >section >.content >article h2 a.anchor span {
+  padding: 10px;
+  width: 100px;
+}
+main >section >.content >article h2 a.anchor span:after {
+  width: 0px;
+  content: 'Link';
+}
+main >section >.content >article h2:hover a.anchor {
+  visibility: visible;
+}
+main >section >.content >article blockquote {
+  border-left: 5px solid #95d47b;
+  margin: 0 0 20px 0;
+  padding: 10px 40px;
+}
+main >section >.content >article blockquote p {
+  margin-bottom: 0px;
+  font-style: italic;
+}
+main >section >.content >article a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px dotted #333;
+}
+main >section >.content >article a:hover {
+  background-color: #ffa500;
+  border: none;
+}
+main >section >.content >article .article--share {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #b3b3b3;
+  font-weight: lighter;
+}
+main >section >.content >article .article--share:hover {
+  color: #666;
+  cursor: pointer;
+}

@@ -5,4 +5,6 @@ $('.navigation-main>ul>li>ul>li>a').click(function () {
 
 $('.toggle.toggle-nav').click(function () {
     $('.site-navigation').toggleClass('toggle');
+    $(this).toggleClass('active');
+    $('#main').toggleClass('toggle');
 });

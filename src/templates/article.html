@@ -1,4 +1,4 @@
-<article>
-	<div class="article--share">Share</div>
+<article {% if meta.fm.style %} class="{{meta.fm.style}}" {% endif %}>
+	<!--<div class="article--share">Share</div>-->
 	{{content|safe}}
 </article>

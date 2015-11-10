@@ -21,17 +21,18 @@
 			<section class="site-intro">
 				<a class="skip" rel="nofollow" href="#main">Skip to main content</a>
 				<header class="banner">
-					<span class="Xtoggle toggle-nav" role="button">
+					<span class="toggle toggle-nav" role="button" aria-label="Toggle Navigation">
+
 					</span>
 					<!-- <h1>BANNER</h1> -->
-					{% include "search.html" %}
+					 <!--include "search.html" -->
 				</header>
 
 				<div class="site-navigation">
 					<span class="toggle toggle-nav" role="button">
 					</span>
 					<div class="brand">
-						<a href="/">
+						<a href="/{{meta.siteLanguage}}">
 							<h1>BRAND</h1>
 						</a>
 					</div>
@@ -50,9 +51,9 @@
 			</section>
 			
 			<main id="main">
-				<aside class="context-options">
-					filters go here
-				</aside>
+				<!--<aside class="context-options">-->
+					<!--filters go here-->
+				<!--</aside>-->
 				<section>
 					<div class="content">
 						{% include "article.html" %}

@@ -1,6 +1,5 @@
 ---
 title: Custom
-category: examples
 ---
 
 # You can insert custom HTML

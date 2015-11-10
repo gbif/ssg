@@ -1,0 +1,74 @@
+header-color = white //primary-color
+.site-intro
+	header
+		/*padding-left: layout_drawer-width*/
+		position:fixed
+		width: 100%
+		top:0px
+		height: layout_header-height
+		z-index: 200
+		background-color: header-color
+		_shadow(2)
+
+		.toggle-nav
+			margin: 5px
+			line-height: (layout_header-height - 10px)
+			width: (layout_header-height - 10px)
+			display: inline-block
+			text-align: center
+			vertical-align: middle
+			font-size: 1.5rem
+			border-radius: 100%
+			&.active
+				background: lighten(header-color, 20%)
+			&:before
+				content: '\2630' //'\2630' 2261
+		h1
+			color: primary-ink-color
+			&:before
+				content: 'LOGO'
+				margin-right: 20px
+
+				Green = rgb(80,158,47);  // Green
+Black = rgb(35, 31, 32)
+
+Azure = rgb(23,92,161);  // Azure
+Aqua = rgb(64,191,255); // Aqua
+purple = rgb(99,111,180);   // purple
+SkyBlue = rgb(229, 255, 255) //sky blue
+OrangePeel = rgb(253, 176, 2) //orange peel
+Plum = rgb(126,70,106);   // plum
+Terracotta = rgb(214,111,39);   // Terracotta
+Mist = rgb(232, 232, 232) //mist
+
+.site-intro
+	header
+		border-image: linear-gradient(90deg,
+			Green 15%,
+			Azure 25%,
+			OrangePeel 32%,
+			Aqua 52%,
+			purple 62%,
+			SkyBlue 70%,
+			Plum 85%,
+			Mist 90%,
+		);
+		border-image-source: linear-gradient(90deg,
+		Green 15%,
+		Azure 15%,
+		Azure 32%,
+		OrangePeel 32%,
+		OrangePeel 52%,
+		Aqua 52%,
+		Aqua 62%,
+		purple 62%,
+		purple 70%,
+		SkyBlue 70%,
+		SkyBlue 85%,
+		Plum 85%,
+		Plum 90%,
+		Mist 90%
+		);
+		border-image-slice: 1;
+		border-width: 0 0 5px 0;
+		border-bottom: 5px solid transparent;

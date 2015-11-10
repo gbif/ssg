@@ -1,5 +1,6 @@
 ---
 title: examples
+type: menu only
 ---
 
 # A static site generator for GBIF

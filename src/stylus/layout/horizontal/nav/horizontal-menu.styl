@@ -1,0 +1,31 @@
+@media (min-width: laptop)
+	.site-navigation
+		z-index: 300
+		position:relative
+		line-height: layout_header-height
+		background-color: primary-color
+		padding: 0 100px
+		.brand
+			padding: 0 100px
+		.navigation-main
+			display:inline-block
+			ul, li
+				display:inline-block
+				&:after
+					content: "\2022"
+					font-size: 20px
+					color: darken(primary-color, 30)
+				&:last-child:after
+					content: ""
+			>ul>li
+				a
+					display: none
+					color: white
+					letter-spacing: 1px
+				>ul>li
+					>a
+						padding: 0 30px
+						display: inline-block
+					>ul
+						display: none
+

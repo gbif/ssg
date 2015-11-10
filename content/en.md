@@ -3,7 +3,6 @@ title: Home
 ---
 
 # A static site generator for GBIF
-
 An example of how a site could look like.
 
 > At GBIF we have a need to quickly create new sites for specific programs and projects. But also for specific audiences.
