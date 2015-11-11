@@ -10,14 +10,14 @@
                 <ul>
                 {% endif %}
                     {% if x.menuItem[meta.siteLanguage] %}
-                        <li {% if meta.prettyUrl|startsWith(x.menuItem[meta.siteLanguage].prettyUrl) %} class="active" {% endif %}>
+                        <li {% if meta.prettyUrl|startsWith(x.menuItem[meta.siteLanguage].prettyUrl) %} class="isActive" {% endif %}>
 
                             {% if x.menuItem[meta.siteLanguage].fm.type == 'link' %}
                                 <a href="{{x.menuItem[meta.siteLanguage].fm.link}}">
                                     {{x.menuItem[meta.siteLanguage].fm.title}}
                                 </a>
                             {% elseif x.children %}
-                                <a href="#">
+                                <a href="#" class="isExpandable">
                                     {{x.menuItem[meta.siteLanguage].fm.title}}
                                 </a>
                                 {% for y in x.children %}
@@ -25,7 +25,7 @@
                                     <ul>
                                     {% endif %}
                                         {% if y.menuItem %}
-                                        <li {% if meta.prettyUrl == y.menuItem[meta.siteLanguage].prettyUrl %} class="active" {% endif %}>
+                                        <li {% if meta.prettyUrl == y.menuItem[meta.siteLanguage].prettyUrl %} class="isActive" {% endif %}>
                                             <a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">
                                                 {{y.menuItem[meta.siteLanguage].fm.title}}
                                             </a>

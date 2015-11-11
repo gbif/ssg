@@ -1,4 +1,5 @@
 header-color = white //primary-color
+
 .site-intro
 	header
 		/*padding-left: layout_drawer-width*/
@@ -24,7 +25,8 @@ header-color = white //primary-color
 			&:before
 				content: '\2630' //'\2630' 2261
 		h1
-			color: primary-ink-color
+			color: _inkColor(header-color)
+			display: inline-block
 			&:before
 				content: 'LOGO'
 				margin-right: 20px
@@ -44,14 +46,20 @@ Mist = rgb(232, 232, 232) //mist
 .site-intro
 	header
 		border-image: linear-gradient(90deg,
-			Green 15%,
-			Azure 25%,
-			OrangePeel 32%,
-			Aqua 52%,
-			purple 62%,
-			SkyBlue 70%,
-			Plum 85%,
-			Mist 90%,
+		Green 15%,
+		Azure 15%,
+		Azure 32%,
+		OrangePeel 32%,
+		OrangePeel 52%,
+		Aqua 52%,
+		Aqua 62%,
+		purple 62%,
+		purple 70%,
+		SkyBlue 70%,
+		SkyBlue 85%,
+		Plum 85%,
+		Plum 90%,
+		Mist 90%
 		);
 		border-image-source: linear-gradient(90deg,
 		Green 15%,
@@ -70,5 +78,5 @@ Mist = rgb(232, 232, 232) //mist
 		Mist 90%
 		);
 		border-image-slice: 1;
-		border-width: 0 0 5px 0;
-		border-bottom: 5px solid transparent;
+		border-width: 0 0 0 0;
+		border-top: 3px solid transparent;

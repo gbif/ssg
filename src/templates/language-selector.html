@@ -1,10 +1,11 @@
 <nav class="languageSelector" id="languageSelector">
-	{% for abbr, url in versions%}
+	{% for abbr in languages.list%}
         {% if loop.first %}
+        <a href="#" class="gbifIcon gbifIcon-globe"></a>
         <ul>
         {% endif %}
             <li>
-                <a href="/{{url}}" {% if abbr == meta.siteLanguage %} class="active" {% endif %}>{{languages.languages[abbr]}}</a>
+                <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="active" {% endif %}>{{languages.languages[abbr]}}</a>
             </li>
         {% if loop.last %}
         </ul>

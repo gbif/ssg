@@ -1,5 +1,5 @@
 .navigation-main
-	>ul>li>a:first-of-type
+	>ul>li>a:first-of-type, >ul>li:last-of-type
 		border-bottom: 1px solid darken(paper-color, 5)
 	li
 		display: block
@@ -13,7 +13,7 @@
 			&:hover
 				color: darken(ink-color, 20)
 				background-color: darken(paper-color, 5)
-		&.active
+		&.isActive
 			>a
 				color: darken(ink-color, 20)
 	>ul>li
@@ -21,7 +21,7 @@
 			padding: 15px 20px
 		>ul
 			>li
-				&.active
+				&.isActive
 					>a
 						background-color: darken(paper-color, 5)
 				>a
@@ -29,7 +29,7 @@
 					&:after
 						position: absolute
 						right: 10px
-					&.expandable:after
+					&.isExpandable:after
 						content: "+"
 				>ul
 					display: none
@@ -39,8 +39,8 @@
 							color: lighten(ink-color, 30)
 							&:hover
 								background-color: inherit
-				&.active
+				&.isActive
 					ul
 						display: block
-					a.expandable:after
+					a.isExpandable:after
 						content: "-"
