@@ -3,11 +3,12 @@ $('.navigation-main>ul>li>ul>li>a').click(function () {
     $(this).parent().toggleClass('isActive');
 });
 
-$('.toggle.toggle-nav').click(function () {
+$('.toggle.toggle-nav').click(function (event) {
     $('.site-navigation').toggleClass('toggle');
     $(this).toggleClass('isActive');
     $('#main').toggleClass('toggle');
     $('body').toggleClass('hasOverlay');
+    return false;
 });
 
 $('.overlay').on("click", function () {

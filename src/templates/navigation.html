@@ -1,6 +1,6 @@
 <nav class="navigation-main">
 	<ul>
-		<li>
+		<li {% if meta.siteLanguage == meta.prettyUrl %} class="isActive" {% endif %}>
             {% if nav.menuItem[meta.siteLanguage] %}
             <a href="/{{meta.siteLanguage}}">{{nav.menuItem[meta.siteLanguage].fm.title}}</a>
             {% endif %}
@@ -16,7 +16,7 @@
                                 <a href="{{x.menuItem[meta.siteLanguage].fm.link}}">
                                     {{x.menuItem[meta.siteLanguage].fm.title}}
                                 </a>
-                            {% elseif x.children %}
+                            {% elseif x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
                                 <a href="#" class="isExpandable">
                                     {{x.menuItem[meta.siteLanguage].fm.title}}
                                 </a>

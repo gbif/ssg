@@ -1,0 +1,67 @@
+.site-intro
+	.site-navigation
+		left: 0px
+		top: 0px
+		width:100%
+		z-index: 300
+		position:relative
+		background-color: primary-color
+		color: _inkColor(primary-color)
+		padding: 0
+		text-align: center
+		transition: left 0s
+		.brand
+			padding: 0 100px
+			display:block
+		.navigation-main
+			display: inline
+			a, ul, li
+				border: none
+				display:inline
+				&.isActive, &.isActive>a
+					background: primary-color
+				&:hover
+					color: darken(primary-color, 30)
+					background: primary-color
+			ul>li>ul>li
+				&:before
+					content: "\2022"
+					font-size: 20px
+					color: darken(primary-color, 30)
+			.isExpandable:after
+				content: ""
+			>ul>li
+				display:inline
+				a
+					color: white
+					letter-spacing: 1px
+				>ul>li
+					>a
+						/*padding: 0 30px*/
+						display: inline-block
+					>ul
+						display: none
+
+.languageSelector
+	display:inline
+	ul
+		border-bottom: none
+		max-height: 250px
+		display: none
+	&.isExpanded>ul
+		border-top: 1px solid darken(primary-color, 5)
+		display: block
+	>a
+		display:inline-block
+		padding: 15px 20px
+		&:hover
+			color: darken(primary-color, 30)
+			background-color: inherit
+	li
+		display: inline
+		>a
+			display: inline-block
+			padding: 5px 20px
+			color: darken(primary-color, 30)
+			&:hover
+				color: ink-color
