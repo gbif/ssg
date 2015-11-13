@@ -20,6 +20,14 @@ module.exports = {
         folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
     },
+    images: {
+        src: './images/**',
+        dest: dest + '/images'
+    },
+    fonts: {
+        src: './fonts/ssgbase/fonts/**/*.*',
+        dest: dest + '/css/fonts'
+    },
     stylus: {
         src: src + '/stylus/**/*.styl',
         entries: src + '/stylus/index.styl',

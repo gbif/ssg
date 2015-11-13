@@ -16,4 +16,8 @@ gulp.task('watch', ['browserSync'], function () {
     //rebuild js
     gulp.watch(config.javascript.src, ['js']);//tmp
     gulp.watch(config.javascript.dest + "/**/*.js").on('change', browserSync.reload);
+
+    //rebuild js
+    gulp.watch(config.images.src, ['images']);//tmp
+    gulp.watch(config.images.dest + "/**/*.*").on('change', browserSync.reload);
 });

@@ -1,0 +1,61 @@
+.navigation
+	background: paper-color
+	position: fixed
+	width: layout_drawer-width
+	bottom: 0px
+	z-index: 50
+	overflow: auto
+	top: layout_header-height
+	transition: left 0.3s ease, right 0.3s ease;
+
+.site-intro
+	a
+		text-decoration: none
+	.site-navigation
+		a
+			color: ink-color
+		@extends .navigation
+		z-index: 100
+		/*top: 50px*/
+		_shadow(2,1)
+		left: -(layout_drawer-width + 5px) //slide just outside, but enough that we will not see the shadow
+		&.toggle
+			left: 0px
+
+
+
+if (horizontalLayout)
+	@media (min-width: laptop)
+		//html:not(ie8)
+		.site-intro
+			.site-navigation
+				left: 0px
+				top: 0px
+				width:100%
+				z-index: 300
+				position:relative
+				background-color: primary-color
+				color: _inkColor(primary-color)
+				padding: 0
+				text-align: center
+				transition: left 0s
+else
+	@media (min-width: laptop)
+		//keep vertical layout but lock it as open
+		.site-intro
+			.site-navigation
+				left: 0px
+				top: 0px
+		main
+			padding-left: layout_drawer-width
+
+//legacy
+.ie8
+	.site-intro .site-navigation
+		border-right: 1px solid grey
+if (horizontalLayout)
+	@media (min-width: laptop)
+		.ie8
+			.site-intro .site-navigation
+				border-right: 0px solid grey
+				border-bottom: 1px solid grey

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="">
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -20,21 +26,17 @@
 		<div class="page-wrapper">
 			<section class="site-intro">
 				<a class="skip" rel="nofollow" href="#main">Skip to main content</a>
-				<header class="banner">
-                    <a href="#" class="button toggle toggle-nav" role="button" aria-label="Toggle Navigation">
-                        <i></i>
-                    </a>
-					<h1>BANNER</h1>
-					 <!--include "search.html" -->
-				</header>
+                <a href="#" class="button toggle toggle-nav icon-menu" role="button" aria-label="Toggle Navigation">
+                </a>
+				<div class="brandBanner"></div>
 
 				<div class="site-navigation">
 					<span class="toggle toggle-nav" role="button">
 					</span>
 					<div class="brand">
 						<a href="/{{meta.siteLanguage}}">
-                            <div></div>
-							<h1>BID</h1>
+                            <div title="logo"></div>
+							<h1>SSG</h1>
 						</a>
 					</div>
 					<div class="login">

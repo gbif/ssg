@@ -1,0 +1,29 @@
+.brand
+	background: primary-color
+	text-align: center
+	overflow: hidden
+	padding: 20px
+	padding-left:0px
+	a
+		margin:auto
+	div
+		color: _inkColor(primary-color)
+		background: siteLogo //url('http://www.gbif.org/sites/all/themes/custom/bvng/images/logo_white.png')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		width: 70px
+		height: 70px
+		display: inline-block
+	h1
+		color: _inkColor(primary-color)
+		display: inline-block
+		font-size: 3em
+		line-height 70px
+		vertical-align: bottom
+
+if (horizontalLayout)
+	@media (min-width: laptop)
+		.brand
+			padding: 10px 0 0 0
+			/*display:block*/

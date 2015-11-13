@@ -5,37 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/context-navigation/index.styl" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/brand/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/brand/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/header/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/header/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/language/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/language/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/layout/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/layout/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/login/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/login/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/nav/_drawers.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/_drawers.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/nav/_toggle.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/_toggle.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/nav/horizontal-menu.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/horizontal-menu.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/nav/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/search/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/search/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/horizontal/share/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/share/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/index.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/stylus/layout/desktop/vertical/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/laptop/vertical/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/_drawers.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/_drawers.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/_reset.styl" afterPath="$PROJECT_DIR$/src/stylus/_reset.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/base/_vars.styl" afterPath="$PROJECT_DIR$/src/stylus/base/_vars.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/variables/colors.styl" afterPath="$PROJECT_DIR$/src/stylus/variables/colors.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/variables/core.styl" afterPath="$PROJECT_DIR$/src/stylus/variables/core.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/02_examples/en.md" afterPath="$PROJECT_DIR$/content/02_examples/en.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/base/index.styl" afterPath="$PROJECT_DIR$/src/stylus/base/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/header/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/mobile/header/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/language/index.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/mobile/language/index.styl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/_buttons.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/_reset.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/article/_article.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/article/_contacts.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/article/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/base/_vars.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/base/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/content-area/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/fonts/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/forms/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/_a11y.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/brand/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/header/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/language/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/layout/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/login/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/_drawers.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/_toggle.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/horizontal-menu.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/search/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/share/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/laptop/vertical/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/brand/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/header/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/language/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/layout/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/login/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/_drawers.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/_toggle.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/vertical-menu.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/search/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/share/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/layout/search/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/variables/colors.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/variables/core.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/variables/index.styl" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/config.js" afterPath="$PROJECT_DIR$/gulp/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/tasks/example/development.js" afterPath="$PROJECT_DIR$/gulp/tasks/example/development.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/index.css" afterPath="$PROJECT_DIR$/example/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/index.html" afterPath="$PROJECT_DIR$/example/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/index.html" afterPath="$PROJECT_DIR$/example/ar/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/about/introduction/index.html" afterPath="$PROJECT_DIR$/example/ar/about/introduction/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/about/why/index.html" afterPath="$PROJECT_DIR$/example/ar/about/why/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/article/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/extensions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/html/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/missing-file-and-space-in-folder-name/subdirect/index.html" afterPath="$PROJECT_DIR$/example/ar/missing-file-and-space-in-folder-name/subdirect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/multilingual/index.html" afterPath="$PROJECT_DIR$/example/ar/multilingual/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/index.html" afterPath="$PROJECT_DIR$/example/dk/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/about/introduction/index.html" afterPath="$PROJECT_DIR$/example/dk/about/introduction/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/about/why/index.html" afterPath="$PROJECT_DIR$/example/dk/about/why/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/examples/article/index.html" afterPath="$PROJECT_DIR$/example/dk/examples/article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/dk/examples/extensions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/examples/html/index.html" afterPath="$PROJECT_DIR$/example/dk/examples/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/missing-file-and-space-in-folder-name/subdirect/index.html" afterPath="$PROJECT_DIR$/example/dk/missing-file-and-space-in-folder-name/subdirect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/dk/multilingual/index.html" afterPath="$PROJECT_DIR$/example/dk/multilingual/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/index.html" afterPath="$PROJECT_DIR$/example/en/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/index.html" afterPath="$PROJECT_DIR$/example/en-US/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/about/introduction/index.html" afterPath="$PROJECT_DIR$/example/en-US/about/introduction/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/about/why/index.html" afterPath="$PROJECT_DIR$/example/en-US/about/why/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/examples/article/index.html" afterPath="$PROJECT_DIR$/example/en-US/examples/article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/en-US/examples/extensions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/examples/html/index.html" afterPath="$PROJECT_DIR$/example/en-US/examples/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/missing-file-and-space-in-folder-name/subdirect/index.html" afterPath="$PROJECT_DIR$/example/en-US/missing-file-and-space-in-folder-name/subdirect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en-US/multilingual/index.html" afterPath="$PROJECT_DIR$/example/en-US/multilingual/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/about/introduction/index.html" afterPath="$PROJECT_DIR$/example/en/about/introduction/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/about/why/index.html" afterPath="$PROJECT_DIR$/example/en/about/why/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/article/index.html" afterPath="$PROJECT_DIR$/example/en/examples/article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/en/examples/extensions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/html/index.html" afterPath="$PROJECT_DIR$/example/en/examples/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/missing-file-and-space-in-folder-name/subdirect/index.html" afterPath="$PROJECT_DIR$/example/en/missing-file-and-space-in-folder-name/subdirect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/multilingual/index.html" afterPath="$PROJECT_DIR$/example/en/multilingual/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/index.html" afterPath="$PROJECT_DIR$/example/es/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/about/introduction/index.html" afterPath="$PROJECT_DIR$/example/es/about/introduction/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/about/why/index.html" afterPath="$PROJECT_DIR$/example/es/about/why/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/examples/article/index.html" afterPath="$PROJECT_DIR$/example/es/examples/article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/es/examples/extensions/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/examples/html/index.html" afterPath="$PROJECT_DIR$/example/es/examples/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/missing-file-and-space-in-folder-name/subdirect/index.html" afterPath="$PROJECT_DIR$/example/es/missing-file-and-space-in-folder-name/subdirect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/es/multilingual/index.html" afterPath="$PROJECT_DIR$/example/es/multilingual/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/index.styl" afterPath="$PROJECT_DIR$/src/stylus/index.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/language-selector.html" afterPath="$PROJECT_DIR$/src/templates/language-selector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_ar.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_ar.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_dk.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_dk.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_en-US.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_en-US.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_en.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_en.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_es.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_es.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/main.html" afterPath="$PROJECT_DIR$/src/templates/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/main.styl" afterPath="$PROJECT_DIR$/src/stylus/main.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/navigation.html" afterPath="$PROJECT_DIR$/src/templates/navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/navigation.js" afterPath="$PROJECT_DIR$/src/js/navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/javascript/script.js" afterPath="$PROJECT_DIR$/example/javascript/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/script.js" afterPath="$PROJECT_DIR$/script/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/vertical-menu.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/mobile/nav/vertical-menu.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/tasks/example/watch.js" afterPath="$PROJECT_DIR$/gulp/tasks/example/watch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssg.iws" />
@@ -61,11 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/index.styl">
+      <file leaf-file-name="1-core.styl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/1-core.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6225681" vertical-offset="0" max-vertical-offset="771">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -74,48 +143,8 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1290">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_buttons.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/_buttons.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/navigation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.styl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stylus/base/index.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2259887" vertical-offset="0" max-vertical-offset="1062">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/layout/index.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state vertical-scroll-proportion="-18.125" vertical-offset="135" max-vertical-offset="1320">
+              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -129,57 +158,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulp/tasks/bundlejs.js" />
-        <option value="$PROJECT_DIR$/gbif_i18n/renderer/heading.js" />
-        <option value="$PROJECT_DIR$/gbif_i18n/renderer/renderer.js" />
-        <option value="$PROJECT_DIR$/gbif_i18n/renderer/link.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/vertical/language/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/vertical/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/horizontal/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/horizontal/language/index.styl" />
-        <option value="$PROJECT_DIR$/content/01_about/en.md" />
-        <option value="$PROJECT_DIR$/content/02_examples/01_article/en.md" />
-        <option value="$PROJECT_DIR$/content/02_examples/04-html/en.md" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/navigation/horizontal/nav/horizontal-menu.styl" />
-        <option value="$PROJECT_DIR$/src/js/search.js" />
-        <option value="$PROJECT_DIR$/gulp/tasks/example/js.js" />
-        <option value="$PROJECT_DIR$/src/templates/article.html" />
-        <option value="$PROJECT_DIR$/src/stylus/index.styl" />
-        <option value="$PROJECT_DIR$/content/en.md" />
-        <option value="$PROJECT_DIR$/src/stylus/fonts/index.styl" />
-        <option value="$PROJECT_DIR$/gbif_i18n/gulp_plugins/applyTemplate.js" />
-        <option value="$PROJECT_DIR$/src/templates/language-selector.html" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/brand/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/content-area/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/article/_article.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/desktop/vertical/index.styl" />
-        <option value="$PROJECT_DIR$/content/01_about/dk.md" />
-        <option value="$PROJECT_DIR$/src/stylus/main.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/variables/colors.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/variables/helpers.js" />
-        <option value="$PROJECT_DIR$/src/js/helpers.js" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/language/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/variables/core.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/desktop/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/nav/_drawers.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/nav/vertical-menu.styl" />
         <option value="$PROJECT_DIR$/src/stylus/layout/mobile/header/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/nav/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/mobile/index.styl" />
-        <option value="$PROJECT_DIR$/content/02_examples/en.md" />
-        <option value="$PROJECT_DIR$/src/templates/navigation.html" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/laptop/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/base/_vars.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/_buttons.styl" />
-        <option value="$PROJECT_DIR$/src/templates/main.html" />
-        <option value="$PROJECT_DIR$/src/js/navigation.js" />
         <option value="$PROJECT_DIR$/src/stylus/_reset.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/base/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/new order/README.md" />
+        <option value="$PROJECT_DIR$/src/stylus/0-variables/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/0-core-variables/1-core-variables/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/0-core-variables/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/1-calculated-variables/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/1-calculated-variables/1-colors.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/base/_vars.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/base/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/3-elements/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/5-components/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/0-core-variables/2-functions.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-layout/buttons.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/3-elements/1-buttons.styl" />
+        <option value="$PROJECT_DIR$/src/js/navigation.js" />
+        <option value="$PROJECT_DIR$/src/stylus/4-layout/overlay.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-layout/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/main.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/mobile/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/5-components/article/_article.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/header/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/_drawers.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/index.styl" />
+        <option value="$PROJECT_DIR$/src/templates/navigation.html" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/vertical-menu.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/menu.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/buttons.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/horizontal.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/vertical.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/drawer.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/3-is-a-mess.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/index.styl" />
+        <option value="$PROJECT_DIR$/gulp/tasks/example/images.js" />
+        <option value="$PROJECT_DIR$/gulp/tasks/example/watch.js" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/_a11y.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/5-components/article/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/2-reset.styl" />
+        <option value="$PROJECT_DIR$/gulp/tasks/example/fonts.js" />
+        <option value="$PROJECT_DIR$/gulp/tasks/example/development.js" />
+        <option value="$PROJECT_DIR$/gulp/config.js" />
+        <option value="$PROJECT_DIR$/src/templates/language-selector.html" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/language/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/2-setup/1-fonts.styl" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl" />
+        <option value="$PROJECT_DIR$/src/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/stylus/0-core-variables/1-core.styl" />
       </list>
     </option>
   </component>
@@ -196,7 +225,7 @@
     <option name="x" value="232" />
     <option name="y" value="23" />
     <option name="width" value="1686" />
-    <option name="height" value="1159" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -293,7 +322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="variables" />
+              <option name="myItemId" value="4-navigation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,7 +344,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="4-navigation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,11 +370,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
+              <option name="myItemId" value="0-core-variables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,246 +385,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nav" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laptop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laptop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="horizontal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content-area" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbif_i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbif_i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gulp_plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -620,9 +409,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/js" />
-      <recent name="$PROJECT_DIR$/gulp/tasks/example" />
-      <recent name="$PROJECT_DIR$/gbif_i18n/renderer" />
+      <recent name="$PROJECT_DIR$/src/stylus/4-navigation/search" />
+      <recent name="$PROJECT_DIR$/src/stylus/4-navigation/layout" />
+      <recent name="$PROJECT_DIR$/src/stylus/4-navigation" />
+      <recent name="$PROJECT_DIR$/src/stylus/2-setup" />
+      <recent name="$PROJECT_DIR$/src/stylus/1-calculated-variables" />
     </key>
   </component>
   <component name="RunManager">
@@ -668,14 +459,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="23" width="1686" height="1159" extended-state="0" />
+    <frame x="232" y="23" width="1686" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27626812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -714,95 +505,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5362319" vertical-offset="165" max-vertical-offset="2370">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_examples/04-html/en.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014534884" vertical-offset="0" max-vertical-offset="1032">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_examples/02_extensions/en.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1019">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_examples/01_article/en.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014720314" vertical-offset="0" max-vertical-offset="1019">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11299435" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19774011" vertical-offset="0" max-vertical-offset="1725">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.098870054" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028901733" vertical-offset="0" max-vertical-offset="1038">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/variables/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -822,38 +528,6 @@
       </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/article/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16949153" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/forms/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/article/_contacts.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36723164" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/01_about/en.md">
@@ -878,86 +552,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/fonts/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056497175" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/variables/colors.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18361582" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/variables/core.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042372882" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/horizontal-menu.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.084745765" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/vertical/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12711865" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/main.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.084745765" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056497175" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/header/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9293785" vertical-offset="78" max-vertical-offset="1155">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/brand/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28248587" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/02_examples/en.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="195">
@@ -969,14 +563,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/applyTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -985,165 +571,366 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/language-selector.html">
+    <entry file="file://$PROJECT_DIR$/src/stylus/1-calculated-variables/1-colors.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18786128" vertical-offset="0" max-vertical-offset="1038">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.6187767" vertical-offset="0" max-vertical-offset="703">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/language/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042372882" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029268293" vertical-offset="0" max-vertical-offset="1025">
-          <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/base/_vars.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/index.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/nav/_drawers.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/5-components/index.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056497175" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/laptop/horizontal/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/1-calculated-variables/index.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/_buttons.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/2-functions.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.08250356" vertical-offset="182" max-vertical-offset="945">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/main.html">
+    <entry file="file://$PROJECT_DIR$/src/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1290">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.19914651" vertical-offset="70" max-vertical-offset="1725">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/_reset.styl">
+    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42372882" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="2" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="690">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/nav/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/js/a11y.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014124294" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/navigation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/content-area/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/overlay.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028248588" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="703">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/article/_article.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/main.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.071496665" vertical-offset="0" max-vertical-offset="1830">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.25604552" vertical-offset="0" max-vertical-offset="703">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/layout/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/5-components/article/_contacts.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07062147" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/nav/_drawers.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/login/index.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11299435" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.019455252" vertical-offset="0" max-vertical-offset="771">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/layout/mobile/nav/vertical-menu.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/share/index.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21186441" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/base/index.styl">
+    <entry file="file://$PROJECT_DIR$/src/stylus/index.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2259887" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.038910504" vertical-offset="0" max-vertical-offset="771">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/content-area/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14056225" vertical-offset="0" max-vertical-offset="870">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/morphSearch.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/nav/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/nav/menu.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1089494" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/buttons.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21400778" vertical-offset="0" max-vertical-offset="771">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/3-elements/1-buttons.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46692607" vertical-offset="0" max-vertical-offset="771">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/3-elements/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5668016" vertical-offset="0" max-vertical-offset="741">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/BID-v2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/clean.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/watch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4474708" vertical-offset="0" max-vertical-offset="771">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/_a11y.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11673152" vertical-offset="0" max-vertical-offset="771">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/2-setup/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019455252" vertical-offset="0" max-vertical-offset="771">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27237353" vertical-offset="0" max-vertical-offset="771">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/5-components/article/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/2-setup/2-reset.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="6" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11673152" vertical-offset="60" max-vertical-offset="840">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/fonts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11673152" vertical-offset="0" max-vertical-offset="771">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/example/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17509727" vertical-offset="0" max-vertical-offset="771">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/2-setup/1-fonts.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35620052" vertical-offset="0" max-vertical-offset="758">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/language-selector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060240965" vertical-offset="0" max-vertical-offset="747">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027237354" vertical-offset="219" max-vertical-offset="990">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/language/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27237353" vertical-offset="0" max-vertical-offset="795">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125" vertical-offset="135" max-vertical-offset="1320">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/1-core.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6225681" vertical-offset="0" max-vertical-offset="771">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding />
         </state>
       </provider>
