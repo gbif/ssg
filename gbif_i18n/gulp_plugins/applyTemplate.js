@@ -15,7 +15,7 @@ module.exports = function (tpl, languages) {
     }
     var tpl = swig.compileFile(tpl);
     return through.obj(function (file, enc, cb) {
-        // console.log(file.meta.menu);
+        //console.log(file.meta.menu);
         var data = {
             languages: languages,
             meta: file.meta.item,

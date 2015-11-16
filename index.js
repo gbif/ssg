@@ -1,24 +1,14 @@
-var renderer = require(__dirname + '/gbif_i18n/renderer/renderer'),
-    validate = require(__dirname + '/gbif_i18n/helpers/validate'),
-    applyTemplate = require('./gbif_i18n/gulp_plugins/applyTemplate'),
-    filter = require(__dirname + '/gbif_i18n/gulp_plugins/filter'),
-    build = require(__dirname + '/gbif_i18n/gulp_plugins/i18n_build'),
-    getYamlFile = require(__dirname + '/gbif_i18n/helpers/getYml'),
-    lunr = require(__dirname + '/gbif_i18n/gulp_plugins/gulp-lunr');
+var requireDir = require('require-dir'),
+    runSequence = require('run-sequence');
 
-module.exports = {
-    plugins: {
-        applyTemplate: applyTemplate,
-        filter: filter,
-        build: build,
-        lunr: lunr
-    },
-    renderer: renderer,
-    helpers: {
-        validate: validate,
-        getYamlFile: getYamlFile
-    },
-    config: {
-        template: __dirname + '/src/templates/main.html'
+module.exports = (function(){
+    requireDir('./gulp/tasks', {recurse: true});
+    function developmentTask (callback) {
+        runSequence(
+            ['clean-all'],
+            ['build-root', 'js', 'stylus', 'images', 'fonts'],
+            ['watch'],
+            callback);
     }
-};
+    return developmentTask;
+})();

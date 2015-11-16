@@ -1,27 +1,25 @@
 var gulp = require('gulp'),
+    base = '../../gbif_i18n',
     config = require('../../config'),
     path = require('path'),
-    gbif_i18n = require('../../../index.js'),
-    validate = gbif_i18n.helpers.validate,
-    getYamlFile = gbif_i18n.helpers.getYamlFile,
+    renderer = require(base + '/renderer/renderer'),
+    validate = require(base + '/helpers/validate'),
+    applyTemplate = require(base + '/gulp_plugins/applyTemplate'),
+    filter = require(base + '/gulp_plugins/filter'),
+    build = require(base + '/gulp_plugins/i18n_build'),
+    getYamlFile = require(base + '/helpers/getYml'),
+    lunr = require(base + '/gulp_plugins/gulp-lunr'),
     frontMatter = require('gulp-front-matter'),
     marked = require('gulp-marked'),
-    renderer = gbif_i18n.renderer,
-    applyTemplate = gbif_i18n.plugins.applyTemplate,
-    filter = gbif_i18n.plugins.filter,
-    build = gbif_i18n.plugins.build,
-    lunr = gbif_i18n.plugins.lunr,
     langFileName, languageData;
 
-
 //get language file
-langFileName = './content/languages.yml'; // TODO Hardcoded language file location
+langFileName = config.languageFile;
 languageData = getYamlFile(langFileName);
 validate.validateLanguageFile(languageData, langFileName); //make sure that the language file is on the correct format
 languageData.list = Object.keys(languageData.languages).map(function (lang) { //create list of language keys. only because it makes it easier to iterate elsewhere
     return lang;
 });
-
 
 //Create the task that builds the actual html files based on the configuration object
 gulp.task('build-main', [], function () {
@@ -42,7 +40,7 @@ gulp.task('build-main', [], function () {
         .pipe(marked({
             renderer: renderer //render using custom markdown renderer
         }))
-        .pipe(applyTemplate(gbif_i18n.config.template, languageData))
+        .pipe(applyTemplate(config.templates.main, languageData))
         .pipe(gulp.dest(config.dest));
 
     // Build a search index using Lunr. The plugin expects a markdown content attribute on the file object.
