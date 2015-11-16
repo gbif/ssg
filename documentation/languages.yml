@@ -1,8 +1,10 @@
 #This file defines which languages that will appear when the site is build
 languages:
   en: English
-  fr: Français
-  pt: Português
+  dk: Dansk # danish
+  es: Español
+  en-US: American
+  ar: العَرَبِية #arabic
 
 
 #

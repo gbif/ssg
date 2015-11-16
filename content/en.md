@@ -1,26 +1,35 @@
 ---
-title: Home
+title: home
 ---
+BID: Biodiversity Information for Development
+===================
 
-# A static site generator for GBIF
-**An example of how a site could look like**
+Biodiversity Information for Development (BID) is a multi-year, €3.9 million programme funded by the [European Union](http://europa.eu) and led by GBIF with the aim of increasing the amount of biodiversity information available in the [‘ACP’ nations of sub-Saharan Africa, the Caribbean and the Pacific](http://#).
 
-> At GBIF we have a need to quickly create new sites for specific programs and projects. But also for specific audiences.
+[Learn more](#about)
 
-## What is this
 
-This is an example of what a static site made with the generator can look like. You can restyle it if needed. In fact you should.
+Information for grantseekers
+-------------
++ **Call for proposals from sub-Saharan Africa**
+ (deadline 20 Nov 2015)
+ + [in English](/03-Calls/en.md)
+ + [en français](/03-Calls/en.md)
+ + [em português](/03-Calls/en.md) 
+
++ [Frequently Asked Questions](#faq)
+
+
+
+Latest news
+-------------------
 
 ```styledYaml
 rss:
-- url: http://drupaledit.gbif-uat.org/newsroom/news/json/bid/pt
+- url: /raw/bid.json
 ```
 
-```styledYaml
-contacts:
-- name: Beate Carola
-  image: http://im1.peldata.com/bl1/7530/6bg.jpg
-  mail: beate@spam.org
-  tel: +23 2393 7498
-  info: Hobby Gardener
-```
+
+*This programme is funded by the [European Union](http://www.europa.eu)*
+
+![Flag of the European Union](/images/flag-yellow-low.jpg)
