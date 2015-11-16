@@ -56,6 +56,10 @@ conf = {
         html: [dest + '/**/*.html'],
         css: [dest + '/**/*.css']
     },
+    raw: {
+        src: src + '/raw/**/*.*',
+        dest: dest + '/raw'
+    },
     customJavascript: {
         src: [],
         watch: undefined

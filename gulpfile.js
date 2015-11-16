@@ -7,10 +7,19 @@
  */
 
 var gulp = require('gulp'),
+    runSequence = require('run-sequence'),
     requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
 requireDir('./gulp/tasks', {recurse: true});
+
+gulp.task('development', function (callback) {
+    runSequence(
+        ['clean-all'],
+        ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
+        ['watch'],
+        callback);
+});
 
 //specifies the default set of tasks to run when you run `gulp`.
 gulp.task('default', ['development']);

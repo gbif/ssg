@@ -6,7 +6,7 @@ module.exports = (function(){
     function developmentTask (callback) {
         runSequence(
             ['clean-all'],
-            ['build-root', 'js', 'stylus', 'images', 'fonts'],
+            ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
             ['watch'],
             callback);
     }
