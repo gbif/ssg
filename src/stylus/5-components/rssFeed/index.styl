@@ -1,0 +1,45 @@
+rssFeedBg = color-dark
+rssFeedColor = _inkColor(color-dark);
+main
+	>section
+		>.content
+			>article
+				.block
+					.block-content
+						.rssFeed
+							margin: 0
+							article
+								background: rssFeedBg
+								padding: 20px
+								border-left: 7px solid secondary-color
+								margin: 10px 0
+								color: rssFeedColor
+								h3
+									font-size: 1.2em
+									padding-bottom: 1em
+									>a
+										color: rssFeedColor
+								p
+									font-size: 0.95em
+								span
+									display block
+									text-align right
+									font-size 0.8em
+									padding-top: 1em
+									color: _discreet(rssFeedBg);
+
+@media (min-width tablet)
+	main
+		>section
+			>.content
+				>article
+					.block
+						.block-content
+							.rssFeed
+								margin: 45px
+								display: flex
+								flex-wrap: wrap
+								justify-content space-around
+								article
+									flex: 1 1 300px
+									margin: 5px

@@ -7,7 +7,8 @@ All markdown files must start with a yaml section
 ---
 title: About # will appear as the title in the menu
 style: [none] | myclassname # if present it will be added as a classname to the article
-type: link # not a page but a link. requires 'link' to be specified
+type: link , menu only# not a page but a link. requires 'link' to be specified
 link: http://www.gbif.org/newsroom/news # it type link, then link to this location
+image: https://images/cat.jpg # Header background image. Use sparingly as it is not scaled and take bandwidth. 
 ---
 ```

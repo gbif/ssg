@@ -33,7 +33,7 @@
 					display: none
 					>li
 						>a
-							padding: 7px 20px 7px 20px
+							padding: 10px 20px 10px 40px
 							color: lighten(ink-color, 30)
 							&:hover
 								background-color: inherit
@@ -53,21 +53,22 @@ if (horizontalLayout)
 						border: none
 						display:inline-block
 						&.isActive, &.isActive>a
-							background: primary-color
+							color: _discreet(horizontalBgColor, 80)
+							background: horizontalBgColor
 						&:hover
-							color: darken(primary-color, 30)
-							background: primary-color
+							color: _discreet(horizontalBgColor)
+							background: horizontalBgColor
 					ul>li>ul>li
 						&:before
 							content: "\2022"
 							font-size: 20px
-							color: darken(primary-color, 30)
+							color: darken(horizontalBgColor, 10)
 					.isExpandable:after
 						content: ""
 					>ul>li
-						display:inline
+						display:inline-block
 						a
-							color: white
+							color: _inkColor(horizontalBgColor)
 							letter-spacing: 1px
 						>ul>li
 							>a

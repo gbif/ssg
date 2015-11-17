@@ -10,12 +10,12 @@ gulp.task('watch', ['browserSync'], function () {
     gulp.watch(config.dest + "/index.html").on('change', browserSync.reload);
 
     //rebuild css
-    gulp.watch(config.stylus.src, ['stylus']);
+    gulp.watch([config.stylus.src, config.stylus.coresrc], ['stylus']);
     gulp.watch(config.dest + "/**/*.css").on('change', browserSync.reload);
 
     //rebuild js
     gulp.watch(config.javascript.src, ['js']);
-    gulp.watch(config.customJavascript.src, ['js']);
+    //gulp.watch(config.customJavascript.src, ['js']);
     gulp.watch(config.javascript.dest + "/**/*.js").on('change', browserSync.reload);
 
     //rebuild js

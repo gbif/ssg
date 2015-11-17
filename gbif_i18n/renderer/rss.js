@@ -10,5 +10,5 @@ function getRSS(data) {
     return '';
 }
 function generateRSS(html) {
-    return '<div class="rss-feed" data-feed="' + html.url + '"></div>';
+    return '<div class="rssFeed" data-feed="' + html.url + '"></div>';
 }

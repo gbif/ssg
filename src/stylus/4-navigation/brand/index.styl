@@ -1,29 +1,46 @@
+brand-background-color = color-dark
 .brand
-	background: primary-color
-	text-align: center
-	overflow: hidden
-	padding: 20px
-	padding-left:0px
+	background brand-background-color
+	text-align center
+	overflow hidden
+	padding 20px
+	padding-left0px
 	a
-		margin:auto
+		marginauto
 	div
-		color: _inkColor(primary-color)
-		background: siteLogo //url('http://www.gbif.org/sites/all/themes/custom/bvng/images/logo_white.png')
-		background-size: contain
-		background-repeat: no-repeat
-		background-position: center
-		width: 70px
-		height: 70px
-		display: inline-block
+		color _inkColor(brand-background-color)
+		background siteLogo
+		background-size contain
+		background-repeat no-repeat
+		background-position center
+		width 70px
+		height 70px
+		display inline-block
 	h1
-		color: _inkColor(primary-color)
-		display: inline-block
-		font-size: 3em
+		color _inkColor(brand-background-color)
+		font-weight bold
+		display inline-block
+		font-size 3em
 		line-height 70px
-		vertical-align: bottom
+		vertical-align bottom
+
+@media (min-width tablet)
+	.brand
+		padding 50px 20px
+
+@media (min-width laptop)
+	.brand
+		padding 50px 20px
 
 if (horizontalLayout)
-	@media (min-width: laptop)
+	@media (min-width laptop)
 		.brand
-			padding: 10px 0 0 0
-			/*display:block*/
+			background-color horizontalBgColor
+			padding 0
+			display inline-block
+			div
+				height 2em
+				width 2em
+				line-height: 3em;
+			h1
+				display none

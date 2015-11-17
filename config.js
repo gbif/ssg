@@ -38,9 +38,11 @@ conf = {
         dest: dest + '/css/fonts'
     },
     stylus: {
-        src: src + '/stylus/**/*.styl',
-        entries: src + '/stylus/index.styl',
-        dest: dest + '/css'
+        src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core
+        coresrc: src + '/stylus/**/*.styl', //for the css in core to watch
+        entries: [src + '/stylus/index.styl'], //main entry point to build css from, will be overwritten by individual sites
+        rawCss: [base + '/node_modules/highlight.js/styles/tomorrow.css'],
+        dest: dest + '/css' //where to build to
     },
     browserSync: {
         server: {
@@ -49,6 +51,7 @@ conf = {
         }
     },
     templates: {
+        src: src + '/templates/**/*.html',
         main: src + '/templates/main.html'
     },
     clean: {
@@ -63,10 +66,6 @@ conf = {
     customJavascript: {
         src: [],
         watch: undefined
-    },
-    customStylus: {
-        variables: undefined,
-        main: undefined
     },
     customTemplates: {
         src: undefined

@@ -36,6 +36,7 @@
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
+    "highlight.js": "^8.9.1",
     "html5shiv": "^3.7.3",
     "jquery": "^1.11.3",
     "jscs": "^2.5.0",

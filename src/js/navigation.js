@@ -8,7 +8,6 @@ $('.toggle.toggle-nav').on('click touchend', function (event) {
     $(this).addClass('isActive');
     $('#main').addClass('toggle');
     $('body').addClass('hasOverlay');
-    return false;
 });
 
 $('.overlay').on("click touchend", function () {

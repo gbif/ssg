@@ -11,7 +11,9 @@ var gulp = require('gulp'),
     lunr = require(base + '/gulp_plugins/gulp-lunr'),
     frontMatter = require('gulp-front-matter'),
     marked = require('gulp-marked'),
-    langFileName, languageData;
+    highlight = require('highlight.js'),
+    langFileName, languageData,
+    translations = getYamlFile('./translations.yml');
 
 //get language file
 langFileName = config.languageFile;
@@ -38,9 +40,12 @@ gulp.task('build-main', [], function () {
     //We now got the files with metadata and in all language versions. Split streams and process templating and search in parallel
     template = langFiles
         .pipe(marked({
-            renderer: renderer //render using custom markdown renderer
+            renderer: renderer, //render using custom markdown renderer
+            highlight: function (code) {
+                return highlight.highlightAuto(code).value;
+            }
         }))
-        .pipe(applyTemplate(config.templates.main, languageData))
+        .pipe(applyTemplate(config.templates.main, languageData, translations))
         .pipe(gulp.dest(config.dest));
 
     // Build a search index using Lunr. The plugin expects a markdown content attribute on the file object.

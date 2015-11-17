@@ -25,7 +25,7 @@
 	<body lang="{{meta.siteLanguage}}">
 		<div class="page-wrapper">
 			<section class="site-intro">
-				<a class="skip" rel="nofollow" href="#main">Skip to main content</a>
+				<a class="skip" rel="nofollow" href="#main">{{i18n.skipLink[meta.siteLanguage]}}</a>
                 <a href="#" class="button toggle toggle-nav icon-menu" role="button" aria-label="Toggle Navigation">
                 </a>
 				<div class="brandBanner"></div>
@@ -74,6 +74,7 @@
             GBIF.site.navigation = {{nav|raw|json_encode}};
             GBIF.site.languages = {{languages|raw|json_encode}};
 			GBIF.siteLanguage = '{{meta.siteLanguage}}';
+            GBIF.i18n = {{i18n|raw|json_encode}};
 		</script>
 		<script src="/javascript/script.js"></script>
 	</body>

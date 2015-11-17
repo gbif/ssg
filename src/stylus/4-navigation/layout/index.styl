@@ -9,6 +9,10 @@
 	transition: left 0.3s ease, right 0.3s ease;
 
 .site-intro
+	ul
+		list-style: none
+	ul, ol, li
+		padding: 0px
 	a
 		text-decoration: none
 	.site-navigation
@@ -29,13 +33,14 @@ if (horizontalLayout)
 		//html:not(ie8)
 		.site-intro
 			.site-navigation
+				_shadow(0,0)
 				left: 0px
 				top: 0px
 				width:100%
 				z-index: 300
 				position:relative
-				background-color: primary-color
-				color: _inkColor(primary-color)
+				background-color: horizontalBgColor
+				color: _inkColor(horizontalBgColor)
 				padding: 0
 				text-align: center
 				transition: left 0s
