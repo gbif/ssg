@@ -1,4 +1,6 @@
 var gulp = require('gulp'),
+    plumber = require('gulp-plumber'),
+    notify = require("gulp-notify"),
     base = '../../gbif_i18n',
     config = require('../../config'),
     path = require('path'),
@@ -29,6 +31,7 @@ gulp.task('build-main', [], function () {
 
     //create stream with language versions and metadata
     langFiles = gulp.src(config.content)
+        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(frontMatter({ //remove Yaml front matter from file and add it to file object as attribute "frontMatter"
             property: 'frontMatter',
             remove: true

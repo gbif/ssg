@@ -12,10 +12,10 @@ main
 				color: ink-color
 				overflow-x: hidden
 				margin: 0px auto
-				.block
-					&.block-first
+				>section
+					&:first-of-type
 						background-color: primary-color
-					padding: 20px 10px
+					/*padding: 20px 10px*/
 					background-color: block-color-1
 					background-size: cover
 					background-position: center
@@ -31,14 +31,13 @@ main
 						padding-bottom: 50px
 					&:first-of-type
 						padding: 0
-					&.hasImage>.block-content>h1
+					&.hasImage>div>h1
 						color: color-dark
 						padding: 3em 1em
-					>.block-content
+					>div
 						max-width: laptop
 						margin: auto
-						>*
-							margin: 0 10px
+						padding 10px 10px 20px 10px
 						>p
 							/*@extends .font-article*/
 							font-size: 1.0em
@@ -96,8 +95,8 @@ main
 							a.anchor
 								visibility: hidden
 								width:0px
-								padding-top: layout_header-height
-								margin-top: -layout_header-height
+								/*padding-top: layout_header-height*/
+								/*margin-top: -layout_header-height*/
 								margin-left: -45px;
 								background:none
 								border:none
@@ -113,15 +112,14 @@ main
 
 						>blockquote
 							border-left: 5px solid tertiary-color
-							// color: #FFF
-							/*background-color: _discreet(paper-color)*/
-							margin-top: 50px
+							margin 30px 0
 							padding: 10px 40px
 							p
-								// @extends .font-main
-								// font-weight: lighter
 								margin-bottom: 0px
 								font-style: italic
+							img
+								max-width 100px
+								display block
 						a
 							text-decoration: none
 							color: ink-color
@@ -147,8 +145,7 @@ main
 				>article
 					.block
 						>.block-content
-							>*
-								margin: 0 50px
+							padding: 20 50px
 							h1
 								font-size: 3em
 

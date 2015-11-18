@@ -1,6 +1,7 @@
 //just for testing css for now
 $('.navigation-main>ul>li>ul>li>a').click(function () {
     $(this).parent().toggleClass('isActive');
+    return false;
 });
 
 $('.toggle.toggle-nav').on('click touchend', function (event) {
@@ -8,6 +9,7 @@ $('.toggle.toggle-nav').on('click touchend', function (event) {
     $(this).addClass('isActive');
     $('#main').addClass('toggle');
     $('body').addClass('hasOverlay');
+    return false;
 });
 
 $('.overlay').on("click touchend", function () {
@@ -17,6 +19,7 @@ $('.overlay').on("click touchend", function () {
     $('body').removeClass('hasOverlay');
 });
 
-$('.languageSelector').click(function () {
-    $(this).toggleClass('isExpanded');
+$('.languageSelector>a').click(function (event) {
+    $(this).parent().toggleClass('isExpanded');
+    return false;
 });

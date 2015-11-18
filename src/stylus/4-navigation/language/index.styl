@@ -25,13 +25,30 @@ if (horizontalLayout)
 	@media (min-width: laptop)
 		.languageSelector
 			display:inline
+			position relative
 			ul
 				border-bottom: none
 				max-height: 250px
-				display: none
+				display none
+				position absolute
+				left -0.8em
+				top 1.5em
+				background paper-color
+				_shadow(1,2)
 			&.isExpanded>ul
-				border-top: 1px solid darken(horizontalBgColor, 5)
+				border: 1px solid darken(paper-color, 5)
 				display: block
+				overflow visible
+				&:before
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 0;
+					left: 50%;
+					margin-left: -12px;
+					top: -12px;
+					border: 6px solid transparent;
+					border-bottom: 6px solid paper-color;
 			>a
 				display:inline-block
 				padding: 15px 20px

@@ -4,11 +4,11 @@ brand-background-color = color-dark
 	text-align center
 	overflow hidden
 	padding 20px
-	padding-left0px
+	padding-left 0px
 	a
-		marginauto
+		margin auto
 	div
-		color _inkColor(brand-background-color)
+		/*color _inkColor(brand-background-color)*/
 		background siteLogo
 		background-size contain
 		background-repeat no-repeat
@@ -37,10 +37,14 @@ if (horizontalLayout)
 		.brand
 			background-color horizontalBgColor
 			padding 0
-			display inline-block
+			display inline
+			a
+				padding 15px 20px
+				background siteLogo
+				background-size contain
+				background-repeat no-repeat
+				background-position center
 			div
-				height 2em
-				width 2em
-				line-height: 3em;
+				display:none
 			h1
 				display none

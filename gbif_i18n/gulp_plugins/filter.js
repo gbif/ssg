@@ -27,7 +27,8 @@ function filter(loc, options, unless) {
         } else if (error) {
             var description = unless ? 'Illegal' : 'Required',
                 errorString = description + ' object field: "' + loc.toString() + ' ' + value + ' " in file ' + file.path;
-            throw new gutil.PluginError('gbif-ssg-filter', errorString);
+            //throw new gutil.PluginError('gbif-ssg-filter', errorString);
+            this.emit("error", new Error(errorString));
         }
         cb();
     });

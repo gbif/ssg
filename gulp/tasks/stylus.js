@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
     path = require('path'),
+    plumber = require('gulp-plumber'),
+    notify = require("gulp-notify"),
     stylus = require('gulp-stylus'),
     concat = require('gulp-concat'),
     koutoSwiss = require('kouto-swiss'),
@@ -12,11 +14,12 @@ var gulp = require('gulp'),
 
 gulp.task('stylus', function () {
     return gulp.src(config.stylus.entries.concat(config.stylus.rawCss))
+        .pipe( gulpif(!gutil.env.production, plumber({errorHandler: notify.onError("Error: <%= error.message %>")}) ))
         .pipe(stylus({
             use: [koutoSwiss()]
         }))
         .pipe(autoprefixer({
-            browsers: ['last 2 version']
+            browsers: ['last 5 version']
         }))
         .pipe(concat('index.css'))
         .pipe(gulpif(gutil.env.production, minifyCSS()))
