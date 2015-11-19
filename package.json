@@ -1,5 +1,5 @@
 {
-  "name": "gbif-ssg-i18n",
+  "name": "gbif-ssg",
   "version": "1.0.0",
   "description": "A static site generator for GBIF sub sites.",
   "main": "index.js",
