@@ -1,7 +1,7 @@
 # Language translations for shared variables across pages. I.e. navigation buttons, skip links etc.
 
 siteName:
-  en: Static site generator
+  en: SSG
 
 skipLink:
   en: Skip to main content

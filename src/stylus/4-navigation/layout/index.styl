@@ -39,7 +39,7 @@ if (horizontalLayout)
 				bottom: auto
 				width:100%
 				z-index: 300
-				/*position: relative*/
+				position: relative
 				overflow visible
 				background-color: horizontalBgColor
 				color: _inkColor(horizontalBgColor)
@@ -60,9 +60,3 @@ else
 .ie8
 	.site-intro .site-navigation
 		border-right: 1px solid grey
-if (horizontalLayout)
-	@media (min-width: laptop)
-		.ie8
-			.site-intro .site-navigation
-				border-right: 0px solid grey
-				border-bottom: 1px solid grey

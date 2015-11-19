@@ -18,6 +18,8 @@
 		color: lighten(ink-color, 30)
 		&:hover
 			color: ink-color
+		&.active
+			background-color: darken(paper-color, 5)
 
 
 
@@ -31,7 +33,7 @@ if (horizontalLayout)
 				max-height: 250px
 				display none
 				position absolute
-				left -0.8em
+				left -1.5em
 				top 1.5em
 				background paper-color
 				_shadow(1,2)
@@ -56,9 +58,7 @@ if (horizontalLayout)
 					color: darken(horizontalBgColor, 30)
 					background-color: inherit
 			li
-				display: inline
 				>a
-					display: inline-block
 					padding: 5px 20px
 					color: darken(horizontalBgColor, 30)
 					&:hover

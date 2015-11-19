@@ -9,8 +9,47 @@ $(".rssFeed").each(function (index) {
 
         $.each(result, function (i, news) {
             var article = document.createElement('article');
-            var content = '<h3><a href="' + news.path + '">' + news.title + '</a></h3><p>' + news.body + '</p><span>' + news.created + '</span>';
+            var content = '<a href="http://www.gbif.org/' + news.path + '"><h3>' + news.title + '</h3><p>' + news.body + '</p><span>' + news.created + '</span></a>';
             $(article).html(content).appendTo(rssFeed);
         });
     });
 });
+
+
+/*
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||['',''])[1].replace(/\+/g, '%20'))||null;
+}
+
+(function() {
+    var rawContentId,
+        jsonUrl,
+        template = '<section class="block"><div class="block-content"><h1>{{title}}</h1></div></section><section class="block"><div class="block-content"><span>{{created}}</span><p>{{body}}</p>{{img}}</div></section>',
+        urlTemplate = '/raw/article2.json'; //http://drupaledit.gbif.org/raw-content/82531/json
+
+    var rawContentId = getURLParameter('id');
+    if (rawContentId == null) {
+        return;
+    }
+    var jsonUrl = urlTemplate.replace('{id}', rawContentId);
+
+    var parent = $('#main>section>.content');
+    var article = document.createElement('article');
+    $.getJSON(jsonUrl, function (result) {
+
+        if (typeof result[0] !== 'object') {
+            console.log('error');
+            return;
+        }
+        result = result[0];
+        var img = result.field_uni_images;
+        var content = template
+            .replace('{{title}}', result.title)
+            .replace('{{body}}', result.body)
+            .replace('{{created}}', result.created)
+            .replace('{{img}}', '<img src="' + img.src + '" alt="' + img.alt + '"/>');
+        parent.empty();
+        $(article).html(content).appendTo(parent);
+    });
+})();
+*/

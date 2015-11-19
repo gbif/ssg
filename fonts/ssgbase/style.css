@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ssgbase';
-	src:url('fonts/ssgbase.eot?srfmlt');
-	src:url('fonts/ssgbase.eot?srfmlt#iefix') format('embedded-opentype'),
-		url('fonts/ssgbase.ttf?srfmlt') format('truetype'),
-		url('fonts/ssgbase.woff?srfmlt') format('woff'),
-		url('fonts/ssgbase.svg?srfmlt#ssgbase') format('svg');
+	src:url('fonts/ssgbase.eot?uf2z7x');
+	src:url('fonts/ssgbase.eot?uf2z7x#iefix') format('embedded-opentype'),
+		url('fonts/ssgbase.ttf?uf2z7x') format('truetype'),
+		url('fonts/ssgbase.woff?uf2z7x') format('woff'),
+		url('fonts/ssgbase.svg?uf2z7x#ssgbase') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,5 +40,11 @@
 }
 .icon-share2:before {
 	content: "\64";
+}
+.icon-link:before {
+	content: "\6c";
+}
+.icon-file-pdf:before {
+	content: "\70";
 }
 

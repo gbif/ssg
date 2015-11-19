@@ -1,7 +1,9 @@
 //just for testing css for now
 $('.navigation-main>ul>li>ul>li>a').click(function () {
     $(this).parent().toggleClass('isActive');
-    return false;
+    if ($(this).attr('href')=='#') {
+        return false;
+    }
 });
 
 $('.toggle.toggle-nav').on('click touchend', function (event) {

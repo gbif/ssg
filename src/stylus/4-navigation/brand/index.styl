@@ -12,16 +12,19 @@ brand-background-color = color-dark
 		background siteLogo
 		background-size contain
 		background-repeat no-repeat
-		background-position center
-		width 70px
-		height 70px
+		height 3em
+		width 4em
+		background-position bottom
 		display inline-block
 	h1
+		border-left: 3px solid paper-color
+		line-height 1em
+		padding-left 5px
+		margin-left 5px
 		color _inkColor(brand-background-color)
 		font-weight bold
 		display inline-block
 		font-size 3em
-		line-height 70px
 		vertical-align bottom
 
 @media (min-width tablet)
@@ -47,4 +50,18 @@ if (horizontalLayout)
 			div
 				display:none
 			h1
+				display none
+
+.ie8
+	.brand
+		div
+			display none
+		h1
+			border-width 0px
+			padding-left 0px
+			margin-left 0px
+if (horizontalLayout)
+	@media (min-width laptop)
+		.brand
+			a
 				display none

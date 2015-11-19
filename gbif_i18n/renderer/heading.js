@@ -2,11 +2,11 @@ var blockwrap = '</div></section><section class="block"><div class="block-conten
 
 module.exports = function (text, level) {
     var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-    var heading = '<h' + level + '><a name="' +
+    var heading = '<h' + level + '>'+text+'<a name="' +
         escapedText +
-        '" class="anchor" href="#' +
+        '" class="anchor icon-link" href="#' +
         escapedText +
-        '"><span class="header-link"></span></a>' + text + '</h' + level + '>';
+        '"></a></h' + level + '>';
     if (level === 1) {
         return heading + blockwrap;
     }

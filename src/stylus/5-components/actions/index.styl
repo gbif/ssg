@@ -1,0 +1,47 @@
+actionBg = darken(paper-color, 10)
+actionColor = color-dark
+actionPadding = 20px
+.content
+	.action-items
+		margin: 1em 0
+		.action-item
+			position relative
+			background: actionBg
+			padding: actionPadding
+			margin: 10px 0
+			color: actionColor
+			a
+				text-decoration none
+				border: none
+				background-color none
+				&:hover
+					background none
+			span.action-pdf
+				font-size 1.5em
+				position absolute
+				+h2
+					padding-left 2em
+			span.action-comment
+				color _discreet(actionBg, 50)
+				display block
+				text-align right
+				font-size 0.8em
+				position absolute
+				right actionPadding
+				top 5px
+			h2
+				font-size 1.0em
+				display inline-block
+			border-left 2px solid actionBg
+			&:hover
+				border-left 2px solid primary-color
+
+@media (min-width tablet)
+	.content
+		.action-items
+			display: flex
+			flex-wrap: wrap
+			justify-content flex-start
+			.action-item
+				flex: 0 1 auto
+				margin: 5px

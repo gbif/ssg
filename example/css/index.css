@@ -6,6 +6,7 @@
 }
 .brandBorder,
 .brandBanner {
+  border-image: -webkit-linear-gradient(0deg, #509e2f 15%, #175ca1 15%, #175ca1 32%, #fdb002 32%, #fdb002 52%, #40bfff 52%, #40bfff 62%, #636fb4 62%, #636fb4 70%, #e5ffff 70%, #e5ffff 85%, #7e466a 85%, #7e466a 90%, #e8e8e8 90%);
   border-image: linear-gradient(90deg, #509e2f 15%, #175ca1 15%, #175ca1 32%, #fdb002 32%, #fdb002 52%, #40bfff 52%, #40bfff 62%, #636fb4 62%, #636fb4 70%, #e5ffff 70%, #e5ffff 85%, #7e466a 85%, #7e466a 90%, #e8e8e8 90%);
   border-image-source: linear-gradient(90deg, #509e2f 15%, #175ca1 15%, #175ca1 32%, #fdb002 32%, #fdb002 52%, #40bfff 52%, #40bfff 62%, #636fb4 62%, #636fb4 70%, #e5ffff 70%, #e5ffff 85%, #7e466a 85%, #7e466a 90%, #e8e8e8 90%);
   border-image-slice: 1;
@@ -48,6 +49,12 @@
 }
 .icon-share2:before {
   content: "\64";
+}
+.icon-link:before {
+  content: "\6c";
+}
+.icon-file-pdf:before {
+  content: "\70";
 }
 div,
 span,
@@ -146,23 +153,30 @@ body {
   text-align: center;
   overflow: hidden;
   padding: 20px;
+  padding-left: 0px;
+}
+.brand a {
+  margin: auto;
 }
 .brand div {
-  color: #fdfdfd;
+/*color _inkColor(brand-background-color)*/
   background: url("/images/logo_white.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 70px;
-  height: 70px;
+  height: 3em;
+  width: 4em;
+  background-position: bottom;
   display: inline-block;
 }
 .brand h1 {
+  border-left: 3px solid #fdfdfd;
+  line-height: 1em;
+  padding-left: 5px;
+  margin-left: 5px;
   color: #fdfdfd;
   font-weight: bold;
   display: inline-block;
   font-size: 3em;
-  line-height: 70px;
   vertical-align: bottom;
 }
 @media (min-width: 768px) {
@@ -175,10 +189,19 @@ body {
     padding: 50px 20px;
   }
 }
+.ie8 .brand div {
+  display: none;
+}
+.ie8 .brand h1 {
+  border-width: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
 .languageSelector ul {
   border-bottom: 1px solid #f0f0f0;
   max-height: 0px;
   overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 .languageSelector.isExpanded>ul {
@@ -200,6 +223,9 @@ body {
 }
 .languageSelector li>a:hover {
   color: #333;
+}
+.languageSelector li>a.active {
+  background-color: #f0f0f0;
 }
 .navigation-main >ul>li>a:first-of-type,
 .navigation-main >ul>li:last-of-type {
@@ -296,8 +322,9 @@ body {
   }
 }
 main {
-  padding-top: 0px;
+/*padding-top: layout_header-height*/
   padding-left: 0px;
+  -webkit-transition: padding-left 0.3s ease;
   transition: padding-left 0.3s ease;
 }
 .navigation,
@@ -308,7 +335,8 @@ main {
   bottom: 0px;
   z-index: 50;
   overflow: auto;
-  top: 0px;
+  top: 0;
+  -webkit-transition: left 0.3s ease, right 0.3s ease;
   transition: left 0.3s ease, right 0.3s ease;
 }
 .site-intro ul {
@@ -357,6 +385,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   top: -12.5em;
+  -webkit-transition: top 0.3s ease;
   transition: top 0.3s ease;
   width: 100%;
   z-index: 600;
@@ -382,17 +411,20 @@ main >section >.content >article {
 }
 main >section >.content >article .contacts {
   margin: auto;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 main >section >.content >article .contact {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -420,52 +452,52 @@ main >section >.content >article .contact address span {
 main >section >.content >article .contact address span a {
   padding: 2px;
 }
-main >section >.content >article .block {
-  padding: 20px 10px;
+main >section >.content >article >section {
   background-color: #fdfdfd;
   background-size: cover;
   background-position: center;
 }
-main >section >.content >article .block.block-first {
+main >section >.content >article >section.block-first {
   background-color: #7bc2d4;
 }
-main >section >.content >article .block:nth-of-type(1) ~ * {
+main >section >.content >article >section.block-first >div {
+  max-width: none;
+}
+main >section >.content >article >section:nth-of-type(1) ~ * {
   background: #fdfdfd;
 }
-main >section >.content >article .block:nth-of-type(2) ~ * {
+main >section >.content >article >section:nth-of-type(2) ~ * {
   background: #f5f5f5;
 }
-main >section >.content >article .block:nth-of-type(3) ~ * {
+main >section >.content >article >section:nth-of-type(3) ~ * {
   background: #fdfdfd;
 }
-main >section >.content >article .block:nth-of-type(4) ~ * {
+main >section >.content >article >section:nth-of-type(4) ~ * {
   background: #f5f5f5;
 }
-main >section >.content >article .block:last-of-type {
+main >section >.content >article >section:last-of-type {
   padding-bottom: 50px;
 }
-main >section >.content >article .block:first-of-type {
+main >section >.content >article >section:first-of-type {
   padding: 0;
 }
-main >section >.content >article .block.hasImage>.block-content>h1 {
+main >section >.content >article >section.hasImage>div>h1 {
   color: #333;
   padding: 3em 1em;
 }
-main >section >.content >article .block >.block-content {
-  max-width: 1024px;
+main >section >.content >article >section >div {
+  max-width: 768px;
   margin: auto;
+  padding: 10px 10px 20px 10px;
 }
-main >section >.content >article .block >.block-content >* {
-  margin: 0 10px;
-}
-main >section >.content >article .block >.block-content >p {
+main >section >.content >article >section >div >p {
 /*@extends .font-article*/
   font-size: 1em;
   text-align: justify;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-main >section >.content >article .block >.block-content >h1 {
+main >section >.content >article >section >div >h1 {
   margin: 0;
   padding: 2em 1em;
   font-size: 1.8em;
@@ -481,114 +513,102 @@ main >section >.content >article .block >.block-content >h1 {
   color: #fdfdfd;
   width: 100%;
 }
-main >section >.content >article .block >.block-content >h1 +p>strong {
-  display: block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  font-size: 1.1em;
-  text-align: center;
-}
-main >section >.content >article .block >.block-content >h1 +p>strong:after {
-  display: block;
-  border-bottom: 1px solid #e2c8ed;
-  content: '';
-  width: 50%;
-  margin: 10px auto;
-}
-main >section >.content >article .block >.block-content >h2 {
+main >section >.content >article >section >div >h2 {
   font-size: 1.4em;
   margin-bottom: 2em;
   margin-top: 2em;
   text-align: center;
 }
-main >section >.content >article .block >.block-content >h3 {
+main >section >.content >article >section >div a.anchor {
+  display: none;
+  padding-left: 1em;
+/*padding-top: layout_header-height*/
+/*margin-top: -layout_header-height*/
+  background: none;
+  border: none;
+}
+main >section >.content >article >section >div >h3:hover a.anchor,
+main >section >.content >article >section >div >h4:hover a.anchor {
+  display: inline;
+  background: none;
+}
+main >section >.content >article >section >div >h3 {
   font-variant: small-caps;
   border-bottom: 1px dotted;
   margin-bottom: 1em;
   margin-top: 2em;
 }
-main >section >.content >article .block >.block-content >h3 a.anchor {
-  visibility: hidden;
-  width: 0px;
-  padding-top: 0px;
-  margin-top: -layout_header-height;
-  margin-left: -45px;
-  background: none;
-  border: none;
+main >section >.content >article >section >div >h4 {
+  font-weight: bold;
 }
-main >section >.content >article .block >.block-content >h3 a.anchor span {
-  padding: 10px;
-  width: 100px;
-}
-main >section >.content >article .block >.block-content >h3 a.anchor span:after {
-  width: 0px;
-  content: 'Link';
-}
-main >section >.content >article .block >.block-content >h3:hover a.anchor {
-  visibility: visible;
-}
-main >section >.content >article .block >.block-content >blockquote {
+main >section >.content >article >section >div >blockquote {
   border-left: 5px solid #ba7bd4;
-/*background-color: _discreet(paper-color)*/
-  margin-top: 50px;
+  margin: 30px 0;
   padding: 10px 40px;
 }
-main >section >.content >article .block >.block-content >blockquote p {
+main >section >.content >article >section >div >blockquote p {
   margin-bottom: 0px;
   font-style: italic;
 }
-main >section >.content >article .block >.block-content a {
+main >section >.content >article >section >div >blockquote img {
+  max-width: 100px;
+  display: block;
+}
+main >section >.content >article >section >div a {
   text-decoration: none;
   color: #333;
   border-bottom: 1px dotted #333;
 }
-main >section >.content >article .block >.block-content a:hover {
+main >section >.content >article >section >div a:hover {
   background-color: #fdb002;
   border: none;
 }
-main >section >.content >article .block >.block-content .article--share {
+main >section >.content >article >section >div img {
+  display: block;
+  margin: auto;
+}
+main >section >.content >article >section >div .article--share {
   position: absolute;
   top: 10px;
   right: 10px;
   color: #b3b3b3;
   font-weight: lighter;
 }
-main >section >.content >article .block >.block-content .article--share:hover {
+main >section >.content >article >section >div .article--share:hover {
   color: #666;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  main >section >.content >article .block >.block-content >* {
-    margin: 0 50px;
+  main >section >.content >article >section >div {
+    padding: 20 50px;
   }
-  main >section >.content >article .block >.block-content h1 {
+  main >section >.content >article >section >div h1 {
     font-size: 3em;
   }
 }
-.ie8 main >section >.content >article .block.hasImage>.block-content>h1 {
-  color: #fdfdfd;
+.ie8 main >section >.content >article >section.hasImage >div >h1 {
+  color: #000;
 }
-main >section >.content >article .block .block-content .rssFeed {
+.content .rssFeed {
   margin: 0;
 }
-main >section >.content >article .block .block-content .rssFeed article {
+.content .rssFeed article {
   background: #333;
   padding: 20px;
   border-left: 7px solid #95d47b;
   margin: 10px 0;
   color: #fdfdfd;
 }
-main >section >.content >article .block .block-content .rssFeed article h3 {
+.content .rssFeed article h3 {
   font-size: 1.2em;
   padding-bottom: 1em;
-}
-main >section >.content >article .block .block-content .rssFeed article h3 >a {
   color: #fdfdfd;
 }
-main >section >.content >article .block .block-content .rssFeed article p {
+.content .rssFeed article p {
+  color: #fdfdfd;
   font-size: 0.95em;
 }
-main >section >.content >article .block .block-content .rssFeed article span {
+.content .rssFeed article span {
   display: block;
   text-align: right;
   font-size: 0.8em;
@@ -597,7 +617,7 @@ main >section >.content >article .block .block-content .rssFeed article span {
 }
 @media (min-width: 768px) {
   main >section >.content >article .block .block-content .rssFeed {
-    margin: 45px;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -609,9 +629,74 @@ main >section >.content >article .block .block-content .rssFeed article span {
             justify-content: space-around;
   }
   main >section >.content >article .block .block-content .rssFeed article {
+    -webkit-box-flex: 1;
     -webkit-flex: 1 1 300px;
         -ms-flex: 1 1 300px;
             flex: 1 1 300px;
+    margin: 5px;
+  }
+}
+.content .action-items {
+  margin: 1em 0;
+}
+.content .action-items .action-item {
+  position: relative;
+  background: #e4e4e4;
+  padding: 20px;
+  margin: 10px 0;
+  color: #333;
+  border-left: 2px solid #e4e4e4;
+}
+.content .action-items .action-item a {
+  text-decoration: none;
+  border: none;
+  background-color: none;
+}
+.content .action-items .action-item a:hover {
+  background: none;
+}
+.content .action-items .action-item span.action-pdf {
+  font-size: 1.5em;
+  position: absolute;
+}
+.content .action-items .action-item span.action-pdf +h2 {
+  padding-left: 2em;
+}
+.content .action-items .action-item span.action-comment {
+  color: #a4a4a4;
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.content .action-items .action-item h2 {
+  font-size: 1em;
+  display: inline-block;
+}
+.content .action-items .action-item:hover {
+  border-left: 2px solid #7bc2d4;
+}
+@media (min-width: 768px) {
+  .content .action-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .content .action-items .action-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     margin: 5px;
   }
 }

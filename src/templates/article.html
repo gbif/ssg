@@ -2,9 +2,9 @@
 	<!--<div class="article--share">Share</div>-->
     <section
             {% if meta.fm.image %}
-                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url({{meta.fm.image}})" class="block hasImage"
+                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url({{meta.fm.image}})" class="block block-first hasImage"
             {% else %}
-                class="block"
+                class="block block-first"
             {% endif %}>
         <div class="block-content">
 	    {{content|safe}}
