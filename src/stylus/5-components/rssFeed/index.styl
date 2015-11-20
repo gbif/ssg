@@ -7,9 +7,11 @@ rssFeedColor = _inkColor(color-dark);
 		article
 			background: rssFeedBg
 			padding: 20px
-			border-left: 7px solid secondary-color
+			border-left: borderWidth solid secondary-color
 			margin: 10px 0
 			color: rssFeedColor
+			&:hover
+				border-left-color link-bg-color
 			h3
 				font-size: 1.2em
 				padding-bottom: 1em

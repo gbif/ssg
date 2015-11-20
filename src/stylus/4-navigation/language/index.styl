@@ -1,4 +1,4 @@
-.languageSelector
+.site-intro .site-navigation .languageSelector
 	ul
 		border-bottom: 1px solid darken(paper-color, 5)
 		max-height: 0px
@@ -6,6 +6,8 @@
 		transition: max-height 0.3s ease
 	&.isExpanded>ul
 		max-height: 250px
+	.languageSelector-description
+		color _discreet(paper-color, 100)
 	a
 		display:block
 	>a
@@ -15,17 +17,16 @@
 			background-color: darken(paper-color, 5)
 	li>a
 		padding: 5px 20px
-		color: lighten(ink-color, 30)
+		color: lighten(ink-color, 50)
 		&:hover
 			color: ink-color
-		&.active
-			background-color: darken(paper-color, 5)
-
+	span
+		padding-right 10px
 
 
 if (horizontalLayout)
 	@media (min-width: laptop)
-		.languageSelector
+		.site-intro .site-navigation .languageSelector
 			display:inline
 			position relative
 			ul
@@ -50,7 +51,7 @@ if (horizontalLayout)
 					margin-left: -12px;
 					top: -12px;
 					border: 6px solid transparent;
-					border-bottom: 6px solid paper-color;
+					border-bottom: 5px solid paper-color;
 			>a
 				display:inline-block
 				padding: 15px 20px
@@ -59,7 +60,13 @@ if (horizontalLayout)
 					background-color: inherit
 			li
 				>a
+					border-bottom 5px solid transparent
 					padding: 5px 20px
 					color: darken(horizontalBgColor, 30)
 					&:hover
 						color: ink-color
+						border-bottom 5px solid link-bg-color
+					&.active
+						background-color: darken(paper-color, 5)
+			.languageSelector-description
+				display none

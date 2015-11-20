@@ -49,6 +49,9 @@
 					</div>
 					{% include "navigation.html" %}
 					{% include "language-selector.html" %}
+                    <div class="info">
+                        <a href="http://gbif.org"><span class="icon-gbif"></span><span class="info-description">GBIF.org</span></a>
+                    </div>
 					<div class="share">
 						SHARE
 					</div>
@@ -56,9 +59,6 @@
 			</section>
 			
 			<main id="main">
-				<!--<aside class="context-options">-->
-					<!--filters go here-->
-				<!--</aside>-->
 				<section>
 					<div class="content">
 						{% include "article.html" %}
@@ -66,6 +66,7 @@
 				</section>
 			</main>
 		</div>
+        {% include "popup.html" %}
         <div class="overlay is-visible"></div>
 		<script>
 			var GBIF = GBIF || {};

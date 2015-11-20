@@ -17,9 +17,7 @@ $(".rssFeed").each(function (index) {
 
 
 /*
-function getURLParameter(name) {
-    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||['',''])[1].replace(/\+/g, '%20'))||null;
-}
+
 
 (function() {
     var rawContentId,
@@ -27,7 +25,7 @@ function getURLParameter(name) {
         template = '<section class="block"><div class="block-content"><h1>{{title}}</h1></div></section><section class="block"><div class="block-content"><span>{{created}}</span><p>{{body}}</p>{{img}}</div></section>',
         urlTemplate = '/raw/article2.json'; //http://drupaledit.gbif.org/raw-content/82531/json
 
-    var rawContentId = getURLParameter('id');
+    var rawContentId = GBIF.getURLParameter('id');
     if (rawContentId == null) {
         return;
     }

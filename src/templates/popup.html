@@ -1,0 +1,26 @@
+{% if languages.list.length > 1 %}
+<div id="popup" class="popup">
+    <a href="#" class="popup-close icon-cross"></a>
+    <div class="popup-languages">
+        <p>This site is available in more languages </p>
+
+        {% for abbr in languages.list%}
+        {% if loop.first %}
+        <ul>
+            {% endif %}
+            <li>
+                <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="active" {% endif %}>{{languages.languages[abbr]}}</a>
+            </li>
+            {% if loop.last %}
+        </ul>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum cookies
+        </p>
+    </div>
+</div>
+{% endif %}

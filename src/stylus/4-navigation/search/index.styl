@@ -22,6 +22,11 @@
 .navigation-main
 	.not-result-item
 		display none
-.site-intro .site-navigation .navigation-main.no-search-match
+.site-navigation .navigation-main.no-search-match
 	a
 		color _discreet(ink-color, 50)
+
+if (horizontalLayout)
+	@media (min-width: laptop)
+		.site-navigation .search
+			display none
