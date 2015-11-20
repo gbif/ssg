@@ -5,76 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/00-Home/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/01-About/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/02-Calls/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/02-Calls/fr.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/02-Calls/pt.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01-BID/03-FAQs/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/01_introduction/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/01_introduction/es.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/02_why/dk.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/02_why/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/dk.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/01_about/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/02_examples/01_article/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/02_examples/02_extensions/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/02_examples/04-html/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/02_examples/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/03_multilingual/dk.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/03_multilingual/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/04_external/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/05_missing file and space in folder name/01_subdirect/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/dk.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/en.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/languages.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/bid/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/bid/calls/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/bid/faqs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/bid/home/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/fr/bid/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/fr/bid/calls/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/fr/bid/faqs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/fr/bid/home/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/lunr/lunr_fr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/lunr/lunr_pt.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/pt/bid/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/pt/bid/calls/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/pt/bid/faqs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/pt/bid/home/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/ssgbase.eot" afterPath="$PROJECT_DIR$/example/css/fonts/ssgbase.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.eot" afterPath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/ssgbase.ttf" afterPath="$PROJECT_DIR$/example/css/fonts/ssgbase.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.ttf" afterPath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/ssgbase.woff" afterPath="$PROJECT_DIR$/example/css/fonts/ssgbase.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.woff" afterPath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/1-calculated-variables/1-colors.styl" afterPath="$PROJECT_DIR$/src/stylus/1-calculated-variables/1-colors.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/2-setup/1-fonts.styl" afterPath="$PROJECT_DIR$/src/stylus/2-setup/1-fonts.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/article.html" afterPath="$PROJECT_DIR$/src/templates/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/demo.html" afterPath="$PROJECT_DIR$/fonts/ssgbase/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/renderer/heading.js" afterPath="$PROJECT_DIR$/gbif_i18n/renderer/heading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/index.css" afterPath="$PROJECT_DIR$/example/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/4-navigation/index.styl" afterPath="$PROJECT_DIR$/src/stylus/4-navigation/index.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/gulp-lunr.js" afterPath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/gulp-lunr.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl" afterPath="$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/4-navigation/language/index.styl" afterPath="$PROJECT_DIR$/src/stylus/4-navigation/language/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl" afterPath="$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/5-components/index.styl" afterPath="$PROJECT_DIR$/src/stylus/5-components/index.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl" afterPath="$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/5-components/article/index.styl" afterPath="$PROJECT_DIR$/src/stylus/5-components/article/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/5-components/rssFeed/index.styl" afterPath="$PROJECT_DIR$/src/stylus/5-components/rssFeed/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/languages.yml" afterPath="$PROJECT_DIR$/content/languages.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/loadNewsJSON.js" afterPath="$PROJECT_DIR$/src/js/loadNewsJSON.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_en.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_en.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/main.html" afterPath="$PROJECT_DIR$/src/templates/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/navigation.html" afterPath="$PROJECT_DIR$/src/templates/navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/navigation.js" afterPath="$PROJECT_DIR$/src/js/navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/renderer/renderer.js" afterPath="$PROJECT_DIR$/gbif_i18n/renderer/renderer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/javascript/script.js" afterPath="$PROJECT_DIR$/example/javascript/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/selection.json" afterPath="$PROJECT_DIR$/fonts/ssgbase/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/ssgbase.svg" afterPath="$PROJECT_DIR$/example/css/fonts/ssgbase.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.svg" afterPath="$PROJECT_DIR$/fonts/ssgbase/fonts/ssgbase.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/style.css" afterPath="$PROJECT_DIR$/fonts/ssgbase/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/search.js" afterPath="$PROJECT_DIR$/src/js/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translations.yml" afterPath="$PROJECT_DIR$/translations.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/ssgbase/variables.styl" afterPath="$PROJECT_DIR$/fonts/ssgbase/variables.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssg.iws" />
@@ -99,7 +38,88 @@
     <favorites_list name="ssg" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.51923" vertical-offset="71" max-vertical-offset="1110">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.styl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25092936" vertical-offset="0" max-vertical-offset="1076">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/navigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="495">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stylus/5-components/article/index.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1082" max-vertical-offset="2175">
+              <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/navigation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="870">
+              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="morphSearch.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/morphSearch.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.481482" vertical-offset="1121" max-vertical-offset="4560">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="110" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1365">
+              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,13 +127,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/stylus/2-setup/base/_vars.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/2-setup/base/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/3-elements/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/0-core-variables/2-functions.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-layout/buttons.styl" />
         <option value="$PROJECT_DIR$/src/stylus/3-elements/1-buttons.styl" />
-        <option value="$PROJECT_DIR$/src/js/navigation.js" />
         <option value="$PROJECT_DIR$/src/stylus/4-layout/overlay.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-layout/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/main.styl" />
@@ -121,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/stylus/5-components/article/_article.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/header/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/_drawers.styl" />
-        <option value="$PROJECT_DIR$/src/templates/navigation.html" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/vertical-menu.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/nav/menu.styl" />
@@ -138,8 +153,6 @@
         <option value="$PROJECT_DIR$/gulp/tasks/example/fonts.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/example/development.js" />
         <option value="$PROJECT_DIR$/gulp/config.js" />
-        <option value="$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl" />
-        <option value="$PROJECT_DIR$/src/templates/main.html" />
         <option value="$PROJECT_DIR$/src/stylus/0-core-variables/1-core.styl" />
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/1-calculated-variables/1-colors.styl" />
@@ -155,9 +168,16 @@
         <option value="$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/5-components/actions/index.styl" />
         <option value="$PROJECT_DIR$/src/templates/article.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl" />
+        <option value="$PROJECT_DIR$/src/templates/navigation.html" />
+        <option value="$PROJECT_DIR$/gbif_i18n/gulp_plugins/gulp-lunr.js" />
+        <option value="$PROJECT_DIR$/src/js/search.js" />
+        <option value="$PROJECT_DIR$/src/js/navigation.js" />
         <option value="$PROJECT_DIR$/src/stylus/5-components/article/index.styl" />
         <option value="$PROJECT_DIR$/translations.yml" />
-        <option value="$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl" />
+        <option value="$PROJECT_DIR$/src/templates/main.html" />
+        <option value="$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl" />
       </list>
     </option>
   </component>
@@ -230,6 +250,214 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5-components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5-components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4-navigation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4-navigation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4-navigation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gbif_i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gbif_i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gulp_plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -288,6 +516,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -295,9 +526,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -317,7 +545,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="232" y="23" width="1686" height="1173" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -326,7 +554,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30427048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30427048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -336,9 +564,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -362,45 +590,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1335">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/applyTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/1-calculated-variables/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/0-core-variables/2-functions.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08250356" vertical-offset="182" max-vertical-offset="945">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19914651" vertical-offset="70" max-vertical-offset="1725">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -411,24 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/overlay.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="703">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/main.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25604552" vertical-offset="0" max-vertical-offset="703">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -463,20 +642,6 @@
     <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/content-area/index.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14056225" vertical-offset="0" max-vertical-offset="870">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/morphSearch.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4560">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -544,13 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
           <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -638,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.958333" vertical-offset="259" max-vertical-offset="1335">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/layout/index.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4042751" vertical-offset="0" max-vertical-offset="1076">
@@ -659,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15895954" vertical-offset="0" max-vertical-offset="1038">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gbif_i18n/renderer/heading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="285">
@@ -673,19 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/5-components/article/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6122841" vertical-offset="0" max-vertical-offset="2145">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.058195926" vertical-offset="0" max-vertical-offset="1031">
           <caret line="4" column="171" selection-start-line="4" selection-start-column="171" selection-end-line="4" selection-end-column="171" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,29 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0697026" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translations.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2091078" vertical-offset="0" max-vertical-offset="1076">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15699334" vertical-offset="0" max-vertical-offset="1275">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,9 +843,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1055">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31368822" vertical-offset="0" max-vertical-offset="1052">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1284491" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/main.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04182156" vertical-offset="0" max-vertical-offset="1076">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/brand/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47397768" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/gulp-lunr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.6" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="900">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/morphSearch.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.481482" vertical-offset="1121" max-vertical-offset="4560">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="110" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.51923" vertical-offset="71" max-vertical-offset="1110">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="495">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0697026" vertical-offset="0" max-vertical-offset="1076">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/5-components/article/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1082" max-vertical-offset="2175">
+          <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1076">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1052">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/4-navigation/search/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25092936" vertical-offset="0" max-vertical-offset="1076">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

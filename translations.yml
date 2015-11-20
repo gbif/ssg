@@ -3,6 +3,9 @@
 siteName:
   en: SSG
 
+searchPlaceholder:
+  en: Search...
+
 skipLink:
   en: Skip to main content
 

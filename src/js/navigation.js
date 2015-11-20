@@ -19,6 +19,7 @@ $('.overlay').on("click touchend", function () {
     $('.toggle.toggle-nav').removeClass('isActive');
     $('#main').removeClass('toggle');
     $('body').removeClass('hasOverlay');
+    $('#search .search-input').blur();
 });
 
 $('.languageSelector>a').click(function (event) {

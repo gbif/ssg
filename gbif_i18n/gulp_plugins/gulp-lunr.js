@@ -29,7 +29,7 @@ module.exports = function () {
             title: file.meta.item.fm.title,
             body: file.mdContent,
             keywords: file.meta.item.fm.keywords ? file.meta.item.fm.keywords : '',
-            href: file.meta.item.prettyUrl
+            href: '/' + file.meta.item.prettyUrl
         };
 
         idx[lang].add(doc);

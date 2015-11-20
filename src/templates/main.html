@@ -29,7 +29,6 @@
                 <a href="#" class="button toggle toggle-nav icon-menu" role="button" aria-label="Toggle Navigation">
                 </a>
 				<div class="brandBanner"></div>
-
 				<div class="site-navigation">
 					<span class="toggle toggle-nav" role="button">
 					</span>
@@ -42,8 +41,11 @@
 					<div class="login">
 						LOGIN
 					</div>
-					<div class="search">
-						SEARCH
+					<div id="search" class="search">
+                        <form class="search-form">
+                            <input class="search-input" type="search" placeholder="{{i18n.searchPlaceholder[meta.siteLanguage]}}"/>
+                            <button class="search-submit" type="submit">Search</button>
+                        </form>
 					</div>
 					{% include "navigation.html" %}
 					{% include "language-selector.html" %}
