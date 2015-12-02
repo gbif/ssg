@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     config = require('../../config');
 
-gulp.task('bower', ['bower_css'], function () {
+gulp.task('bower', ['bower_css', 'bower_fonts'], function () {
     return gulp.src(config.javascript.layout)
         .pipe(concat('ssg.js'))
         .pipe(gulp.dest('bower_build'));
@@ -23,4 +23,9 @@ gulp.task('bower_css', function () {
         }))
         .pipe(concat('ssg.css'))
         .pipe(gulp.dest('bower_build'));
+});
+
+gulp.task('bower_fonts', [], function () {
+    return gulp.src(config.fonts.src)
+        .pipe(gulp.dest('bower_build/fonts'));
 });
