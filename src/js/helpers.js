@@ -1,3 +1,4 @@
+var GBIF = GBIF || {};
 GBIF.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 if (GBIF.supportsTouch) {

@@ -24,9 +24,10 @@ conf = {
         src: [
             path.join(base, 'node_modules/jquery/dist/**/jquery.js'),
             path.join(base, 'node_modules/lunr/lunr.js'),
+            src + '/js/helpers.js',
             src + '/js/**/*.js'
         ],
-        layout: [src + '/js/navigation.js', src + '/js/a11y.js', src + '/js/helpers.js'],
+        layout: [src + '/js/helpers.js', src + '/js/a11y.js', src + '/js/navigation.js'],
         folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
     },
