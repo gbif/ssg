@@ -383,7 +383,9 @@ main {
 .site-intro li {
   padding: 0px;
 }
-.site-intro a {
+.site-intro a,
+.site-intro a:hover,
+.site-intro a:focus {
   text-decoration: none;
 }
 .site-intro .site-navigation {
