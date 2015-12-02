@@ -43,7 +43,7 @@ $("a.skip").click(function (event) {
  |*|
  \*/
 
-GBIF = GBIF || {};
+var GBIF = GBIF || {};
 GBIF.cookies = {
     getItem: function (sKey) {
         if (!sKey) {
