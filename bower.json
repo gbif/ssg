@@ -19,7 +19,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "!bower_build/"
   ],
   "dependencies": {
     "jquery": "~2.1.4"
