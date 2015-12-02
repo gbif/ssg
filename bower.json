@@ -1,0 +1,27 @@
+{
+  "name": "gbif-ssg",
+  "description": "A static site generator for GBIF sub sites.",
+  "main": ["bower_build/ssg.js", "bower_build/ssg.css"],
+  "authors": [
+    "gbif"
+  ],
+  "license": "Apache 2.0",
+  "keywords": [
+    "gbif",
+    "ssg",
+    "layout"
+  ],
+  "homepage": "https://github.com/gbif/ssg",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
