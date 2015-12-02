@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     config = require('../../config');
 
 gulp.task('bower', ['bower_css'], function () {
-    return gulp.src('./src/js/**/*.js')
+    return gulp.src(config.javascript.layout)
         .pipe(concat('ssg.js'))
         .pipe(gulp.dest('bower_build'));
 });

@@ -26,6 +26,7 @@ conf = {
             path.join(base, 'node_modules/lunr/lunr.js'),
             src + '/js/**/*.js'
         ],
+        layout: [src + '/js/navigation.js', src + '/js/a11y.js', src + '/js/helpers.js'],
         folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
     },
