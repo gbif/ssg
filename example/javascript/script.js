@@ -12319,6 +12319,16 @@ lunr.TokenStore.prototype.toJSON = function () {
   }))
 })();
 
+var GBIF = GBIF || {};
+GBIF.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+if (GBIF.supportsTouch) {
+    $('body').toggleClass('isTouch'); //used for styling to make target large enough for touching
+}
+
+GBIF.getURLParameter = function(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||['',''])[1].replace(/\+/g, '%20'))||null;
+}
 /*
 Accessibility on skip link
 Not all browsers move focus when using anchors. 
@@ -12340,11 +12350,81 @@ $("a.skip").click(function (event) {
         $(this).removeAttr('tabindex');
     }).focus(); // focus on the content container
 });
-GBIF.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+/*\
+ |*|
+ |*|  :: cookies.js ::
+ |*|
+ |*|  A complete cookies reader/writer framework with full unicode support.
+ |*|
+ |*|  Revision #1 - September 4, 2014
+ |*|
+ |*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
+ |*|  https://developer.mozilla.org/User:fusionchess
+ |*|
+ |*|  This framework is released under the GNU Public License, version 3 or later.
+ |*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
+ |*|
+ |*|  Syntaxes:
+ |*|
+ |*|  * docCookies.setItem(name, value[, end[, path[, domain[, secure]]]])
+ |*|  * docCookies.getItem(name)
+ |*|  * docCookies.removeItem(name[, path[, domain]])
+ |*|  * docCookies.hasItem(name)
+ |*|  * docCookies.keys()
+ |*|
+ \*/
 
-if (GBIF.supportsTouch) {
-    $('body').toggleClass('isTouch'); //used for styling to make target large enough for touching
-}
+var GBIF = GBIF || {};
+GBIF.cookies = {
+    getItem: function (sKey) {
+        if (!sKey) {
+            return null;
+        }
+        return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    },
+    setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+        if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
+            return false;
+        }
+        var sExpires = "";
+        if (vEnd) {
+            switch (vEnd.constructor) {
+                case Number:
+                    sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
+                    break;
+                case String:
+                    sExpires = "; expires=" + vEnd;
+                    break;
+                case Date:
+                    sExpires = "; expires=" + vEnd.toUTCString();
+                    break;
+            }
+        }
+        document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+        return true;
+    },
+    removeItem: function (sKey, sPath, sDomain) {
+        if (!this.hasItem(sKey)) {
+            return false;
+        }
+        document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "");
+        return true;
+    },
+    hasItem: function (sKey) {
+        if (!sKey) {
+            return false;
+        }
+        return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
+    },
+    keys: function () {
+        var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+        for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
+            aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]);
+        }
+        return aKeys;
+    }
+};
+
 /**
  * Created by bko on 09/11/15.
  */
@@ -12364,9 +12444,7 @@ $(".rssFeed").each(function (index) {
 
 
 /*
-function getURLParameter(name) {
-    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||['',''])[1].replace(/\+/g, '%20'))||null;
-}
+
 
 (function() {
     var rawContentId,
@@ -12374,7 +12452,7 @@ function getURLParameter(name) {
         template = '<section class="block"><div class="block-content"><h1>{{title}}</h1></div></section><section class="block"><div class="block-content"><span>{{created}}</span><p>{{body}}</p>{{img}}</div></section>',
         urlTemplate = '/raw/article2.json'; //http://drupaledit.gbif.org/raw-content/82531/json
 
-    var rawContentId = getURLParameter('id');
+    var rawContentId = GBIF.getURLParameter('id');
     if (rawContentId == null) {
         return;
     }
@@ -12401,6 +12479,8 @@ function getURLParameter(name) {
 })();
 */
 //just for testing css for now
+var GBIF = GBIF || {};
+GBIF.navigation = {};
 $('.navigation-main>ul>li>ul>li>a').click(function () {
     $(this).parent().toggleClass('isActive');
     if ($(this).attr('href')=='#') {
@@ -12408,25 +12488,50 @@ $('.navigation-main>ul>li>ul>li>a').click(function () {
     }
 });
 
-$('.toggle.toggle-nav').on('click touchend', function (event) {
+GBIF.navigation.showMenu = function(event){
     $('.site-navigation').addClass('toggle');
     $(this).addClass('isActive');
     $('#main').addClass('toggle');
     $('body').addClass('hasOverlay');
     return false;
-});
+};
+$('.toggle.toggle-nav').on('click touchend', GBIF.navigation.showMenu);
 
-$('.overlay').on("click touchend", function () {
+
+GBIF.navigation.hideMenu = function(event){
     $('.site-navigation').removeClass('toggle');
     $('.toggle.toggle-nav').removeClass('isActive');
     $('#main').removeClass('toggle');
     $('body').removeClass('hasOverlay');
-});
+    $('#search .search-input').blur();
+};
+$('.overlay').on("click touchend", GBIF.navigation.hideMenu);
 
 $('.languageSelector>a').click(function (event) {
     $(this).parent().toggleClass('isExpanded');
     return false;
 });
+(function(){
+    "use strict";
+    var secTimeout = 60*60*24*30; // 30 days timeout
+
+    if (GBIF.getURLParameter('clearcookies')) {
+        GBIF.cookies.removeItem('hasSeenPopup', '/');
+    }
+
+    $('#popup .popup-close').click(function(){
+        $(this).parent().removeClass('isVisible');
+        return false
+    });
+
+    if (GBIF.cookies.hasItem('hasSeenPopup') && GBIF.cookies.getItem('hasSeenPopup')) {
+        return;
+    } else {
+        GBIF.cookies.setItem('hasSeenPopup', true, secTimeout, '/');
+        $('#popup').addClass('isVisible');
+    }
+})();
+
 /*
  Perform and display search
  TODO
@@ -12436,108 +12541,68 @@ $('.languageSelector>a').click(function (event) {
 $(document).ready(function () {
     'use strict';
     // Set up search
-    var index, store, morphSearch, input, searchColumn;
+    var index, store, searchElement, input, navElements = $('#navigation-main li a');
+
+    var filterMenu = function(results) {
+        if (typeof results === 'undefined') {
+            $.each(navElements, function(i, e) {
+                var navElement = $(e);
+                navElement.removeClass('not-result-item')
+                navElement.removeClass('result-item')
+                $('#navigation-main').removeClass('no-search-match');
+            });
+            return;
+        }
+        if (results.length == 0) {
+            $.each(navElements, function(i, e) {
+                $('#navigation-main').addClass('no-search-match');
+            });
+            return;
+        }
+        var resultUrls = results.map(function(e){
+            return e.ref;
+        });
+
+        $.each(navElements, function(i, e){
+            var navElement = $(e);
+            var url = navElement.attr('href');
+            if (resultUrls.indexOf(url) == -1) {
+                navElement.addClass('not-result-item');
+                navElement.removeClass('result-item');
+            }
+            else {
+                navElement.removeClass('not-result-item');
+                navElement.addClass('result-item');
+            }
+            $('#navigation-main').removeClass('no-search-match');
+        });
+        $('#navigation-main .isExpandable').next().find('.result-item').parent().parent().prev().removeClass('not-result-item').parent().addClass('isActive');
+    }
+
     $.getJSON('/lunr/lunr_' + GBIF.siteLanguage + '.json', function (response) {
         // Create index
         index = lunr.Index.load(response.index);
         // Create store
         store = response.results;
-        // Handle search
-        morphSearch = document.getElementById('morphsearch');
-        if (!morphSearch) {
+
+        searchElement = document.getElementById('search');
+        if (!searchElement) {
             return;
         }
-        input = morphSearch.querySelector('input.morphsearch-input');
-        searchColumn = morphSearch.querySelector('.dummy-column');
+        input = searchElement.querySelector('input.search-input');
 
-        $(input).on('keyup', function () {
+        // Handle search
+        $(input).on('keyup search', function (ev) {
             var query = $(this).val(), // Get query
-                result = index.search(query), // Search for it
-                resultdiv = $(searchColumn); // Output it
-            if (result.length === 0) {
-                // Hide results
-                resultdiv.hide();
+                result = index.search(query); // Search for it
+            if (query == '') {
+                filterMenu(undefined);
             } else {
-                // Show results
-                resultdiv.empty();
-                resultdiv.append('<h2>Category 1 (e.g. "About")</h2>');
-                for (var i = 0; i < result.length; i++) {
-                    if (result[i].score == 0) {
-                        return;
-                    }
-                    var ref = result[i].ref,
-                        searchitem = '<a class="dummy-media-object" href="/' + ref + '"><h3>' + store[ref].title + '</h3></a>';
-                    resultdiv.append(searchitem);
-                }
-                resultdiv.show();
+                filterMenu(result);
             }
         });
+        searchElement.querySelector( 'button[type="submit"]' ).addEventListener( 'click', function(ev) { ev.preventDefault();} );
     });
+
+
 });
-
-
-/*
- Search interface. From Codrops with a few changes.
- See: https://github.com/codrops/MorphingSearch
- Licence: ≈ free to use without attribution for all purposes
-
- TODO:
- body shouldn't have class added until end of animation
- search overlay shouldn't have scroll-bars until full.
-
- Error handling
- */
-(function () {
-    var morphSearch, input, ctrlClose, isOpen, toggleSearch;
-    morphSearch = document.getElementById('morphsearch');
-    if (!morphSearch) {
-        return;
-    }
-    input = morphSearch.querySelector('input.morphsearch-input');
-    ctrlClose = morphSearch.querySelector('span.morphsearch-close');
-    isOpen = false;
-
-    // show/hide search area
-    toggleSearch = function (evt) {
-        // return if open and the input gets focused
-        if (evt.type.toLowerCase() === 'focus' && isOpen) {
-            return false;
-        }
-        if (isOpen) {
-            morphSearch.classList.remove('open');
-            document.body.classList.remove('search-mode');
-            // trick to hide input text once the search overlay closes
-            // todo: hardcoded times, should be done after transition ends. Consider removing altogether
-            if (input.value !== '') {
-                setTimeout(function () {
-                    morphSearch.classList.add('hideInput');
-                    setTimeout(function () {
-                        morphSearch.classList.remove('hideInput');
-                        input.value = '';
-                    }, 300);
-                }, 500);
-            }
-
-            input.blur();
-        } else {
-            morphSearch.classList.add('open');
-            document.body.classList.add('search-mode');
-        }
-        isOpen = !isOpen;
-    };
-    // events
-    input.addEventListener('focus', toggleSearch);
-    ctrlClose.addEventListener('click', toggleSearch);
-    // esc key closes search overlay
-    // keyboard navigation events
-    document.addEventListener('keydown', function (ev) {
-        var keyCode = ev.keyCode || ev.which;
-        if (keyCode === 27 && isOpen) {
-            toggleSearch(ev);
-        }
-    });
-    //As we are currently using client side search no need to send the form. So prevent form sending.
-    morphSearch.querySelector('button[type="submit"]').addEventListener('click', function (ev) {
-        ev.preventDefault();
-    });
-})();
