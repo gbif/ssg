@@ -53,7 +53,7 @@ module.exports = function () {
             index_and_resultmap = {
                 index: idx[i].toJSON(),
                 results: results[i]
-            }
+            };
             content = new Buffer(JSON.stringify(index_and_resultmap));
             target = new File({
                 path: 'lunr_' + i + '.json',

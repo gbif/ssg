@@ -12532,6 +12532,158 @@ $('.languageSelector>a').click(function (event) {
     }
 })();
 
+
+(function() {
+    function appendScript(conditionalScript) {
+        var el = document.createElement('script');
+        el.setAttribute('src', conditionalScript);
+        document.head.appendChild(el);
+    }
+
+    //We wan't classlist and this is not supported in ie9
+    if (!document.body.classList) {
+        appendScript('//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js');
+    }
+})();
+
+
+
+//Matches there are vendor prefixes and no suport in ie9
+this.Element && function(ElementPrototype) {
+    ElementPrototype.matchesSelector = ElementPrototype.matchesSelector ||
+    ElementPrototype.mozMatchesSelector ||
+    ElementPrototype.msMatchesSelector ||
+    ElementPrototype.oMatchesSelector ||
+    ElementPrototype.webkitMatchesSelector ||
+    function (selector) {
+        var node = this, nodes = (node.parentNode || node.document).querySelectorAll(selector), i = -1;
+        while (nodes[++i] && nodes[i] != node);
+        return !!nodes[i];
+    }
+}(Element.prototype);
+
+
+//Create a global GBIF Object
+(function (global) {
+    var gb = gb || {},
+        util = {VERSION: '0.0.1'};
+
+
+    //event listeners
+    util.addEventListenerAll = function (selector, eventName, handler) {
+        util.forEachElement(selector, function (el) {
+            el.addEventListener(eventName, handler);
+        })
+    };
+
+    //misc
+    util.forEachElement = function (selector, fn) {
+        var elements = document.querySelectorAll(selector);
+        for (var i = 0; i < elements.length; i++)
+            fn(elements[i], i);
+    };
+
+    //consider moving into polyfill
+    util.matches = function (el, selector) {
+        var p = Element.prototype;
+        var f = p.matches || p.webkitMatchesSelector || p.mozMatchesSelector || p.msMatchesSelector || function(s) {
+                return [].indexOf.call(document.querySelectorAll(s), this) !== -1;
+            };
+        return f.call(el, selector);
+    };
+
+
+    gb.util = util;
+    global.gb = gb;
+})(window);
+
+
+var searchToggleSelector = '.site__searchToggle',
+    navToggleSelector = '.site__menuToggle';
+var toggleMenu = function () {
+    document.getElementById('SiteHeader').classList.toggle('isActive');
+    document.getElementById('siteCanvas').classList.toggle('hasActiveMenu');
+
+    gb.util.forEachElement(searchToggleSelector, function (el) {
+        el.classList.remove('isActive');
+    });
+
+    var searchAreaEl = document.getElementById('site_search');
+    searchAreaEl.classList.remove('isActive');
+};
+gb.util.addEventListenerAll(navToggleSelector, 'click', toggleMenu);
+toggleMenu();
+
+function getAncestors(el, stopEl) {
+    var ancestors = [];
+    while ((el = el.parentElement) && el != stopEl) ancestors.push(el);
+    return ancestors;
+}
+
+//collapse and expand menu items
+var siteNav = document.getElementById('nav');
+var SiteNavCategoryItems = siteNav.querySelectorAll('.isCategory');
+gb.util.addEventListenerAll('.isCategory>a', 'click', function (event) {
+    var ancestors = getAncestors(this, siteNav),
+        child, i;
+
+    //collpase all items that are not parents
+    for (i = 0; i < SiteNavCategoryItems.length; i++) {
+        child = SiteNavCategoryItems[i];
+        if (ancestors.indexOf(child) == -1) {
+            child.classList.remove('isExpanded');
+        }
+    }
+
+    if (!siteNav.classList.contains('isExpanded')) {
+        //for horizontal layout. When changing from laptop to mobile this means that the first menu click is ignored
+        this.parentNode.classList.add('isExpanded');
+    }
+    else {
+        this.parentNode.classList.toggle('isExpanded');
+    }
+    siteNav.classList.add('isExpanded');//use for horizontal layout
+    event.preventDefault(); //do not scroll to top
+});
+
+//collapse expand service menu
+gb.util.addEventListenerAll('.ServiceMenu__teaser>a', 'click', function (event) {
+    this.parentNode.parentNode.classList.toggle('isExpanded');
+});
+
+
+//Search toggling
+gb.util.addEventListenerAll(searchToggleSelector, 'click', function (event) {
+    gb.util.forEachElement(searchToggleSelector, function (el) {
+        el.classList.toggle('isActive');
+    });
+
+    var searchAreaEl = document.getElementById('site_search');
+    searchAreaEl.classList.toggle('isActive');
+    searchAreaEl.querySelector('input').focus();
+    closeMenus();
+    event.preventDefault();
+});
+
+
+
+//close menu when clicking outside
+function closeMenus() {
+    siteNav.classList.remove('isExpanded');
+    if (document.getElementById('siteCanvas').classList.contains('hasActiveMenu')) {
+        toggleMenu();
+    }
+}
+function closeMenusOnClickOutside(event) {
+    var clickOnContent = gb.util.matches(event.target, '#main *') || event.target == document.documentElement;
+    if (clickOnContent) {
+        closeMenus();
+    }
+}
+document.addEventListener('click', closeMenusOnClickOutside);
+document.addEventListener('touchend', closeMenusOnClickOutside);
+
+
 /*
  Perform and display search
  TODO
@@ -12541,43 +12693,35 @@ $('.languageSelector>a').click(function (event) {
 $(document).ready(function () {
     'use strict';
     // Set up search
-    var index, store, searchElement, input, navElements = $('#navigation-main li a');
+    var index, store, input, resultHTML,
+        searchElement = document.getElementById('search'),
+        searchResults = searchElement.querySelector('.search__results');
 
     var filterMenu = function(results) {
         if (typeof results === 'undefined') {
-            $.each(navElements, function(i, e) {
-                var navElement = $(e);
-                navElement.removeClass('not-result-item')
-                navElement.removeClass('result-item')
-                $('#navigation-main').removeClass('no-search-match');
-            });
+            searchResults.innerHTML = 'Enter search to see results';
             return;
         }
         if (results.length == 0) {
-            $.each(navElements, function(i, e) {
-                $('#navigation-main').addClass('no-search-match');
-            });
+            searchResults.innerHTML = 'No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.';
             return;
         }
+
         var resultUrls = results.map(function(e){
             return e.ref;
         });
 
-        $.each(navElements, function(i, e){
-            var navElement = $(e);
-            var url = navElement.attr('href');
-            if (resultUrls.indexOf(url) == -1) {
-                navElement.addClass('not-result-item');
-                navElement.removeClass('result-item');
-            }
-            else {
-                navElement.removeClass('not-result-item');
-                navElement.addClass('result-item');
-            }
-            $('#navigation-main').removeClass('no-search-match');
+        resultHTML = '';
+        $.each(resultUrls, function(i, e){
+            var res = store[e];
+            resultHTML += '<a href="{{href}}"><h2>{{title}}</h2><span>{{category}}</span><p>{{desc}}</p></a>'
+                .replace('{{title}}', res.title)
+                .replace('{{category}}', res.title)
+                .replace('{{href}}', e)
+                .replace('{{desc}}', res.title);
         });
-        $('#navigation-main .isExpandable').next().find('.result-item').parent().parent().prev().removeClass('not-result-item').parent().addClass('isActive');
-    }
+        searchResults.innerHTML = resultHTML;
+    };
 
     $.getJSON('/lunr/lunr_' + GBIF.siteLanguage + '.json', function (response) {
         // Create index
@@ -12585,7 +12729,6 @@ $(document).ready(function () {
         // Create store
         store = response.results;
 
-        searchElement = document.getElementById('search');
         if (!searchElement) {
             return;
         }

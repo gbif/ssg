@@ -1,0 +1,105 @@
+{% include "mobileheader.html" %}
+
+<nav id="nav" class="SiteNav" role="navigation">
+    <div class="ServiceMenu">
+        <div class="ServiceMenu__teaser">
+        </div>
+        <ul>
+            <li class="ServiceMenu__search">
+                <a href="#" class="gb-icon-search site__searchToggle">Search</a>
+            </li>
+            {% include "language-selector.html" %}
+        </ul>
+    </div>
+
+
+    <div class="MainMenu">
+        {% if nav.menuItem[meta.siteLanguage] %}
+        <a href="/{{meta.siteLanguage}}" class="gb-icon-home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
+        {% endif %}
+        {% for x in nav.children %}
+        {% if loop.first %}
+        <ul>
+            {% endif %}
+            {% if x.menuItem[meta.siteLanguage] %}
+            <li class=" {% if meta.prettyUrl|startsWith(x.menuItem[meta.siteLanguage].prettyUrl) %}
+                        isActive
+                        {% endif %}
+                        {% if x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                        isCategory
+                        {% endif %}
+                        {% if x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' && x.children[0].children && x.children[0].menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                        isCategory isMega
+                        {% endif %}
+                        ">
+
+                {% if x.menuItem[meta.siteLanguage].fm.type == 'link' %}
+                <a href="{{x.menuItem[meta.siteLanguage].fm.link}}">
+                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                </a>
+                {% elseif x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                <a href="#" class="isExpandable">
+                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                </a>
+                {% for y in x.children %}
+                {% if loop.first %}
+                <ul>
+                    {% endif %}
+                    {% if y.menuItem %}
+                    <li class=" {% if meta.prettyUrl|startsWith(y.menuItem[meta.siteLanguage].prettyUrl) %}
+                        isActive
+                        {% endif %}
+                        {% if y.children && y.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                        isCategory
+                        {% endif %}
+                        {% if y.children && y.menuItem[meta.siteLanguage].fm.type == 'menu only' && y.children[0].children && y.children[0].menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                        isCategory isMega
+                        {% endif %}
+                        ">
+                        <a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">
+                            {{y.menuItem[meta.siteLanguage].fm.title}}
+                        </a>
+
+
+
+
+                        {% for z in y.children %}
+                        {% if loop.first %}
+                        <ul>
+                            {% endif %}
+                            {% if z.menuItem %}
+                            <li {% if meta.prettyUrl == z.menuItem[meta.siteLanguage].prettyUrl %} class="isActive" {% endif %}>
+                                <a href="/{{z.menuItem[meta.siteLanguage].prettyUrl}}">
+                                    {{z.menuItem[meta.siteLanguage].fm.title}}
+                                </a>
+
+
+                            </li>
+                            {% endif %}
+                            {% if loop.last %}
+                        </ul>
+                        {% endif %}
+                        {% endfor %}
+
+
+                    </li>
+                    {% endif %}
+                    {% if loop.last %}
+                </ul>
+                {% endif %}
+                {% endfor %}
+                {% else %}
+                <a href="/{{x.menuItem[meta.siteLanguage].prettyUrl}}">
+                    {{x.menuItem[meta.siteLanguage].fm.title}}
+                </a>
+                {% endif %}
+
+
+            </li>
+            {% endif %}
+            {% if loop.last %}
+        </ul>
+        {% endif %}
+        {% endfor %}
+    </div>
+</nav>

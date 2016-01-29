@@ -4,24 +4,31 @@ var gulp = require('gulp'),
     notify = require("gulp-notify"),
     stylus = require('gulp-stylus'),
     concat = require('gulp-concat'),
-    koutoSwiss = require('kouto-swiss'),
+    axis = require('axis'),
+    lost = require('lost'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require("gulp-rename"),
     gutil = require('gulp-util'),
     gulpif = require('gulp-if'),
     minifyCSS = require('gulp-minify-css'),
+    postcss = require('gulp-postcss'),
     config = require('../../config');
 
 gulp.task('stylus', function () {
+    var processors = [
+        lost()
+    ];
+
     return gulp.src(config.stylus.entries.concat(config.stylus.rawCss))
         .pipe( gulpif(!gutil.env.production, plumber({errorHandler: notify.onError("Error: <%= error.message %>")}) ))
         .pipe(stylus({
-            use: [koutoSwiss()]
+            use: [axis()]
         }))
         .pipe(autoprefixer({
             browsers: ['last 5 version']
         }))
         .pipe(concat('index.css'))
+        .pipe(postcss(processors))
         .pipe(gulpif(gutil.env.production, minifyCSS()))
         .pipe(gulp.dest(config.stylus.dest));
 });

@@ -36,7 +36,7 @@ conf = {
         dest: dest + '/images'
     },
     fonts: {
-        src: path.join(base, 'fonts/ssgbase/fonts/**/*.*'),
+        src: path.join(base, 'fonts/**/*.*'),
         dest: dest + '/css/fonts'
     },
     stylus: {

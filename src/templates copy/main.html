@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>{{frontMatter.title}}</title>
+		<link rel="stylesheet" type="text/css" href="/css/index.css">
+        <base href="/ssg-bid/dist/">
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.2.0/es5-shim.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aight/1.2.2/aight.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body lang="{{meta.siteLanguage}}">
+		<div class="page-wrapper">
+			<section class="site-intro">
+				<a class="skip" rel="nofollow" href="#main">{{i18n.skipLink[meta.siteLanguage]}}</a>
+                <a href="#" class="button toggle toggle-nav icon-menu" role="button" aria-label="Toggle Navigation">
+                </a>
+				<div class="brandBanner"></div>
+				<div class="site-navigation">
+					<span class="toggle toggle-nav" role="button">
+					</span>
+					<div class="brand">
+						<a href="/{{meta.siteLanguage}}">
+                            <div title="logo"></div>
+							<h1>{{i18n.siteName[meta.siteLanguage]}}</h1>
+						</a>
+					</div>
+					<div class="login">
+						LOGIN
+					</div>
+					<div id="search" class="search">
+                        <form class="search-form">
+                            <input class="search-input" type="search" placeholder="{{i18n.searchPlaceholder[meta.siteLanguage]}}"/>
+                            <button class="search-submit" type="submit">Search</button>
+                        </form>
+					</div>
+					{% include "navigation.html" %}
+					{% include "language-selector.html" %}
+                    <div class="info">
+                        <a href="http://gbif.org"><span class="icon-gbif"></span><span class="info-description">GBIF.org</span></a>
+                    </div>
+					<div class="share">
+						SHARE
+					</div>
+				</div>
+			</section>
+			
+			<main id="main">
+				<section>
+					<div class="content">
+						{% include "article.html" %}
+					</div>
+				</section>
+			</main>
+		</div>
+        {% include "popup.html" %}
+        <div class="overlay is-visible"></div>
+		<script>
+			var GBIF = GBIF || {};
+            GBIF.page = GBIF.page || {};
+            GBIF.site = GBIF.site || {};
+            GBIF.page.meta = {{meta|raw|json_encode}};
+            GBIF.page.versions = {{versions|raw|json_encode}};
+            GBIF.site.navigation = {{nav|raw|json_encode}};
+            GBIF.site.languages = {{languages|raw|json_encode}};
+			GBIF.siteLanguage = '{{meta.siteLanguage}}';
+            GBIF.i18n = {{i18n|raw|json_encode}};
+		</script>
+		<script src="/javascript/script.js"></script>
+	</body>
+
+</html>
+

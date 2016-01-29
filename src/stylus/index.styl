@@ -1,3 +1,23 @@
-@import "0-core-variables"
-@import "1-calculated-variables"
-@import "main"
+@import "_variables"
+/*global-reset()*/
+normalize-css()
+border-box-html()
+fluid-media()
+print-styles()
+
+
+@import "fonts/_typography"
+@import "fonts/gb_iconfont"
+@import "_mediaQueryBlocks"
+typographic()
+
+@import "layout"
+@import "popup"
+@import "search"
+/**
+ *  Add a style that might be helpful while creating the layout and composition.
+ */
+$develop_vertical_rythm = true
+$develop_pink = true
+/*@import "_develop"*/
+

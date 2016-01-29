@@ -7,43 +7,35 @@
 $(document).ready(function () {
     'use strict';
     // Set up search
-    var index, store, searchElement, input, navElements = $('#navigation-main li a');
+    var index, store, input, resultHTML,
+        searchElement = document.getElementById('search'),
+        searchResults = searchElement.querySelector('.search__results');
 
     var filterMenu = function(results) {
         if (typeof results === 'undefined') {
-            $.each(navElements, function(i, e) {
-                var navElement = $(e);
-                navElement.removeClass('not-result-item')
-                navElement.removeClass('result-item')
-                $('#navigation-main').removeClass('no-search-match');
-            });
+            searchResults.innerHTML = 'Enter search to see results';
             return;
         }
         if (results.length == 0) {
-            $.each(navElements, function(i, e) {
-                $('#navigation-main').addClass('no-search-match');
-            });
+            searchResults.innerHTML = 'No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.';
             return;
         }
+
         var resultUrls = results.map(function(e){
             return e.ref;
         });
 
-        $.each(navElements, function(i, e){
-            var navElement = $(e);
-            var url = navElement.attr('href');
-            if (resultUrls.indexOf(url) == -1) {
-                navElement.addClass('not-result-item');
-                navElement.removeClass('result-item');
-            }
-            else {
-                navElement.removeClass('not-result-item');
-                navElement.addClass('result-item');
-            }
-            $('#navigation-main').removeClass('no-search-match');
+        resultHTML = '';
+        $.each(resultUrls, function(i, e){
+            var res = store[e];
+            resultHTML += '<a href="{{href}}"><h2>{{title}}</h2><span>{{category}}</span><p>{{desc}}</p></a>'
+                .replace('{{title}}', res.title)
+                .replace('{{category}}', res.title)
+                .replace('{{href}}', e)
+                .replace('{{desc}}', res.title);
         });
-        $('#navigation-main .isExpandable').next().find('.result-item').parent().parent().prev().removeClass('not-result-item').parent().addClass('isActive');
-    }
+        searchResults.innerHTML = resultHTML;
+    };
 
     $.getJSON('/lunr/lunr_' + GBIF.siteLanguage + '.json', function (response) {
         // Create index
@@ -51,7 +43,6 @@ $(document).ready(function () {
         // Create store
         store = response.results;
 
-        searchElement = document.getElementById('search');
         if (!searchElement) {
             return;
         }

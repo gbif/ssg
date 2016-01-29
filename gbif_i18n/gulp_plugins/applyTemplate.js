@@ -8,12 +8,14 @@ swig.setFilter('startsWith', function (input, start) {
     return input.startsWith(start)
 });
 
+
 module.exports = function (tpl, languages, translations) {
     if (typeof tpl !== 'string') {
-        var errorString = tpl + ' is not a valid template name'
+        var errorString = tpl + ' is not a valid template name';
         throw new gutil.PluginError('applyTemplate.js plugin', errorString);
     }
-    var tpl = swig.compileFile(tpl);
+
+    var templ = swig.compileFile(tpl);
     return through.obj(function (file, enc, cb) {
         //console.log(file.meta.menu);
         var data = {
@@ -22,9 +24,10 @@ module.exports = function (tpl, languages, translations) {
             versions: file.meta.versions,
             nav: file.meta.menu,
             content: file.contents.toString(),
-            i18n: translations
+            i18n: translations,
+            message: 'testerserserser'
         };
-        file.contents = new Buffer(tpl(data), 'utf8');
+        file.contents = new Buffer(templ(data), 'utf8');
         this.push(file);
         cb();
     });
