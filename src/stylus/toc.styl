@@ -1,3 +1,7 @@
+
+
+
+
 .closeDrawer {
 	display none
 	&:after {
@@ -15,13 +19,14 @@
 	width $drawer-width
 	position absolute
 	top 0px
-	transition: right 500ms ease;
+	transition right 500ms ease
 	height 100%//"calc(100vh - %s)" % $navbar_height
 	right 0
 	box-shadow 2px 0 2px rgba(0,0,0,0.3)
 	background $toc_drawer_bg
 	color $toc_drawer_color
 	overflow hidden
+
 	> div {
 		height 100%
 		// background #333
@@ -33,14 +38,13 @@
 		~ .Site__contentArea {
 			right $drawer-width
 			overflow hidden
+			border-right solid 1px #ccc //TODO too much styling here, should be moved to optional function
 			.closeDrawer {
 				display block
 			}
 		}
 	}
 }
-
-
 
 
 
@@ -60,7 +64,7 @@ forceShowDrawer() {
 		z-index 20
 		right initial
 		left -($drawer-width)
-		transition: left 500ms ease;
+		transition left 500ms ease
 		position fixed
 		top $navbar_height
 		&:target {
@@ -76,7 +80,7 @@ forceShowDrawer() {
 		}
 	}
 	.Site__contentArea {
-		transition: left 500ms ease;
+		transition left 500ms ease
 		left 0
 	}
 }
@@ -87,20 +91,109 @@ forceShowDrawer() {
 }
 
 
+
+
+
+//fixed toggle
+.toggleDrawer {
+	z-index 10
+	height $toc_drawer_button_height
+	border-top-left-radius ($toc_drawer_button_height / 2)
+	border-bottom-left-radius ($toc_drawer_button_height / 2)
+	background $toc_toggle_bg
+	color $toc_toggle_color
+	white-space nowrap
+	line-height $toc_drawer_button_height
+	bottom vr-block(1)
+	>i {
+		display inline-block
+		vertical-align middle
+		width $toc_drawer_button_height
+		font-size $toc_drawer_button_height
+		text-align center
+		display inline-block
+		&:before {
+			line-height $toc_drawer_button_height
+		}
+	}
+	>span {
+		vertical-align top
+		display inline-block
+		line-height $toc_drawer_button_height
+		height $toc_drawer_button_height
+		max-width 0
+		margin-right 0
+		transition all 700ms ease
+		position relative
+		overflow hidden
+		/*left -100px*/
+	}
+}
++isBelow($laptop) {
+	.toggleDrawer {
+		position absolute
+		right 0
+	}
+}
++isAbove($laptop) {
+	.toggleDrawer {
+		position fixed
+		/*top $navbar_height*/
+		right initial
+		border-radius 0
+		border-top-right-radius ($toc_drawer_button_height / 2)
+		border-bottom-right-radius ($toc_drawer_button_height / 2)
+		>i {
+
+		}
+		&:hover {
+			>span {
+				/*display inline-block*/
+				/*left 0*/
+				/*margin-right vr-block(0.5)*/
+				/*padding-left 20px*/
+				max-width 200px
+			}
+		}
+	}
+}
++isAbove($desktop) {
+	.toggleDrawer {
+		display none
+	}
+}
+
+
+
+
+
 tocStyleClose() {
 	.Toc {
 		.Toc__close {
 			position absolute
 			top vr-block(0)
 			right vr-block(0)
-			setFont(12)
+			font-size vr-block(1)
+			padding vr-block(0.5)
+		}
+	}
+	+isAbove($desktop) {
+		.Site__drawer {
+			.Toc {
+				.Toc__close {
+					display none
+				}
+			}
 		}
 	}
 }
 
 tocStyling() {
 	.Toc {
-		padding vr-block(2) vr-block(1)
+		margin vr-block(2) vr-block(1)
+		a.Toc__close {
+			margin 0
+		}
 		a {
 			display block
 			line-height vr-block(1)
@@ -109,23 +202,23 @@ tocStyling() {
 				setFont(4)
 			}
 			&.Toc--l2 {
-				padding vr-block(1) 0
+				margin vr-block(1) 0
 				font-weight bold
 				&:after {
 					content ' '
 					display block
 					width 50%
-					border-bottom vr-block(0.125) solid tomato
+					border-bottom vr-block(0.125) solid $toc_h2_underline_color
 				}
 			}
 			&.Toc--l3 {
 			}
 			&.Toc--l4 {
-				padding vr-block(0.5) 0 vr-block(0.5) vr-block(1)
+				margin vr-block(0.5) 0 vr-block(0.5) vr-block(1)
 			}
 			&.Toc--l5 {
-				padding 0
-				padding-left vr-block(2.5)
+				margin 0
+				margin-left vr-block(2.5)
 			}
 		}
 	}
