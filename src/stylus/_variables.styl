@@ -23,8 +23,8 @@ $Mist = rgb(232, 232, 232) 		// mist
 $c_main := $Mist//#67A05D
 $c_sec := #F5CC27
 $_accent := $purple
-$content_bg := $Mist
-
+$content_bg := #fffcfc//$Mist
+$ink = #333
 
 /*Navigation-bar variables*/
 $navbar_height := vr-block(3)
@@ -32,6 +32,7 @@ $navbar_borderWidth := vr-block(0.25)
 $navbar_bg := tomato//$Mist
 $navbar_BorderColor := deepskyblue
 $navbar_textColor := $Mist
+$navbar_textColor_hover := lighten($navbar_textColor, 80%)
 $navbar_dropdown_bg := white
 $navbar_dropdown_megaColor := tomato
 $navbar_dropdown_color := #333
@@ -39,12 +40,15 @@ $navbar_horizontal_color := $c_main
 
 
 /* DRAWERS */
-$drawer-width := 20em
+$drawer-width := 300px
 $nav_drawer_bg := #444
 $nav_drawer_color := #ddd
+$nav_drawer_image = "/images/arch2.jpeg"
 
-$paper-color = white
-$ink = #333
+$toc_drawer_bg := $content_bg
+$toc_drawer_color := $ink
+
+
 
 $borderWidth = vr-block(0.25);
 
@@ -65,3 +69,7 @@ $link-bg-color := $OrangePeel
 $button-bg-color := $Black //primary-color //rgb(80,158,47)
 $button-color := tomato
 $popupBorderColor = pink
+
+$articleHeader_textColor = inherit//white
+$articleHeader_weight = bold
+$articleHeader_bg = inherit//lighten(tomato, 20%)//coral

@@ -6,7 +6,7 @@
         </div>
         <ul>
             <li class="ServiceMenu__search">
-                <a href="#" class="gb-icon-search site__searchToggle">Search</a>
+                <a href="#search" class="gb-icon-search site__searchToggle">Search</a>
             </li>
             {% include "language-selector.html" %}
         </ul>
@@ -23,7 +23,7 @@
             {% endif %}
             {% if x.menuItem[meta.siteLanguage] %}
             <li class=" {% if meta.prettyUrl|startsWith(x.menuItem[meta.siteLanguage].prettyUrl) %}
-                        isActive
+                        isExpanded
                         {% endif %}
                         {% if x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
                         isCategory
@@ -38,7 +38,7 @@
                     {{x.menuItem[meta.siteLanguage].fm.title}}
                 </a>
                 {% elseif x.children && x.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
-                <a href="#" class="isExpandable">
+                <a href="#">
                     {{x.menuItem[meta.siteLanguage].fm.title}}
                 </a>
                 {% for y in x.children %}
@@ -47,7 +47,7 @@
                     {% endif %}
                     {% if y.menuItem %}
                     <li class=" {% if meta.prettyUrl|startsWith(y.menuItem[meta.siteLanguage].prettyUrl) %}
-                        isActive
+                        isExpanded
                         {% endif %}
                         {% if y.children && y.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
                         isCategory
@@ -56,23 +56,31 @@
                         isCategory isMega
                         {% endif %}
                         ">
-                        <a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">
+
+                        {% if y.menuItem[meta.siteLanguage].fm.type == 'link' %}
+                        <a href="{{y.menuItem[meta.siteLanguage].fm.link}}">
                             {{y.menuItem[meta.siteLanguage].fm.title}}
                         </a>
-
-
-
-
+                        {% elseif y.children && y.menuItem[meta.siteLanguage].fm.type == 'menu only' %}
+                        <a href="#">
+                            {{y.menuItem[meta.siteLanguage].fm.title}}
+                        </a>
                         {% for z in y.children %}
                         {% if loop.first %}
                         <ul>
                             {% endif %}
                             {% if z.menuItem %}
                             <li {% if meta.prettyUrl == z.menuItem[meta.siteLanguage].prettyUrl %} class="isActive" {% endif %}>
+                                
+                                {% if z.menuItem[meta.siteLanguage].fm.type == 'link' %}
+                                <a href="{{z.menuItem[meta.siteLanguage].fm.link}}">
+                                    {{z.menuItem[meta.siteLanguage].fm.title}}
+                                </a>
+                                {% else %}
                                 <a href="/{{z.menuItem[meta.siteLanguage].prettyUrl}}">
                                     {{z.menuItem[meta.siteLanguage].fm.title}}
                                 </a>
-
+                                {% endif %}
 
                             </li>
                             {% endif %}
@@ -80,6 +88,11 @@
                         </ul>
                         {% endif %}
                         {% endfor %}
+                        {% else %}
+                        <a href="/{{y.menuItem[meta.siteLanguage].prettyUrl}}">
+                            {{y.menuItem[meta.siteLanguage].fm.title}}
+                        </a>
+                        {% endif %}
 
 
                     </li>

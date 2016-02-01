@@ -16,12 +16,27 @@
 
 
 <div id="page-wrapper" class="page-wrapper">
+    <a class="skip" rel="nofollow" href="#main">{{i18n.skipLink[meta.siteLanguage]}}</a>
     <div class="siteCanvas" id="siteCanvas">
         {% include "nav.html" %}
         {% include "searcharea.html" %}
 
         <main class="main" role="main" id="main">
-            <div class="Site__contentArea">
+
+            {% if meta.fm.toc %}
+            <aside class=" {% if meta.fm.toc == 'forced' %} isLocked {% endif %} Site__drawer" id="filter">
+                <div>
+                    {% include "drawer.html" %}
+                </div>
+            </aside>
+            {% endif %}
+
+
+            <div class="Site__contentArea {% if meta.fm.style %} {{meta.fm.style}}  {% else %} article {% endif %}">
+                {% if meta.fm.toc %}
+                    <a href="#filter" class="toggleDrawer openDrawer">Open TOC</a>
+                    <a href="#" class="toggleDrawer closeDrawer">Close TOC</a>
+                {% endif %}
                 <div class="Site__contentArea__main">
                     {% include "article.html" %}
                 </div>
@@ -35,8 +50,6 @@
 {% include "popup.html" %}
 
 
-
-
 <script>
     var GBIF = GBIF || {};
     GBIF.page = GBIF.page || {};
@@ -47,6 +60,7 @@
     GBIF.site.languages = {{languages|raw|json_encode}};
     GBIF.siteLanguage = '{{meta.siteLanguage}}';
     GBIF.i18n = {{i18n|raw|json_encode}};
+    GBIF.toc = {{toc|raw|json_encode}};
 </script>
 <script src="/javascript/script.js"></script>
 

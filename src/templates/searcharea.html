@@ -1,11 +1,19 @@
 <div class="Search" id="site_search">
     <div class="Search__content" id="search">
         <form>
-            <input type="search" placeholder="Search" name="site_search" class="search-input">
+            <input type="text" placeholder="Search" name="search" class="search-input">
             <button type="submit" class="gb-icon-search"><span>Search</span></button>
         </form>
-        <div class="search__results">
-
-        </div>
+        <div id="Search__feedback" class="Search--noInput">
+	        <div class="Search__noInput Search--message">Enter search to see results</div>
+	        <div class="Search__noResults Search--message">No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.</div>
+	        <div class="Search__results">
+	        </div>
+    	</div>
+        <script type="text/html" id="searchResultTemlpate">
+        	{% raw %}
+        	<a href="{{href}}"><h2>{{title}}</h2><span>{{category}}</span><p>{{desc}}</p></a>
+        	{% endraw %}
+		</script>
     </div>
 </div>

@@ -7,32 +7,36 @@
 $(document).ready(function () {
     'use strict';
     // Set up search
-    var index, store, input, resultHTML,
+    var index, store, input, resultHTML, historyTimer,
         searchElement = document.getElementById('search'),
-        searchResults = searchElement.querySelector('.search__results');
+        searchResults = searchElement.querySelector('.Search__results'),
+        searchResultTemlpate = document.getElementById('searchResultTemlpate').innerHTML,
+        search__feedback = document.getElementById('Search__feedback');
 
-    var filterMenu = function(results) {
+    var showSearchResults = function(results) {
         if (typeof results === 'undefined') {
-            searchResults.innerHTML = 'Enter search to see results';
+            search__feedback.className = 'Search--noInput';
+            // searchResults.innerHTML = 'Enter search to see results';
             return;
         }
         if (results.length == 0) {
-            searchResults.innerHTML = 'No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.';
+            search__feedback.className = 'Search--noResults';
+            // searchResults.innerHTML = 'No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.';
             return;
         }
 
+        search__feedback.className = 'Search--showResults';
         var resultUrls = results.map(function(e){
             return e.ref;
         });
-
         resultHTML = '';
         $.each(resultUrls, function(i, e){
             var res = store[e];
-            resultHTML += '<a href="{{href}}"><h2>{{title}}</h2><span>{{category}}</span><p>{{desc}}</p></a>'
+            resultHTML += searchResultTemlpate
                 .replace('{{title}}', res.title)
-                .replace('{{category}}', res.title)
+                .replace('{{category}}', res.category)
                 .replace('{{href}}', e)
-                .replace('{{desc}}', res.title);
+                .replace('{{desc}}', res.desc);
         });
         searchResults.innerHTML = resultHTML;
     };
@@ -49,17 +53,36 @@ $(document).ready(function () {
         input = searchElement.querySelector('input.search-input');
 
         // Handle search
-        $(input).on('keyup search', function (ev) {
+        $(input).on('keyup', function (e) {
             var query = $(this).val(), // Get query
                 result = index.search(query); // Search for it
             if (query == '') {
-                filterMenu(undefined);
+                showSearchResults(undefined);
             } else {
-                filterMenu(result);
+                showSearchResults(result);
             }
         });
         searchElement.querySelector( 'button[type="submit"]' ).addEventListener( 'click', function(ev) { ev.preventDefault();} );
+        getState();
+        //perform search
+        $(input).trigger('keyup');
     });
 
+    //router
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || ['', ''])[1].replace(/\+/g, '%20')) || null;
+    }
+    function getState() {
+        var query = getURLParameter('q');
+        if (query) {
+            //display search
+            gb.toggleSearch();
+            //enter query in input
+            var input = searchElement.querySelector('input.search-input');
+            input.value = query;
+        }
+    }
 
 });
+
+

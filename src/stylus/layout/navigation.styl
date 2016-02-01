@@ -10,7 +10,7 @@ siteHeaderbar() {
 
 
 //navigation layout
-nav {
+.SiteNav {
 	position absolute
 	top 0
 	overflow-y auto
@@ -20,7 +20,7 @@ nav {
 }
 
 +isBelow($laptop) {
-	nav {
+	.SiteNav {
 		left -($drawer-width)
 	}
 
@@ -46,8 +46,22 @@ nav {
 		display none
 	}
 	.SiteNav {
+		>div>ul>li>a:hover {
+			color $navbar_textColor_hover
+		}
+		>div>ul>li.isCategory>a:hover {
+			position relative
+			&:after {
+				position absolute
+				top vr-block(2.5)
+				left 50%
+				margin-left -(vr-block(0.25) * 2)
+				content ''
+				triangle: 'up'(vr-block(0.25) * 2) $navbar_BorderColor
+			}
+		}
 		&.isExpanded {
-			>div>ul>li.isCategory.isExpanded>a {
+			>div>ul>li.isCategory.isExpanded>a, >div>ul>li.isCategory.isExpanded>a:hover {
 				position relative
 				&:after {
 					position absolute
@@ -74,7 +88,7 @@ nav {
 					background $navbar_dropdown_bg
 					position absolute
 					padding vr-block(0.25) 0
-					box-shadow 2px 3px 3px rgba(0,0,0,0.2)
+					box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);//box-shadow 2px 3px 3px rgba(0,0,0,0.2)
 					li {
 						display block
 						a {
@@ -95,7 +109,7 @@ nav {
 						width 100% //500px
 						padding vr-block(0.25) vr-block(3)
 						> li {
-							lost-column: 1/4
+							lost-column: 1/3
 							> a {
 								color $navbar_dropdown_megaColor
 							}
@@ -319,7 +333,7 @@ a.actionIcon {
 			}
 			height vr-block(6)
 			width 100%
-			background url("/images/drawer.jpg")
+			background url($nav_drawer_image)
 			background-size cover
 		}
 	}
@@ -461,81 +475,3 @@ main {
 
 
 
-
-
-
-
-//FILTERS
-
-//use sibling elements
-
-.Site__drawer {
-	right 0
-	width $drawer-width
-	position absolute
-	top 0px
-	transition: right 500ms ease;
-	height 100%//"calc(100vh - %s)" % $navbar_height
-	right 0
-
-	background pink
-	overflow hidden
-	> div {
-		height 100%
-		background #333
-		color #ddd
-		overflow-y auto
-		-webkit-overflow-scrolling touch
-	}
-	&:target {
-		~ .Site__contentArea {
-			right $drawer-width
-			overflow hidden
-		}
-	}
-}
-
-
-
-
-
-forceShowDrawer() {
-	transition initial
-	left 0
-	~ .Site__contentArea {
-		padding-left $drawer-width
-	}
-	&:target ~ .Site__contentArea {
-		left 0
-	}
-}
-+isAbove($laptop) {
-	.Site__drawer {
-		z-index 20
-		right initial
-		left -($drawer-width)
-		transition: left 500ms ease;
-		position fixed
-		top $navbar_height
-		&:target {
-			right initial
-			left 0
-			/*~ .Site__contentArea {*/
-				/*right initial*/
-				/*left $drawer-width*/
-			/*}*/
-		}
-		&.isLocked {
-			forceShowDrawer()
-		}
-	}
-	.Site__contentArea {
-		transition: left 500ms ease;
-		left 0
-	}
-}
-+isAbove($desktop) {
-	.Site__drawer {
-		forceShowDrawer()
-	}
-}

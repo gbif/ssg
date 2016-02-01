@@ -7,6 +7,7 @@ var marked = require('marked'),
     getRSS = require('./rss'),
     heading = require('./heading'),
     hr = require('./hr'),
+    getImages = require('./image'),
     getHTMLfiles = require('./injectHTML');
 
 module.exports = renderer;
@@ -28,12 +29,13 @@ renderer.code = function (code, language) {
         html += getContacts(data);
         html += getActions(data);
         html += getRSS(data);
+        html += getImages(data);
         return html;
     }
 
     if (language == 'highlight') {
         var parsedCode = require('highlight.js').highlightAuto(code).value;
-        return '<code class="highlightedCode">' + parsedCode + '</code>';
+        return '<pre><code class="highlightedCode">' + parsedCode + '</code></pre>';
     }
 
     //if not styled yaml code field then return the result of the normal code renderer.

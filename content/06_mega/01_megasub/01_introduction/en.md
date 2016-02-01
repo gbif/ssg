@@ -1,18 +1,21 @@
 ---
-title: Introduction
+title: Bid proposals
 category: about
+description: The first call for proposals from sub-Saharan Africa for the Biodiversity Information for Development (BID) programme
 ---
 
-# Introduction to static site generators
+# BID
 
-The first ever website, Tim Berners-Lee’s original home page for the World Wide Web, was static. Then came along dynamic sites. Now static is back in vogue.
+_The first call for proposals from sub-Saharan Africa for the Biodiversity Information for Development (BID) programme._
 
-[Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+The first call for proposals from sub-Saharan Africa for the Biodiversity Information for Development (BID) programme, published in September 2015, brought in 143 initial concept notes for projects coordinated from 34 African countries.
 
-Tattooed trust fund locavore Williamsburg listicle, artisan Tumblr. Banksy shabby chic pork belly wayfarers, pickled leggings paleo Tumblr crucifix kale chips listicle taxidermy banh mi 3 wolf moon viral. Four loko Blue Bottle DIY post-ironic. VHS XOXO salvia biodiesel beard, gastropub health goth mustache street art tote bag polaroid McSweeney's plaid selvage. Irony readymade Vice mlkshk pug, pour-over hella heirloom. Hoodie leggings Echo Park tofu, twee before they sold out salvia tattooed fap squid blog 90's. Leggings distillery whatever YOLO Blue Bottle.
+The total amount of funds requested was in excess of six times the value of the €900,000 available for this call.
 
-> A world in which biodiversity information is freely and universally available for science, society and a sustainable future.
+The deadline for submitting initial concept notes for the 2015 Africa call was 20 November 2015. GBIF and its evaluation panel have invited a selected number of applicants to prepare full proposals, which are due on 26 Feb 2016. Selected projects will be announced in April 2016.
 
-## Why it is smart
+GBIF will issue calls for proposals from ACP countries in the Caribbean and Pacific Islands in 2016, with a second and final call for Africa ACP countries planned in 2017.
 
-Portland ugh literally drinking vinegar. Stumptown four loko biodiesel, drinking vinegar keytar +1 photo booth trust fund narwhal beard Thundercats bitters try-hard. Organic fanny pack whatever Banksy. Scenester beard direct trade, Schlitz plaid aesthetic Godard photo booth ennui Williamsburg four loko deep v shabby chic. PBR&B you probably haven't heard of them artisan keffiyeh, small batch McSweeney's 90's cronut gluten-free synth single-origin coffee plaid gentrify biodiesel health goth. Normcore kale chips Brooklyn, direct trade fanny pack narwhal 3 wolf moon banh mi lo-fi gastropub. 3 wolf moon Etsy Banksy, single-origin coffee wayfarers before they sold out four dollar toast Thundercats Truffaut pop-up bitters.
+Sign up here for the BID mailing list to receive timely updates.
+
+Funded by the European Union and led by GBIF, BID is a multi-year programme to increase the availability and use of biodiversity information for research and decision-making in the ‘ACP’ nations of sub-Saharan Africa, the Caribbean and the Pacific.

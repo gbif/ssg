@@ -1,0 +1,134 @@
+.closeDrawer {
+	display none
+	&:after {
+		content ' '
+		display block
+		width 100%
+		height 100%
+		position fixed
+		top 0
+	}
+}
+
+.Site__drawer {
+	right 0
+	width $drawer-width
+	position absolute
+	top 0px
+	transition: right 500ms ease;
+	height 100%//"calc(100vh - %s)" % $navbar_height
+	right 0
+	box-shadow 2px 0 2px rgba(0,0,0,0.3)
+	background $toc_drawer_bg
+	color $toc_drawer_color
+	overflow hidden
+	> div {
+		height 100%
+		// background #333
+		// color #ddd
+		overflow-y auto
+		-webkit-overflow-scrolling touch
+	}
+	&:target {
+		~ .Site__contentArea {
+			right $drawer-width
+			overflow hidden
+			.closeDrawer {
+				display block
+			}
+		}
+	}
+}
+
+
+
+
+
+forceShowDrawer() {
+	transition initial
+	left 0
+	~ .Site__contentArea {
+		padding-left $drawer-width
+	}
+	&:target ~ .Site__contentArea {
+		left 0
+	}
+}
+
++isAbove($laptop) {
+	.Site__drawer {
+		z-index 20
+		right initial
+		left -($drawer-width)
+		transition: left 500ms ease;
+		position fixed
+		top $navbar_height
+		&:target {
+			right initial
+			left 0
+			/*~ .Site__contentArea {*/
+				/*right initial*/
+				/*left $drawer-width*/
+			/*}*/
+		}
+		&.isLocked {
+			forceShowDrawer()
+		}
+	}
+	.Site__contentArea {
+		transition: left 500ms ease;
+		left 0
+	}
+}
++isAbove($desktop) {
+	.Site__drawer {
+		forceShowDrawer()
+	}
+}
+
+
+tocStyleClose() {
+	.Toc {
+		.Toc__close {
+			position absolute
+			top vr-block(0)
+			right vr-block(0)
+			setFont(12)
+		}
+	}
+}
+
+tocStyling() {
+	.Toc {
+		padding vr-block(2) vr-block(1)
+		a {
+			display block
+			line-height vr-block(1)
+			&.Toc--l1 {
+				font-weight bold
+				setFont(4)
+			}
+			&.Toc--l2 {
+				padding vr-block(1) 0
+				font-weight bold
+				&:after {
+					content ' '
+					display block
+					width 50%
+					border-bottom vr-block(0.125) solid tomato
+				}
+			}
+			&.Toc--l3 {
+			}
+			&.Toc--l4 {
+				padding vr-block(0.5) 0 vr-block(0.5) vr-block(1)
+			}
+			&.Toc--l5 {
+				padding 0
+				padding-left vr-block(2.5)
+			}
+		}
+	}
+}
+tocStyling()
+tocStyleClose()

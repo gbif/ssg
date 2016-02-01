@@ -69,16 +69,17 @@ var searchToggleSelector = '.site__searchToggle',
 var toggleMenu = function () {
     document.getElementById('SiteHeader').classList.toggle('isActive');
     document.getElementById('siteCanvas').classList.toggle('hasActiveMenu');
-
+    closeSearch();
+};
+function closeSearch() {
     gb.util.forEachElement(searchToggleSelector, function (el) {
         el.classList.remove('isActive');
     });
 
     var searchAreaEl = document.getElementById('site_search');
     searchAreaEl.classList.remove('isActive');
-};
+}
 gb.util.addEventListenerAll(navToggleSelector, 'click', toggleMenu);
-toggleMenu();
 
 function getAncestors(el, stopEl) {
     var ancestors = [];
@@ -109,7 +110,7 @@ gb.util.addEventListenerAll('.isCategory>a', 'click', function (event) {
         this.parentNode.classList.toggle('isExpanded');
     }
     siteNav.classList.add('isExpanded');//use for horizontal layout
-    event.preventDefault(); //do not scroll to top
+    event.preventDefault();
 });
 
 //collapse expand service menu
@@ -119,7 +120,7 @@ gb.util.addEventListenerAll('.ServiceMenu__teaser>a', 'click', function (event) 
 
 
 //Search toggling
-gb.util.addEventListenerAll(searchToggleSelector, 'click', function (event) {
+gb.toggleSearch = function(event) {
     gb.util.forEachElement(searchToggleSelector, function (el) {
         el.classList.toggle('isActive');
     });
@@ -128,9 +129,9 @@ gb.util.addEventListenerAll(searchToggleSelector, 'click', function (event) {
     searchAreaEl.classList.toggle('isActive');
     searchAreaEl.querySelector('input').focus();
     closeMenus();
-    event.preventDefault();
-});
-
+    event.preventDefault(); //do not scroll to top
+}
+gb.util.addEventListenerAll(searchToggleSelector, 'click', gb.toggleSearch);
 
 
 //close menu when clicking outside
@@ -148,4 +149,16 @@ function closeMenusOnClickOutside(event) {
 }
 document.addEventListener('click', closeMenusOnClickOutside);
 document.addEventListener('touchend', closeMenusOnClickOutside);
+
+$(document).keydown(function(e){
+    if (e.keyCode==27) {
+        closeMenus();
+        closeSearch();
+    }
+});
+
+// gb.util.addEventListenerAll('a.btn', 'click', function (event) {
+//     event.preventDefault();
+// });
+
 

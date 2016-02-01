@@ -46,7 +46,7 @@ $palatino      = 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
 
 // Settings
 
-$line-height-ratio  = 1.5
+$line-height-ratio  := 1.5
 $header-ratio       = $golden
 $body-font          = $helvetica
 $body-font-weight   = 300
@@ -54,7 +54,7 @@ $body-color         = #666
 $header-font        = $helvetica
 $header-font-weight = 300
 $header-color       = #111
-$html-font-size         = 14px
+$html-font-size     := 16px
 $base-line-height = ($line-height-ratio)rem
 
 // Ratios
@@ -77,10 +77,49 @@ $major-eleventh = 2.667
 $major-twelfth  = 3
 $double-octave  = 4
 
+$f0 = 1  
+$f1 = $minor-second  
+$f2 = $major-second  
+$f3 = $minor-third   
+$f4 = $major-third   
+$f5 = $perfect-fourth
+$f6 = $aug-fourth    
+$f7 = $perfect-fifth 
+$f8 = $minor-sixth   
+$f9 = $golden        
+$f10 = $major-sixth   
+$f11 = $minor-seventh 
+$f12 = $major-seventh 
+$f13 = $octave        
+$f14 = $major-tenth   
+$f15 = $major-eleventh
+$f16 = $major-twelfth 
+$f17 = $double-octave
 
+$l0  = $base-line-height
+$l1  = $base-line-height*1//$minor-second  
+$l2  = $base-line-height*1//$major-second  
+$l3  = $base-line-height*1//$minor-third   
+$l4  = $base-line-height*1//$major-third   
+$l5  = $base-line-height*1//$perfect-fourth
+$l6  = $base-line-height*1//$aug-fourth    
+$l7  = $base-line-height*2//$perfect-fifth 
+$l8  = $base-line-height*2//$minor-sixth   
+$l9  = $base-line-height*2//$golden        
+$l10 = $base-line-height*2//$major-sixth   
+$l11 = $base-line-height*2//$minor-seventh 
+$l12 = $base-line-height*2//$major-seventh 
+$l13 = $base-line-height*3//$octave        
+$l14 = $base-line-height*3//$major-tenth   
+$l15 = $base-line-height*3//$major-eleventh
+$l16 = $base-line-height*3//$major-twelfth 
+$l17 = $base-line-height*3//$double-octave 
 
-
-
+$typeScale = $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, $f16, $f17
+$typeHeight = $l0, $l1, $l2, $l3, $l4, $l5, $l6, $l7, $l8, $l9, $l10, $l11, $l12, $l13, $l14, $l15, $l16, $l17
+setFont($myindex = 0)
+	font-size ( $typeScale[$myindex+0] )rem
+	line-height ( $typeHeight[$myindex+0] )rem
 
 
 $type-base-ratio = $perfect-fourth
@@ -198,26 +237,36 @@ typographic() {
 		font-family: $header-font
 		font-weight: $header-font-weight
 		clear: both
+		margin-bottom: vr-block(1)
+		margin-top vr-block(1.5)
 	}
 	h1 {
-		set-type(4)
+		setFont(12)
 	}
 	h2 {
-		set-type(3)
+		setFont(6)
 	}
 	h3 {
-		set-type(2)
+		setFont(4)
 	}
 	h4 {
-		set-type(1)
+		setFont(2)
 	}
 	h5 {
-		set-type(0)
+		setFont(1)
 	}
 	h6 {
-		set-type(-1)
-		font-weight 500
+		setFont(1)
 	}
+	+isAbove($laptop) {
+		h1 {
+			setFont(17)
+		}
+		h2 {
+			setFont(12)
+		}
+	}
+		
 
 	blockquote {
 		font-style: italic
@@ -258,10 +307,6 @@ typographic() {
 	//      color: $header-color
 	//      font-weight: bold
 	// }
-
-	ul,ol {
-		padding 0
-	}
 
 	// fieldset {
 	//      padding: vr-block(.5) vr-block() vr-block()

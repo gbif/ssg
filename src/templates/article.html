@@ -1,11 +1,6 @@
-<article {% if meta.fm.style %} class="{{meta.fm.style}}" {% endif %}>
+<article {% if meta.fm.style %} class="{{meta.fm.style}}"  {% else %} class="article" {% endif %}>
 	<!--<div class="article--share">Share</div>-->
-    <section
-            {% if meta.fm.image %}
-                style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url({{meta.fm.image}})" class="block block-first hasImage"
-            {% else %}
-                class="block block-first"
-            {% endif %}>
+    <section class="block block-first">
         <div class="block-content">
 	    {{content|safe}}
         </div>

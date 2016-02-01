@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     applyTemplate = require(base + '/gulp_plugins/applyTemplate'),
     filter = require(base + '/gulp_plugins/filter'),
     build = require(base + '/gulp_plugins/i18n_build'),
+    toc = require(base + '/gulp_plugins/toc'),
     getYamlFile = require(base + '/helpers/getYml'),
     lunr = require(base + '/gulp_plugins/gulp-lunr'),
     frontMatter = require('gulp-front-matter'),
@@ -48,6 +49,7 @@ gulp.task('build-main', [], function () {
                 return highlight.highlightAuto(code).value;
             }
         }))
+        .pipe(toc())
         .pipe(applyTemplate(config.templates.main, languageData, translations))
         .pipe(gulp.dest(config.dest));
 

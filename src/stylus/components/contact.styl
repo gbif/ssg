@@ -1,0 +1,28 @@
+$image-size = vr-block(10)
+
+.contacts
+	margin: auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.contact
+	flex: 0 0 auto
+	margin:auto
+	display: inline-block
+	margin: 2em
+	div
+		margin:auto
+		width: $image-size
+		height: $image-size
+		border-radius: ($image-size / 2)
+		background-size: cover
+		background-position: center
+	address
+		margin: 1em
+		span
+			display:block
+			text-align: center
+			font-weight: 400
+			padding: 2px
+			a
+				padding: 2px

@@ -5,7 +5,9 @@ var through = require('through2'),
 swig.setDefaults({ cache: false });
 
 swig.setFilter('startsWith', function (input, start) {
-    return input.startsWith(start)
+    var startsWith = input.startsWith(start);
+    var followedBySlash = input.charAt(start.length) == '/';
+    return startsWith && followedBySlash;
 });
 
 
@@ -25,7 +27,7 @@ module.exports = function (tpl, languages, translations) {
             nav: file.meta.menu,
             content: file.contents.toString(),
             i18n: translations,
-            message: 'testerserserser'
+            toc: file.meta.toc
         };
         file.contents = new Buffer(templ(data), 'utf8');
         this.push(file);

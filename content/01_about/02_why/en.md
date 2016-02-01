@@ -1,6 +1,7 @@
 ---
 title: Why
 category: about
+description: Dette er min beskrivelse
 ---
 
 # Why use a SSG instead of a dynamic site?

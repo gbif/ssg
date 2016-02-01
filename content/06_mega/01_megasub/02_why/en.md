@@ -1,6 +1,7 @@
 ---
-title: Why
+title: 1.1.2
 category: about
+description: Dette er min beskrivelse af filen
 ---
 
 # Why use a SSG instead of a dynamic site?

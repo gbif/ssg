@@ -19,6 +19,7 @@ module.exports = function () {
         if (!idx[lang]) {
             idx[lang] = lunr(function () {
                 this.field('title', {boost: 2});
+                this.field('description', {boost: 2});
                 this.field('body');
                 this.field('keywords', {boost: 5});
                 this.ref('href');
