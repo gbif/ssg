@@ -101,4 +101,12 @@ function hideToc() {
 
 //overlay
 $('.overlay').on('click touchend', closeMenus);
+function closeMenusOnClickOutside(event) {
+    var clickOnContent = $(event.target).is('#main *');
+    if (clickOnContent) {
+        closeMenus();
+    }
+}
+document.addEventListener('click', closeMenusOnClickOutside);
+document.addEventListener('touchend', closeMenusOnClickOutside);
 

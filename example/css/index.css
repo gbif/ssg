@@ -973,6 +973,11 @@ a.actionIcon:before {
     right: 0px;
   }
 }
+@media screen and (min-width: 901px) {
+  .SiteNav__info {
+    display: none;
+  }
+}
 main {
   position: relative;
 /*position absolute*/
@@ -1240,14 +1245,15 @@ main {
 .page-wrapper>.skip:focus {
   top: 0;
 }
-.Search__noInput,
-.Search__noResults,
+.Search--message {
+  text-align: center;
+  margin: 3rem;
+}
+.Search__content {
+  margin: 0 1.5rem;
+}
 .Search__results {
   display: none;
-}
-.Search--noInput .Search__noInput,
-.Search--noResults .Search__noResults {
-  display: block;
 }
 .Search--showResults .Search__results {
   display: -webkit-box;
@@ -1378,7 +1384,7 @@ main {
   }
 }
 @media screen and (min-width: 1401px) {
-  .Site__contentArea__main {
+  .Site__drawer ~ .Site__contentArea {
     padding-right: 300px;
   }
   .Site__drawer {

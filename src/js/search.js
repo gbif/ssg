@@ -14,18 +14,13 @@ $(document).ready(function () {
         search__feedback = document.getElementById('Search__feedback');
 
     var showSearchResults = function(results) {
-        if (typeof results === 'undefined') {
-            search__feedback.className = 'Search--noInput';
+        if (typeof results === 'undefined' || results.length == 0) {
+            $(search__feedback).removeClass('Search--showResults');
             // searchResults.innerHTML = 'Enter search to see results';
             return;
         }
-        if (results.length == 0) {
-            search__feedback.className = 'Search--noResults';
-            // searchResults.innerHTML = 'No matches. If you cannor fint what you are looking forward feel free to contact us by mail or phone.';
-            return;
-        }
 
-        search__feedback.className = 'Search--showResults';
+        $(search__feedback).addClass('Search--showResults');
         var resultUrls = results.map(function(e){
             return e.ref;
         });
