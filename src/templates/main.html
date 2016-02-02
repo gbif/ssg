@@ -34,13 +34,15 @@
 
             <div class="Site__contentArea {% if meta.fm.style %} {{meta.fm.style}}  {% else %} article {% endif %}">
                 {% if meta.fm.toc %}
-                    <a href="#filter" class="toggleDrawer openDrawer"><i class=" gb-icon-left-arrow"></i><span>Open TOC</span></a>
+                    <a href="#" class="toggleDrawer openDrawer"><i class=" gb-icon-left-arrow"></i><span>Open TOC</span></a>
                     <!--<a href="#" class="toggleDrawer closeDrawer"><i class="gb-icon-search"></i><span>Close TOC</span></a>-->
                 {% endif %}
                 <div class="Site__contentArea__main">
                     {% include "article.html" %}
                 </div>
             </div>
+            <div class="overlay overlayFilter"></div>
+            <div class="overlay overlayMobileMenu"></div>
         </main>
 
     </div>

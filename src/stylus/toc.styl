@@ -71,6 +71,9 @@ forceShowDrawer() {
 			}
 		}
 	}
+	.toggleDrawer.openDrawer>i:before {
+		content $icon-string-right-arrow
+	}
 	.Site__contentArea {
 		transition left 500ms ease
 		left 0
@@ -86,6 +89,9 @@ forceShowDrawer() {
 +isAbove( ($article_max_width + $drawer-width*2)) {
 	.Site__contentArea__main {
 		padding-right $drawer-width
+	}
+	.Site__drawer {
+		border none
 	}
 }
 
@@ -115,9 +121,6 @@ forceShowDrawer() {
 		&:before {
 			line-height $toc_drawer_button_height
 		}
-	}
-	&.isActive>i:before {
-		content $icon-string-right-arrow
 	}
 	>span {
 		vertical-align top

@@ -462,7 +462,7 @@ h6 {
   font-size: 1.067rem;
   line-height: 1.5rem;
 }
-@media screen and (min-width: 49rem) {
+@media screen and (min-width: 769px) {
   h1 {
     font-size: 2.667rem;
     line-height: 4.5rem;
@@ -472,7 +472,7 @@ h6 {
     line-height: 3rem;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   h1 {
     font-size: 4rem;
     line-height: 4.5rem;
@@ -537,7 +537,7 @@ body,
   overflow-x: hidden;
   background: #fffefe;
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   html,
   body,
   .page-wrapper {
@@ -567,17 +567,19 @@ body,
 .page-wrapper *::-webkit-scrollbar-thumb {
   background: rgba(0,0,0,0.3);
 }
-.XXXpage-wrapper *::-webkit-scrollbar {
-  width: 18px; /* for vertical scrollbars */
-  height: 18px; /* for horizontal scrollbars */
+.overlay {
+  background: #222;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
 }
-.XXXpage-wrapper *::-webkit-scrollbar-track {
-  background: #dcdcdc;
+.overlay.isActive {
+  display: block;
 }
-.XXXpage-wrapper *::-webkit-scrollbar-thumb {
-  background: #b4b4b4;
-}
-@media screen and (min-width: 52rem) and (max-width: 56rem) {
+@media screen and (min-width: 885px) and (max-width: 900px) {
   html {
     overflow-y: scroll;
   }
@@ -588,11 +590,11 @@ body,
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  width: 18rem;
+  width: 300px;
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .SiteNav {
-    left: -18rem;
+    left: -300px;
   }
   .siteCanvas {
     -webkit-transition: left 500ms ease;
@@ -602,7 +604,7 @@ body,
     left: 0;
   }
   .siteCanvas.hasActiveMenu {
-    left: 18rem;
+    left: 300px;
   }
   .siteCanvas.hasActiveMenu .menu-link {
     display: none;
@@ -611,7 +613,7 @@ body,
     display: inline-block;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   header {
     display: none;
   }
@@ -752,7 +754,7 @@ body,
     bottom: 0.75rem;
   }
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .SiteNav {
     background: #444;
     color: #ddd;
@@ -815,7 +817,7 @@ body,
     max-height: 1000px;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .SiteNav {
     background: #ff6347;
     height: 4.5rem;
@@ -824,7 +826,7 @@ body,
     color: #e8e8e8;
   }
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .SiteNav .isCategory > ul {
     max-height: 0;
     overflow: hidden;
@@ -836,7 +838,7 @@ body,
     max-height: 500px;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .SiteNav .isCategory > ul {
     display: none;
   }
@@ -867,7 +869,7 @@ a.actionIcon:before {
   line-height: 0rem;
   margin-top: 1.5rem;
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .ServiceMenu .ServiceMenu__teaser {
     height: 9rem;
     width: 100%;
@@ -880,7 +882,7 @@ a.actionIcon:before {
     width: 100%;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .ServiceMenu {
     position: absolute;
     right: 0;
@@ -912,7 +914,7 @@ a.actionIcon:before {
     margin-top: 1.5rem;
   }
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .ServiceMenu .ServiceMenu__search {
     display: none;
   }
@@ -937,7 +939,7 @@ a.actionIcon:before {
     left: 0%;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .isOwnMenu > ul {
     top: 4.5rem;
     right: -300px;
@@ -970,7 +972,7 @@ main {
   height: -webkit-calc(100% - 4.5rem);
   height: calc(100% - 4.5rem);
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   main {
     padding-top: 4.5rem;
   }
@@ -982,7 +984,7 @@ main {
   -webkit-transition: right 500ms ease;
   transition: right 500ms ease;
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .Site__contentArea {
     height: 100%;
     right: 0;
@@ -1076,7 +1078,7 @@ main {
   position: absolute;
   visibility: hidden;
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .Search {
     overflow: initial;
     height: auto;
@@ -1263,7 +1265,7 @@ main {
 }
 .Site__contentArea.article article .block-content {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 800px;
   padding: 0 1.5rem;
 }
 .Site__contentArea.article article .block-first {
@@ -1282,7 +1284,7 @@ main {
   text-align: center;
   display: block;
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .Site__contentArea__main>article .anchor:target:before {
     display: block;
     content: " ";
@@ -1306,13 +1308,13 @@ main {
 }
 .Site__drawer {
   right: 0;
-  width: 18rem;
+  width: 300px;
   position: absolute;
   top: 0px;
   -webkit-transition: right 500ms ease;
   transition: right 500ms ease;
   height: 100%;
-  right: -18rem;
+  right: -300px;
   background: #fffefe;
   color: #333;
   overflow: hidden;
@@ -1327,11 +1329,11 @@ main {
 .Site__drawer.isActive {
   right: 0;
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .Site__drawer {
     z-index: 20;
     right: initial;
-    left: -18rem;
+    left: -300px;
     -webkit-transition: left 500ms ease;
     transition: left 500ms ease;
     position: fixed;
@@ -1348,7 +1350,7 @@ main {
     left: 0;
   }
   .Site__drawer.isLocked ~ .Site__contentArea {
-    padding-left: 18rem;
+    padding-left: 300px;
   }
   .Site__drawer.isLocked.isActive ~ .Site__contentArea {
     left: 0;
@@ -1356,13 +1358,16 @@ main {
   .Site__drawer.isLocked ~.Site__contentArea .toggleDrawer.openDrawer {
     display: none;
   }
+  .toggleDrawer.openDrawer>i:before {
+    content: "\EA10";
+  }
   .Site__contentArea {
     -webkit-transition: left 500ms ease;
     transition: left 500ms ease;
     left: 0;
   }
 }
-@media screen and (min-width: 69rem) {
+@media screen and (min-width: 1101px) {
   .Site__drawer {
     -webkit-transition: initial;
     transition: initial;
@@ -1371,15 +1376,18 @@ main {
     border-right: solid 1px #ccc;
   }
   .Site__drawer ~ .Site__contentArea {
-    padding-left: 18rem;
+    padding-left: 300px;
   }
   .Site__drawer.isActive ~ .Site__contentArea {
     left: 0;
   }
 }
-@media screen and (min-width: 87rem) {
+@media screen and (min-width: 1401px) {
   .Site__contentArea__main {
-    padding-right: 18rem;
+    padding-right: 300px;
+  }
+  .Site__drawer {
+    border: none;
   }
 }
 .toggleDrawer.openDrawer {
@@ -1405,9 +1413,6 @@ main {
 .toggleDrawer.openDrawer >i:before {
   line-height: 3rem;
 }
-.toggleDrawer.openDrawer.isActive>i:before {
-  content: "\EA10";
-}
 .toggleDrawer.openDrawer >span {
   vertical-align: top;
   display: inline-block;
@@ -1420,12 +1425,12 @@ main {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 900px) {
   .toggleDrawer.openDrawer {
     right: 0;
   }
 }
-@media screen and (min-width: 57rem) {
+@media screen and (min-width: 901px) {
   .toggleDrawer.openDrawer {
     position: fixed;
 /*top $navbar_height*/
@@ -1442,7 +1447,7 @@ main {
     max-width: 200px;
   }
 }
-@media screen and (min-width: 69rem) {
+@media screen and (min-width: 1101px) {
   .toggleDrawer.openDrawer {
     display: none;
   }
@@ -1484,7 +1489,7 @@ main {
   font-size: 1.5rem;
   padding: 0.75rem;
 }
-@media screen and (min-width: 69rem) {
+@media screen and (min-width: 1101px) {
   .Site__drawer .Toc .Toc__close {
     display: none;
   }
