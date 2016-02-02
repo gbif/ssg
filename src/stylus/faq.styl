@@ -1,35 +1,35 @@
-.Site__contentArea.faq article {
-	.block-content {
-		h2,h3,h4,h5 {
-			&:target {
-				padding-top vr-block(3)
-				+p {
-					padding-bottom vr-block(3)
-				}
-				&:after {
-					content ' '
-					display block
-					width vr-block(10)
-					height vr-block(0.5)
-					border-bottom vr-block(0.125) solid
-				}
-			}
-			>a.header-link {
-				display initial
-				position absolute
-				padding-left vr-block(0.25)
-			    &:before {
-					display none
-				}
-			}
-			&:hover {
-				>a.header-link:before {
-					display initial
-				}
-			}
-		}
-	}	
-}
+/*.Site__contentArea.faq article {*/
+	/*.block-content {*/
+		/*h2,h3,h4,h5 {*/
+			/*&:target {*/
+				/*padding-top vr-block(3)*/
+				/*+p {*/
+					/*padding-bottom vr-block(3)*/
+				/*}*/
+				/*&:after {*/
+					/*content ' '*/
+					/*display block*/
+					/*width vr-block(10)*/
+					/*height vr-block(0.5)*/
+					/*border-bottom vr-block(0.125) solid*/
+				/*}*/
+			/*}*/
+			/*>a.header-link {*/
+				/*display initial*/
+				/*position absolute*/
+				/*padding-left vr-block(0.25)*/
+			    /*&:before {*/
+					/*display none*/
+				/*}*/
+			/*}*/
+			/*&:hover {*/
+				/*>a.header-link:before {*/
+					/*display initial*/
+				/*}*/
+			/*}*/
+		/*}*/
+	/*}	*/
+/*}*/
 
 +isAbove($laptop) {
 	.Site__contentArea__main>article {

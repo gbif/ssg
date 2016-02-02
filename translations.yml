@@ -12,6 +12,10 @@ skipLink:
 languageSelector_title:
   en: Select language
 
+translationNotAvailable:
+  en: This text is not available in english
+  ar: هذا النص غير متوفر في اللغة العربية
+
 
 
 

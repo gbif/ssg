@@ -119,20 +119,20 @@ function addFile(dict, menu, file, languages) {
         extName = path.extname(file.path),
         basename = path.basename(file.path, extName),
         contentLanguage = basename,//basename.substr(basename.length - 2),
-        menuItem = getMenuItem(file, dir, contentLanguage);
+        menuItem = getMenuItem(file, dir, contentLanguage, contentLanguage);
     if (languages.indexOf(contentLanguage) == -1) {
         return; // language not included on the language file
     }
     if (contentLanguage == languages[0]) {
         languages.forEach(function (e) {
-            var menuItemClone = getMenuItem(file.clone(), dir, e);
+            var menuItemClone = getMenuItem(file.clone(), dir, e, contentLanguage);
             objectSetter.set([dict, dir, e], menuItemClone);
         });
     }
     objectSetter.update([dict, dir, contentLanguage], menuItem);
 }
 
-function getMenuItem(file, dir, language) {
+function getMenuItem(file, dir, language, contentLanguage) {
     "use strict";
 
     var prettyUrl = getPrettyUrl(dir, language),
@@ -141,6 +141,7 @@ function getMenuItem(file, dir, language) {
             meta: {
                 fm: fm,
                 siteLanguage: language,
+                contentLanguage: contentLanguage,
                 prettyUrl: prettyUrl
             },
             file: file

@@ -18,16 +18,19 @@ GBIF.navigation.showMenu = function(event){
 $('.toggle.toggle-nav').on('click touchend', GBIF.navigation.showMenu);
 
 
-GBIF.navigation.hideMenu = function(event){
+GBIF.navigation.showContent = function(event){
     $('.site-navigation').removeClass('toggle');
     $('.toggle.toggle-nav').removeClass('isActive');
     $('#main').removeClass('toggle');
     $('body').removeClass('hasOverlay');
+    $('.Site__drawer').removeClass('isActive');
     $('#search .search-input').blur();
 };
-$('.overlay').on("click touchend", GBIF.navigation.hideMenu);
+$('.overlay').on("click touchend", GBIF.navigation.showContent);
 
 $('.languageSelector>a').click(function (event) {
     $(this).parent().toggleClass('isExpanded');
     return false;
 });
+
+

@@ -21,28 +21,20 @@
 	top 0px
 	transition right 500ms ease
 	height 100%//"calc(100vh - %s)" % $navbar_height
-	right 0
-	box-shadow 2px 0 2px rgba(0,0,0,0.3)
+	right -($drawer-width)
 	background $toc_drawer_bg
 	color $toc_drawer_color
 	overflow hidden
+	z-index 20
+	box-shadow -2px 0 2px rgba(0,0,0,0.3)
 
 	> div {
 		height 100%
-		// background #333
-		// color #ddd
 		overflow-y auto
 		-webkit-overflow-scrolling touch
 	}
-	&:target {
-		~ .Site__contentArea {
-			right $drawer-width
-			overflow hidden
-			border-right solid 1px #ccc //TODO too much styling here, should be moved to optional function
-			.closeDrawer {
-				display block
-			}
-		}
+	&.isActive {
+		right 0
 	}
 }
 
@@ -54,7 +46,7 @@ forceShowDrawer() {
 	~ .Site__contentArea {
 		padding-left $drawer-width
 	}
-	&:target ~ .Site__contentArea {
+	&.isActive ~ .Site__contentArea {
 		left 0
 	}
 }
@@ -67,16 +59,16 @@ forceShowDrawer() {
 		transition left 500ms ease
 		position fixed
 		top $navbar_height
-		&:target {
+		box-shadow 2px 0 2px rgba(0,0,0,0.3)
+		&.isActive {
 			right initial
 			left 0
-			/*~ .Site__contentArea {*/
-				/*right initial*/
-				/*left $drawer-width*/
-			/*}*/
 		}
 		&.isLocked {
 			forceShowDrawer()
+			~.Site__contentArea .toggleDrawer.openDrawer {
+				display none
+			}
 		}
 	}
 	.Site__contentArea {
@@ -84,9 +76,16 @@ forceShowDrawer() {
 		left 0
 	}
 }
-+isAbove($desktop) {
++isAbove( ($article_max_width + $drawer-width)) {
 	.Site__drawer {
 		forceShowDrawer()
+		box-shadow none
+		border-right solid 1px #ccc
+	}
+}
++isAbove( ($article_max_width + $drawer-width*2)) {
+	.Site__contentArea__main {
+		padding-right $drawer-width
 	}
 }
 
@@ -95,7 +94,7 @@ forceShowDrawer() {
 
 
 //fixed toggle
-.toggleDrawer {
+.toggleDrawer.openDrawer {
 	z-index 10
 	height $toc_drawer_button_height
 	border-top-left-radius ($toc_drawer_button_height / 2)
@@ -105,6 +104,7 @@ forceShowDrawer() {
 	white-space nowrap
 	line-height $toc_drawer_button_height
 	bottom vr-block(1)
+	position absolute //Use absolute for mobile and fixed for desktop as fixed is unstable on mobile devices when combined with input fields
 	>i {
 		display inline-block
 		vertical-align middle
@@ -116,6 +116,9 @@ forceShowDrawer() {
 			line-height $toc_drawer_button_height
 		}
 	}
+	&.isActive>i:before {
+		content $icon-string-right-arrow
+	}
 	>span {
 		vertical-align top
 		display inline-block
@@ -123,20 +126,19 @@ forceShowDrawer() {
 		height $toc_drawer_button_height
 		max-width 0
 		margin-right 0
-		transition all 700ms ease
+
+		transition all 300ms ease
 		position relative
 		overflow hidden
-		/*left -100px*/
 	}
 }
 +isBelow($laptop) {
-	.toggleDrawer {
-		position absolute
+	.toggleDrawer.openDrawer {
 		right 0
 	}
 }
 +isAbove($laptop) {
-	.toggleDrawer {
+	.toggleDrawer.openDrawer {
 		position fixed
 		/*top $navbar_height*/
 		right initial
@@ -150,20 +152,18 @@ forceShowDrawer() {
 			>span {
 				/*display inline-block*/
 				/*left 0*/
-				/*margin-right vr-block(0.5)*/
+				margin-right vr-block(0.5)
 				/*padding-left 20px*/
 				max-width 200px
 			}
 		}
 	}
 }
-+isAbove($desktop) {
-	.toggleDrawer {
++isAbove(($article_max_width + $drawer-width)) {
+	.toggleDrawer.openDrawer {
 		display none
 	}
 }
-
-
 
 
 
@@ -177,7 +177,7 @@ tocStyleClose() {
 			padding vr-block(0.5)
 		}
 	}
-	+isAbove($desktop) {
+	+isAbove(($article_max_width + $drawer-width)) {
 		.Site__drawer {
 			.Toc {
 				.Toc__close {
@@ -198,8 +198,7 @@ tocStyling() {
 			display block
 			line-height vr-block(1)
 			&.Toc--l1 {
-				font-weight bold
-				setFont(4)
+				display none
 			}
 			&.Toc--l2 {
 				margin vr-block(1) 0

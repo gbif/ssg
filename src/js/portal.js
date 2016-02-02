@@ -69,6 +69,7 @@ var searchToggleSelector = '.site__searchToggle',
 var toggleMenu = function () {
     document.getElementById('SiteHeader').classList.toggle('isActive');
     document.getElementById('siteCanvas').classList.toggle('hasActiveMenu');
+    hideToc();
     closeSearch();
 };
 function closeSearch() {
@@ -140,6 +141,7 @@ function closeMenus() {
     if (document.getElementById('siteCanvas').classList.contains('hasActiveMenu')) {
         toggleMenu();
     }
+    hideToc();
 }
 function closeMenusOnClickOutside(event) {
     var clickOnContent = gb.util.matches(event.target, '#main *') || event.target == document.documentElement;
@@ -160,5 +162,16 @@ $(document).keydown(function(e){
 // gb.util.addEventListenerAll('a.btn', 'click', function (event) {
 //     event.preventDefault();
 // });
+
+gb.toggleSearch.showToc = function(event){
+    $('.Site__drawer').toggleClass('isActive');
+    $(this).toggleClass('isActive');
+    return false;
+};
+$('.toggleDrawer').on('click touchend', gb.toggleSearch.showToc);
+function hideToc() {
+    $('.Site__drawer').removeClass('isActive');
+    $('.toggleDrawer').removeClass('isActive');
+}
 
 

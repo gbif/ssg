@@ -4,17 +4,18 @@
 	}
 	.block-content {
 		margin 0 auto
-		max-width 50rem
+		max-width $article_max_width
 		padding 0 vr-block(1)
 	}
 	.block-first {
 		background $articleHeader_bg
 		margin-bottom vr-block(1)
 		h1 {
+			margin-top vr-block(1)
 			font-weight $articleHeader_weight
 			color $articleHeader_textColor
 			text-align center
-			padding-bottom vr-block(1)
+			padding-bottom vr-block(0.875)
 			border-bottom: vr-block(0.125) dotted deepskyblue;
 		}
 	}
@@ -22,20 +23,4 @@
 		text-align center
 		display block
 	}
-}
-
-//TODO where to put?
-.responsiveImage {
-	>img {
-		width 100%
-	}
-	overflow hidden
-	width 100%
-	max-width 50rem
-	height 0
-	padding-bottom 50%
-}
-
-.header-link {
-	display none
 }

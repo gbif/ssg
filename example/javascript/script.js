@@ -12498,19 +12498,23 @@ GBIF.navigation.showMenu = function(event){
 $('.toggle.toggle-nav').on('click touchend', GBIF.navigation.showMenu);
 
 
-GBIF.navigation.hideMenu = function(event){
+GBIF.navigation.showContent = function(event){
     $('.site-navigation').removeClass('toggle');
     $('.toggle.toggle-nav').removeClass('isActive');
     $('#main').removeClass('toggle');
     $('body').removeClass('hasOverlay');
+    $('.Site__drawer').removeClass('isActive');
     $('#search .search-input').blur();
 };
-$('.overlay').on("click touchend", GBIF.navigation.hideMenu);
+$('.overlay').on("click touchend", GBIF.navigation.showContent);
 
 $('.languageSelector>a').click(function (event) {
     $(this).parent().toggleClass('isExpanded');
     return false;
 });
+
+
+
 (function(){
     "use strict";
     var secTimeout = 60*60*24*30; // 30 days timeout
@@ -12603,6 +12607,7 @@ var searchToggleSelector = '.site__searchToggle',
 var toggleMenu = function () {
     document.getElementById('SiteHeader').classList.toggle('isActive');
     document.getElementById('siteCanvas').classList.toggle('hasActiveMenu');
+    hideToc();
     closeSearch();
 };
 function closeSearch() {
@@ -12674,6 +12679,7 @@ function closeMenus() {
     if (document.getElementById('siteCanvas').classList.contains('hasActiveMenu')) {
         toggleMenu();
     }
+    hideToc();
 }
 function closeMenusOnClickOutside(event) {
     var clickOnContent = gb.util.matches(event.target, '#main *') || event.target == document.documentElement;
@@ -12694,6 +12700,17 @@ $(document).keydown(function(e){
 // gb.util.addEventListenerAll('a.btn', 'click', function (event) {
 //     event.preventDefault();
 // });
+
+gb.toggleSearch.showToc = function(event){
+    $('.Site__drawer').toggleClass('isActive');
+    $(this).toggleClass('isActive');
+    return false;
+};
+$('.toggleDrawer').on('click touchend', gb.toggleSearch.showToc);
+function hideToc() {
+    $('.Site__drawer').removeClass('isActive');
+    $('.toggleDrawer').removeClass('isActive');
+}
 
 
 

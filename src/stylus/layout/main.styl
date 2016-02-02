@@ -1,12 +1,12 @@
 
-html, body, #page-wrapper {
+html, body, .page-wrapper {
 	height 100vh
 	width 100%
 	overflow-x hidden
 	background $content_bg
 }
 +isAbove($laptop) {
-	html, body, #page-wrapper {
+	html, body, .page-wrapper {
 		height auto
 		min-height 100%
 	}
@@ -101,7 +101,7 @@ body {
 }
 
 //Safari hack to prevent flicker. At mobile breakpoint it removes scrollbar and then thinks it is larger, leading to the laptop view. Where there is a scrollbar that makes the window smaller etc.
-+isBetween( ($laptop - 15px), $laptop) {
++isBetween( ($laptop - 5rem), $laptop) {
 	html {
 		overflow-y scroll
 	}

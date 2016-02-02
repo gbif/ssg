@@ -48,12 +48,6 @@ $palatino      = 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
 
 $line-height-ratio  := 1.5
 $header-ratio       = $golden
-$body-font          = $helvetica
-$body-font-weight   = 300
-$body-color         = #666
-$header-font        = $helvetica
-$header-font-weight = 300
-$header-color       = #111
 $html-font-size     := 16px
 $base-line-height = ($line-height-ratio)rem
 
@@ -237,7 +231,7 @@ typographic() {
 		font-family: $header-font
 		font-weight: $header-font-weight
 		clear: both
-		margin-bottom: vr-block(1)
+		margin-bottom: vr-block(0.5)
 		margin-top vr-block(1.5)
 	}
 	h1 {
@@ -257,6 +251,14 @@ typographic() {
 	}
 	h6 {
 		setFont(1)
+	}
+	+isAbove($tablet) {
+		h1 {
+			setFont(15)
+		}
+		h2 {
+			setFont(10)
+		}
 	}
 	+isAbove($laptop) {
 		h1 {
@@ -290,43 +292,9 @@ typographic() {
 		margin-bottom 0
 	}
 
-	// big, small, sub, sup {
-	//      line-height: 0
-	// }
-
 	abbr[title] {
-		// border-bottom: 1px dotted currentColor // should be inherited from normalize
 		cursor: help
 	}
-
-	// address {
-	//      font-style: normal
-	// }
-
-	// dt {
-	//      color: $header-color
-	//      font-weight: bold
-	// }
-
-	// fieldset {
-	//      padding: vr-block(.5) vr-block() vr-block()
-	//      border-width: 1px
-	//      border-style: solid
-	//      max-width: 100%
-	//      margin-bottom: vr-block(1, 1)
-	//      button, input[type="submit"] {
-	//              margin-bottom: 0
-	//      }
-	// }
-
-	// legend {
-	//      color: $header-color
-	//      font-weight: bold
-	// }
-
-	// label {
-	//      display: block
-	// }
 
 	input[type="text"], input[type="email"], input[type="password"], textarea {
 		display: block

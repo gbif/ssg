@@ -1,0 +1,3 @@
+{% if meta.siteLanguage != meta.contentLanguage && i18n.translationNotAvailable[meta.siteLanguage]%}
+<div class="translationNotification">{{i18n.translationNotAvailable[meta.siteLanguage]}}</div>
+{% endif %}
