@@ -5,12 +5,6 @@ html, body, .page-wrapper {
 	overflow-x hidden
 	background $content_bg
 }
-+isAbove($laptop) {
-	html, body, .page-wrapper {
-		height auto
-		min-height 100%
-	}
-}
 .siteCanvas {
 	height 100%
 	width 100%
@@ -99,16 +93,13 @@ body {
 	}
 }
 
-+isAbove($laptop) {
-	.Site__contentArea__main>article {
-		.anchor:target:before { //compensate for the fixed header on desktop
-			display: block;
-			content: " ";
-			height: $navbar_height;
-			margin-top: -($navbar_height);
-			visibility: hidden;
-			position relative
-			z-index -9999
-		}
+.Site__contentArea__main {
+	display flex
+	flex-direction column
+	article {
+		flex 1 0 auto
+	}
+	footer {
+		flex 0 0 auto
 	}
 }

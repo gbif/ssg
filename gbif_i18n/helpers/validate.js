@@ -13,7 +13,8 @@ languages:
 */
 function validateLanguageFile(data, fileName) {
     var languageFile = fileName ? fileName : '';
-    if (Object.prototype.toString.call(data) !== '[object Object]' || Object.prototype.toString.call(data.languages) !== '[object Object]' || Object.keys(data.languages).length < 1)  {
+    console.log(data);
+    if (Object.prototype.toString.call(data) !== '[object Object]' || Object.keys(data).length < 1)  {
         var errorString = 'Wrong format in language file ' + languageFile + '. The language file must be a dictionary of "languages:" of type "abbrivation": "local presentation name". E.g. en: english';
         throw new gutil.PluginError('gbif-ssg-i18n', errorString);
     }

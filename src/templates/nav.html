@@ -1,6 +1,6 @@
 {% include "mobileheader.html" %}
 
-<nav id="nav" class="SiteNav" role="navigation">
+<nav id="nav" class="SiteNav {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %}" role="navigation">
     <div class="ServiceMenu">
         <div class="ServiceMenu__teaser">
         </div>

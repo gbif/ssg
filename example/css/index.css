@@ -537,14 +537,6 @@ body,
   overflow-x: hidden;
   background: #fffefe;
 }
-@media screen and (min-width: 901px) {
-  html,
-  body,
-  .page-wrapper {
-    height: auto;
-    min-height: 100%;
-  }
-}
 .siteCanvas {
   height: 100%;
   width: 100%;
@@ -584,16 +576,28 @@ body,
     overflow-y: scroll;
   }
 }
-@media screen and (min-width: 901px) {
-  .Site__contentArea__main>article .anchor:target:before {
-    display: block;
-    content: " ";
-    height: 4.5rem;
-    margin-top: -4.5rem;
-    visibility: hidden;
-    position: relative;
-    z-index: -9999;
-  }
+.Site__contentArea__main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Site__contentArea__main article {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.Site__contentArea__main footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .SiteNav {
   position: absolute;
@@ -602,6 +606,9 @@ body,
   -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 300px;
+}
+.SiteNav.rtl {
+  direction: rtl;
 }
 @media screen and (max-width: 900px) {
   .SiteNav {
@@ -635,7 +642,7 @@ body,
     height: 4.5rem;
     width: 100%;
     overflow: visible;
-    position: fixed;
+    position: relative;
   }
   .SiteNav >div>ul>li>a:hover {
     color: #fafafa;
@@ -764,6 +771,18 @@ body,
     position: absolute;
     bottom: 0.75rem;
   }
+  .SiteNav.rtl .MainMenu >ul,
+  .SiteNav.rtl .MainMenu >a {
+    float: right;
+  }
+  .SiteNav.rtl .ServiceMenu {
+    left: 0;
+    right: initial;
+  }
+  .SiteNav.rtl .ServiceMenu >ul>li >ul {
+    left: 0;
+    right: initial;
+  }
 }
 @media screen and (max-width: 900px) {
   .SiteNav {
@@ -791,14 +810,13 @@ body,
   .SiteNav >div a:hover,
   .SiteNav >div a.isActive {
     background-color: rgba(0,0,0,0.15);
-/*color lighten($nav_drawer_color, 50%)*/
   }
   .SiteNav >div >ul>li>ul>li >a {
     color: #b1b1b1;
-/*padding vr-block(0.25) vr-block(1) vr-block(0.25) vr-block(3)*/
+    background: #3f3f3f;
   }
   .SiteNav >div >ul>li>ul>li >ul>li>a {
-    background: #3f3f3f;
+    background: #3c3c3c;
     padding: 0.375rem 1.5rem 0.375rem 4.5rem;
   }
   .SiteNav >div >ul>li>ul>li >ul>li>ul>li>a {
@@ -826,6 +844,13 @@ body,
     -webkit-transition: max-height 1.3s;
     transition: max-height 1.3s;
     max-height: 1000px;
+  }
+  .SiteNav.rtl li>a,
+  .SiteNav.rtl .MainMenu>a {
+    padding: 0.75rem 3rem 0.75rem 3rem;
+  }
+  .SiteNav.rtl .isCategory .isCategory>ul a {
+    padding-right: 4.5rem;
   }
 }
 @media screen and (min-width: 901px) {
@@ -988,11 +1013,6 @@ main {
   height: -webkit-calc(100% - 4.5rem);
   height: calc(100% - 4.5rem);
 }
-@media screen and (min-width: 901px) {
-  main {
-    padding-top: 4.5rem;
-  }
-}
 .Site__contentArea {
   background: #fffefe;
   position: relative;
@@ -1000,16 +1020,14 @@ main {
   -webkit-transition: right 500ms ease;
   transition: right 500ms ease;
 }
-@media screen and (max-width: 900px) {
-  .Site__contentArea {
-    height: 100%;
-    right: 0;
-  }
-  .Site__contentArea .Site__contentArea__main {
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-    height: 100%;
-  }
+.Site__contentArea {
+  height: 100%;
+  right: 0;
+}
+.Site__contentArea .Site__contentArea__main {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  height: 100%;
 }
 .SiteHeader {
   background: #ff6347;
@@ -1250,7 +1268,7 @@ main {
   margin: 3rem;
 }
 .Search__content {
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 .Search__results {
   display: none;
@@ -1277,6 +1295,9 @@ main {
   background: #ff6347;
   margin: 1.5rem;
 }
+.Search.rtl {
+  direction: rtl;
+}
 .Site__contentArea.article article .block-content {
   margin: 0 1.5rem;
 }
@@ -1301,6 +1322,9 @@ main {
   text-align: center;
   display: block;
 }
+.Site__contentArea.article .Site__contentArea__main.rtl> article {
+  direction: rtl;
+}
 .Site__drawer {
   right: 0;
   width: 300px;
@@ -1324,6 +1348,9 @@ main {
 .Site__drawer.isActive {
   right: 0;
 }
+.Site__drawer.rtl {
+  direction: rtl;
+}
 @media screen and (min-width: 901px) {
   .Site__drawer {
     z-index: 20;
@@ -1331,8 +1358,6 @@ main {
     left: -300px;
     -webkit-transition: left 500ms ease;
     transition: left 500ms ease;
-    position: fixed;
-    top: 4.5rem;
     box-shadow: 2px 0 2px rgba(0,0,0,0.3);
   }
   .Site__drawer.isActive {
@@ -1384,7 +1409,7 @@ main {
   }
 }
 @media screen and (min-width: 1401px) {
-  .Site__drawer ~ .Site__contentArea {
+  .Site__drawer ~ .Site__contentArea>.Site__contentArea__main {
     padding-right: 300px;
   }
   .Site__drawer {
@@ -1547,6 +1572,10 @@ main {
 }
 .contact address span a {
   padding: 2px;
+}
+.Site__footer {
+  padding: 3rem;
+  border-top: solid 0.1875rem #00bfff;
 }
 /**
  *  Add a style that might be helpful while creating the layout and composition.

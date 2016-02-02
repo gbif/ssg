@@ -2,11 +2,11 @@
 <li class="ServiceMenu__language isCategory">
     {% for abbr in languages.list%}
     {% if loop.first %}
-    <a href="#" class="gb-icon-global" title="{{i18n.languageSelector_title[meta.siteLanguage]}}">{{languages.languages[meta.siteLanguage]}}</a>
+    <a href="#" class="gb-icon-global" title="{{i18n.languageSelector_title[meta.siteLanguage]}}">{{languages[meta.siteLanguage].name}}</a>
     <ul>
     {% endif %}
         <li>
-            <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="isActive" {% endif %}>{{languages.languages[abbr]}}</a>
+            <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="isActive" {% endif %}>{{languages[abbr].name}}</a>
         </li>
     {% if loop.last %}
     </ul>

@@ -1,10 +1,15 @@
 #This file defines which languages that will appear when the site is build
-languages:
-  en: English
-  dk: Dansk # danish
-  es: Español
-  en-US: American
-  ar: العَرَبِية #arabic
+en:
+  name: English
+dk:
+  name: Dansk # danish
+es:
+  name: Español
+en-US:
+  name: American
+ar:
+  name: العَرَبِية #arabic
+  dir: rtl
 
 
 #

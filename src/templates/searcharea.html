@@ -1,8 +1,9 @@
-<div class="Search" id="site_search">
+<div class="Search 
+            {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %}" id="site_search">
     <div class="Search__content" id="search">
         <form>
-            <input type="text" placeholder="Search" name="search" class="search-input">
-            <button type="submit" class="gb-icon-search"><span>Search</span></button>
+            <input type="text" placeholder="{{i18n.searchPlaceholder[meta.siteLanguage]}}" name="search" class="search-input">
+            <button type="submit" class="gb-icon-search"><span>{{i18n.searchPlaceholder[meta.siteLanguage]}}</span></button>
         </form>
         <div id="Search__feedback">
 	        <div class="Search__results">

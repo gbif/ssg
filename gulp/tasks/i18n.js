@@ -22,7 +22,7 @@ var gulp = require('gulp'),
 langFileName = config.languageFile;
 languageData = getYamlFile(langFileName);
 validate.validateLanguageFile(languageData, langFileName); //make sure that the language file is on the correct format
-languageData.list = Object.keys(languageData.languages).map(function (lang) { //create list of language keys. only because it makes it easier to iterate elsewhere
+languageData.list = Object.keys(languageData).map(function (lang) { //create list of language keys. only because it makes it easier to iterate elsewhere
     return lang;
 });
 

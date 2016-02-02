@@ -24,7 +24,10 @@
         <main class="main" role="main" id="main">
 
             {% if meta.fm.toc %}
-            <aside class=" {% if meta.fm.toc == 'forced' %} isLocked {% endif %} Site__drawer" id="filter">
+            <aside class="
+            {% if meta.fm.toc == 'forced' %} isLocked {% endif %} 
+            {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %} 
+            Site__drawer" id="filter">
                 <div>
                     {% include "drawer.html" %}
                 </div>
@@ -36,10 +39,15 @@
                 {% if meta.fm.toc %}
                     <a href="#" class="toggleDrawer openDrawer"><i class=" gb-icon-left-arrow"></i><span>Open TOC</span></a>
                 {% endif %}
-                <div class="Site__contentArea__main">
+                <div class="Site__contentArea__main 
+                            {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %} ">
                     {% include "article.html" %}
 
-                    
+                    <footer class="Site__footer">
+                        <p>jshgdf sdfg kjhsgd</p>
+                        <p>jshgdf sdfg kjhsgd</p>
+                        <p>jshgdf sdfg kjhsgd</p>
+                    </footer>
 
                 </div>
 
