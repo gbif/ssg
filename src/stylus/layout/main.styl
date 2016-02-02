@@ -98,3 +98,17 @@ body {
 		overflow-y scroll
 	}
 }
+
++isAbove($laptop) {
+	.Site__contentArea__main>article {
+		.anchor:target:before { //compensate for the fixed header on desktop
+			display: block;
+			content: " ";
+			height: $navbar_height;
+			margin-top: -($navbar_height);
+			visibility: hidden;
+			position relative
+			z-index -9999
+		}
+	}
+}
