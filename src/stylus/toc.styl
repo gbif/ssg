@@ -41,7 +41,7 @@ forceShowDrawer() {
 +isAbove($laptop) {
 	.Site__drawer {
 		z-index 20
-		right initial
+		right auto
 		left -($drawer-width)
 		transition left 500ms ease
 		// position fixed
@@ -49,7 +49,7 @@ forceShowDrawer() {
 		box-shadow 2px 0 2px rgba(0,0,0,0.3)
 
 		&.isActive {
-			right initial
+			right auto
 			left 0
 		}
 		&.isLocked {
@@ -90,33 +90,30 @@ forceShowDrawer() {
 }
 
 
-
-
-
 //fixed toggle
 .toggleDrawer.openDrawer {
 	z-index 10
-	height $toc_drawer_button_height
-	border-top-left-radius ($toc_drawer_button_height / 2)
-	border-bottom-left-radius ($toc_drawer_button_height / 2)
 	background $toc_toggle_bg
 	color $toc_toggle_color
 	white-space nowrap
-	line-height $toc_drawer_button_height
 	bottom vr-block(1)
 	position absolute //Use absolute for mobile and fixed for desktop as fixed is unstable on mobile devices when combined with input fields
+
+	border-top-left-radius ($toc_drawer_button_height / 2)
+	border-bottom-left-radius ($toc_drawer_button_height / 2)
+	font-size $toc_drawer_button_height
+	height $toc_drawer_button_height
+	line-height $toc_drawer_button_height
+	min-width $toc_drawer_button_height
+	text-align center
 	>i {
 		display inline-block
-		vertical-align middle
-		width $toc_drawer_button_height
-		font-size $toc_drawer_button_height
-		text-align center
-		display inline-block
 		&:before {
-			line-height $toc_drawer_button_height
+			font-size $toc_drawer_button_height
 		}
 	}
 	>span {
+		font-size 1rem
 		vertical-align top
 		display inline-block
 		line-height $toc_drawer_button_height
@@ -137,23 +134,10 @@ forceShowDrawer() {
 +isAbove($laptop) {
 	.toggleDrawer.openDrawer {
 		position fixed
-		/*top $navbar_height*/
-		right initial
+		right auto
 		border-radius 0
 		border-top-right-radius ($toc_drawer_button_height / 2)
 		border-bottom-right-radius ($toc_drawer_button_height / 2)
-		>i {
-
-		}
-		&:hover {
-			>span {
-				/*display inline-block*/
-				/*left 0*/
-				margin-right vr-block(0.5)
-				/*padding-left 20px*/
-				max-width 200px
-			}
-		}
 	}
 }
 +isAbove(($article_max_width + $drawer-width)) {

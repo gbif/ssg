@@ -36,13 +36,15 @@ $navbar_dropdown_bg := white
 $navbar_dropdown_megaColor := tomato
 $navbar_dropdown_color := #333
 $navbar_horizontal_color := $c_main
+$navbar_dropdown_triangle_color := $navbar_dropdown_bg
 
+$logo_color := $navbar_textColor
 
 /* DRAWERS */
 $drawer-width := 300px
 $nav_drawer_bg := #444
 $nav_drawer_color := #ddd
-$nav_drawer_image = "/images/arch2.jpeg"
+$nav_drawer_image := "/images/arch2.jpeg"
 
 $toc_drawer_bg := $content_bg
 $toc_drawer_color := $ink
@@ -52,22 +54,23 @@ $toc_toggle_color := $Mist
 $toc_drawer_button_height := vr-block(2)
 
 //TranslationNotification
-$translationNotification_bg = #444
-$translationNotification_color = #ddd
+$translationNotification_bg := #444
+$translationNotification_color := #ddd
 
 //articles
-$article_max_width = 800px
+$article_max_width := 800px
 
-$borderWidth = vr-block(0.25);
+$borderWidth := vr-block(0.25);
 
 
 //Typography
-$body-font          = $helvetica
-$body-font-weight   = 400
-$body-color         = #555
-$header-font        = $helvetica
-$header-font-weight = 400
-$header-color       = #111
+$body-font          := $helvetica
+$body-font-weight   := 400
+$body-color         := #555
+$header-font        := $helvetica
+$header-font-weight := 400
+$header-color       := #111
+
 
 /* LOGO */
 siteLogo := url(/images/logo_white.png) //url(/images/BID-v2.png)
@@ -86,6 +89,7 @@ $button-bg-color := $Black //primary-color //rgb(80,158,47)
 $button-color := tomato
 $popupBorderColor = pink
 
-$articleHeader_textColor = inherit//white
-$articleHeader_weight = bold
-$articleHeader_bg = inherit//lighten(tomato, 20%)//coral
+$articleHeader_textColor := inherit//white
+$articleHeader_weight := bold
+$articleHeader_bg := inherit//lighten(tomato, 20%)//coral
+$articleHeader_border := vr-block(0.125) dotted deepskyblue

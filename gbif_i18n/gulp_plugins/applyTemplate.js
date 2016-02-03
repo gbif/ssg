@@ -10,6 +10,12 @@ swig.setFilter('startsWith', function (input, start) {
     return startsWith && followedBySlash;
 });
 
+swig.setFilter('toAnchor', function (input) {
+    return input.toLowerCase().replace(/[\s]+/g, '-')
+});
+
+
+
 
 module.exports = function (tpl, languages, translations) {
     if (typeof tpl !== 'string') {

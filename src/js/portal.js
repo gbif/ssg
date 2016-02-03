@@ -1,8 +1,21 @@
+(function() {
+    function appendScript(conditionalScript) {
+        var el = document.createElement('script');
+        el.setAttribute('src', conditionalScript);
+        document.head.appendChild(el);
+    }
+
+    //We wan't classlist and this is not supported in ie9
+    if (!document.body.classList) {
+        appendScript('//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js');
+    }
+})();
+
 var searchToggleSelector = '.site__searchToggle',
     navToggleSelector = '.site__menuToggle';
 var toggleMenu = function (event) {
-    document.getElementById('SiteHeader').classList.toggle('isActive');
-    document.getElementById('siteCanvas').classList.toggle('hasActiveMenu');
+    $('#SiteHeader').toggleClass('isActive');
+    $('#siteCanvas').toggleClass('hasActiveMenu');
     $('.overlayMobileMenu').toggleClass('isActive');
     hideToc();
     closeSearch();

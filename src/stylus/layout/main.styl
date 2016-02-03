@@ -9,67 +9,36 @@ html, body, .page-wrapper {
 	height 100%
 	width 100%
 }
-.SiteNav, .mobileHeader {
+.SiteNav, .mobileHeader, .Site__drawer, .SiteHeader {
 	ul,ol {
 		margin 0
 		list-style none
 		padding 0
 	}
+	a {
+		text-decoration none
+	}
 }
 
 
+setScrollbars() {
+	.page-wrapper * {
+		&::-webkit-scrollbar {
+			width: 8px; /* for vertical scrollbars */
+			height: 8px; /* for horizontal scrollbars */
+		}
 
+		&::-webkit-scrollbar-track {
+			// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			// border-radius: 10px;
+			background: rgba(0, 0, 0, 0)
+		}
 
-//ie scrollbar styling
-body {
-	/*scrollbar-face-color: #b46868;*/
-
-	/*scrollbar-base-color: #222;*/
-	/*scrollbar-3dlight-color: #222;*/
-	/*scrollbar-highlight-color: #222;*/
-	/*scrollbar-track-color: #3e3e42;*/
-	/*scrollbar-arrow-color: #111;*/
-	/*scrollbar-shadow-color: #222;*/
-	/*scrollbar-dark-shadow-color: #222;*/
-
-	/*-ms-overflow-style: -ms-autohiding-scrollbar;*/
-}
-
-// ::-webkit-scrollbar
-// {
-// 	width: 17px;  /* for vertical scrollbars */
-// 	height: 17px; /* for horizontal scrollbars */
-// }
-
-// ::-webkit-scrollbar-track
-// {
-// 	background: rgba(220, 220, 220, 1);
-// 	border-radius: 0px;
-// }
-
-// ::-webkit-scrollbar-thumb
-// {
-// 	border-radius: 0px;
-// 	background: rgba(150, 150, 150, 1);
-// }
-
-.page-wrapper * {
-	&::-webkit-scrollbar
-	{
-		width: 8px;  /* for vertical scrollbars */
-		height: 8px; /* for horizontal scrollbars */
-	}
-
-	&::-webkit-scrollbar-track {
-	    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	    // border-radius: 10px;
-	    background: rgba(0,0,0,0)
-	}
-
-	&::-webkit-scrollbar-thumb {
-	    // border-radius: 10px;
-	    background: rgba(0,0,0,0.3)
-	    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+		&::-webkit-scrollbar-thumb {
+			// border-radius: 10px;
+			background: rgba(0, 0, 0, 0.3)
+			// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+		}
 	}
 }
 
@@ -87,11 +56,11 @@ body {
 }
 
 //Safari hack to prevent flicker. At mobile breakpoint it removes scrollbar and then thinks it is larger, leading to the laptop view. Where there is a scrollbar that makes the window smaller etc.
-+isBetween( ($laptop - 16px), $laptop) {
-	html {
-		overflow-y scroll
-	}
-}
+/*+isBetween( ($laptop - 16px), $laptop) {*/
+	/*html {*/
+		/*overflow-y scroll*/
+	/*}*/
+/*}*/
 
 .Site__contentArea__main {
 	display flex

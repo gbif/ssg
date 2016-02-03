@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# [A static site generator for GBIF](sdf)
+# A static site generator for GBIF
 
 **An example of how a site could look like**
 

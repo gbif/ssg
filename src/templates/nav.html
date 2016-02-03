@@ -15,7 +15,7 @@
 
     <div class="MainMenu">
         {% if nav.menuItem[meta.siteLanguage] %}
-        <a href="/{{meta.siteLanguage}}" class="gb-icon-home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
+        <a href="/{{meta.siteLanguage}}" class="gb-icon-home home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
         {% endif %}
         {% for x in nav.children %}
         {% if loop.first %}

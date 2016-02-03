@@ -9,7 +9,7 @@
         <ul>
             {% endif %}
             <li>
-                <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="active" {% endif %}>{{languages.languages[abbr]}}</a>
+                <a href="/{{versions[abbr]}}" {% if abbr == meta.siteLanguage %} class="active" {% endif %}>{{languages[abbr].name}}</a>
             </li>
             {% if loop.last %}
         </ul>

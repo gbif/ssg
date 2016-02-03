@@ -26,7 +26,7 @@
             {% if meta.fm.toc %}
             <aside class="
             {% if meta.fm.toc == 'forced' %} isLocked {% endif %} 
-            {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %} 
+            {% if languages[meta.contentLanguage].dir == 'rtl' %} rtl {% endif %}
             Site__drawer" id="filter">
                 <div>
                     {% include "drawer.html" %}
@@ -37,10 +37,10 @@
 
             <div class="Site__contentArea {% if meta.fm.style %} {{meta.fm.style}}  {% else %} article {% endif %}">
                 {% if meta.fm.toc %}
-                    <a href="#" class="toggleDrawer openDrawer"><i class=" gb-icon-left-arrow"></i><span>Open TOC</span></a>
+                    <a href="#" class="toggleDrawer openDrawer"><i class="gb-icon-left-arrow"></i></a>
                 {% endif %}
                 <div class="Site__contentArea__main 
-                            {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %} ">
+                            {% if languages[meta.contentLanguage].dir == 'rtl' %} rtl {% endif %} ">
                     {% include "article.html" %}
 
                     <footer class="Site__footer">
