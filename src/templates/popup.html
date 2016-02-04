@@ -1,8 +1,8 @@
 {% if languages.list.length > 1 %}
 <div id="popup" class="popup">
-    <a href="#" class="popup-close icon-cross"></a>
+    <a href="#" class="popup-close gb-icon-close_L"></a>
     <div class="popup-languages">
-        <p>This site is available in more languages </p>
+        <p>What is your preferred language</p>
 
         {% for abbr in languages.list%}
         {% if loop.first %}
@@ -17,9 +17,9 @@
         {% endfor %}
     </div>
 
-    <div>
+    <div class="popup__privacy">
         <p>
-            Lorem ipsum cookies
+            We use cookies to deliver this service. You can read more in our <a href="//gbif.org">privacy policy</a>
         </p>
     </div>
 </div>

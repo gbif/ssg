@@ -222,9 +222,9 @@ typographic() {
 		margin-bottom $base-line-height
 	}
 
-	p {
-		set-type()
-	}
+	/*p {*/
+		/*set-type()*/
+	/*}*/
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $header-font
@@ -243,14 +243,13 @@ typographic() {
 		setFont(4)
 	}
 	h4 {
-		setFont(2)
-	}
-	h5 {
 		setFont(1)
 	}
-	h6 {
+	h5, h6 {
 		setFont(1)
+		font-style italic
 	}
+
 	+isAbove($tablet) {
 		h1 {
 			setFont(15)
@@ -271,6 +270,9 @@ typographic() {
 
 	blockquote {
 		font-style: italic
+		border-left solid vr-block(0.25) $blockquote_border_color
+		padding-left vr-block(1)
+		margin-left 0
 		cite {
 			display: block
 			font-style: normal

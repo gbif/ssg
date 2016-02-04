@@ -1,4 +1,27 @@
 .Site__footer {
-	padding vr-block(2)
-	border-top solid vr-block(0.125) deepskyblue
+	padding vr-block(0.5) 0
+	border-top solid $footer_border_width $footer_border_color
+	background $footer_bg
+	color $footer_color
+	.Site__footer__content {
+		max-width $article_max_width
+		margin 0 auto
+		padding 0 vr-block(1)
+		font-size 0.9rem
+		text-align center
+		.Site__footer__gbifLogo {
+			font-size 2rem
+			a {
+				font-size 1rem
+				text-decoration none
+			}
+		}
+		p {
+			margin-bottom vr-block(0)
+			a {
+				text-decoration none
+				border-bottom dotted 1px $footer_color
+			}
+		}
+	}
 }

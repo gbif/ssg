@@ -46,6 +46,11 @@ $nav_drawer_bg := #444
 $nav_drawer_color := #ddd
 $nav_drawer_image := "/images/arch2.jpeg"
 
+$footer_bg := $navbar_bg
+$footer_color := $navbar_textColor
+$footer_border_width := $navbar_borderWidth
+$footer_border_color := $navbar_BorderColor
+
 $toc_drawer_bg := $content_bg
 $toc_drawer_color := $ink
 $toc_h2_underline_color := tomato
@@ -66,11 +71,11 @@ $borderWidth := vr-block(0.25);
 //Typography
 $body-font          := $helvetica
 $body-font-weight   := 400
-$body-color         := #555
+$body-color         := #333
 $header-font        := $helvetica
-$header-font-weight := 400
-$header-color       := #111
-
+$header-font-weight := 500
+$header-color       := #555
+$blockquote_border_color := #555
 
 /* LOGO */
 siteLogo := url(/images/logo_white.png) //url(/images/BID-v2.png)
@@ -87,9 +92,13 @@ $ink-color := $color-dark
 $link-bg-color := $OrangePeel
 $button-bg-color := $Black //primary-color //rgb(80,158,47)
 $button-color := tomato
-$popupBorderColor = pink
+$popupBorderColor = $ink
 
 $articleHeader_textColor := inherit//white
 $articleHeader_weight := bold
 $articleHeader_bg := inherit//lighten(tomato, 20%)//coral
 $articleHeader_border := vr-block(0.125) dotted deepskyblue
+
+
+//search
+$search_result_bg := #ccc

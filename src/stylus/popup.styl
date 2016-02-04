@@ -19,8 +19,8 @@ $popupColor = $ink
 		padding: vr-block(0.5)
 		margin 0
 	a
-		color $popupColor
 		text-decoration none
+		color $popupColor
 		border: none
 		background-color none
 	&.isVisible
@@ -46,5 +46,10 @@ $popupColor = $ink
 				border-left borderWidth solid $popupBg
 				&:hover
 					border-left-color $primary-color
+	.popup__privacy {
+		a {
+			border-bottom dotted 1px $popupColor
+		}
+	}
 
 

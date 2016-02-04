@@ -42,7 +42,7 @@ conf = {
     stylus: {
         src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core
         coresrc: src + '/stylus/**/*.styl', //for the css in core to watch
-        entries: [src + '/stylus/index.styl'], //main entry point to build css from, will be overwritten by individual sites
+        entries: [src + '/stylus/documentation.styl'], //main entry point to build css from, will be overwritten by individual sites
         rawCss: [base + '/node_modules/highlight.js/styles/tomorrow.css'],
         dest: dest + '/css' //where to build to
     },

@@ -6,7 +6,7 @@
         </div>
         <ul>
             <li class="ServiceMenu__search">
-                <a href="#" class="gb-icon-search site__searchToggle">Search</a>
+                <a href="#" class="gb-icon-search site__searchToggle">{{i18n.NavSearch[meta.siteLanguage]}}</a>
             </li>
             {% include "language-selector.html" %}
         </ul>
@@ -15,7 +15,7 @@
 
     <div class="MainMenu">
         {% if nav.menuItem[meta.siteLanguage] %}
-        <a href="/{{meta.siteLanguage}}" class="gb-icon-home home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
+        <a href="/{{meta.siteLanguage}}/#" class="gb-icon-home home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
         {% endif %}
         {% for x in nav.children %}
         {% if loop.first %}

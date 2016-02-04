@@ -2,23 +2,41 @@
 
 siteName:
   en: SSG
+  da: SSG
+  ar: SSG
+
+NavSearch:
+  en: Search...
+  ar: البحث عن
+  da: Søg
+
+NavMenu:
+  en: Menu
+  ar: قائمة الطعام
+  da: Menu
 
 searchPlaceholder:
   en: Search...
   ar: البحث عن
+  da: Søg
 
 skipLink:
   en: Skip to main content
 
 languageSelector_title:
   en: Select language
+  ar: اختار اللغة
+  da: Vælg sprog
 
 translationNotAvailable:
   en: This text is not available in english
   ar: هذا النص غير متوفر في اللغة العربية
+  da: Denne side er ikke tilgængelig på dansk
 
 cannotFindInformation:
   en: Cannot find what you are looking for? Feel free to contact us.
+  ar: لم تجد ما تبحث عنه؟ لا تتردد في الاتصال بنا .
+  da: Du er altid velkommen til at kontakte os hvis du ikke kan finde hvad du søger
 
 
 

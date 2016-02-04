@@ -13,14 +13,34 @@
 	display flex
 	flex-wrap wrap
 	>a{
-		padding vr-block(1)
 		float left
 		display block;
 		flex 1 1 auto
 		width 350px
 		min-width 250px
-		background tomato
-		margin vr-block(1)
+		background $search_result_bg
+		margin vr-block(0.5)
+		text-decoration none
+		position relative
+		>* {
+			padding 0 vr-block(1)
+			margin 0
+		}
+		h2 {
+			padding vr-block(0.5) vr-block(1)
+			color white
+			background #aaa
+		}
+		p {
+			padding-top vr-block(0.5) vr-block(1)
+		}
+		span {
+			position absolute
+			right 0
+			top vr-block(0.5)
+			font-size 80%
+			text-transform uppercase
+		}
 	}
 }
 .Search.rtl {

@@ -152,11 +152,12 @@ siteHeaderbar() {
 				padding 0 vr-block(0.75)
 			}
 			>a {
-				width vr-block(3)
+				/*width vr-block(3)*/
 				position relative
 				span {
-					position absolute
-					left -9999px
+					padding-left vr-block(3)
+					/*position absolute*/
+					/*left -9999px*/
 				}
 				&:before {
 					content $icon-string-logo
@@ -170,6 +171,10 @@ siteHeaderbar() {
 			.MainMenu {
 				>ul, >a {
 					float right
+				}
+				>a span {
+					padding-right vr-block(3)
+					padding-left 0
 				}
 			}
 			.ServiceMenu{

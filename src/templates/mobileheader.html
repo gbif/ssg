@@ -3,17 +3,17 @@
         <div class="SiteHeader__mobileOptions">
             <div class="navbar_action">
                 <a href="#" class="actionIcon gb-icon-menu site__menuToggle btn">
-                    <span>Menu</span>
+                    <span>{{i18n.NavMenu[meta.siteLanguage]}}</span>
                 </a>
             </div>
             <div class="navbar_action">
-                <a href="/#" class="actionIcon gb-icon-logo home">
+                <a href="/{{meta.siteLanguage}}/#" class="actionIcon gb-icon-logo home">
                     <span>{{i18n.siteName[meta.siteLanguage]}}</span>
                 </a>
             </div>
             <div class="navbar_action">
                 <a href="#" class="actionIcon gb-icon-search site__searchToggle btn">
-                    <span>Search</span>
+                    <span>{{i18n.NavSearch[meta.siteLanguage]}}</span>
                 </a>
             </div>
         </div>

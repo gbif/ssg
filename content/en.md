@@ -1,27 +1,19 @@
 ---
 title: Home
+style: article home
 ---
 
-# A static site generator for GBIF
+# A small set of tools for generating static sites with Gulp
 
-**An example of how a site could look like**
+_This site serves as documentation and an example_
 
-> At GBIF we have a need to quickly create new sites for specific programs and projects. But also for specific audiences.
+> At GBIF we would like to have the option to quickly create new small sites. This would be useful for temporary projects with a lot of content as well as focused channels for specific audiences. 
 
 ## What is this
 
-This is an example of what a static site made with the generator can look like. You can restyle it if needed. In fact you should.
+This is an example of what a static site made with the generator can look like. You can restyle it if needed. In fact you should. The base stylesheet is intended to make the sites look similar to each other and the main site [GBIF.org](http://gbif.org). The intention hasn't been to create a full blown static site generator, but a predefined build process, templates and style that allows for consistency and simplicity. In these pages you can read more about generating a static site and how to customize it.
 
-```styledYaml
-rss:
-- url: http://drupaledit.gbif-uat.org/newsroom/news/json/bid/pt
-```
+## Why
+The first ever website was static. Then came along dynamic sites. Now static is back in vogue.
 
-```styledYaml
-contacts:
-- name: Beate Carola
-  image: http://im1.peldata.com/bl1/7530/6bg.jpg
-  mail: beate@spam.org
-  tel: +23 2393 7498
-  info: Hobby Gardener
-```
+[Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
