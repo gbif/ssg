@@ -1,7 +1,6 @@
 {
   "name": "gbif-ssg",
   "description": "A static site generator for GBIF sub sites.",
-  "main": ["bower_build/ssg.js", "bower_build/ssg.css", "bower_build/fonts/*"],
   "authors": [
     "gbif"
   ],
@@ -15,8 +14,7 @@
   "moduleType": [],
   "private": true,
   "ignore": [
-    "*",
-    "!bower_build/**"
+    "*"
   ],
   "dependencies": {
     "jquery": "~2.1.4"

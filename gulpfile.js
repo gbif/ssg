@@ -21,5 +21,12 @@ gulp.task('development', function (callback) {
         callback);
 });
 
+gulp.task('prod', function (callback) {
+    runSequence(
+        ['clean-all'],
+        ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
+        callback);
+});
+
 //specifies the default set of tasks to run when you run `gulp`.
 gulp.task('default', ['development']);

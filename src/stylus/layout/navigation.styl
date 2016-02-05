@@ -56,7 +56,8 @@ siteHeaderbar() {
 			position relative
 			&:after {
 				position absolute
-				top vr-block(2.5)
+				/*top vr-block(2.5)*/
+				bottom - ($navbar_borderWidth)
 				left 50%
 				margin-left -(vr-block(0.25) * 2)
 				content ''
@@ -68,7 +69,8 @@ siteHeaderbar() {
 				position relative
 				&:after {
 					position absolute
-					top vr-block(2.5)
+					/*top vr-block(2.5)*/
+					bottom - ($navbar_borderWidth)
 					left 50%
 					margin-left -(vr-block(0.25) * 2)
 					content ''

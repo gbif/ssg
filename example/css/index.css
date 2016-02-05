@@ -388,7 +388,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #333;
   font-size: 16px;
   line-height: 1.5;
@@ -642,7 +642,8 @@ body,
   }
   .SiteNav >div>ul>li.isCategory>a:hover:after {
     position: absolute;
-    top: 3.75rem;
+/*top vr-block(2.5)*/
+    bottom: -0.375rem;
     left: 50%;
     margin-left: -0.75rem;
     content: '';
@@ -659,7 +660,8 @@ body,
   .SiteNav.isExpanded >div>ul>li.isCategory.isExpanded>a:after,
   .SiteNav.isExpanded >div>ul>li.isCategory.isExpanded>a:hover:after {
     position: absolute;
-    top: 3.75rem;
+/*top vr-block(2.5)*/
+    bottom: -0.375rem;
     left: 50%;
     margin-left: -0.75rem;
     content: '';
@@ -1322,6 +1324,10 @@ main {
 .Search.rtl {
   direction: rtl;
 }
+.article a {
+  text-decoration: none;
+  border-bottom: solid 1px #fdb002;
+}
 .article .block-content {
   margin: 0 1.5rem;
 }
@@ -1332,7 +1338,7 @@ main {
 }
 .article .block-first {
   background: inherit;
-  margin-bottom: 1.5rem;
+/*margin-bottom vr-block(1)*/
 }
 .article .block-first h1 {
   margin: 0;
@@ -1431,14 +1437,6 @@ main {
   }
   .Site__drawer .Toc__close {
     display: none;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .Site__drawer ~ .Site__contentArea>.Site__contentArea__main {
-    padding-right: 300px;
-  }
-  .Site__drawer {
-    border: none;
   }
 }
 .toggleDrawer.openDrawer {

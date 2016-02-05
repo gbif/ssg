@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     gutil = require('gulp-util'),
     gulpif = require('gulp-if'),
-    minifyCSS = require('gulp-minify-css'),
+    cssnano = require('gulp-cssnano'),
     postcss = require('gulp-postcss'),
     config = require('../../config');
 
@@ -29,6 +29,6 @@ gulp.task('stylus', function () {
         }))
         .pipe(concat('index.css'))
         .pipe(postcss(processors))
-        .pipe(gulpif(gutil.env.production, minifyCSS()))
+        .pipe(gulpif(gutil.env.production, cssnano()))
         .pipe(gulp.dest(config.stylus.dest));
 });
