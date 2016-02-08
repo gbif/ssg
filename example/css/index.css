@@ -384,6 +384,9 @@ iframe {
 .gb-icon-right-arrow:before {
   content: "\EA10";
 }
+.gb-icon-bid:before {
+  content: "\EA11";
+}
 html {
   height: 100%;
   width: 100%;
@@ -430,7 +433,7 @@ h6 {
   font-weight: 500;
   clear: both;
   margin-bottom: 0.75rem;
-  margin-top: 2.25rem;
+/*margin-top vr-block(1.5)*/
 }
 h1 {
   font-size: 1.875rem;
@@ -634,7 +637,8 @@ body,
     overflow: visible;
     position: relative;
   }
-  .SiteNav >div>ul>li>a:hover {
+  .SiteNav >div>ul>li>a:hover,
+  .SiteNav >div>a:hover {
     color: #fafafa;
   }
   .SiteNav >div>ul>li.isCategory>a:hover {
@@ -720,6 +724,10 @@ body,
   }
   .SiteNav >div>ul>li.isCategory.isMega > ul > li > a {
     color: #ff6347;
+    cursor: default;
+  }
+  .SiteNav >div>ul>li.isCategory.isMega > ul > li > a:hover {
+    background: none;
   }
   .SiteNav >div>ul>li.isCategory.isMega > ul > li >ul {
     display: block;
@@ -1052,6 +1060,7 @@ main {
 }
 .SiteHeader .SiteHeader__mobileOptions .home:before {
   color: #e8e8e8;
+  content: "\EA0D";
 }
 .isActive.site__searchToggle:before,
 .SiteHeader.isActive .site__menuToggle:before {
@@ -1289,6 +1298,8 @@ main {
           flex-wrap: wrap;
 }
 .Search--showResults .Search__results >a {
+  padding: 1.5rem;
+  margin: 0.75rem;
   float: left;
   display: block;
   -webkit-box-flex: 1;
@@ -1296,35 +1307,32 @@ main {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 350px;
-  min-width: 250px;
-  background: #ccc;
-  margin: 0.75rem;
+  min-width: 200px;
+  background: #eee;
   text-decoration: none;
   position: relative;
+  border-left: 10px solid #00bfff;
 }
 .Search--showResults .Search__results >a >* {
-  padding: 0 1.5rem;
   margin: 0;
 }
 .Search--showResults .Search__results >a h2 {
-  padding: 0.75rem 1.5rem;
-  color: #fff;
-  background: #aaa;
+  color: #222;
+  background: #eee;
 }
-.Search--showResults .Search__results >a p {
-  padding-top: 0.75rem 1.5rem;
+.Search--showResults .Search__results >a >p {
+  margin-top: 0.75rem;
 }
 .Search--showResults .Search__results >a span {
-  position: absolute;
-  right: 0;
-  top: 0.75rem;
-  font-size: 80%;
-  text-transform: uppercase;
+  display: none;
+/*font-size 0.8rem*/
+/*float right*/
+/*text-transform uppercase*/
 }
 .Search.rtl {
   direction: rtl;
 }
-.article a {
+.article .block-content a {
   text-decoration: none;
   border-bottom: solid 1px #fdb002;
 }
@@ -1518,7 +1526,9 @@ main {
 .Toc a.Toc--l3,
 .Toc a.Toc--l4,
 .Toc a .Toc--l5 {
-  margin: 0.375rem 0;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 .Toc a.Toc--l4 {
   margin: 0.375rem 0 0.375rem 1.5rem;

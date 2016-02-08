@@ -49,7 +49,7 @@ siteHeaderbar() {
 		display none
 	}
 	.SiteNav {
-		>div>ul>li>a:hover {
+		>div>ul>li>a:hover, >div>a:hover {
 			color $navbar_textColor_hover
 		}
 		>div>ul>li.isCategory>a:hover {
@@ -117,6 +117,10 @@ siteHeaderbar() {
 							lost-column: 1/4
 							> a {
 								color $navbar_dropdown_megaColor
+								cursor default
+								&:hover {
+									background none
+								}
 							}
 							>ul {
 								display block
@@ -162,7 +166,7 @@ siteHeaderbar() {
 					/*left -9999px*/
 				}
 				&:before {
-					content $icon-string-logo
+					content $site-logo-content
 					font-size vr-block(2)
 					position absolute
 					bottom vr-block(0.5)

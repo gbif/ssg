@@ -109,7 +109,7 @@ function addToMenu(menu, dir, item) {
 
 function getPrettyUrl(dir, language) {
     "use strict";
-    var prettyUrl = path.join(language, dir.toLowerCase().replace(/[0-9]{2}./g, '').replace(/\s/g, '-'));
+    var prettyUrl = path.join(language, dir.toLowerCase().replace(/^[0-9]{2}./g, '').replace(/\/[0-9]{2}./g, '/').replace(/\s/g, '-'));
     return prettyUrl;
 }
 

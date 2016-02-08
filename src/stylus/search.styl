@@ -1,3 +1,4 @@
+
 .Search--message {
 	text-align center
 	margin vr-block(2)
@@ -12,34 +13,34 @@
 .Search--showResults .Search__results {
 	display flex
 	flex-wrap wrap
-	>a{
+	>a {
+		padding vr-block(1)
+		margin vr-block(0.5)
 		float left
 		display block;
 		flex 1 1 auto
 		width 350px
-		min-width 250px
+		min-width 200px
 		background $search_result_bg
-		margin vr-block(0.5)
 		text-decoration none
 		position relative
+		border-left 10px solid $search_result_border_color
 		>* {
-			padding 0 vr-block(1)
 			margin 0
 		}
 		h2 {
-			padding vr-block(0.5) vr-block(1)
-			color white
-			background #aaa
+			color $search_result_color
+			background $search_result__header_bg
 		}
-		p {
-			padding-top vr-block(0.5) vr-block(1)
+		>p {
+			margin-top vr-block(0.5)
 		}
+
 		span {
-			position absolute
-			right 0
-			top vr-block(0.5)
-			font-size 80%
-			text-transform uppercase
+			display none
+			/*font-size 0.8rem*/
+			/*float right*/
+			/*text-transform uppercase*/
 		}
 	}
 }
