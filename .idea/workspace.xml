@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylus/fonts/_iconmoon.styl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.eot" afterPath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.eot" afterPath="$PROJECT_DIR$/fonts/iconfont/gbificons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.ttf" afterPath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.ttf" afterPath="$PROJECT_DIR$/fonts/iconfont/gbificons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.woff" afterPath="$PROJECT_DIR$/example/css/fonts/iconfont/gbificons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.woff" afterPath="$PROJECT_DIR$/fonts/iconfont/gbificons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/_variables.styl" afterPath="$PROJECT_DIR$/src/stylus/_variables.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/article.styl" afterPath="$PROJECT_DIR$/src/stylus/article.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/fonts/gb_iconfont.styl" afterPath="$PROJECT_DIR$/src/stylus/fonts/gb_iconfont.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js" afterPath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/index.css" afterPath="$PROJECT_DIR$/example/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_ar.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_da.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_en.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/mobileheader.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/mobileheader.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/navigation.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/navigation.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/search.styl" afterPath="$PROJECT_DIR$/src/stylus/search.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/searcharea.html" afterPath="$PROJECT_DIR$/src/templates/searcharea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/toc.styl" afterPath="$PROJECT_DIR$/src/stylus/toc.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/portal.js" afterPath="$PROJECT_DIR$/src/js/portal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssg.iws" />
@@ -50,34 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/01_examples/02_extensions/en.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="portal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/portal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="660">
-              <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/search.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="810">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state vertical-scroll-proportion="-16.076923" vertical-offset="844" max-vertical-offset="1860">
+              <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -86,40 +44,18 @@
       <file leaf-file-name="searcharea.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/searcharea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="390">
               <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i18n_build.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="2385">
-              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toc.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/toc.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2305" max-vertical-offset="3105">
-              <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadNewsJSON.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1015">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.29182878" vertical-offset="0" max-vertical-offset="1028">
+              <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -134,7 +70,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gbif_i18n/helpers/validate.js" />
-        <option value="$PROJECT_DIR$/src/js/portal.js" />
         <option value="$PROJECT_DIR$/src/stylus/index.styl" />
         <option value="$PROJECT_DIR$/src/stylus/fonts/_iconmoon.styl" />
         <option value="$PROJECT_DIR$/src/templates/navigation.html" />
@@ -184,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/stylus/search.styl" />
         <option value="$PROJECT_DIR$/src/templates/searcharea.html" />
         <option value="$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js" />
+        <option value="$PROJECT_DIR$/src/js/portal.js" />
       </list>
     </option>
   </component>
@@ -360,24 +296,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/stylus/translationNotification.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1053">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/translation_notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="120">
-          <caret line="1" column="88" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/layout/main.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="1185">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -427,6 +350,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="315">
           <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -434,6 +358,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25098425" vertical-offset="0" max-vertical-offset="1950">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -545,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29182878" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23323615" vertical-offset="0" max-vertical-offset="1029">
@@ -660,6 +578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.111111" vertical-offset="438" max-vertical-offset="7875">
           <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,13 +626,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/02_extensions/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="660">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.13300492" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38423645" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/toc.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64387465" vertical-offset="2052" max-vertical-offset="3105">
+          <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23076923" vertical-offset="1332" max-vertical-offset="2385">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/search.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4985755" vertical-offset="0" max-vertical-offset="1053">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -726,44 +676,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/search.styl">
+    <entry file="file://$PROJECT_DIR$/content/01_examples/02_extensions/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.38613862" vertical-offset="0" max-vertical-offset="1010">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/portal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.076923" vertical-offset="844" max-vertical-offset="1860">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/searcharea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="390">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gbif_i18n/gulp_plugins/i18n_build.js">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="2385">
-          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/toc.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2305" max-vertical-offset="3105">
-          <caret line="182" column="34" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.29182878" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding />
         </state>
       </provider>
