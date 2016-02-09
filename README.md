@@ -13,3 +13,4 @@ image: https://images/cat.jpg # Header background image. Use sparingly as it is 
 toc: [none] | true | forced # add a table of content to the page. Default false. Set to 'forced' if it should be visible at all times on medium sized screens. large screens will always show it.
 ---
 ```
+
