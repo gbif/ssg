@@ -22,8 +22,8 @@ conf = {
     javascript: {
         main: src + '/js/script.js',
         src: [
-            path.join(base, 'node_modules/jquery/dist/**/jquery.js'),
-            path.join(base, 'node_modules/lunr/lunr.js'),
+            './node_modules/jquery/dist/**/jquery.js',
+            './node_modules/lunr/lunr.js',
             src + '/js/helpers.js',
             src + '/js/**/*.js'
         ],
