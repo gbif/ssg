@@ -14,7 +14,7 @@
     "ssg"
   ],
   "author": "gbif",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "axis": "^0.5.2",
     "browser-sync": "^2.9.11",
