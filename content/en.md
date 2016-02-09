@@ -17,3 +17,4 @@ This is an example of what a static site made with the generator can look like. 
 The first ever website was static. Then came along dynamic sites. Now static is back in vogue.
 
 [Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+
