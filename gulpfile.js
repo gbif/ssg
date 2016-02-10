@@ -21,7 +21,7 @@ gulp.task('development', function (callback) {
         callback);
 });
 
-gulp.task('prod', function (callback) {
+gulp.task('production', function (callback) {
     runSequence(
         ['clean-all'],
         ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],

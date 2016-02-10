@@ -10,5 +10,16 @@ module.exports = (function(){
             ['watch'],
             callback);
     }
-    return developmentTask;
+
+    function productionTask (callback) {
+        runSequence(
+            ['clean-all'],
+            ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
+            callback);
+    }
+
+    return {
+        developmentTask: developmentTask,
+        productionTask: productionTask
+    };
 })();
