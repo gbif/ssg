@@ -16,7 +16,6 @@ module.exports = (function(){
         runSequence(
             ['clean-all'],
             ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
-            ['watch'],
             callback);
     }
 
