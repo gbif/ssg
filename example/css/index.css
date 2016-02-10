@@ -1349,7 +1349,7 @@ main {
 /*margin-bottom vr-block(1)*/
 }
 .article .block-first h1 {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   padding-top: 1.5rem;
   font-weight: bold;
   color: inherit;

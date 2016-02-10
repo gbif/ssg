@@ -5,42 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/02_documentation/01_creating-content/en.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/02_documentation/02_new-sites/en.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/02_extensions/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/03_multilingual/ar.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/03_multilingual/da.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/03_multilingual/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/04-html/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/04_external/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/01_examples/08_faq/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/02_documentation/01_markdown/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/02_documentation/02_build/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/02_documentation/03_edit/01_introduction/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/02_documentation/03_edit/02_how/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/02_documentation/03_edit/en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/ar/documentation/edit/how/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/ar/documentation/edit/introduction/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/custom-html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/frontmatter/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/what-is-markdown/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/da/documentation/edit/how/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/da/documentation/edit/introduction/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/custom-html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/frontmatter/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/what-is-markdown/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/documentation/edit/how/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/documentation/edit/introduction/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/custom-html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/frontmatter/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/what-is-markdown/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/script/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/raw/bid.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content/02_documentation/01_markdown/01_what-is-markdown/en.md" afterPath="$PROJECT_DIR$/content/02_documentation/01_creating-content/01_what-is-markdown/en.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content/02_documentation/01_markdown/02_frontmatter/en.md" afterPath="$PROJECT_DIR$/content/02_documentation/01_creating-content/02_images/en.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content/02_documentation/01_markdown/03_custom-html/en.md" afterPath="$PROJECT_DIR$/content/02_documentation/01_creating-content/03_custom-html/en.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content/02_documentation/02_build/01_example-site/en.md" afterPath="$PROJECT_DIR$/content/02_documentation/02_new-sites/01_example-site/en.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content/02_documentation/02_build/02_build-process/en.md" afterPath="$PROJECT_DIR$/content/02_documentation/02_new-sites/02_build-process/en.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/article.styl" afterPath="$PROJECT_DIR$/src/stylus/article.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/en.md" afterPath="$PROJECT_DIR$/content/en.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/01_examples/01_article/en.md" afterPath="$PROJECT_DIR$/content/01_examples/01_article/en.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/css/index.css" afterPath="$PROJECT_DIR$/example/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/index.html" afterPath="$PROJECT_DIR$/example/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/index.html" afterPath="$PROJECT_DIR$/example/ar/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/documentation/edit/how/index.html" afterPath="$PROJECT_DIR$/example/ar/documentation/edit/how/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/documentation/edit/introduction/index.html" afterPath="$PROJECT_DIR$/example/ar/documentation/edit/introduction/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/custom-html/index.html" afterPath="$PROJECT_DIR$/example/ar/documentation/markdown/custom-html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/frontmatter/index.html" afterPath="$PROJECT_DIR$/example/ar/documentation/markdown/frontmatter/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/documentation/markdown/what-is-markdown/index.html" afterPath="$PROJECT_DIR$/example/ar/documentation/markdown/what-is-markdown/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/article/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/article/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/extensions/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/faq/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/faq/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/html/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/ar/examples/multilingual/index.html" afterPath="$PROJECT_DIR$/example/ar/examples/multilingual/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/index.html" afterPath="$PROJECT_DIR$/example/da/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/documentation/edit/how/index.html" afterPath="$PROJECT_DIR$/example/da/documentation/edit/how/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/documentation/edit/introduction/index.html" afterPath="$PROJECT_DIR$/example/da/documentation/edit/introduction/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/custom-html/index.html" afterPath="$PROJECT_DIR$/example/da/documentation/markdown/custom-html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/frontmatter/index.html" afterPath="$PROJECT_DIR$/example/da/documentation/markdown/frontmatter/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/documentation/markdown/what-is-markdown/index.html" afterPath="$PROJECT_DIR$/example/da/documentation/markdown/what-is-markdown/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/examples/article/index.html" afterPath="$PROJECT_DIR$/example/da/examples/article/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/da/examples/extensions/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/examples/faq/index.html" afterPath="$PROJECT_DIR$/example/da/examples/faq/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/examples/html/index.html" afterPath="$PROJECT_DIR$/example/da/examples/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/da/examples/multilingual/index.html" afterPath="$PROJECT_DIR$/example/da/examples/multilingual/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/index.html" afterPath="$PROJECT_DIR$/example/en/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/documentation/edit/how/index.html" afterPath="$PROJECT_DIR$/example/en/documentation/edit/how/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/documentation/edit/introduction/index.html" afterPath="$PROJECT_DIR$/example/en/documentation/edit/introduction/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/custom-html/index.html" afterPath="$PROJECT_DIR$/example/en/documentation/markdown/custom-html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/frontmatter/index.html" afterPath="$PROJECT_DIR$/example/en/documentation/markdown/frontmatter/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/documentation/markdown/what-is-markdown/index.html" afterPath="$PROJECT_DIR$/example/en/documentation/markdown/what-is-markdown/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/article/index.html" afterPath="$PROJECT_DIR$/example/en/examples/article/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/extensions/index.html" afterPath="$PROJECT_DIR$/example/en/examples/extensions/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/faq/index.html" afterPath="$PROJECT_DIR$/example/en/examples/faq/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/html/index.html" afterPath="$PROJECT_DIR$/example/en/examples/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/en/examples/multilingual/index.html" afterPath="$PROJECT_DIR$/example/en/examples/multilingual/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_ar.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_ar.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_da.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_da.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lunr/lunr_en.json" afterPath="$PROJECT_DIR$/example/lunr/lunr_en.json" />
@@ -70,21 +94,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="150">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/05-multilinglual/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33560312" vertical-offset="0" max-vertical-offset="1028">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/01_examples/04_multilingual/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="20" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/03-styling/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/04-custom-js/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/01_example-site/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="150">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/02_build-process/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/04-front-matter/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8019802" vertical-offset="0" max-vertical-offset="1035">
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/03_custom-html/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/en.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="150">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -98,21 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/stylus/index.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/fonts/_iconmoon.styl" />
-        <option value="$PROJECT_DIR$/src/templates/navigation.html" />
-        <option value="$PROJECT_DIR$/src/stylus/layout/main.styl" />
-        <option value="$PROJECT_DIR$/content/03_multilingual/en.md" />
-        <option value="$PROJECT_DIR$/content/02_examples/01_article/en.md" />
-        <option value="$PROJECT_DIR$/src/stylus/responsiveImage.styl" />
-        <option value="$PROJECT_DIR$/content/07_mega2/01_megasub/02_why/en.md" />
-        <option value="$PROJECT_DIR$/gulp/tasks/i18n.js" />
-        <option value="$PROJECT_DIR$/src/stylus/footer.styl" />
-        <option value="$PROJECT_DIR$/src/templates/main.html" />
-        <option value="$PROJECT_DIR$/inject/html/footerDK.html" />
-        <option value="$PROJECT_DIR$/src/templates/popup.html" />
-        <option value="$PROJECT_DIR$/src/stylus/popup.styl" />
-        <option value="$PROJECT_DIR$/src/js/popup.js" />
         <option value="$PROJECT_DIR$/src/stylus/documentation.styl" />
         <option value="$PROJECT_DIR$/content/languages.yml" />
         <option value="$PROJECT_DIR$/content/08_faq/en.md" />
@@ -128,9 +247,7 @@
         <option value="$PROJECT_DIR$/content/02_documentation/da.md" />
         <option value="$PROJECT_DIR$/content/02_documentation/en.md" />
         <option value="$PROJECT_DIR$/content/02_documentation/ar.md" />
-        <option value="$PROJECT_DIR$/content/en.md" />
         <option value="$PROJECT_DIR$/inject/html/map-test.html" />
-        <option value="$PROJECT_DIR$/content/01_examples/04-html/en.md" />
         <option value="$PROJECT_DIR$/gulp/tasks/fonts.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/gulp/tasks/stylus.js" />
@@ -139,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/stylus/layout/mobileheader.styl" />
         <option value="$PROJECT_DIR$/src/stylus/layout/navigation.styl" />
         <option value="$PROJECT_DIR$/src/stylus/toc.styl" />
-        <option value="$PROJECT_DIR$/src/stylus/article.styl" />
         <option value="$PROJECT_DIR$/src/stylus/_variables.styl" />
         <option value="$PROJECT_DIR$/src/stylus/search.styl" />
         <option value="$PROJECT_DIR$/src/templates/searcharea.html" />
@@ -149,6 +265,24 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/content/en.md" />
+        <option value="$PROJECT_DIR$/content/01_examples/01_article/en.md" />
+        <option value="$PROJECT_DIR$/content/01_examples/03_multilingual/en.md" />
+        <option value="$PROJECT_DIR$/content/01_examples/02_extensions/en.md" />
+        <option value="$PROJECT_DIR$/content/01_examples/04-html/en.md" />
+        <option value="$PROJECT_DIR$/content/01_examples/01_toc/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_markdown/en.md" />
+        <option value="$PROJECT_DIR$/src/stylus/article.styl" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_creating-content/01_what-is-markdown/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_creating-content/02_frontmatter/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_creating-content/03_custom-html/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/02_build/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/02_new-sites/03-styling/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/02_new-sites/04-custom-js/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/02_new-sites/01_example-site/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/02_new-sites/02_build-process/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_creating-content/05-multilinglual/en.md" />
+        <option value="$PROJECT_DIR$/content/02_documentation/01_creating-content/04-front-matter/en.md" />
       </list>
     </option>
   </component>
@@ -219,11 +353,341 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gulp" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_new-sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_new-sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="04-custom-js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_new-sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03-styling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_new-sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_build-process" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_new-sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_example-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_creating-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_creating-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05-multilinglual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_creating-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="04-front-matter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02_documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_creating-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_what-is-markdown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="04_multilingual" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,7 +700,7 @@
     <property name="JavaScriptLanguageLevel" value="ES6" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="options.lastSelected" value="settings.javascript.linters.jscs" />
+    <property name="options.lastSelected" value="settings.javascript.linters.eslint" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
@@ -246,6 +710,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../portal16" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/02_documentation/02_new-sites/04-custom-js" />
+      <recent name="$PROJECT_DIR$/content/02_documentation/02_new-sites/03-styling" />
+      <recent name="$PROJECT_DIR$/content/02_documentation/01_creating-content/05-multilinglual" />
+      <recent name="$PROJECT_DIR$/content/01_examples/01_toc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/footer" />
       <recent name="$PROJECT_DIR$/gulp/tasks" />
@@ -343,115 +813,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14383562" vertical-offset="0" max-vertical-offset="730">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/popup.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="915">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/documentation.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/languages.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/language-selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="315">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25098425" vertical-offset="0" max-vertical-offset="1950">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_documentation/da.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014662757" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_documentation/ar.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058651026" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/ar.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014662757" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/da.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014662757" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014662757" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/02_documentation/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014662757" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="1" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4131054" vertical-offset="0" max-vertical-offset="1053">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/ar.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -521,30 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/04-html/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11730205" vertical-offset="0" max-vertical-offset="1023">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/fonts/_typography.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="4950">
           <caret line="234" column="5" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="375">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -590,61 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/article.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/08_faq/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4522472" vertical-offset="278" max-vertical-offset="990">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/04_external/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/01_article/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0744382" vertical-offset="22" max-vertical-offset="750">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/_variables.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77335167" vertical-offset="1012" max-vertical-offset="1740">
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13300492" vertical-offset="0" max-vertical-offset="1015">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38423645" vertical-offset="0" max-vertical-offset="1015">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -666,31 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4985755" vertical-offset="0" max-vertical-offset="1053">
           <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/01_examples/02_extensions/en.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38613862" vertical-offset="0" max-vertical-offset="1010">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/portal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="1860">
-          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,36 +983,278 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/tasks/js.js">
+    <entry file="file://$PROJECT_DIR$/src/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="270">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.13300492" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/cookies.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/src/js/a11y.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1053">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14591439" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33560312" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.364786" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1455102960000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1455102960000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16050583" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2188716" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1053">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01_examples/01_article/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54950494" vertical-offset="0" max-vertical-offset="1010">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23762377" vertical-offset="0" max-vertical-offset="1010">
+          <caret line="16" column="240" selection-start-line="16" selection-start-column="240" selection-end-line="16" selection-end-column="240" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.jscs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24781342" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/portal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6342412" vertical-offset="0" max-vertical-offset="1860">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/loadNewsJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylus/article.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/01_what-is-markdown/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/02_images/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="435">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01_examples/06-html/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044554457" vertical-offset="0" max-vertical-offset="1010">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="150">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/03_custom-html/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="150">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/04-custom-js/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/01_example-site/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/02_build-process/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/02_new-sites/03-styling/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01_examples/04_multilingual/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="20" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/05-multilinglual/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02_documentation/01_creating-content/04-front-matter/en.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8019802" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding />
         </state>
       </provider>
