@@ -13212,19 +13212,6 @@ $('.languageSelector>a').click(function (event) {
     }
 })();
 
-(function() {
-    function appendScript(conditionalScript) {
-        var el = document.createElement('script');
-        el.setAttribute('src', conditionalScript);
-        document.head.appendChild(el);
-    }
-
-    //We wan't classlist and this is not supported in ie9
-    if (!document.body.classList) {
-        appendScript('//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js');
-    }
-})();
-
 var searchToggleSelector = '.site__searchToggle',
     navToggleSelector = '.site__menuToggle';
 var toggleMenu = function (event) {
@@ -13239,9 +13226,7 @@ var toggleMenu = function (event) {
 };
 function closeSearch() {
     $(searchToggleSelector).removeClass('isActive');
-
-    var searchAreaEl = document.getElementById('site_search');
-    searchAreaEl.classList.remove('isActive');
+    $('#site_search').removeClass('isActive');
 }
 $(navToggleSelector).on('click touchend', toggleMenu);
 
@@ -13262,24 +13247,24 @@ $('.isCategory>a').on('click', function (event) {
     for (i = 0; i < SiteNavCategoryItems.length; i++) {
         child = SiteNavCategoryItems[i];
         if (ancestors.indexOf(child) == -1) {
-            child.classList.remove('isExpanded');
+            $(child).removeClass('isExpanded');
         }
     }
 
-    if (!siteNav.classList.contains('isExpanded')) {
+    if (!$(siteNav).hasClass('isExpanded')) {
         //for horizontal layout. When changing from laptop to mobile this means that the first menu click is ignored
-        this.parentNode.classList.add('isExpanded');
+        $(this.parentNode).addClass('isExpanded');
     }
     else {
-        this.parentNode.classList.toggle('isExpanded');
+        $(this.parentNode).toggleClass('isExpanded');
     }
-    siteNav.classList.add('isExpanded');//use for horizontal layout
+    $(siteNav).addClass('isExpanded');//use for horizontal layout
     event.preventDefault();
 });
 
 //collapse expand service menu
 $('.ServiceMenu__teaser>a').on('click', function (event) {
-    this.parentNode.parentNode.classList.toggle('isExpanded');
+    $(this.parentNode.parentNode).toggleClass('isExpanded');
 });
 
 
@@ -13287,9 +13272,10 @@ $('.ServiceMenu__teaser>a').on('click', function (event) {
 function toggleSearch(event) {
     $(searchToggleSelector).toggleClass('isActive');
     var searchAreaEl = document.getElementById('site_search');
-    searchAreaEl.classList.toggle('isActive');
+    $(searchAreaEl).toggleClass('isActive');
     searchAreaEl.querySelector('input').focus();
     closeMenus();
+    hideToc();
     event.preventDefault(); //do not scroll to top
 }
 $(searchToggleSelector).on('click', toggleSearch);
@@ -13297,21 +13283,27 @@ $(searchToggleSelector).on('click', toggleSearch);
 
 //close menu when clicking outside
 function closeMenus() {
-    siteNav.classList.remove('isExpanded');
-    if (document.getElementById('siteCanvas').classList.contains('hasActiveMenu')) {
+    $(siteNav).removeClass('isExpanded');
+    if ($('#siteCanvas').hasClass('hasActiveMenu')) {
         toggleMenu();
     }
+}
+
+function hideNavigation() {
+    "use strict";
     hideToc();
+    closeMenus();
 }
 
 $(document).keydown(function(e){
     if (e.keyCode==27) {
         closeMenus();
         closeSearch();
+        hideToc();
     }
 });
 
-toggleToc = function(event){
+toggleToc = function(){
     $('.Site__drawer').toggleClass('isActive');
     $(this).toggleClass('isActive');
     $('.overlayFilter').toggleClass('isActive');
@@ -13327,9 +13319,10 @@ function hideToc() {
 }
 
 //overlay
-$('.overlay').on('click touchend', closeMenus);
+$('.overlay').on('click touchend', hideNavigation);
+
 function closeMenusOnClickOutside(event) {
-    var clickOnContent = $(event.target).is('#main *');
+    var clickOnContent = $(event.target).is('#main *') || $(event.target).is('#site_search *');
     if (clickOnContent) {
         closeMenus();
     }

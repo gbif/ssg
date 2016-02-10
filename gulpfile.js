@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
-requireDir('./gulp/tasks', {recurse: true});
+requireDir(__dirname + '/gulp/tasks', {recurse: true});
 
 gulp.task('development', function (callback) {
     runSequence(
