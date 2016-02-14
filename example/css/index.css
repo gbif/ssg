@@ -490,6 +490,7 @@ blockquote cite {
 pre {
   padding: 0.75rem;
   margin-bottom: 1.5rem;
+  background-color: #eee;
 }
 pre code {
   padding: 0;
@@ -1556,9 +1557,21 @@ main {
   height: 0;
   padding-bottom: 50%;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 .responsiveImage >img {
   width: 100%;
+}
+.responsiveImage .responsiveImage_license {
+  display: none;
+}
+.responsiveImage:hover .responsiveImage_license {
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.3);
+  color: #ddd;
+  padding: 5px;
 }
 .contacts {
   margin: auto;

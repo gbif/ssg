@@ -1,0 +1,13 @@
+<div class="contacts">
+	{% for contact in contacts %}
+	<div class="contact">
+		<div style="background-image: url({{contact.image}})"></div>
+		<address>
+			<span>{{contact.name}}</span>
+			<span>{{contact.info}}</span>
+			<span><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></span>
+			<span><a href="tel:{{contact.tel}}">{{contact.tel}}</a></span>
+		</address>
+	</div>
+	{% endfor %}
+</div>

@@ -12,5 +12,5 @@ function getImages(data) {
 }
 
 function getResponsiveImage(img) {
-    return '<div class="responsiveImage"><img src="'+img.url+'" title ="'+img.title+'"></div>';
+    return '<div class="responsiveImage"><img src="'+img.url+'" title ="'+img.title+'"><div class="responsiveImage_license">'+img.license+'</div></div>';
 }

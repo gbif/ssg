@@ -7,7 +7,9 @@ toc: true
 
 _Articles can have a table of contents_
 
-Adding a TOC is simple. Just add `toc: true` to the front matter.
+Adding a TOC is simple. Just add `toc: true` to the front matter. Depending on screen size the TOC will either be shown or visible when you toggle it with the button in the bottom.
+
+You can read more about [content creation and front matter](/en/documentation/creating-content/front-matter/) in the documentation.
 
 ## Voluptatem accusantium doloremque
 

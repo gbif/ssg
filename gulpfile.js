@@ -8,6 +8,7 @@
 
 var gulp = require('gulp'),
     runSequence = require('run-sequence'),
+    gutil = require('gulp-util'),
     requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
@@ -29,4 +30,8 @@ gulp.task('production', function (callback) {
 });
 
 //specifies the default set of tasks to run when you run `gulp`.
-gulp.task('default', ['development']);
+if (gutil.env.production) {
+    gulp.task('default', ['production']);
+} else {
+    gulp.task('default', ['development']);
+}

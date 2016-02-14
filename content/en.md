@@ -3,9 +3,9 @@ title: Home
 style: article home
 ---
 
-# A small set of tools for generating static sites with Gulp
+# Static Site Generation with Gulp
 
-_This site serves as documentation and an example_
+_Tools for building static sites with Gulp. This site serves as documentation and an example_
 
 > At GBIF we would like to have the option to quickly create new small sites. This would be useful for temporary projects with a lot of content as well as focused channels for specific audiences. 
 

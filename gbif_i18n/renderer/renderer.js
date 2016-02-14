@@ -2,13 +2,11 @@ var marked = require('marked'),
     frontMatter = require('front-matter'),
     renderer = new marked.Renderer(),
     originalCodeRenderer = renderer.code,
-    getContacts = require('./contacts'),
     getActions = require('./actions'),
-    getRSS = require('./rss'),
     heading = require('./heading'),
     hr = require('./hr'),
     getImages = require('./image'),
-    getHTMLfiles = require('./injectHTML');
+    renderTemplates = require('./injectTemplate');
 
 module.exports = renderer;
 
@@ -25,10 +23,8 @@ renderer.code = function (code, language) {
         data = fm.attributes;
 
         var html = '';
-        html += getHTMLfiles(data);
-        html += getContacts(data);
         html += getActions(data);
-        html += getRSS(data);
+        html += renderTemplates(data);
         html += getImages(data);
         return html;
     }
