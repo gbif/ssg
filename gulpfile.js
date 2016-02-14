@@ -8,6 +8,7 @@
 
 var gulp = require('gulp'),
     runSequence = require('run-sequence'),
+    gutil = require('gulp-util'),
     requireDir = require('require-dir');
 
 // Require all tasks in gulp/tasks, including subfolders
