@@ -29,4 +29,8 @@ gulp.task('production', function (callback) {
 });
 
 //specifies the default set of tasks to run when you run `gulp`.
-gulp.task('default', ['development']);
+if (gutil.env.production) {
+    gulp.task('default', ['production']);
+} else {
+    gulp.task('default', ['development']);
+}
