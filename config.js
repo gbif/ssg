@@ -57,6 +57,10 @@ conf = {
     raw: {
         src: src + '/raw/**/*.*',
         dest: dest + '/raw'
+    },
+    favicons: {
+        src: src + '/favicons/**/*.*',
+        dest: dest
     }
 };
 
