@@ -7,6 +7,7 @@ var path = require('path'),
     overwriteConf = require(path.resolve('./config.js')),
     dest = overwriteConf.dest || './dist',
     base = getPath('./'),
+    src = './src',
     fullSrcPath = path.join(base, 'src'),
     conf;
 
