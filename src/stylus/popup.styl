@@ -1,7 +1,4 @@
-$popupBg = darken($paper-color, 10%)
-$popupColor = $ink
-
-.popup
+.popup {
 	position fixed
 	margin 0 auto
 	bottom -500px
@@ -14,42 +11,50 @@ $popupColor = $ink
 	border $borderWidth solid $popupBorderColor
 	border-bottom-width 0px
 	max-width 500px
-	p
+	p {
 		font-size 0.9rem
 		padding: vr-block(0.5)
 		margin 0
-	a
+	}
+	a {
 		text-decoration none
 		color $popupColor
 		border: none
 		background-color none
-	&.isVisible
+	}
+	&.isVisible {
 		bottom 0
-	.popup-close
+	}
+	.popup-close {
 		position absolute
 		top 0
 		right 0
 		padding vr-block(1)
-	.popup-languages
-		ul
+	}
+	.popup-languages {
+		ul {
 			padding 0
 			display flex
 			flex-wrap wrap
-		li
+		}
+		li {
 			flex 0 0 auto
 			display inline-block
 			margin: 10px 5px
-			a
+			a {
 				background: $popupBg
 				padding: vr-block(0.5) vr-block(0.5)
 				color: $popupColor
-				border-left borderWidth solid $popupBg
-				&:hover
-					border-left-color $primary-color
+				border-left $borderWidth solid $popupBg
+				&:hover {
+					border-left-color $navbar_BorderColor
+				}
+			}
+		}
+	}
 	.popup__privacy {
 		a {
 			border-bottom dotted 1px $popupColor
 		}
 	}
-
-
+}

@@ -19,9 +19,6 @@ $Mist = rgb(232, 232, 232) 		// mist
 
 
 /* SITE SPECIFIC COLORS */
-$c_main := $Mist//#67A05D
-$c_sec := #F5CC27
-$_accent := $purple
 $content_bg := #fffefe//$Mist
 $ink = #333
 
@@ -29,13 +26,13 @@ $ink = #333
 $navbar_height = vr-block(3)
 $navbar_borderWidth = vr-block(0.25)
 $navbar_bg := tomato//$Mist
-$navbar_BorderColor := deepskyblue
+$navbar_BorderColor := rgb(123, 194, 212)//deepskyblue
 $navbar_textColor := $Mist
 $navbar_textColor_hover := lighten($navbar_textColor, 80%)
 $navbar_dropdown_bg := white
 $navbar_dropdown_megaColor := tomato
 $navbar_dropdown_color := #333
-$navbar_horizontal_color := $c_main
+$navbar_horizontal_color := $Mist
 $navbar_dropdown_triangle_color := $navbar_dropdown_bg
 
 $logo_color := $navbar_textColor
@@ -81,11 +78,6 @@ $header-font-weight := 500
 $header-color       := #555
 $blockquote_border_color := #555
 
-/* LOGO */
-siteLogo := url(/images/logo_white.png) //url(/images/BID-v2.png)
-
-/* COLORS */
-$primary-color := rgb(123, 194, 212)//lighten(Plum, 30%) //rgb(123, 194, 212)
 
 $color-dark := #333
 $color-bright := #FDFDFD
@@ -94,13 +86,13 @@ $paper-color := $color-bright
 $background-color := $paper-color//#F1F1F1
 $ink-color := $color-dark
 $link-bg-color := $OrangePeel
-$button-bg-color := $Black //primary-color //rgb(80,158,47)
+$button-bg-color := $Black
 $button-color := tomato
 $popupBorderColor = $ink
 
-$articleHeader_textColor := inherit//white
+$articleHeader_textColor := inherit
 $articleHeader_weight := bold
-$articleHeader_bg := inherit//lighten(tomato, 20%)//coral
+$articleHeader_bg := inherit
 $articleHeader_border := vr-block(0.125) dotted deepskyblue
 
 
@@ -109,3 +101,7 @@ $search_result_bg := #eee
 $search_result__header_bg := #eee
 $search_result_color := #222
 $search_result_border_color := $navbar_BorderColor
+
+//popup
+$popupBg := darken($paper-color, 10%)
+$popupColor := $ink

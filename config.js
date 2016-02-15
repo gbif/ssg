@@ -5,9 +5,9 @@ This is not intended to be modified by editors
 var path = require('path'),
     _ = require('lodash'),
     overwriteConf = require(path.resolve('./config.js')),
-    dest = overwriteConf.dest || './example',
+    dest = overwriteConf.dest || './dist',
     base = getPath('./'),
-    src = path.join(base, 'src'),
+    fullSrcPath = path.join(base, 'src'),
     conf;
 
 function getPath(p){
@@ -20,10 +20,7 @@ conf = {
     content: './content/**/*.md',
     languageFile: './content/languages.yml',
     javascript: {
-        main: src + '/js/script.js',
         src: [],
-        layout: [src + '/js/helpers.js', src + '/js/a11y.js', src + '/js/navigation.js'],
-        folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
     },
     images: {
@@ -48,8 +45,8 @@ conf = {
         }
     },
     templates: {
-        src: src + '/templates/**/*.html',
-        main: src + '/templates/main.html'
+        src: fullSrcPath + '/templates/**/*.html',
+        main: fullSrcPath + '/templates/main.html'
     },
     clean: {
         all: [dest + '/**/*.*'],
@@ -59,18 +56,10 @@ conf = {
     raw: {
         src: src + '/raw/**/*.*',
         dest: dest + '/raw'
-    },
-    customJavascript: {
-        src: [],
-        watch: undefined
-    },
-    customTemplates: {
-        src: undefined
     }
 };
 
 conf = _.merge(conf, overwriteConf);
-conf.javascript.src = conf.javascript.src.concat(conf.customJavascript.src);
 
 //console.log(conf);
 module.exports = conf;
