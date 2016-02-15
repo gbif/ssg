@@ -18,10 +18,8 @@
   "private": true,
   "ignore": [
     "*",
-    "!bower_build/*"
+    "!bower_build/**/*.*"
   ],
   "dependencies": {
-    "jquery": "~2.1.4",
-    "lunr-js": "~0.0.2"
   }
 }
