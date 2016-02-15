@@ -25,12 +25,16 @@ conf = {
         dest: dest + '/javascript'
     },
     images: {
-        src: './images/**',
+        src: src + '/images/**',
         dest: dest + '/images'
     },
     fonts: {
-        src: path.join(base, 'fonts/**/*.*'),
-        dest: dest + '/css/fonts'
+        src: './iconfont/**/*.*',
+        dest: dest + '/css/fonts/iconfont/',
+        iconsSrc: '',
+        iconfontBuildDest: './iconfont/',
+        template: '',
+        templateDest: ''
     },
     stylus: {
         src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core

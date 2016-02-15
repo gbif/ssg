@@ -2,7 +2,6 @@ var marked = require('marked'),
     frontMatter = require('front-matter'),
     renderer = new marked.Renderer(),
     originalCodeRenderer = renderer.code,
-    getActions = require('./actions'),
     heading = require('./heading'),
     hr = require('./hr'),
     getImages = require('./image'),
@@ -23,7 +22,6 @@ renderer.code = function (code, language) {
         data = fm.attributes;
 
         var html = '';
-        html += getActions(data);
         html += renderTemplates(data);
         html += getImages(data);
         return html;

@@ -15,7 +15,9 @@ var conf = {
         src + '/js/**/*.js'],
     jsDest: dist,
     stylusSrc: [src + '/stylus/**/*.*'],
-    stylusDest: dist + '/stylus/'
+    stylusDest: dist + '/stylus/',
+    iconsSrc: [src + '/fonts/icons/used/**/*.*', src + '/fonts/fonttemplate.styl'],
+    iconsDest: dist + '/icons/'
 };
 
 gulp.task('clean', function (cb) {
@@ -35,9 +37,14 @@ gulp.task('stylus', [], function () {
         .pipe(gulp.dest(conf.stylusDest));
 });
 
+gulp.task('fonts', [], function () {
+    return gulp.src(conf.iconsSrc)
+        .pipe(gulp.dest(conf.iconsDest));
+});
+
 gulp.task('default', function (callback) {
     runSequence(
         ['clean'],
-        ['js', 'stylus'],
+        ['js', 'stylus', 'fonts'],
         callback);
 });

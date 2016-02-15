@@ -39,4 +39,4 @@ module.exports = function (tpl, languages, translations) {
         this.push(file);
         cb();
     });
-}
+};
