@@ -1,0 +1,202 @@
+.Site__drawer {
+	right 0
+	width $drawer-width
+	position absolute
+	top 0px
+	transition right 500ms ease
+	height 100%//"calc(100vh - %s)" % $navbar_height
+	right -($drawer-width)
+	background $toc_drawer_bg
+	color $toc_drawer_color
+	overflow hidden
+	z-index 20
+	box-shadow -2px 0 2px rgba(0,0,0,0.3)
+
+	> div {
+		height 100%
+		overflow-y auto
+		-webkit-overflow-scrolling touch
+	}
+	&.isActive {
+		right 0
+	}
+	&.rtl {
+		direction rtl
+	}
+}
+
+
+forceShowDrawer() {
+	transition initial
+	left 0
+	~ .Site__contentArea {
+		padding-left $drawer-width
+	}
+	&.isActive ~ .Site__contentArea {
+		left 0
+	}
+}
+
+
++isAbove($laptop) {
+	.Site__drawer {
+		z-index 20
+		right auto
+		left -($drawer-width)
+		transition left 500ms ease
+		// position fixed
+		// top $navbar_height
+		box-shadow 2px 0 2px rgba(0,0,0,0.3)
+
+		&.isActive {
+			right auto
+			left 0
+		}
+		&.isLocked {
+			forceShowDrawer()
+			~.Site__contentArea .toggleDrawer.openDrawer {
+				display none
+			}
+			.Toc__close {
+				display none
+			}
+		}
+	}
+	.toggleDrawer.openDrawer>i:before {
+		content $icon-string-right-arrow
+	}
+	.Site__contentArea {
+		transition left 500ms ease
+		left 0
+	}
+}
++isAbove( ($article_max_width + $drawer-width)) {
+	.Site__drawer {
+		forceShowDrawer()
+		box-shadow none
+		border-right solid 1px #ccc
+		.Toc__close {
+			display none
+		}
+	}
+}
+
+
+//fixed toggle
+.toggleDrawer.openDrawer {
+	z-index 10
+	background $toc_toggle_bg
+	color $toc_toggle_color
+	white-space nowrap
+	bottom vr-block(1)
+	position absolute //Use absolute for mobile and fixed for desktop as fixed is unstable on mobile devices when combined with input fields
+
+	border-top-left-radius ($toc_drawer_button_height / 2)
+	border-bottom-left-radius ($toc_drawer_button_height / 2)
+	font-size $toc_drawer_button_height
+	height $toc_drawer_button_height
+	line-height $toc_drawer_button_height
+	min-width $toc_drawer_button_height
+	text-align center
+	>i {
+		display inline-block
+		&:before {
+			font-size $toc_drawer_button_height
+		}
+	}
+	>span {
+		font-size 1rem
+		vertical-align top
+		display inline-block
+		line-height $toc_drawer_button_height
+		height $toc_drawer_button_height
+		max-width 0
+		margin-right 0
+
+		transition all 300ms ease
+		position relative
+		overflow hidden
+	}
+}
++isBelow($laptop) {
+	.toggleDrawer.openDrawer {
+		right 0
+	}
+}
++isAbove($laptop) {
+	.toggleDrawer.openDrawer {
+		position fixed
+		right auto
+		border-radius 0
+		border-top-right-radius ($toc_drawer_button_height / 2)
+		border-bottom-right-radius ($toc_drawer_button_height / 2)
+	}
+}
++isAbove(($article_max_width + $drawer-width)) {
+	.toggleDrawer.openDrawer {
+		display none
+	}
+}
+
+
+
+tocStyleClose() {
+	.Toc {
+		.Toc__close {
+			position absolute
+			top vr-block(0)
+			right vr-block(0)
+			font-size vr-block(1)
+			padding vr-block(0.5)
+		}
+	}
+	+isAbove(($article_max_width + $drawer-width)) {
+		.Site__drawer {
+			.Toc {
+				.Toc__close {
+					display none
+				}
+			}
+		}
+	}
+}
+
+tocStyling() {
+	.Toc {
+		margin vr-block(2) vr-block(1)
+		a.Toc__close {
+			margin 0
+		}
+		a {
+			display block
+			line-height vr-block(1)
+			&.Toc--l1 {
+				display none
+			}
+			&.Toc--l2 {
+				margin vr-block(1) 0
+				font-weight bold
+				&:after {
+					content ' '
+					display block
+					width 50%
+					border-bottom vr-block(0.125) solid $toc_h2_underline_color
+				}
+			}
+			&.Toc--l3, &.Toc--l4, .Toc--l5 {
+				margin vr-block(0.5) 0
+				font-size 0.9rem
+				line-height 1.2rem
+			}
+			&.Toc--l4 {
+				margin vr-block(0.25) 0 vr-block(0.25) vr-block(1)
+			}
+			&.Toc--l5 {
+				margin 0
+				margin-left vr-block(2.5)
+			}
+		}
+	}
+}
+tocStyling()
+tocStyleClose()

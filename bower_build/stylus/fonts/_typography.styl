@@ -1,0 +1,326 @@
+
+
+
+// Inspired by https://github.com/corysimmons/typographic
+// not done - edit as the site needs base styling.
+// Currently we do not know what we want the look to be and which libraries that might style elemets for us
+
+
+
+// Sans-serif
+//we use $helvetica
+
+$calibri       = 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif'
+$candara       = 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif'
+$courier       = 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', 'monospace'
+$franklin      = 'Franklin Gothic Medium', 'Arial', 'sans-serif'
+$futura        = 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'
+$geneva        = 'Geneva', 'Tahoma', 'Verdana', 'sans-serif'
+$gill-sans     = 'Gill Sans', 'Gill Sans MT', 'Calibri', 'sans-serif'
+$helvetica     = 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'
+$lucida-grande = 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Geneva', 'Verdana', 'sans-serif'
+$optima        = 'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', 'sans-serif'
+$segoe         = 'Segoe', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'
+$tahoma        = 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'
+$trebuchet     = 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Tahoma', 'sans-serif'
+$verdana       = 'Verdana', 'Geneva', 'sans-serif'
+
+
+// Serif
+
+$antiqua       = 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif'
+$baskerville   = 'Baskerville', 'Baskerville old face', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif'
+$bodoni        = 'Bodoni MT', 'Didot', 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif'
+$cambria       = 'Cambria', 'Georgia', 'serif'
+$caslon        = 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', 'Georgia', 'serif'
+$constantia    = 'Constantia', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif'
+$didot         = 'Didot', 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif'
+$garamond      = 'Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', 'serif'
+$goudy         = 'Goudy Old Style', 'Garamond', 'Big Caslon', 'Times New Roman', 'serif'
+$hoefler       = 'Hoefler Text', 'Baskerville old face', 'Garamond', 'Times New Roman', 'serif'
+$lucida-bright = 'Lucida Bright', 'Georgia', 'serif'
+$palatino      = 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiqua", 'Georgia', 'serif'
+
+
+
+
+// Settings
+
+$line-height-ratio  := 1.5
+$header-ratio       = $golden
+$html-font-size     := 16px
+$base-line-height = ($line-height-ratio)rem
+
+// Ratios
+// https://24ways.org/2011/composing-the-new-canon
+$minor-second   = 1.067
+$major-second   = 1.125
+$minor-third    = 1.2
+$major-third    = 1.25
+$perfect-fourth = 1.333
+$aug-fourth     = 1.414
+$perfect-fifth  = 1.5
+$minor-sixth    = 1.6
+$golden         = 1.618
+$major-sixth    = 1.667
+$minor-seventh  = 1.778
+$major-seventh  = 1.875
+$octave         = 2
+$major-tenth    = 2.5
+$major-eleventh = 2.667
+$major-twelfth  = 3
+$double-octave  = 4
+
+$f0 = 1  
+$f1 = $minor-second  
+$f2 = $major-second  
+$f3 = $minor-third   
+$f4 = $major-third   
+$f5 = $perfect-fourth
+$f6 = $aug-fourth    
+$f7 = $perfect-fifth 
+$f8 = $minor-sixth   
+$f9 = $golden        
+$f10 = $major-sixth   
+$f11 = $minor-seventh 
+$f12 = $major-seventh 
+$f13 = $octave        
+$f14 = $major-tenth   
+$f15 = $major-eleventh
+$f16 = $major-twelfth 
+$f17 = $double-octave
+
+$l0  = $base-line-height
+$l1  = $base-line-height*1//$minor-second  
+$l2  = $base-line-height*1//$major-second  
+$l3  = $base-line-height*1//$minor-third   
+$l4  = $base-line-height*1//$major-third   
+$l5  = $base-line-height*1//$perfect-fourth
+$l6  = $base-line-height*1//$aug-fourth    
+$l7  = $base-line-height*2//$perfect-fifth 
+$l8  = $base-line-height*2//$minor-sixth   
+$l9  = $base-line-height*2//$golden        
+$l10 = $base-line-height*2//$major-sixth   
+$l11 = $base-line-height*2//$minor-seventh 
+$l12 = $base-line-height*2//$major-seventh 
+$l13 = $base-line-height*3//$octave        
+$l14 = $base-line-height*3//$major-tenth   
+$l15 = $base-line-height*3//$major-eleventh
+$l16 = $base-line-height*3//$major-twelfth 
+$l17 = $base-line-height*3//$double-octave 
+
+$typeScale = $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, $f16, $f17
+$typeHeight = $l0, $l1, $l2, $l3, $l4, $l5, $l6, $l7, $l8, $l9, $l10, $l11, $l12, $l13, $l14, $l15, $l16, $l17
+setFont($myindex = 0)
+	font-size ( $typeScale[$myindex+0] )rem
+	line-height ( $typeHeight[$myindex+0] )rem
+
+
+$type-base-ratio = $perfect-fourth
+//small text, body text,large text, main heading, hero heading
+$type-scale = 0.707, 1, 1.414, 1.999, 2.827, 3.998, 4.209, 5.610
+type-scale($level)
+	return $type-scale[$level+1]
+
+$line-heights = $base-line-height, $base-line-height, $base-line-height, $base-line-height * 2, $base-line-height * 2, $base-line-height * 3, $base-line-height * 3, $base-line-height * 6
+type-line-height($level)
+	return $line-heights[$level+1]
+
+set-type($level = 0)
+	font-size (type-scale($level))rem
+	line-height (type-line-height($level))rem
+
+
+
+
+// Helpers
+
+/**
+ * Creates a baseline grid based off your $line-height-ratio to help visualize your vertical rhythm grid. You can offset the grid by negative or positive pixels to line it up perfectly with the bottom of your text.
+ *
+ * @param {color} [$color=black] - A color to be lightened and used as the color for the grid.
+ * @param {number} [$px-offset=false] - A positive or negative number of pixels to offset the grid by. Useful for lining the bottom of the gridlines up with your text.
+ *
+ * @example
+ *   .page-wrapper
+ *       grid-overlay(blue, 2)
+ */
+
+grid-overlay($color = black, $px-offset = false)
+	background: linear-gradient(to top, rgba($color, 10%) 5%, transparent 5%)
+	background-size: 100% ($line-height-ratio / 2)em//$base-line-height
+	if $px-offset
+		background-position: 0 unit($px-offset, 'px')
+
+
+/**
+ * Returns a "vertical unit". Useful for specifying the height and margins of non-text elements like images and such.
+ *
+ * @param {number} [$units=1] - Number of units. Accepts floated numbers as well.
+ * @param {number} [$px-offset=false] - A positive or negative number of pixels to offset the grid by. Useful for lining the bottom of the gridlines up with your text. Since this doesn't compute a literal pixel you may need to use a floated number (multiples of .25 work well) to keep your rhythm on track.
+ *
+ * @example
+ *   img
+ *     vr-block(5.25, .5)
+ */
+
+vr-block($units = 1, $px-offset = false)
+	if $px-offset
+		return $units*$base-line-height + $px-offset
+	else
+		return $units*$base-line-height
+
+
+/**
+ * The Typographic Reset. This is where Typographic goes through every markup element and styles it to adhere to a vertical rhythm. After you set your variables in a settings file fire this mixin.
+ *
+ * @example
+ *   typographic()
+ */
+
+typographic() {
+
+	html {
+		height 100%
+		width 100%
+		font-family: $body-font
+		font-weight: $body-font-weight
+		color: $body-color
+
+		font-size: $html-font-size
+		line-height: $line-height-ratio
+	}
+	body {
+		// min-height 100%
+		text-rendering optimizeLegibility
+	}
+
+	//This meyer-like reset strikes me as too much. Clutters dev tools
+	// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	// a, abbr, acronym, address, big, cite, code,
+	// del, dfn, em, img, ins, kbd, q, s, samp,
+	// small, strike, strong, sub, sup, tt, var,
+	// b, u, i, center,
+	// dl, dt, dd, ol, ul, li,
+	// fieldset, form, label, legend,
+	// table, caption, tbody, tfoot, thead, tr, th, td, div, span, p {
+	//      t-reset()
+	// }
+	h1, h2, h3, h4, h5, h6, p, ul, ol {
+		margin 0
+	}
+
+	//since we use links everywhere as buttons it is easier to only set it to standard link styling when needed (e.g. article content)
+	a {
+		color inherit
+	}
+
+	p, blockquote, pre,
+	address,
+	dl, ol, ul,
+	table {
+		margin-bottom $base-line-height
+	}
+
+	/*p {*/
+		/*set-type()*/
+	/*}*/
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $header-font
+		font-weight: $header-font-weight
+		clear: both
+		margin-bottom: vr-block(0.5)
+		/*margin-top vr-block(1.5)*/
+	}
+	h1 {
+		setFont(12)
+	}
+	h2 {
+		setFont(6)
+	}
+	h3 {
+		setFont(4)
+	}
+	h4 {
+		setFont(1)
+	}
+	h5, h6 {
+		setFont(1)
+		font-style italic
+	}
+
+	+isAbove($tablet) {
+		h1 {
+			setFont(15)
+		}
+		h2 {
+			setFont(10)
+		}
+	}
+	+isAbove($laptop) {
+		h1 {
+			setFont(17)
+		}
+		h2 {
+			setFont(12)
+		}
+	}
+		
+
+	blockquote {
+		font-style: italic
+		border-left solid vr-block(0.25) $blockquote_border_color
+		padding-left vr-block(1)
+		margin-left 0
+		cite {
+			display: block
+			font-style: normal
+		}
+	}
+
+	pre {
+		padding: vr-block(.5)
+		margin-bottom: vr-block(1)
+		background-color #eee
+		code {
+			padding: 0
+		}
+	}
+
+	code {
+		font-family: $courier
+		padding: ($line-height-ratio * .05)em ($line-height-ratio * .15)em
+		margin-bottom 0
+	}
+
+	abbr[title] {
+		cursor: help
+	}
+
+	input[type="text"], input[type="email"], input[type="password"], textarea {
+		display: block
+		max-width: 100%
+	}
+
+	input[type="submit"], button {
+		display: block
+		cursor: pointer
+	}
+
+	table {
+		width: 100%
+		border-spacing: 0
+		border-collapse: collapse
+		margin-bottom: vr-block(1)
+	}
+
+	th {
+		text-align: left
+		color: $header-color
+	}
+
+	td {
+		padding: vr-block(.125) vr-block(.5)
+	}
+}

@@ -1,0 +1,34 @@
+.article {
+	.block-content a {
+		text-decoration none
+		border-bottom solid 1px $LinkBorderColor
+	}
+	.block-content {
+		margin 0 vr-block(1)
+	}
+	.block-content {
+		margin 0 auto
+		max-width $article_max_width
+		padding 0 vr-block(1)
+	}
+	.block-first {
+		background $articleHeader_bg
+		/*margin-bottom vr-block(1)*/
+		h1 {
+			margin 0 0 vr-block(1) 0
+			padding-top vr-block(1)
+			font-weight $articleHeader_weight
+			color $articleHeader_textColor
+			text-align center
+			padding-bottom vr-block(0.875)
+			border-bottom $articleHeader_border
+		}
+	}
+	.block-first + .block > .block-content > p:first-child>em {
+		text-align center
+		display block
+	}
+}
+.Site__contentArea.article .Site__contentArea__main.rtl> article {
+	direction rtl
+}

@@ -1,0 +1,29 @@
+.SiteHeader {
+	siteHeaderbar()
+	.SiteHeader__mobileOptions {
+		> div {
+			width 33.33%
+			display block
+			float left
+			&:nth-of-type(2) {
+				text-align center
+			}
+			&:nth-of-type(3) {
+				text-align right
+			}
+			>a {
+				span {
+					white-space nowrap
+				}
+			}
+		}
+		.home:before {
+			color $logo_color
+			content $site-logo-content
+		}
+	}
+}
+
+.isActive.site__searchToggle:before, .SiteHeader.isActive .site__menuToggle:before{
+	content $icon-string-close_L
+}

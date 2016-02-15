@@ -1,0 +1,23 @@
+.responsiveImage {
+	>img {
+		width 100%
+	}
+	overflow hidden
+	width 100%
+	max-width 50rem
+	height 0
+	padding-bottom 50%
+	margin-bottom vr-block(1)
+	position relative
+	.responsiveImage_license {
+		display none
+	}
+	&:hover .responsiveImage_license {
+		display block
+		position absolute
+		top 0
+		background-color rgba(0,0,0,0.3)
+		color #ddd
+		padding 5px
+	}
+}

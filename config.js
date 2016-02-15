@@ -21,12 +21,7 @@ conf = {
     languageFile: './content/languages.yml',
     javascript: {
         main: src + '/js/script.js',
-        src: [
-            './node_modules/jquery/dist/**/jquery.js',
-            './node_modules/lunr/lunr.js',
-            src + '/js/helpers.js',
-            src + '/js/**/*.js'
-        ],
+        src: [],
         layout: [src + '/js/helpers.js', src + '/js/a11y.js', src + '/js/navigation.js'],
         folder: src + '/js/**/*.*',
         dest: dest + '/javascript'
@@ -42,7 +37,7 @@ conf = {
     stylus: {
         src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core
         coresrc: src + '/stylus/**/*.styl', //for the css in core to watch
-        entries: [src + '/stylus/documentation.styl'], //main entry point to build css from, will be overwritten by individual sites
+        entries: [src + '/stylus/index.styl'], //main entry point to build css from, will be overwritten by individual sites
         rawCss: [base + '/node_modules/highlight.js/styles/tomorrow.css'],
         dest: dest + '/css' //where to build to
     },

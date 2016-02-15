@@ -1,22 +1,27 @@
 {
   "name": "gbif-ssg",
-  "description": "A static site generator for GBIF sub sites.",
+  "description": "Client assets for use with GBIF gulp ssg plugins.",
+  "main": [
+    "bower_build/script.js",
+    "bower_build/stylus/index.styl"
+  ],
   "authors": [
     "gbif"
   ],
   "license": "Apache 2.0",
   "keywords": [
     "gbif",
-    "ssg",
-    "layout"
+    "ssg"
   ],
   "homepage": "https://github.com/gbif/ssg",
   "moduleType": [],
   "private": true,
   "ignore": [
-    "*"
+    "*",
+    "!bower_build/*"
   ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "lunr-js": "~0.0.2"
   }
 }

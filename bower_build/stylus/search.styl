@@ -1,0 +1,49 @@
+
+.Search--message {
+	text-align center
+	margin vr-block(2)
+}
+
+.Search__content {
+	padding 0 vr-block(1)
+}
+.Search__results {
+	display none
+}
+.Search--showResults .Search__results {
+	display flex
+	flex-wrap wrap
+	>a {
+		padding vr-block(1)
+		margin vr-block(0.5)
+		float left
+		display block;
+		flex 1 1 auto
+		width 350px
+		min-width 200px
+		background $search_result_bg
+		text-decoration none
+		position relative
+		border-left 10px solid $search_result_border_color
+		>* {
+			margin 0
+		}
+		h2 {
+			color $search_result_color
+			background $search_result__header_bg
+		}
+		>p {
+			margin-top vr-block(0.5)
+		}
+
+		span {
+			display none
+			/*font-size 0.8rem*/
+			/*float right*/
+			/*text-transform uppercase*/
+		}
+	}
+}
+.Search.rtl {
+	direction rtl
+}

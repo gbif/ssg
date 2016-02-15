@@ -1,37 +1,43 @@
-/*
- Rather than manage one giant configuration file responsible
- for creating multiple tasks, each task has been broken out into
- its own file in gulp/tasks. Any files in that directory get
- automatically required below.
- To add a new task, simply add a new task file in the tasks directory.
- */
-
 var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     gutil = require('gulp-util'),
-    requireDir = require('require-dir');
+    concat = require('gulp-concat'),
+    del = require('del');
 
-// Require all tasks in gulp/tasks, including subfolders
-requireDir(__dirname + '/gulp/tasks', {recurse: true});
+var src = 'src';
+var dist = './bower_build';
+var conf = {
+    jsSrc: [
+        './node_modules/jquery/dist/**/jquery.js',
+        './node_modules/lunr/lunr.js',
+        src + '/js/helpers.js',
+        src + '/js/cookies.js',
+        src + '/js/**/*.js'],
+    jsDest: dist,
+    stylusSrc: [src + '/stylus/**/*.*'],
+    stylusDest: dist + '/stylus/'
+};
 
-gulp.task('development', function (callback) {
-    runSequence(
-        ['clean-all'],
-        ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
-        ['watch'],
-        callback);
+gulp.task('clean', function (cb) {
+    del(dist).then(function () {
+        cb();
+    });
 });
 
-gulp.task('production', function (callback) {
-    runSequence(
-        ['clean-all'],
-        ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw'],
-        callback);
+gulp.task('js', [], function () {
+    return gulp.src(conf.jsSrc)
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest(conf.jsDest));
 });
 
-//specifies the default set of tasks to run when you run `gulp`.
-if (gutil.env.production) {
-    gulp.task('default', ['production']);
-} else {
-    gulp.task('default', ['development']);
-}
+gulp.task('stylus', [], function () {
+    return gulp.src(conf.stylusSrc)
+        .pipe(gulp.dest(conf.stylusDest));
+});
+
+gulp.task('default', function (callback) {
+    runSequence(
+        ['clean'],
+        ['js', 'stylus'],
+        callback);
+});

@@ -1,0 +1,34 @@
+.translationNotification {
+	position fixed
+	padding vr-block(0.5)
+	top ($navbar_height + vr-block(0.5))
+	background $translationNotification_bg
+	color $translationNotification_color
+	animation fadeInOut 6s
+	opacity: 0;
+	right -9999px;
+}
+
+$translationNotification_pos_r = vr-block(0.5);
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+		right $translationNotification_pos_r
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	92% {
+		right $translationNotification_pos_r
+	}
+	100% {
+		opacity: 0;
+		right -500px;
+	}
+}
