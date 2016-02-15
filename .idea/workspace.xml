@@ -5,255 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/gbificons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/ssgicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/ssgicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/ssgicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/iconfont/ssgicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icons/used/bid.svg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/add-user.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/add-user.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/airplay.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/airplay.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/alarm.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/alarm.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/album.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/album.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/albums.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/albums.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/anchor.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/anchor.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-down-circle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-down-circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-down.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-down.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-left-circle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-left-circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-left.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-left.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-right-circle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-right-circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-right.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-right.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-up-circle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-up-circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/angle-up.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/angle-up.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/arc.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/arc.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/attention.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/attention.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/back-2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/back-2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/back.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/back.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/ball.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/ball.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bandaid.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bandaid.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/battery.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/battery.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bell.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bell.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bicycle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bicycle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bid.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bid.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bluetooth.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bluetooth.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bookmarks.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bookmarks.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/bottom-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/bottom-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/box1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/box1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/box2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/box2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/browser.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/browser.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/calculator.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/calculator.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/call.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/call.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/camera.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/camera.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/car.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/car.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cart.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cart.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cash.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cash.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/chat.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/chat.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/check.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/check.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/clock.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/clock.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/close-circle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/close-circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/close.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/close.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/close_L.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/close_L.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cloud-download.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cloud-download.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cloud-upload.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cloud-upload.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cloud.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cloud.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/coffee.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/coffee.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/comment.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/comment.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/compass.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/compass.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/config.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/config.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/copy-file.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/copy-file.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/credit.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/credit.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/crop.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/crop.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/culture.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/culture.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/cup.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/cup.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/date.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/date.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/delete-user.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/delete-user.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/diamond.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/diamond.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/disk.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/disk.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/diskette.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/diskette.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/display1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/display1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/display2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/display2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/dodo.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/dodo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/door-lock.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/door-lock.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/download.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/download.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/drawer.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/drawer.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/drop.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/drop.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/edit.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/edit.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/exapnd2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/exapnd2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/expand1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/expand1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/eyedropper.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/eyedropper.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/female.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/female.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/file.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/file.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/film.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/film.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/filter.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/filter.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/flag.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/flag.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/folder.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/folder.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/gb_minus.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/gb_minus.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/gb_plus.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/gb_plus.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/gift.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/gift.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/glasses.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/glasses.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/gleam.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/gleam.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/global.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/global.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/graph.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/graph.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/graph1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/graph1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/graph2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/graph2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/graph3.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/graph3.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/gym.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/gym.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/hammer.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/hammer.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/headphones.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/headphones.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/helm.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/helm.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/help1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/help1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/help2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/help2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/home.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/home.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/hourglass.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/hourglass.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/id.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/id.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/info.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/info.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/joy.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/joy.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/junk.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/junk.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/key.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/key.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/keypad.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/keypad.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/leaf.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/leaf.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/left-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/left-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/less.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/less.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/light.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/light.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/like.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/like.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/like2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/like2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/link.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/link.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/lintern.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/lintern.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/lock.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/lock.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/logo-L.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/logo-L.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/logo-line.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/logo-line.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/logo.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/logo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/look.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/look.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/loop.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/loop.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/magic-wand.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/magic-wand.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/magnet.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/magnet.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/mail-open-file.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/mail-open-file.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/mail-open.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/mail-open.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/mail.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/mail.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/male.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/male.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/map-2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/map-2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/map-marker.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/map-marker.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/map.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/map.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/medal.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/medal.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/menu.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/menu.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/micro.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/micro.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/monitor.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/monitor.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/moon.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/moon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/more.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/more.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/mouse.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/mouse.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/music.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/music.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/musiclist.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/musiclist.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/mute.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/mute.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/network.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/network.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/news-paper.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/news-paper.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/next-2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/next-2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/next.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/next.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/note.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/note.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/note2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/note2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/notebook.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/notebook.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/paint-bucket.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/paint-bucket.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/paint.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/paint.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/paper-plane.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/paper-plane.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/paperclip.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/paperclip.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/pen.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/pen.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/pendrive.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/pendrive.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/phone.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/phone.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/photo-gallery.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/photo-gallery.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/photo.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/photo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/piggy.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/piggy.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/pin.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/pin.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/plane.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/plane.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/play.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/play.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/plug.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/plug.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/plugin.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/plugin.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/plus.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/plus.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/portfolio.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/portfolio.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/power.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/power.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/prev.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/prev.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/print.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/print.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/radio.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/radio.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/refresh-2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/refresh-2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/refresh-cloud.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/refresh-cloud.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/refresh.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/refresh.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/repeat.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/repeat.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/ribbon.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/ribbon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/right-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/right-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/rocket.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/rocket.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/safe.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/safe.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/science.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/science.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/scissors.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/scissors.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/search.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/search.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/server.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/server.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/settings.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/settings.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/share.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/share.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/shield.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/shield.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/shopbag.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/shopbag.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/shuffle.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/shuffle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/signal.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/signal.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/smile.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/smile.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/speaker.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/speaker.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/star.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/star.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/stopwatch.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/stopwatch.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/study.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/study.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/sun.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/sun.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/switch.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/switch.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/target.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/target.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/ticket.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/ticket.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/timer.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/timer.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/tools.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/tools.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/trash.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/trash.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/umbrella.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/umbrella.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/unlock.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/unlock.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/up-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/up-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/upload.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/upload.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/usb.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/usb.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/user-female.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/user-female.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/user.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/user.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/users.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/users.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/vector.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/vector.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/video.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/video.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/voicemail.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/voicemail.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/volume.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/volume.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/volume1.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/volume1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/volume2.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/volume2.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/wallet.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/wallet.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/way.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/way.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/wine.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/wine.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/world.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/world.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/all/wristwatch.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/all/wristwatch.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/fonttemplate.nunjucks.styl" afterPath="$PROJECT_DIR$/src/fonts/fonttemplate.styl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA01-config.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA01-config.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA02-leaf.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA02-leaf.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA03-menu.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA03-menu.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA04-search.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA04-search.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA05-user-female.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA05-user-female.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA06-cloud-upload.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA06-cloud-upload.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA07-home.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA07-home.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA08-info.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA08-info.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA09-map.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA09-map.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0A-close.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0A-close.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0B-close_L.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0B-close_L.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0C-logo-L.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0C-logo-L.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0D-logo.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0D-logo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0E-global.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0E-global.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA0F-left-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA0F-left-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/icons/used/uEA10-right-arrow.svg" afterPath="$PROJECT_DIR$/src/fonts/icons/used/uEA10-right-arrow.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/_variables.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/_variables.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/_variables.styl" afterPath="$PROJECT_DIR$/src/stylus/_variables.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/applyTemplate.js" afterPath="$PROJECT_DIR$/gbif_i18n/gulp_plugins/applyTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulp/tasks/fonts.js" afterPath="$PROJECT_DIR$/gulp/tasks/fonts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/index.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/index.styl" afterPath="$PROJECT_DIR$/src/stylus/index.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/popup.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/popup.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/renderer/renderer.js" afterPath="$PROJECT_DIR$/gbif_i18n/renderer/renderer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/script.js" afterPath="$PROJECT_DIR$/bower_build/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/search.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/search.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -281,48 +33,18 @@
       <file leaf-file-name="fonts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulp/tasks/fonts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="750">
-              <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
+            <state vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="750">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.12" vertical-offset="27" max-vertical-offset="1155">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2626459" vertical-offset="0" max-vertical-offset="1028">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylus/index.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="480">
-              <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.8017493" vertical-offset="0" max-vertical-offset="1029">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -446,34 +168,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -552,7 +246,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="218" y="23" width="1686" height="1173" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -734,32 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043774318" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/lunr/lunr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="29610">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/lunr/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulp/tasks/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -920,14 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4790419" vertical-offset="0" max-vertical-offset="1002">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="1029">
@@ -968,14 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/tasks/fonts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="750">
-          <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stylus/index.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -994,8 +646,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2626459" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="840">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/tasks/fonts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="750">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.043774318" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8017493" vertical-offset="0" max-vertical-offset="1029">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding />
         </state>
       </provider>
