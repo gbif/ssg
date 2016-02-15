@@ -30,7 +30,7 @@ gulp.task('build-font', function() {
                 .pipe(gulpData({
                     glyphs: glyphs,
                     fontName: 'gbificons',
-                    fontPath: '/iconfont/',
+                    fontPath: '/css/fonts/iconfont/',
                     className: 'gb-icon'
                 }))
                 .pipe(nunjucksRender())
