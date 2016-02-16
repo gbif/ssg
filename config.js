@@ -54,7 +54,7 @@ conf = {
         main: fullSrcPath + '/templates/main.html'
     },
     clean: {
-        all: [dest + '/**/*.*'],
+        all: [dest + '/**/*.*', './iconfont/**/*.*', src + '/stylus/iconfont/'],
         html: [dest + '/**/*.html'],
         css: [dest + '/**/*.css']
     },

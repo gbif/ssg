@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     path = require('path'),
+    gutil = require('gulp-util'),
     nunjucksRender = require('gulp-nunjucks-render'),
     rename = require('gulp-rename'),
     gulpData = require('gulp-data'),
@@ -7,7 +8,7 @@ var gulp = require('gulp'),
     config = require('../../config').fonts;
 
 gulp.task('fonts', ['build-font'], function () {
-    return gulp.src(config.src)
+    return gulp.src(path.join(config.iconfontBuildDest, '/**/*.*'))
         .pipe(gulp.dest(config.dest));
 });
 
@@ -31,7 +32,8 @@ gulp.task('build-font', function() {
                     glyphs: glyphs,
                     fontName: 'gbificons',
                     fontPath: '/css/fonts/iconfont/',
-                    className: 'gb-icon'
+                    className: 'gb-icon',
+                    runTimestamp: runTimestamp
                 }))
                 .pipe(nunjucksRender())
                 .pipe(rename(function (path) {
@@ -40,5 +42,8 @@ gulp.task('build-font', function() {
                 }))
                 .pipe(gulp.dest(config.templateDest));
         })
+        .pipe(rename(function (path) {
+            path.basename = path.basename + runTimestamp;
+        }))
         .pipe(gulp.dest(config.iconfontBuildDest));
 });

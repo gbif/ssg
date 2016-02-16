@@ -9,7 +9,6 @@
 
 <head>
     {% include "head.html" %}
-    <title>GBIF</title>
 </head>
 <body>
 
@@ -72,7 +71,11 @@
     var GBIF = GBIF || {};
     GBIF.siteLanguage = '{{meta.siteLanguage}}';
 </script>
+
+
+<!-- inject:js -->
 <script src="/javascript/script.js"></script>
+<!-- endinject -->
 
 </body>
 </html>

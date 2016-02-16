@@ -18,6 +18,7 @@ module.exports = (function(){
             ['clean-all'],
             ['fonts'],
             ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons'],
+            ['optimize'],
             callback);
     }
 

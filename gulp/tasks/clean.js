@@ -7,9 +7,3 @@ gulp.task('clean-all', function (cb) {
         cb();
     });
 });
-
-gulp.task('clean-html', function (cb) {
-    del(config.html).then(function () {
-        cb();
-    });
-});
