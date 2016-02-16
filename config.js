@@ -34,7 +34,7 @@ conf = {
         iconsSrc: '',
         iconfontBuildDest: './iconfont/',
         template: '',
-        templateDest: ''
+        templateDest: src + '/stylus/iconfont/'
     },
     stylus: {
         src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core
