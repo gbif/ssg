@@ -7,7 +7,8 @@ module.exports = (function(){
     function developmentTask (callback) {
         runSequence(
             ['clean-all'],
-            ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw', 'favicons'],
+            ['fonts'],
+            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons'],
             ['watch'],
             callback);
     }
@@ -15,7 +16,8 @@ module.exports = (function(){
     function productionTask (callback) {
         runSequence(
             ['clean-all'],
-            ['build-root', 'js', 'stylus', 'images', 'fonts', 'raw', 'favicons'],
+            ['fonts'],
+            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons'],
             callback);
     }
 
