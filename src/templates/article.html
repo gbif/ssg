@@ -1,8 +1,30 @@
 <article {% if meta.fm.style %} class="{{meta.fm.style}}"  {% else %} class="article" {% endif %}>
 	<!--<div class="article--share">Share</div>-->
-    <section class="block block-first">
-        <div class="block-content">
-	    {{content|safe}}
-        </div>
-    </section>
+    <div class="article__content">
+        <section class="block block-first">
+
+            {% if meta.fm.image %}
+            <div class="article__headerImage">
+                <div class="responsiveImage">
+                    <img src="{{meta.fm.image}}" title="Wildebeest herds in the Masai Mara, Kenya.">
+                    <div class="responsiveImage_license">
+                        Wildebeest herds in the Masai Mara, Kenya. Photo by T. R. Shankar Raman. CC BY 3.0. Via Wikimedia commons.
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="block-content">
+                {% if meta.fm.category %}
+                <div class="article__category">
+                    <span class="article__category__upper">{{meta.fm.category}}</span>
+                    {% if meta.fm.subCategory %}
+                    <span class="article__category__lower">{{meta.fm.subCategory}}</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+            {{content|safe}}
+            </div>
+        </section>
+    </div>
 </article>

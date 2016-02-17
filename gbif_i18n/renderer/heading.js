@@ -3,8 +3,8 @@ var blockwrap = '</div></section><section class="block"><div class="block-conten
 module.exports = function (text, level) {
     var escapedText = text.toLowerCase().replace(/[\s]+/g, '-');
     var heading = '<h' + level + ' id ="'+escapedText+'" class="anchor">'+text+'</h' + level + '>';
-    if (level === 1) {
+    /*if (level === 1) {
         return heading + blockwrap;
-    }
+    }*/
     return heading;
 };

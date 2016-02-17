@@ -1,27 +1,59 @@
 .article {
+	background $articleBg
+	.article__content {
+		max-width $article_max_width
+		margin 0 auto
+		overflow hidden //ensures that margins doesn't overflow container
+	}
+	.article__headerImage {
+		max-width $article_max_width
+		margin 0 auto
+		.responsiveImage {
+			padding-bottom 33%
+			margin 0
+		}
+	}
+	.article__category {
+		margin 0 auto
+		text-align center
+		text-transform: uppercase
+		font-size 80%
+		.article__category__upper {
+			font-weight bold
+		}
+		.article__category__lower {
+			border-left 2px solid $OrangePeel
+			margin-left 5px
+			padding-left 5px
+		}
+	}
+	section.block {
+		margin-bottom vr-block(1)
+		background $article-content-bg
+		overflow hidden
+	}
 	.block-content a {
 		text-decoration none
 		border-bottom solid 1px $LinkBorderColor
 	}
 	.block-content {
 		margin 0 vr-block(1)
-	}
-	.block-content {
-		margin 0 auto
+		margin-top vr-block(1)
 		max-width $article_max_width
-		padding 0 vr-block(1)
 	}
 	.block-first {
 		background $articleHeader_bg
 		/*margin-bottom vr-block(1)*/
 		h1 {
-			margin 0 0 vr-block(1) 0
-			padding-top vr-block(1)
+			margin-bottom vr-block(1)
 			font-weight $articleHeader_weight
 			color $articleHeader_textColor
 			text-align center
 			padding-bottom vr-block(0.875)
 			border-bottom $articleHeader_border
+		}
+		.block-content {
+			margin-top vr-block(1)
 		}
 	}
 	.block-first + .block > .block-content > p:first-child>em {
@@ -31,4 +63,13 @@
 }
 .Site__contentArea.article .Site__contentArea__main.rtl> article {
 	direction rtl
+}
+
++isAbove($laptop) {
+	.article {
+		.block-content {
+			margin 0 vr-block(5)
+			margin-top vr-block(1)
+		}
+	}
 }
