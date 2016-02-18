@@ -6,10 +6,17 @@
             {% if meta.fm.image %}
             <div class="article__headerImage">
                 <div class="responsiveImage">
-                    <img src="{{meta.fm.image}}" title="Wildebeest herds in the Masai Mara, Kenya.">
+                    <img src="{{meta.fm.image}}" {% if meta.fm.imageTitle %}title="{{meta.fm.imageTitle}}"{% endif %}>
+                    {% if meta.fm.imageTitle %}
                     <div class="responsiveImage_license">
-                        Wildebeest herds in the Masai Mara, Kenya. Photo by T. R. Shankar Raman. CC BY 3.0. Via Wikimedia commons.
+                        <span class="responsiveImage__icon gb-icon-info"></span>
+                        {% if meta.fm.imageLink %}
+                        <span class="responsiveImage__info"><a href="{{meta.fm.imageLink}}">{{meta.fm.imageTitle}}</a></span>
+                        {% else %}
+                        <span class="responsiveImage__info">{{meta.fm.imageTitle}}</span>
+                        {% endif %}
                     </div>
+                    {% endif %}
                 </div>
             </div>
             {% endif %}

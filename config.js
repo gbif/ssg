@@ -38,7 +38,7 @@ conf = {
     },
     stylus: {
         src: src + '/stylus/**/*.styl', //for the css in the specific site that might overwrite the core
-        coresrc: src + '/stylus/**/*.styl', //for the css in core to watch
+        coresrc: fullSrcPath + '/stylus/**/*.styl', //for the css in core to watch
         entries: [src + '/stylus/index.styl'], //main entry point to build css from, will be overwritten by individual sites
         rawCss: [],//in case we want to add additional css from external libs
         dest: dest + '/css' //where to build to

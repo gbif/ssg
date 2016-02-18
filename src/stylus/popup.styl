@@ -40,14 +40,15 @@
 		li {
 			flex 0 0 auto
 			display inline-block
-			margin: 10px 5px
+			margin 10px 5px
 			a {
-				background: $popupButtonColor
-				padding: vr-block(0.5) vr-block(0.5)
-				color: $popupColor
-				border-left $borderWidth solid $popupBg
+				background-color $popupButtonColor
+				padding vr-block(0.5) vr-block(0.5)
+				color $popupColor
+				transition background-color 300ms, color 300ms ease
 				&:hover {
-					border-left-color $navbar_BorderColor
+					background-color $popupButtonHoverBg
+					color $popupButtonHoverColor
 				}
 			}
 		}
