@@ -21,7 +21,7 @@ $Mist = rgb(232, 232, 232) 		// mist
 $borderWidth := vr-block(0.25);
 
 // text and background
-$content_bg := #fffefe
+$content_bg := white
 $ink = #333
 
 //Navigation-bar variables
@@ -45,6 +45,7 @@ $nav_drawer_image := "/images/drawer.jpg"
 
 //links
 $LinkBorderColor := $OrangePeel
+$LinkHoverBg := $OrangePeel
 
 //Logo
 $site-logo-content := $icon-string-logo
@@ -70,20 +71,27 @@ $translationNotification_color := #ddd
 
 //Typography
 $body-font          := $helvetica
-$body-font-weight   := 300
+$body-font-weight   := normal
 $body-color         := #333
 $header-font        := $helvetica
-$header-font-weight := 500
+$header-font-weight := 300
 $header-color       := #555
-$html-font-size		:= 15px
+$html-font-size		:= 14px
 $blockquote_border_color := #555
 
 //article
-$article_max_width := 800px
+$article_max_width := 1000px
+$articleBg := #eee
+$article-content-bg := $content_bg
 $articleHeader_textColor := inherit
-$articleHeader_weight := bold
+$articleHeader_weight := 200
 $articleHeader_bg := inherit
-$articleHeader_border := vr-block(0.125) dotted $navbar_BorderColor
+$articleHeader_border := 1px solid #ddd
+$articleMarginLarge := vr-block(5)
+$articleMarginSmall := vr-block(1)
+$articleMarginTop := vr-block(1)
+$articleCategorySpacerColor := $OrangePeel
+$articleFontSize := 16px
 
 //search
 $search_result_bg := #eee
@@ -94,5 +102,7 @@ $search_result_border_color := #555
 //popup
 $popupBg := $content_bg
 $popupButtonColor := #ccc
+$popupButtonHoverColor := $ink
+$popupButtonHoverBg := #aaa
 $popupColor := $ink
-$popupBorderColor = $ink
+$popupBorderColor := $ink

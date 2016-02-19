@@ -96,7 +96,7 @@ $l3  = $base-line-height*1//$minor-third
 $l4  = $base-line-height*1//$major-third   
 $l5  = $base-line-height*1//$perfect-fourth
 $l6  = $base-line-height*1//$aug-fourth    
-$l7  = $base-line-height*2//$perfect-fifth 
+$l7  = $base-line-height*2//$perfect-fifth
 $l8  = $base-line-height*2//$minor-sixth   
 $l9  = $base-line-height*2//$golden        
 $l10 = $base-line-height*2//$major-sixth   
@@ -214,11 +214,23 @@ typographic() {
 		color inherit
 	}
 
-	p, blockquote, pre,
-	address,
-	dl, ol, ul,
-	table {
-		margin-bottom $base-line-height
+	.block-content {
+		p, blockquote, pre,
+		address,
+		dl, >ol, >ul,
+		table {
+			margin-bottom $base-line-height
+		}
+		>*:last-child {
+			margin-bottom vr-block(1.5)
+		}
+	}
+
+	//lists
+	.block-content {
+		>ul>li, >ol>li {
+			margin-bottom vr-block(0.5)
+		}
 	}
 
 	/*p {*/
@@ -229,24 +241,30 @@ typographic() {
 		font-family: $header-font
 		font-weight: $header-font-weight
 		clear: both
-		margin-bottom: vr-block(0.5)
-		/*margin-top vr-block(1.5)*/
+		margin-bottom: vr-block(1)
 	}
 	h1 {
 		setFont(12)
 	}
 	h2 {
+		margin-top vr-block(3)
 		setFont(6)
 	}
 	h3 {
-		setFont(4)
+		setFont(2)
+		font-weight bold
+		margin-top vr-block(2)
 	}
 	h4 {
 		setFont(1)
+		font-style oblique
+		margin-bottom 0.5rem
+		font-weight bold
 	}
 	h5, h6 {
 		setFont(1)
-		font-style italic
+		font-style oblique
+		margin-bottom 0.5rem
 	}
 
 	+isAbove($tablet) {
@@ -255,6 +273,9 @@ typographic() {
 		}
 		h2 {
 			setFont(10)
+		}
+		h3 {
+			setFont(4)
 		}
 	}
 	+isAbove($laptop) {

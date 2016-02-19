@@ -4,20 +4,44 @@
 	}
 	overflow hidden
 	width 100%
-	max-width 50rem
 	height 0
 	padding-bottom 50%
 	margin-bottom vr-block(1)
 	position relative
 	.responsiveImage_license {
 		display none
-	}
-	&:hover .responsiveImage_license {
-		display block
 		position absolute
 		top 0
 		background-color rgba(0,0,0,0.3)
 		color #ddd
-		padding 5px
+		padding 0 3px
+		line-height 20px
+		font-size 14px
+		.responsiveImage__icon {
+			width vr-block(1)
+			font-size 20px
+			width 20px
+			vertical-align bottom
+			display inline-block
+			text-align center
+		}
+		.responsiveImage__info{
+			display none
+			a {
+				text-decoration none
+				&:hover {
+					text-decoration underline
+				}
+			}
+		}
+		&:hover {
+			display inline-block
+			.responsiveImage__info{
+				display inline
+			}
+		}
+	}
+	&:hover .responsiveImage_license {
+		display block
 	}
 }

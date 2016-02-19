@@ -14,33 +14,34 @@
 	display flex
 	flex-wrap wrap
 	>a {
-		padding vr-block(1)
+		//padding vr-block(0.5) vr-block(1)
 		margin vr-block(0.5)
 		float left
 		display block;
 		flex 1 1 auto
 		width 350px
 		min-width 200px
-		background $search_result_bg
+		background #fff//$search_result_bg
 		text-decoration none
 		position relative
-		border-left $borderWidth solid $search_result_border_color
-		>* {
-			margin 0
+		color #444//$searchResultColor
+		border 1px solid #ddd
+		h3 {
+			color $searchResultHeaderColor
+			background #444
+			padding 0.75rem 1rem
 		}
-		h2 {
-			color $search_result_color
-			background $search_result__header_bg
-		}
-		>p {
-			margin-top vr-block(0.5)
-		}
-
 		span {
-			display none
-			/*font-size 0.8rem*/
-			/*float right*/
-			/*text-transform uppercase*/
+			margin 0.5rem 1rem
+			display block
+			font-size 0.8rem
+			text-transform uppercase
+			color $searchCategoryColor
+			line-height 1.5rem
+		}
+		p{
+			margin 0rem 1rem
+			margin-bottom 0.75rem
 		}
 	}
 }
