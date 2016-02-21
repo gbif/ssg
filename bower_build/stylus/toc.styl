@@ -163,18 +163,24 @@ tocStyleClose() {
 
 tocStyling() {
 	.Toc {
-		margin vr-block(2) vr-block(1)
+		font-size 15px
+		margin vr-block(2) 0
 		a.Toc__close {
 			margin 0
 		}
 		a {
 			display block
 			line-height vr-block(1)
+			padding vr-block(0.25) vr-block(1)
+			&:hover {
+				background #eee
+			}
 			&.Toc--l1 {
 				display none
 			}
 			&.Toc--l2 {
-				margin vr-block(1) 0
+				//padding vr-block(2) vr-block(1)
+				margin vr-block(1.5) 0 0 0
 				font-weight bold
 				&:after {
 					content ' '
@@ -183,17 +189,23 @@ tocStyling() {
 					border-bottom vr-block(0.125) solid $toc_h2_underline_color
 				}
 			}
-			&.Toc--l3, &.Toc--l4, .Toc--l5 {
-				margin vr-block(0.5) 0
-				font-size 0.9rem
-				line-height 1.2rem
+			&.Toc--l3 {
+				/*margin vr-block(1) 0 0 0*/
 			}
 			&.Toc--l4 {
-				margin vr-block(0.25) 0 vr-block(0.25) vr-block(1)
+				padding-left vr-block(2)
+				color #666
 			}
 			&.Toc--l5 {
-				margin 0
-				margin-left vr-block(2.5)
+				padding-left vr-block(3)
+			}
+		}
+	}
+	+isAbove($laptop) {
+		.Toc {
+			font-size 14px
+			a {
+
 			}
 		}
 	}

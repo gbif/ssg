@@ -22,7 +22,7 @@ $borderWidth := vr-block(0.25);
 
 // text and background
 $content_bg := white
-$ink = #333
+$ink = #555
 
 //Navigation-bar variables
 $navbar_height = vr-block(3)
@@ -72,18 +72,17 @@ $translationNotification_color := #ddd
 //Typography
 $body-font          := $helvetica
 $body-font-weight   := normal
-$body-color         := #333
+$body-color         := $ink
 $header-font        := $helvetica
 $header-font-weight := 300
-$header-color       := #555
+$header-color       := #444
 $html-font-size		:= 14px
 $blockquote_border_color := #555
 
 //article
-$article_max_width := 1000px
 $articleBg := #eee
 $article-content-bg := $content_bg
-$articleHeader_textColor := inherit
+$articleHeader_textColor := $header-color
 $articleHeader_weight := 200
 $articleHeader_bg := inherit
 $articleHeader_border := 1px solid #ddd
@@ -92,12 +91,18 @@ $articleMarginSmall := vr-block(1)
 $articleMarginTop := vr-block(1)
 $articleCategorySpacerColor := $OrangePeel
 $articleFontSize := 16px
+$article_max_width := 900px
 
 //search
-$search_result_bg := #eee
+$searchBg := $articleBg
+$searchInputColor := #333
+$formBottomBorderColor := #ccc
+$search_result_bg := #444//#eee
 $search_result__header_bg := #eee
-$search_result_color := #222
-$search_result_border_color := #555
+$searchResultColor := #ddd
+$searchResultHeaderColor := #eee
+$searchCategoryColor := $navbar_bg
+
 
 //popup
 $popupBg := $content_bg

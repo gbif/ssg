@@ -162,8 +162,12 @@ siteHeaderbar() {
 				position relative
 				span {
 					padding-left vr-block(3)
+					display initial
 					/*position absolute*/
 					/*left -9999px*/
+				}
+				.MainMenu__rootName {
+					display none
 				}
 				&:before {
 					content $site-logo-content
@@ -214,6 +218,9 @@ siteHeaderbar() {
 			padding vr-block(0.5) vr-block(1) vr-block(0.5) vr-block(2)
 			line-height vr-block(1)
 		}
+		.MainMenu__siteName {
+			display none
+		}
 		>div {
 			//draw a thin line between sections
 			> * {
@@ -221,7 +228,7 @@ siteHeaderbar() {
 			}
 			
 			//items with icons need additional styling
-			a {
+			>a, ul a {
 				position relative
 				&:before {
 					font-size vr-block(1)
@@ -367,15 +374,14 @@ a.actionIcon {
 +isBelow($laptop) {
 	.ServiceMenu {
 		.ServiceMenu__teaser {
-			>a {
-				display block
-				height 100%
-				width 100%
-			}
-			height vr-block(6)
+			height $navbar_height
 			width 100%
-			background url($nav_drawer_image)
-			background-size cover
+			background $navbar_bg
+			border-bottom $navbar_borderWidth solid $navbar_BorderColor
+			color $navbar_textColor
+			>.navbar_action {
+				text-align center
+			}
 		}
 	}
 }

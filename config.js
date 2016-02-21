@@ -9,6 +9,7 @@ var path = require('path'),
     base = getPath('./'),
     src = './src',
     fullSrcPath = path.join(base, 'src'),
+    tmp = './.tmp',
     conf;
 
 function getPath(p){
@@ -50,8 +51,8 @@ conf = {
         }
     },
     templates: {
-        src: fullSrcPath + '/templates/**/*.html',
-        main: fullSrcPath + '/templates/main.html'
+        src: tmp + '/templates/**/*.html',
+        main: tmp + '/templates/main.html'
     },
     clean: {
         all: [dest + '/**/*.*', './iconfont/**/*.*', src + '/stylus/iconfont/'],
@@ -61,6 +62,10 @@ conf = {
     raw: {
         src: src + '/raw/**/*.*',
         dest: dest + '/raw'
+    },
+    mergedTemplates: {
+        src: [ path.join(fullSrcPath, 'templates/**/*.html'), path.join(src, 'templates/**/*.html') ],
+        dest: tmp + '/templates'
     },
     favicons: {
         src: src + '/favicons/**/*.*',

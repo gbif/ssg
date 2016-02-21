@@ -11990,7 +11990,9 @@ function toggleSearch(event) {
     searchAreaEl.querySelector('input').focus();
     closeMenus();
     hideToc();
-    event.preventDefault(); //do not scroll to top
+    if (event) {
+        event.preventDefault();//do not scroll to top
+    }
 }
 $(searchToggleSelector).on('click', toggleSearch);
 

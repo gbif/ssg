@@ -20,11 +20,11 @@
         {% include "nav.html" %}
         {% include "searcharea.html" %}
 
-        <main class="main" role="main" id="main">
+        <main class="main {% if meta.fm.drawer %}hasDrawer{% endif %}" role="main" id="main">
 
-            {% if meta.fm.toc %}
+            {% if meta.fm.drawer %}
             <aside class="
-            {% if meta.fm.toc == 'forced' %} isLocked {% endif %} 
+            isLocked
             {% if languages[meta.contentLanguage].dir == 'rtl' %} rtl {% endif %}
             Site__drawer" id="filter">
                 <div>
@@ -35,22 +35,15 @@
 
 
             <div class="Site__contentArea {% if meta.fm.style %} {{meta.fm.style}}  {% else %} article {% endif %}">
-                {% if meta.fm.toc %}
+                {% if meta.fm.drawer %}
                     <a href="#" class="toggleDrawer openDrawer"><i class="gb-icon-left-arrow"></i></a>
                 {% endif %}
                 <div class="Site__contentArea__main 
                             {% if languages[meta.contentLanguage].dir == 'rtl' %} rtl {% endif %} ">
+
                     {% include "article.html" %}
 
-                    <footer class="Site__footer">
-                        <div class="Site__footer__content">
-                            <div class="gb-icon-logo Site__footer__gbifLogo"><a href="http://gbif.org">GBIF.org</a></div>
-                            <p>
-                                This site is affiliated to <abbr title="Global Biodiversity Information Facility">GBIF</abbr>.
-                                <a href="http://gbif.org">Cookie and privacy policy.</a>
-                            </p>
-                        </div>
-                    </footer>
+                    {% include "footer.html" %}
 
                 </div>
 

@@ -9,12 +9,12 @@
 		max-width $article_max_width
 		margin 0 auto
 		.responsiveImage {
-			padding-bottom 50%
+			padding-bottom 40%
 			margin 0
 		}
 	}
 	.article__category {
-		margin 0 auto
+		margin vr-block(1) auto 0 auto
 		text-align center
 		text-transform: uppercase
 		font-size 80%
@@ -36,6 +36,9 @@
 		overflow hidden
 		&:last-of-type {
 			margin-bottom 0
+			.block-content {
+				margin-bottom vr-block(3)
+			}
 		}
 	}
 	.block-content a {
@@ -47,13 +50,13 @@
 	}
 	.block-content {
 		margin 0 $articleMarginSmall
-		margin-top vr-block(1)
+		margin-top vr-block(1.5)
 		max-width $article_max_width
 	}
 	.block-first {
 		background $articleHeader_bg
 		h1 {
-			margin-bottom vr-block(1)
+			margin-bottom vr-block(1.5)
 			font-weight $articleHeader_weight
 			color $articleHeader_textColor
 			text-align center
@@ -77,11 +80,6 @@
 		.block-content {
 			margin 0 $articleMarginLarge
 			margin-top vr-block(1)
-		}
-		.article__headerImage {
-			.responsiveImage {
-				padding-bottom 30%
-			}
 		}
 	}
 }

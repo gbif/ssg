@@ -27,7 +27,7 @@ languageData.list = Object.keys(languageData).map(function (lang) { //create lis
 });
 
 //Create the task that builds the actual html files based on the configuration object
-gulp.task('build-main', [], function () {
+gulp.task('build-main', ['templates'], function () {
     var langFiles, template, search, merge; //Streams
 
     //create stream with language versions and metadata
@@ -43,13 +43,13 @@ gulp.task('build-main', [], function () {
 
     //We now got the files with metadata and in all language versions. Split streams and process templating and search in parallel
     template = langFiles
+        .pipe(toc())
         .pipe(marked({
             renderer: renderer, //render using custom markdown renderer
             highlight: function (code) {
                 return highlight.highlightAuto(code).value;
             }
         }))
-        .pipe(toc())
         .pipe(applyTemplate(config.templates.main, languageData, translations))
         .pipe(gulp.dest(config.dest));
 

@@ -13,6 +13,7 @@
 .Search--showResults .Search__results {
 	display flex
 	flex-wrap wrap
+	justify-content space-around
 	>a {
 		//padding vr-block(0.5) vr-block(1)
 		margin vr-block(0.5)
@@ -27,6 +28,7 @@
 		color #444//$searchResultColor
 		border 1px solid #ddd
 		h3 {
+			margin 0
 			color $searchResultHeaderColor
 			background #444
 			padding 0.75rem 1rem
@@ -38,13 +40,31 @@
 			text-transform uppercase
 			color $searchCategoryColor
 			line-height 1.5rem
+			&:empty {
+				margin 0
+			}
 		}
 		p{
 			margin 0rem 1rem
 			margin-bottom 0.75rem
+			color #666
+			&:empty {
+				margin 0
+			}
+		}
+		p:empty, span:empty {
+			margin 0
 		}
 	}
 }
 .Search.rtl {
 	direction rtl
+}
+
++isAbove($laptop) {
+	.Search--showResults .Search__results {
+		>a {
+			max-width 50vw
+		}
+	}
 }

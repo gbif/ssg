@@ -2,11 +2,10 @@
 
 <nav id="nav" class="SiteNav {% if languages[meta.siteLanguage].dir == 'rtl' %} rtl {% endif %}" role="navigation">
     <div class="ServiceMenu">
-        <div class="ServiceMenu__teaser">
-        </div>
+        {% include "menuHeader.html" %}
         <ul>
             <li class="ServiceMenu__search">
-                <a href="#" class="gb-icon-search site__searchToggle">{{i18n.NavSearch[meta.siteLanguage]}}</a>
+                <a href="#" class="gb-icon-search site__searchToggle"><span>{{i18n.NavSearch[meta.siteLanguage]}}</span></a>
             </li>
             {% include "language-selector.html" %}
         </ul>
@@ -15,7 +14,10 @@
 
     <div class="MainMenu">
         {% if nav.menuItem[meta.siteLanguage] %}
-        <a href="/{{meta.siteLanguage}}/#" class="gb-icon-home home"><span>{{nav.menuItem[meta.siteLanguage].fm.title}}</span></a>
+        <a href="/{{meta.siteLanguage}}/#" class="gb-icon-home home">
+            <span class="MainMenu__rootName">{{nav.menuItem[meta.siteLanguage].fm.title}}</span>
+            <span class="MainMenu__siteName">{{i18n.siteName[meta.siteLanguage]}}</span>
+        </a>
         {% endif %}
         {% for x in nav.children %}
         {% if loop.first %}

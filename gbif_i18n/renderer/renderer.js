@@ -10,7 +10,7 @@ var marked = require('marked'),
 module.exports = renderer;
 
 //add anchors to headlines
-renderer.heading = heading;
+//renderer.heading = heading;
 
 renderer.hr = hr;
 
