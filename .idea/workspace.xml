@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053f8b1f-de9f-4725-bcb7-5bb31c0ccc9f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_build/icons/config.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/fonts/_typography.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/fonts/_typography.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/fonts/_typography.styl" afterPath="$PROJECT_DIR$/src/stylus/fonts/_typography.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/_variables.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/_variables.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/_variables.styl" afterPath="$PROJECT_DIR$/src/stylus/_variables.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/article.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/article.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/article.styl" afterPath="$PROJECT_DIR$/src/stylus/article.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gbif_i18n/renderer/image.js" afterPath="$PROJECT_DIR$/gbif_i18n/renderer/image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/layout/navigation.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/layout/navigation.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/popup.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/popup.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/portal.js" afterPath="$PROJECT_DIR$/src/js/portal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_build/stylus/responsiveImage.styl" afterPath="$PROJECT_DIR$/bower_build/stylus/responsiveImage.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/search.styl" afterPath="$PROJECT_DIR$/src/stylus/search.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/layout/search.styl" afterPath="$PROJECT_DIR$/src/stylus/layout/search.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/searcharea.html" afterPath="$PROJECT_DIR$/src/templates/searcharea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylus/toc.styl" afterPath="$PROJECT_DIR$/src/stylus/toc.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/head.html" afterPath="$PROJECT_DIR$/src/templates/head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssg.iws" />
@@ -49,18 +34,28 @@
       <file leaf-file-name="_typography.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stylus/fonts/_typography.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="5265">
-              <caret line="230" column="22" selection-start-line="230" selection-start-column="22" selection-end-line="230" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5355">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23013699" vertical-offset="27" max-vertical-offset="1155">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.72" vertical-offset="42" max-vertical-offset="1230">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16713092" vertical-offset="0" max-vertical-offset="718">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -103,13 +98,11 @@
         <option value="$PROJECT_DIR$/gulp/tasks/optimize.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/clean.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/fonts.js" />
-        <option value="$PROJECT_DIR$/src/templates/head.html" />
         <option value="$PROJECT_DIR$/src/templates/language-selector.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/stylus/layout/navigation.styl" />
         <option value="$PROJECT_DIR$/src/templates/main.html" />
         <option value="$PROJECT_DIR$/gbif_i18n/renderer/heading.js" />
-        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/translations.yml" />
         <option value="$PROJECT_DIR$/src/js/popup.js" />
         <option value="$PROJECT_DIR$/src/stylus/popup.styl" />
@@ -125,6 +118,8 @@
         <option value="$PROJECT_DIR$/src/stylus/footer.styl" />
         <option value="$PROJECT_DIR$/src/stylus/article.styl" />
         <option value="$PROJECT_DIR$/src/stylus/fonts/_typography.styl" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/src/templates/head.html" />
       </list>
     </option>
   </component>
@@ -138,7 +133,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
+    <option name="x" value="145" />
     <option name="y" value="23" />
     <option name="width" value="1686" />
     <option name="height" value="1173" />
@@ -182,6 +177,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -261,7 +288,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="23" width="1686" height="1173" extended-state="0" />
+    <frame x="145" y="23" width="1686" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -272,7 +299,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3673966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3673966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -538,14 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1029">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gbif_i18n/renderer/hr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04109589" vertical-offset="0" max-vertical-offset="730">
@@ -690,18 +709,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylus/fonts/_typography.styl">
+    <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="5265">
-          <caret line="230" column="22" selection-start-line="230" selection-start-column="22" selection-end-line="230" selection-end-column="22" />
+        <state vertical-scroll-proportion="-6.72" vertical-offset="42" max-vertical-offset="1230">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
+    <entry file="file://$PROJECT_DIR$/src/stylus/fonts/_typography.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23013699" vertical-offset="27" max-vertical-offset="1155">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5355">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16713092" vertical-offset="0" max-vertical-offset="718">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding />
         </state>
       </provider>
