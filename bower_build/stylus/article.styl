@@ -2,6 +2,25 @@
 	-webkit-font-smoothing antialiased
 	font-size $articleFontSize
 	background $articleBg
+	
+	h2 {
+		margin-top vr-block(3)
+	}
+	h3 {
+		margin-top vr-block(2)
+	}
+	h4 {
+		margin-bottom 0.5rem
+	}
+	h5, h6 {
+		margin-bottom 0.5rem
+	}
+	.block-content {
+		>h2:first-child, >h3:first-child {
+			margin-top vr-block(1)
+		}
+	}
+	
 	.article__content {
 		overflow hidden //ensures that margins doesn't overflow container
 	}
@@ -28,7 +47,8 @@
 			padding-left 5px
 		}
 	}
-	section.block {
+}
+section.block {
 		max-width $article_max_width
 		margin 0 auto
 		margin-bottom vr-block(1)
@@ -40,12 +60,27 @@
 				margin-bottom vr-block(3)
 			}
 		}
+		h1 {
+			margin-bottom vr-block(1.5)
+			font-weight $articleHeader_weight
+			color $articleHeader_textColor
+			text-align center
+			padding-bottom vr-block(1)
+		}
 	}
-	.block-content a {
-		text-decoration none
-		border-bottom dotted 1px $LinkBorderColor
-		&:hover {
-			background-color $LinkHoverBg
+	.block-content {
+		a {
+			text-decoration none
+			border-bottom dotted 1px $LinkBorderColor
+			&:hover {
+				background-color $LinkHoverBg
+			}
+		}
+		>div a {
+			border-bottom none
+			&:hover {
+				background-color inherit
+			}
 		}
 	}
 	.block-content {
@@ -56,11 +91,6 @@
 	.block-first {
 		background $articleHeader_bg
 		h1 {
-			margin-bottom vr-block(1.5)
-			font-weight $articleHeader_weight
-			color $articleHeader_textColor
-			text-align center
-			padding-bottom vr-block(1)
 			border-bottom $articleHeader_border
 		}
 	}
@@ -70,7 +100,7 @@
 			display block
 		}
 	}
-}
+	
 .Site__contentArea.article .Site__contentArea__main.rtl> article {
 	direction rtl
 }

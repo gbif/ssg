@@ -81,6 +81,18 @@ forceShowDrawer() {
 	}
 }
 
+//inline toc
+.block-content>.toc+ul {
+	a {
+		border none
+		&:hover {
+			background none
+			border-bottom 1px solid $OrangePeel
+		}
+	}
+	//border-left 3px solid $Straw
+	padding-left 40px
+}
 
 //fixed toggle
 .toggleDrawer.openDrawer {

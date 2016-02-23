@@ -13,7 +13,7 @@ $(document).ready(function () {
         searchResultTemlpate = document.getElementById('searchResultTemlpate').innerHTML,
         search__feedback = document.getElementById('Search__feedback');
 
-    var showSearchResults = function(results) {
+    var showSearchResults = function(results, term) {
         if (typeof results === 'undefined' || results.length == 0) {
             $(search__feedback).removeClass('Search--showResults');
             // searchResults.innerHTML = 'Enter search to see results';
@@ -31,6 +31,7 @@ $(document).ready(function () {
                 .replace('{{title}}', res.title)
                 .replace('{{category}}', res.category)
                 .replace('{{href}}', e)
+                .replace('{{searchTerm}}', term)
                 .replace('{{desc}}', res.desc);
         });
         searchResults.innerHTML = resultHTML;
@@ -52,32 +53,15 @@ $(document).ready(function () {
             var query = $(this).val(), // Get query
                 result = index.search(query); // Search for it
             if (query == '') {
-                showSearchResults(undefined);
+                showSearchResults(undefined, query);
             } else {
-                showSearchResults(result);
+                showSearchResults(result, query);
             }
         });
         searchElement.querySelector( 'button[type="submit"]' ).addEventListener( 'click', function(ev) { ev.preventDefault();} );
-        getState();
         //perform search
         $(input).trigger('keyup');
     });
-
-    //router
-    function getURLParameter(name) {
-        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || ['', ''])[1].replace(/\+/g, '%20')) || null;
-    }
-    function getState() {
-        var query = getURLParameter('q');
-        if (query) {
-            //display search
-            gb.toggleSearch();
-            //enter query in input
-            var input = searchElement.querySelector('input.search-input');
-            input.value = query;
-        }
-    }
-
 });
 
 

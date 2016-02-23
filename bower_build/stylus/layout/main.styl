@@ -1,6 +1,6 @@
 
 html, body, .page-wrapper {
-	height 100vh
+	height 100%
 	width 100%
 	overflow-x hidden
 	background $content_bg
@@ -62,7 +62,7 @@ setScrollbars() {
 	/*}*/
 /*}*/
 
-.Site__contentArea__main {
+.Site__contentArea .Site__contentArea__main {
 	display flex
 	flex-direction column
 	article {
@@ -71,4 +71,9 @@ setScrollbars() {
 	footer {
 		flex 0 0 auto
 	}
+}
+
+.gb-icon-siteLogo:before {
+	content $site-logo-content
+	color $logo_color
 }

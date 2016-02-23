@@ -228,7 +228,13 @@ typographic() {
 
 	//lists
 	.block-content {
-		>ul>li, >ol>li {
+		ul,ol {
+			padding-left 20px
+		}
+		li>ul, >li>ol {
+			margin-top vr-block(0.5)
+		}
+		ul>li, ol>li {
 			margin-bottom vr-block(0.5)
 		}
 	}
@@ -238,10 +244,10 @@ typographic() {
 	/*}*/
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: $header-font
-		font-weight: $header-font-weight
-		clear: both
-		margin-bottom: vr-block(1)
+		font-family $header-font
+		font-weight $header-font-weight
+		clear both
+		margin-bottom vr-block(1)
 	}
 	h1 {
 		setFont(12)
