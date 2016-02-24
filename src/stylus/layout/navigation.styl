@@ -307,7 +307,6 @@ siteHeaderbar() {
 
 
 //navigation interaction
-
 +isBelow($laptop) {
 	.SiteNav .isCategory > ul {
 		max-height 0
@@ -336,11 +335,6 @@ siteHeaderbar() {
 			display block
 		}
 	}
-	/*.SiteNav--collapseMenu .isCategory.isExpanded {*/
-		/*> ul {*/
-			/*display none*/
-		/*}*/
-	/*}*/
 }
 
 
@@ -410,51 +404,7 @@ a.actionIcon {
 			display none
 		}
 	}
-	.isOwnMenu {
-		left -100%
-		transition: left 500ms ease;
-		position absolute
-		top 0
-		background pink
-		width 100%
-		height 100%
-		> a {
-			background #333
-			display block //visual
-			&:before {
-				content 'back '
-			}
-		}
-		&.isActive {
-			left 0%
-		}
-	}
 }
-
-+isAbove($laptop) {
-	.isOwnMenu {
-		> ul {
-			top $navbar_height
-			right -300px
-			transition: right 500ms ease;
-			position absolute
-			background pink
-			width 300px
-			height "calc(100vh - %s)" % $navbar_height
-			> a {
-				background #333
-				display block //visual
-				&:before {
-					content 'back '
-				}
-			}
-		}
-		&.isActive > ul {
-			right 0px
-		}
-	}
-}
-
 
 +isAbove($laptop) {
 	.SiteNav__info {
@@ -463,36 +413,13 @@ a.actionIcon {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main {
 	position relative
-	//position 0 simply to avoid reflows that could be expensive
-	/*position absolute*/
 	padding-top 0
-	/*top $navbar_height*/
 	width 100%
-	/*height "calc(100vh - %s)" % $navbar_height*/
 	height "calc(100% - %s)" % $navbar_height
-	// overflow hidden
 }
-// +isAbove($laptop) {
-// 	main {
-// 		padding-top $navbar_height
-// 	}
-// }
+
 
 .Site__contentArea {
 	background $content_bg
@@ -511,11 +438,7 @@ main {
 
 	}
 }
-/*+isAbove($laptop) {*/
-	/*.Site__contentArea__main {*/
-		/*padding-left 85px*/
-	/*}*/
-/*}*/
+
 
 
 

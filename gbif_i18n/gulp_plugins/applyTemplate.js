@@ -17,7 +17,7 @@ swig.setFilter('toAnchor', function (input) {
 
 
 
-module.exports = function (tpl, languages, translations) {
+module.exports = function (tpl, googleAnalyticsId, languages, translations) {
     if (typeof tpl !== 'string') {
         var errorString = tpl + ' is not a valid template name';
         throw new gutil.PluginError('applyTemplate.js plugin', errorString);
@@ -33,7 +33,8 @@ module.exports = function (tpl, languages, translations) {
             nav: file.meta.menu,
             content: file.contents.toString(),
             i18n: translations,
-            toc: file.meta.toc
+            toc: file.meta.toc,
+            googleAnalyticsId: googleAnalyticsId
         };
         file.contents = new Buffer(templ(data), 'utf8');
         this.push(file);

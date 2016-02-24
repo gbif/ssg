@@ -63,6 +63,7 @@
 <script>
     var GBIF = GBIF || {};
     GBIF.siteLanguage = '{{meta.siteLanguage}}';
+
     {#
     gbdev = {page: {}, site: {}};
     gbdev.page.meta = {{meta|raw|json_encode}};
@@ -72,12 +73,13 @@
     gbdev.siteLanguage = '{{meta.siteLanguage}}';
     gbdev.i18n = {{i18n|raw|json_encode}};
     #}
+
 </script>
 
 
 <!-- inject:js -->
 <script src="/javascript/script.js"></script>
 <!-- endinject -->
-
+{% include "ga.html" %}
 </body>
 </html>

@@ -11803,7 +11803,7 @@ var GBIF = GBIF || {};
 GBIF.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 if (GBIF.supportsTouch) {
-    $('body').toggleClass('isTouch'); //used for styling to make target large enough for touching
+    $('body').toggleClass('isTouch'); //could be useful to have in stylesheet. for example to make targets larger on touch devices
 }
 
 GBIF.getURLParameter = function(name) {
@@ -11905,9 +11905,163 @@ $("a.skip").click(function (event) {
         $(this).removeAttr('tabindex');
     }).focus(); // focus on the content container
 });
+(function() {
+    var searchToggleSelector = '.site__searchToggle',
+        navToggleSelector = '.site__menuToggle',
+        siteNav = document.getElementById('nav'),
+        SiteNavCategoryItems = siteNav.querySelectorAll('.isCategory');
+
+    /**
+     * Toggle the main navigation
+     * @param event Optional and will prevent default
+     */
+    var toggleMenu = function (event) {
+        $('#SiteHeader').toggleClass('isActive');
+        $('#siteCanvas').toggleClass('hasActiveMenu');
+        $('.overlayMobileMenu').toggleClass('isActive');
+        hideToc();
+        closeSearch();
+        if (event) {
+            event.preventDefault();//prevent default to avoid scrolling to top when interacting with the menu. If not anchor will be executed
+        }
+    };
+
+    /**
+     * Close search area and return to main interface
+     */
+    function closeSearch() {
+        $(searchToggleSelector).removeClass('isActive');
+        $('#site_search').removeClass('isActive');
+    }
+
+    /**
+     * Get an elements ancestors
+     * @param childElement, element to start with
+     * @param stopElement. Stop search when this element is reached
+     * @returns {Array} list of elements ancestors
+     */
+    function getAncestors(childElement, stopElement) {
+        var ancestors = [];
+        while ((childElement = childElement.parentElement) && childElement != stopElement) ancestors.push(childElement);
+        return ancestors;
+    }
+
+    //collapse and expand menu items
+    $('.isCategory>a').on('click', function (event) {
+        var ancestors = getAncestors(this, siteNav),
+            child, i;
+
+        //collapse all items that are not an ancestor of the clicked menu item
+        for (i = 0; i < SiteNavCategoryItems.length; i++) {
+            child = SiteNavCategoryItems[i];
+            if (ancestors.indexOf(child) == -1) {
+                $(child).removeClass('isExpanded');
+            } else {
+                $(child).addClass('isExpanded');
+            }
+        }
+
+        $(siteNav).addClass('isExpanded'); //mark the navigation as having an expanded child. this is used for horizontal layout
+        event.preventDefault();//prevent default to avoid scrolling to top when interacting with the menu. If not anchor will be executed
+    });
+
+    /**
+     * Toggle search area
+     * @param event Optional and will prevent default
+     */
+    function toggleSearch(event) {
+        $(searchToggleSelector).toggleClass('isActive');
+        var searchAreaEl = document.getElementById('site_search');
+        $(searchAreaEl).toggleClass('isActive');
+        searchAreaEl.querySelector('input').focus();
+        closeMenus();
+        hideToc();
+        if (event) {
+            event.preventDefault();//prevent default to avoid scrolling to top when interacting with the menu. If not anchor will be executed
+        }
+    }
+
+    /**
+     * hide menu
+     */
+    function closeMenus() {
+        $(siteNav).removeClass('isExpanded');
+        if ($('#siteCanvas').hasClass('hasActiveMenu')) {
+            toggleMenu();
+        }
+    }
+
+    /**
+     * hide navigation areas.
+     */
+    function hideNavigation() {
+        "use strict";
+        hideToc();
+        closeMenus();
+    }
+
+    /**
+     * Toggle drawer
+     * @returns {boolean}
+     */
+    function toggleToc() {
+        $('.Site__drawer').toggleClass('isActive');
+        $(this).toggleClass('isActive');
+        $('.overlayFilter').toggleClass('isActive');
+        return false;
+    }
+
+    /**
+     * Hide drawer
+     */
+    function hideToc() {
+        $('.Site__drawer').removeClass('isActive');
+        $('.toggleDrawer').removeClass('isActive');
+        $('.overlayFilter').removeClass('isActive');
+
+    }
+
+    /**
+     * Hide horizontal menu if event
+     * @param event
+     */
+    function closeMenusOnClickOutside(event) {
+        var clickOnContent = $(event.target).is('#main *') || $(event.target).is('#site_search *');
+        if (clickOnContent) {
+            closeMenus();
+        }
+    }
+
+    //hide horizontal menu if clicking outside menu area
+    document.addEventListener('click', closeMenusOnClickOutside);
+    document.addEventListener('touchend', closeMenusOnClickOutside);
+
+    //hide menu, drawer and search area if ESC is pressed
+    $(document).keydown(function (e) {
+        if (e.keyCode == 27) {
+            closeMenus();
+            closeSearch();
+            hideToc();
+        }
+    });
+
+    //Hide navigation when overlay is clicked
+    $('.overlay').on('click touchend', hideNavigation);
+
+    //toggle drawer on click
+    $('.toggleDrawer').on('click touchend', toggleToc);
+
+    //show/hide search area
+    $(searchToggleSelector).on('click', toggleSearch);
+
+    //toggle menu when clicking on the menu icon
+    $(navToggleSelector).on('click touchend', toggleMenu);
+})();
+
 (function(){
     "use strict";
-    var secTimeout = 60*60*24*30; // 30 days timeout
+    var days = 180;// days before showing popup again
+    var secTimeout = 60*60*24*days;
 
     if (GBIF.getURLParameter('clearcookies')) {
         GBIF.cookies.removeItem('hasSeenPopup', '/');
@@ -11926,156 +12080,29 @@ $("a.skip").click(function (event) {
     }
 })();
 
-var searchToggleSelector = '.site__searchToggle',
-    navToggleSelector = '.site__menuToggle';
-var toggleMenu = function (event) {
-    $('#SiteHeader').toggleClass('isActive');
-    $('#siteCanvas').toggleClass('hasActiveMenu');
-    $('.overlayMobileMenu').toggleClass('isActive');
-    hideToc();
-    closeSearch();
-    if (event){
-        event.preventDefault();
-    }
-};
-function closeSearch() {
-    $(searchToggleSelector).removeClass('isActive');
-    $('#site_search').removeClass('isActive');
-}
-$(navToggleSelector).on('click touchend', toggleMenu);
-
-function getAncestors(el, stopEl) {
-    var ancestors = [];
-    while ((el = el.parentElement) && el != stopEl) ancestors.push(el);
-    return ancestors;
-}
-
-//collapse and expand menu items
-var siteNav = document.getElementById('nav');
-var SiteNavCategoryItems = siteNav.querySelectorAll('.isCategory');
-$('.isCategory>a').on('click', function (event) {
-    var ancestors = getAncestors(this, siteNav),
-        child, i;
-
-    //collpase all items that are not parents
-    for (i = 0; i < SiteNavCategoryItems.length; i++) {
-        child = SiteNavCategoryItems[i];
-        if (ancestors.indexOf(child) == -1) {
-            $(child).removeClass('isExpanded');
-        }
-    }
-
-    if (!$(siteNav).hasClass('isExpanded')) {
-        //for horizontal layout. When changing from laptop to mobile this means that the first menu click is ignored
-        $(this.parentNode).addClass('isExpanded');
-    }
-    else {
-        $(this.parentNode).toggleClass('isExpanded');
-    }
-    $(siteNav).addClass('isExpanded');//use for horizontal layout
-    event.preventDefault();
-});
-
-//collapse expand service menu
-$('.ServiceMenu__teaser>a').on('click', function (event) {
-    $(this.parentNode.parentNode).toggleClass('isExpanded');
-});
-
-
-//Search toggling
-function toggleSearch(event) {
-    $(searchToggleSelector).toggleClass('isActive');
-    var searchAreaEl = document.getElementById('site_search');
-    $(searchAreaEl).toggleClass('isActive');
-    searchAreaEl.querySelector('input').focus();
-    closeMenus();
-    hideToc();
-    if (event) {
-        event.preventDefault();//do not scroll to top
-    }
-}
-$(searchToggleSelector).on('click', toggleSearch);
-
-
-//close menu when clicking outside
-function closeMenus() {
-    $(siteNav).removeClass('isExpanded');
-    if ($('#siteCanvas').hasClass('hasActiveMenu')) {
-        toggleMenu();
-    }
-}
-
-function hideNavigation() {
-    "use strict";
-    hideToc();
-    closeMenus();
-}
-
-$(document).keydown(function(e){
-    if (e.keyCode==27) {
-        closeMenus();
-        closeSearch();
-        hideToc();
-    }
-});
-
-toggleToc = function(){
-    $('.Site__drawer').toggleClass('isActive');
-    $(this).toggleClass('isActive');
-    $('.overlayFilter').toggleClass('isActive');
-    return false;
-};
-$('.toggleDrawer').on('click touchend', toggleToc);
-
-function hideToc() {
-    $('.Site__drawer').removeClass('isActive');
-    $('.toggleDrawer').removeClass('isActive');
-    $('.overlayFilter').removeClass('isActive');
-
-}
-
-//overlay
-$('.overlay').on('click touchend', hideNavigation);
-
-function closeMenusOnClickOutside(event) {
-    var clickOnContent = $(event.target).is('#main *') || $(event.target).is('#site_search *');
-    if (clickOnContent) {
-        closeMenus();
-    }
-}
-document.addEventListener('click', closeMenusOnClickOutside);
-document.addEventListener('touchend', closeMenusOnClickOutside);
-
-
 /*
  Perform and display search
- TODO
- Needs rewriting. Just for testing as is.
- Possibly both as a module with config param
  */
 $(document).ready(function () {
     'use strict';
     // Set up search
-    var index, store, input, resultHTML, historyTimer,
+    var index, store, resultHTML,
         searchElement = document.getElementById('search'),
         searchResults = searchElement.querySelector('.Search__results'),
         searchResultTemlpate = document.getElementById('searchResultTemlpate').innerHTML,
-        search__feedback = document.getElementById('Search__feedback');
+        search__feedback = document.getElementById('Search__feedback'),
+        input = searchElement.querySelector('input.search-input');
+
+    if (!searchElement) {return;}
+
+    var clearSearchResults = function() {
+        $(search__feedback).removeClass('Search--showResults');
+    };
 
     var showSearchResults = function(results, term) {
-        if (typeof results === 'undefined' || results.length == 0) {
-            $(search__feedback).removeClass('Search--showResults');
-            // searchResults.innerHTML = 'Enter search to see results';
-            return;
-        }
-
-        $(search__feedback).addClass('Search--showResults');
-        var resultUrls = results.map(function(e){
-            return e.ref;
-        });
         resultHTML = '';
-        $.each(resultUrls, function(i, e){
-            var res = store[e];
+        $.each(results, function(i, e){
+            var res = store[e.ref];
             resultHTML += searchResultTemlpate
                 .replace('{{title}}', res.title)
                 .replace('{{category}}', res.category)
@@ -12084,31 +12111,28 @@ $(document).ready(function () {
                 .replace('{{desc}}', res.desc);
         });
         searchResults.innerHTML = resultHTML;
+        $(search__feedback).addClass('Search--showResults');
     };
 
+    //get the search index of the site language
     $.getJSON('/lunr/lunr_' + GBIF.siteLanguage + '.json', function (response) {
         // Create index
         index = lunr.Index.load(response.index);
         // Create store
         store = response.results;
 
-        if (!searchElement) {
-            return;
-        }
-        input = searchElement.querySelector('input.search-input');
-
-        // Handle search
+        // Handle key strokes and search continuously
         $(input).on('keyup', function (e) {
             var query = $(this).val(), // Get query
                 result = index.search(query); // Search for it
-            if (query == '') {
-                showSearchResults(undefined, query);
+            if (query == '' || result.length == 0) {
+                clearSearchResults();
             } else {
                 showSearchResults(result, query);
             }
         });
         searchElement.querySelector( 'button[type="submit"]' ).addEventListener( 'click', function(ev) { ev.preventDefault();} );
-        //perform search
+        //perform search in case of browser remembering last search
         $(input).trigger('keyup');
     });
 });

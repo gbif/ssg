@@ -2,7 +2,7 @@ var GBIF = GBIF || {};
 GBIF.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 if (GBIF.supportsTouch) {
-    $('body').toggleClass('isTouch'); //used for styling to make target large enough for touching
+    $('body').toggleClass('isTouch'); //could be useful to have in stylesheet. for example to make targets larger on touch devices
 }
 
 GBIF.getURLParameter = function(name) {

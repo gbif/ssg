@@ -1,6 +1,7 @@
 (function(){
     "use strict";
-    var secTimeout = 60*60*24*30; // 30 days timeout
+    var days = 180;// days before showing popup again
+    var secTimeout = 60*60*24*days;
 
     if (GBIF.getURLParameter('clearcookies')) {
         GBIF.cookies.removeItem('hasSeenPopup', '/');

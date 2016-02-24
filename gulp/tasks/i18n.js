@@ -50,7 +50,7 @@ gulp.task('build-main', ['templates'], function () {
                 return highlight.highlightAuto(code).value;
             }
         }))
-        .pipe(applyTemplate(config.templates.main, languageData, translations))
+        .pipe(applyTemplate(config.templates.main, config.googleAnalyticsId, languageData, translations))
         .pipe(gulp.dest(config.dest));
 
     // Build a search index using Lunr. The plugin expects a markdown content attribute on the file object.
