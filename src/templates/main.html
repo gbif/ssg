@@ -63,7 +63,6 @@
 <script>
     var GBIF = GBIF || {};
     GBIF.siteLanguage = '{{meta.siteLanguage}}';
-
     {#
     gbdev = {page: {}, site: {}};
     gbdev.page.meta = {{meta|raw|json_encode}};
@@ -71,12 +70,12 @@
     gbdev.site.navigation = {{nav|raw|json_encode}};
     gbdev.site.languages = {{languages|raw|json_encode}};
     gbdev.siteLanguage = '{{meta.siteLanguage}}';
-    gbdev.i18n = {{i18n|raw|json_encode}};
+    gbdev.translations = {{i18n|raw|json_encode}};
     #}
 
 </script>
 
-
+{% include "cdnScripts.html" %}
 <!-- inject:js -->
 <script src="/javascript/script.js"></script>
 <!-- endinject -->

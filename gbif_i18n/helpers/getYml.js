@@ -32,4 +32,4 @@ module.exports =  function (filePath) {
         console.error(e);
     }
     return undefined;
-}
+};

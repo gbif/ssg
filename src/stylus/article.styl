@@ -32,6 +32,7 @@
 			margin 0
 		}
 	}
+	$articleCategorySeperatorSpacing = 5px
 	.article__category {
 		margin vr-block(1) auto 0 auto
 		text-align center
@@ -43,8 +44,16 @@
 		}
 		.article__category__lower {
 			border-left 2px solid $articleCategorySpacerColor
-			margin-left 5px
-			padding-left 5px
+			margin-left $articleCategorySeperatorSpacing
+			padding-left $articleCategorySeperatorSpacing
+		}
+		&.article__category-deep {
+			text-align left
+			.article__category__upper {
+				display inline-block
+				width s('calc(50% - %s)', $articleCategorySeperatorSpacing)
+				text-align right
+			}
 		}
 		+h1 {
 			margin-top 0
@@ -88,7 +97,8 @@ section.block {
 		}
 	}
 	.block-content {
-		margin 0 $articleMarginSmall
+		margin-left $articleMarginSmall
+		margin-right $articleMarginSmall
 		margin-top vr-block(1)
 		max-width $article_max_width
 	}
@@ -99,9 +109,10 @@ section.block {
 		}
 	}
 	.block-content {
-		>h1+p>em, >p:first-child>em {
+		>h1+p>em {
 			text-align center
 			display block
+			margin-top -(vr-block(1))
 		}
 	}
 	
@@ -112,7 +123,8 @@ section.block {
 +isAbove($laptop) {
 	.article {
 		.block-content {
-			margin 0 $articleMarginLarge
+			margin-left $articleMarginLarge
+			margin-right $articleMarginLarge
 		}
 	}
 }

@@ -88,7 +88,8 @@ section.block {
 		}
 	}
 	.block-content {
-		margin 0 $articleMarginSmall
+		margin-left $articleMarginSmall
+		margin-right $articleMarginSmall
 		margin-top vr-block(1)
 		max-width $article_max_width
 	}
@@ -99,9 +100,10 @@ section.block {
 		}
 	}
 	.block-content {
-		>h1+p>em, >p:first-child>em {
+		>h1+p>em {
 			text-align center
 			display block
+			margin-top -(vr-block(1))
 		}
 	}
 	
@@ -112,7 +114,8 @@ section.block {
 +isAbove($laptop) {
 	.article {
 		.block-content {
-			margin 0 $articleMarginLarge
+			margin-left $articleMarginLarge
+			margin-right $articleMarginLarge
 		}
 	}
 }

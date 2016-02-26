@@ -8,7 +8,7 @@ module.exports = (function(){
         runSequence(
             ['clean-all'],
             ['fonts'],
-            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons'],
+            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons', 'translations'],
             ['watch'],
             callback);
     }
@@ -17,7 +17,7 @@ module.exports = (function(){
         runSequence(
             ['clean-all'],
             ['fonts'],
-            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons'],
+            ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons', 'translations'],
             ['optimize'],
             callback);
     }

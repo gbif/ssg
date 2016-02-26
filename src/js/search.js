@@ -24,7 +24,7 @@ $(document).ready(function () {
             resultHTML += searchResultTemlpate
                 .replace('{{title}}', res.title)
                 .replace('{{category}}', res.category)
-                .replace('{{href}}', e)
+                .replace('{{href}}', e.ref)
                 .replace('{{searchTerm}}', term)
                 .replace('{{desc}}', res.desc);
         });

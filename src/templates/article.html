@@ -23,7 +23,7 @@
 
             <div class="block-content">
                 {% if meta.fm.category %}
-                <div class="article__category">
+                <div class="article__category {% if meta.fm.subCategory %}article__category-deep{% endif %}">
                     <span class="article__category__upper">{{meta.fm.category}}</span>
                     {% if meta.fm.subCategory %}
                     <span class="article__category__lower">{{meta.fm.subCategory}}</span>

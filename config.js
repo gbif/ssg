@@ -70,6 +70,10 @@ conf = {
     favicons: {
         src: src + '/favicons/**/*.*',
         dest: dest
+    },
+    translations: {
+        src: './translations.yml',
+        dest: dest + '/translations'
     }
 };
 
