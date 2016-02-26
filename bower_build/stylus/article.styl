@@ -46,6 +46,9 @@
 			margin-left 5px
 			padding-left 5px
 		}
+		+h1 {
+			margin-top 0
+		}
 	}
 }
 section.block {
@@ -61,6 +64,7 @@ section.block {
 			}
 		}
 		h1 {
+			margin-top vr-block(1)
 			margin-bottom vr-block(1.5)
 			font-weight $articleHeader_weight
 			color $articleHeader_textColor
@@ -85,7 +89,7 @@ section.block {
 	}
 	.block-content {
 		margin 0 $articleMarginSmall
-		margin-top vr-block(1.5)
+		margin-top vr-block(1)
 		max-width $article_max_width
 	}
 	.block-first {
@@ -109,7 +113,6 @@ section.block {
 	.article {
 		.block-content {
 			margin 0 $articleMarginLarge
-			margin-top vr-block(1)
 		}
 	}
 }

@@ -190,9 +190,9 @@
       "resolved": "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.6.0.tgz"
     },
     "axis": {
-      "version": "0.5.2",
-      "from": "axis@>=0.5.2 <0.6.0",
-      "resolved": "https://registry.npmjs.org/axis/-/axis-0.5.2.tgz"
+      "version": "0.6.0",
+      "from": "axis@>=0.6.0 <0.7.0",
+      "resolved": "https://registry.npmjs.org/axis/-/axis-0.6.0.tgz"
     },
     "backo2": {
       "version": "1.0.2",
@@ -3156,9 +3156,9 @@
       "resolved": "https://registry.npmjs.org/longest/-/longest-1.0.1.tgz"
     },
     "lost": {
-      "version": "6.7.1",
-      "from": "lost@>=6.7.1 <7.0.0",
-      "resolved": "https://registry.npmjs.org/lost/-/lost-6.7.1.tgz",
+      "version": "6.7.2",
+      "from": "lost@6.7.2",
+      "resolved": "https://registry.npmjs.org/lost/-/lost-6.7.2.tgz",
       "dependencies": {
         "object-assign": {
           "version": "2.0.0",
