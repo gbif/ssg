@@ -9,6 +9,7 @@ module.exports = (function(){
             ['clean-all'],
             ['fonts'],
             ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons', 'translations'],
+            ['error404'],
             ['watch'],
             callback);
     }
@@ -18,6 +19,7 @@ module.exports = (function(){
             ['clean-all'],
             ['fonts'],
             ['build-root', 'js', 'stylus', 'images', 'raw', 'favicons', 'translations'],
+            ['error404'],
             ['optimize'],
             callback);
     }

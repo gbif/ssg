@@ -74,6 +74,10 @@ conf = {
     translations: {
         src: './translations.yml',
         dest: dest + '/translations'
+    },
+    error404: {
+        src: tmp + '/templates/custom_404.html',
+        dest: dest
     }
 };
 
