@@ -48,7 +48,8 @@ gulp.task('build-main', ['templates'], function () {
             renderer: renderer, //render using custom markdown renderer
             highlight: function (code) {
                 return highlight.highlightAuto(code).value;
-            }
+            },
+            breaks: true
         }))
         .pipe(applyTemplate(config.templates.main, config.googleAnalyticsId, languageData, translations))
         .pipe(gulp.dest(config.dest));
