@@ -7,3 +7,6 @@ Example of usages
 
 * There is an example zip included.
 * There is a more complex example and documentation site at https://github.com/gbif/ssg-example
+
+## Node version
+Currently versions < 7.0 are supported. You may run into [this](https://github.com/npm/npm/issues/14232) error trying to build a site on node version >= 7.0
